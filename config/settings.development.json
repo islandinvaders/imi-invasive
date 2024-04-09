@@ -4,10 +4,30 @@
     { "email": "john@foo.com", "password": "changeme" }
   ],
 
-  "defaultData": [
-    { "name": "Basket", "quantity": 3, "owner": "john@foo.com", "condition": "excellent" },
-    { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
-    { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
-    { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
+  "referenceData": [
+    {"pestName": "Mongoose",
+      "sciName": "Herpestes javanicus",
+      "risk": "Undefined",
+      "regStatus": "HAR 124",
+      "pestType": "Animal",
+      "description": "Mongoose are a weasel-like animal totaling about 26″ in length with a long, brownish body, short legs and a tail as long as its body. They have small rounded ears and a pointed nose. The mongoose is active during the day and generally sleeps in dens at night",
+      "impact": "Mongoose are opportunistic feeders that will eat birds, small mammals, reptiles, insects, fruits, and plants. They prey on the eggs and hatchlings of native ground nesting birds and endangered sea turtles.",
+      "distribution": "Maui, Moloka’i and O’ahu",
+      "lookalike": "Cats, Rats, Pheasants"
+    }
+  ],
+
+  "reportData": [
+    {"image": "https://i.pinimg.com/originals/f1/4d/74/f14d74fccd5698545d2b5b02bad55790.jpg",
+      "pestName": "Mongoose",
+      "pestDescription": "Small, tan, furry animal with 4 legs, a long body, and a long tail",
+      "island": "Oahu",
+      "location": "University of Hawaii Campus Center",
+      "date": "2024-01-01",
+      "reporter": "john@foo.com",
+      "verified": "Yes",
+      "removed": "No"
+      }
+
   ]
 }

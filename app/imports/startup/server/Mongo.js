@@ -1,18 +1,30 @@
 import { Meteor } from 'meteor/meteor';
-import { Stuffs } from '../../api/stuff/Stuff.js';
-
+import { Reports } from '../../api/report/Report.js';
+import { References } from '../../api/reference/Reference.js';
 /* eslint-disable no-console */
 
-// Initialize the database with a default data document.
-const addData = (data) => {
-  console.log(`  Adding: ${data.name} (${data.owner})`);
-  Stuffs.collection.insert(data);
+// Initialize ReferencesCollection default data
+const addReference = (data) => {
+  console.log(`  Adding: ${data.pestName} `);
+  References.collection.insert(data);
 };
 
-// Initialize the StuffsCollection if empty.
-if (Stuffs.collection.find().count() === 0) {
-  if (Meteor.settings.defaultData) {
-    console.log('Creating default data.');
-    Meteor.settings.defaultData.forEach(data => addData(data));
+if (References.collection.find().count() === 0) {
+  if (Meteor.settings.referenceData) {
+    console.log('Creating default reference data.');
+    Meteor.settings.referenceData.forEach(data => addReference(data));
+  }
+}
+
+// Initialize ReportsCollection default data
+const addReport = (data) => {
+  console.log(`  Adding: ${data.pestName} (${data.reporter}, ${data.date}) `);
+  Reports.collection.insert(data);
+};
+
+if (Reports.collection.find().count() === 0) {
+  if (Meteor.settings.reportData) {
+    console.log('Creating default report data.');
+    Meteor.settings.reportData.forEach(data => addReport(data));
   }
 }
