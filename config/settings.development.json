@@ -5,7 +5,9 @@
   ],
 
   "referenceData": [
-    {"pestName": "Mongoose",
+    {
+      "image": "https://i.pinimg.com/originals/f1/4d/74/f14d74fccd5698545d2b5b02bad55790.jpg",
+      "pestName": "Mongoose",
       "sciName": "Herpestes javanicus",
       "risk": "Undefined",
       "regStatus": "HAR 124",
