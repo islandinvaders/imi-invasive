@@ -31,7 +31,7 @@ if (Meteor.users.find().count() === 0) {
       createUser(email, password, role);
       createProfile(firstName, lastName, email, bio, interests);
     });
-} else {
+  } else {
     console.log('Cannot initialize the database!  Please invoke meteor with a settings file.');
   }
 }
