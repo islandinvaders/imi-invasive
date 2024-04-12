@@ -7,10 +7,10 @@ const Posts = () => (
     <Row className="align-middle text-center">
       <Col xs={4}>
         <Row className="d-flex justify-content-center align-items-center">
-          <Image roundedCircle src="https://m.media-amazon.com/images/I/812Onuail2L._AC_UF894,1000_QL80_.jpg" />
+          <Image roundedCircle src="https://m.media-amazon.com/images/I/812Onuail2L._AC_UF894,1000_QL80_.jpg" id="profile-pic" />
         </Row>
         <Row className="d-flex justify-content-center align-items-center">
-          <ButtonGroup vertical style={{ width: '150px' }}> {/* Set a fixed width for the button group */}
+          <ButtonGroup vertical style={{ width: '150px' }}>
             <DropdownButton
               as={ButtonGroup}
               title="My Posts"
@@ -31,15 +31,18 @@ const Posts = () => (
           <Card style={{ width: '50rem' }}>
             <Card.Img variant="top" src="https://allthatsinteresting.com/wordpress/wp-content/uploads/2022/06/angry-mongoose.jpg" />
             <Card.Body>
-              <Card.Title>WILDCARD</Card.Title>
+              <Card.Title>Pest Name: Name of pest user reports</Card.Title>
               <Card.Text>
-                Short description of what the poster saw/experienced
+                Pest Description: Short description of what the poster saw/experienced
               </Card.Text>
             </Card.Body>
             <ListGroup className="list-group-flush">
-              <ListGroup.Item>Species: </ListGroup.Item>
-              <ListGroup.Item>Spotted at: </ListGroup.Item>
-              <ListGroup.Item>Other: </ListGroup.Item>
+              <ListGroup.Item>Island: what island pest was found on</ListGroup.Item>
+              <ListGroup.Item>Location: where found</ListGroup.Item>
+              <ListGroup.Item>Date: when found</ListGroup.Item>
+              <ListGroup.Item>Reporter: username of who reported</ListGroup.Item>
+              <ListGroup.Item>Verified: verification of the post</ListGroup.Item>
+              <ListGroup.Item>Removed: if anyone has removed it from the area</ListGroup.Item>
             </ListGroup>
           </Card>
         </Col>

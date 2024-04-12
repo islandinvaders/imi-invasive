@@ -26,3 +26,10 @@ body {
   padding-top: 10px;
   padding-bottom: 20px;
 }
+#profile-pic {
+  max-width: 300px;
+  height: auto;
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+
