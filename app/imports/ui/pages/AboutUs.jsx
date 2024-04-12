@@ -6,7 +6,7 @@ import { Linkedin } from 'react-bootstrap-icons';
 const AboutUs = () => (
   <Container id="about-us-page" className="py-3 justify-content-center">
     <Row className="align-items-center text-center">
-      <Col xs={12} md={6} className="text-center">
+      <Col xs={12} className="text-center">
         <h1>ABOUT US</h1>
         <p>
           &apos;Imi Invasive aims to address invasive species management challenges by establishing a citizen science initiative to bring the community together
