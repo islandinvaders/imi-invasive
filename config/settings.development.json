@@ -1,11 +1,36 @@
 {
   "defaultAccounts": [
-    { "email": "admin@foo.com", "password": "changeme", "role": "admin" },
-    { "email": "john@foo.com", "password": "changeme" }
+    {
+      "email": "admin@foo.com",
+      "password": "changeme",
+      "role": "admin",
+      "firstName": "Admin",
+      "lastName": "User",
+      "bio": "I am an admin user",
+      "interests": "All"
+    },
+    {
+      "email": "john@foo.com",
+      "password": "changeme",
+      "firstName": "Gojo",
+      "lastName": "Satoru",
+      "bio": "I am an advocate for endangered species",
+      "interests": "Birds, Insects, Mammals"
+    },
+    {
+      "email": "jo@jo.com",
+      "password": "changeme",
+      "firstName": "Johnathan",
+      "lastName": "Joestar",
+      "bio": "I am an advocate for endangered species",
+      "interests": "Birds, Insects, Mammals"
+    }
   ],
 
   "referenceData": [
-    {"pestName": "Mongoose",
+    {
+      "image": "https://i.pinimg.com/originals/f1/4d/74/f14d74fccd5698545d2b5b02bad55790.jpg",
+      "pestName": "Mongoose",
       "sciName": "Herpestes javanicus",
       "risk": "Undefined",
       "regStatus": "HAR 124",

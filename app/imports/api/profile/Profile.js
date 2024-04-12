@@ -2,29 +2,27 @@ import { Mongo } from 'meteor/mongo';
 import SimpleSchema from 'simpl-schema';
 
 /**
- * The ReferencesCollection. It encapsulates state and variable values for a reference guide entry.
+ * The ProfilesCollection. It encapsulates state and variable values for Profile.
  */
-class ReferencesCollection {
+class ProfilesCollection {
   constructor() {
     // The name of this collection.
-    this.name = 'ReferencesCollection';
+    this.name = 'ProfilesCollection';
     // Define the Mongo collection.
     this.collection = new Mongo.Collection(this.name);
     // Define the structure of each document in the collection.
     this.schema = new SimpleSchema({
-      image: String,
-      pestName: String,
-      sciName: String,
-      risk: String,
-      regStatus: String,
-      pestType: {
+      firstName: String,
+      lastName: String,
+      email: String,
+      bio: {
         type: String,
-        allowedValues: ['Plant', 'Animal', 'Bug', 'Microbe', 'Fungus'],
+        optional: true,
       },
-      description: String,
-      impact: String,
-      distribution: String,
-      lookalike: String,
+      interests: {
+        type: String,
+        optional: true,
+      },
     });
     // Attach the schema to the collection, so all attempts to insert a document are checked against schema.
     this.collection.attachSchema(this.schema);
@@ -35,7 +33,7 @@ class ReferencesCollection {
 }
 
 /**
- * The singleton instance of the ReferencesCollection.
- * @type {ReferencesCollection}
+ * The singleton instance of the ProfilesCollection.
+ * @type {ProfilesCollection}
  */
-export const References = new ReferencesCollection();
+export const Profiles = new ProfilesCollection();
