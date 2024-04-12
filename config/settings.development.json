@@ -31,14 +31,50 @@
     {
       "image": "https://i.pinimg.com/originals/f1/4d/74/f14d74fccd5698545d2b5b02bad55790.jpg",
       "pestName": "Mongoose",
-      "sciName": "Herpestes javanicus",
-      "risk": "Undefined",
+      "sciName": "Herpestes Javanicus",
+      "risk": "N/A",
       "regStatus": "HAR 124",
       "pestType": "Animal",
       "description": "Mongoose are a weasel-like animal totaling about 26″ in length with a long, brownish body, short legs and a tail as long as its body. They have small rounded ears and a pointed nose. The mongoose is active during the day and generally sleeps in dens at night",
       "impact": "Mongoose are opportunistic feeders that will eat birds, small mammals, reptiles, insects, fruits, and plants. They prey on the eggs and hatchlings of native ground nesting birds and endangered sea turtles.",
-      "distribution": "Maui, Moloka’i and O’ahu",
+      "distribution": "Maui, Moloka’i, O’ahu",
       "lookalike": "Cats, Rats, Pheasants"
+    },
+    {
+      "image": "https://dlnr.hawaii.gov/hisc/files/2013/02/corjub.jpg",
+      "pestName": "Pampas Grass",
+      "sciName": "Cortaderia Selloana, Cortaderia Jubata",
+      "risk": "High",
+      "regStatus": "HAR 68",
+      "pestType": "Plant",
+      "description": "Pampas grass is an erect giant bunch grass with long, slender, bright green, saw-toothed leaves. At its base are dried, corkscrew-shaped leaves. It has large showy flower plumes that extend 2-3′ beyond the foliage. Two species of pampas grass are found in Hawaii, Cortaderia selloana and C. jubata, which are difficult to tell apart. Both reach heights of 9-10′ and have loosely clumped pinkish-white seed heads. They flower from July through November. Spent flower stalks are sometimes persistent for several years",
+      "impact": "Pampas grass grows rapidly, produces thousands of seeds per flower plume, and can accumulate large amounts of fire prone biomass. Seeds are viable for 4-6 months, but field evidence from Hawaii suggests viability could be greater. It can crowd out native species, impede access, degrade grazing lands, and create fire hazards.",
+      "distribution": "Maui, O’ahu",
+      "lookalike": "Sugarcane, Native Hawaiian sedges"
+    },
+    {
+      "image": "https://dlnr.hawaii.gov/hisc/files/2013/02/elecoq2.jpg",
+      "pestName": "Coqui Frog",
+      "sciName": "Eleutherodactylus Coqui",
+      "risk": "Undefined",
+      "regStatus": "Hawai’i Injurious Wildlife (Exhibit 5, Chapter 13-124)",
+      "pestType": "Animal",
+      "description": "The coqui is a small tree frog slightly larger than 2.5 cm (1 in) long, with colors varying from light yellow to dark brown. It has a round body shape and a broad rounded snout with obvious toe pads. They also make a distinctive “ko-kee” vocalization that can be easily heard. They are found on ground level and in trees and bushes, but their calls are primarily made from 1-2m (3-7 feet) high",
+      "impact": "No natural predators or competitors to keep populations in check. Populations have reached 55,000 frogs per hectare in some Hawai’i populations (Compared to 24,000 frogs per hectare in their native habitat, Puerto Rico). Eat huge quantities of insects, removing insects from forest floor to treetops. This results in the loss of insect services, such as pollination. Disrupt the balance of vulnerable native ecosystems. Potential food source for snakes if they were to arrive. Loud, incessant and annoying call from dusk until dawn. Adverse economic impacts on tourism. Decreased export plant sales. Disclosure requirement for real estate transactions, has resulted in decreased property values in some locations",
+      "distribution": "Maui, O’ahu, Hawai’i Island:",
+      "lookalike": "Greenhouse frog"
+    },
+    {
+      "image": "https://dlnr.hawaii.gov/hisc/files/2013/02/tibher3.jpg",
+      "pestName": "Cane Tibouchina",
+      "sciName": "Tibouchina Herbacea",
+      "risk": "N/A",
+      "regStatus": "HAR 68",
+      "pestType": "Plant",
+      "description": "This shrub is semi woody and can grow up to 9′ tall. The young stems are angled and hairy. The leaves are opposite, 3″ long by 1.4″ wide, hairy, and have 5-7 prominent veins. The flowers are pink and have 4 petals with bright yellow anthers. The fruit is cup-like and extremely small. The seeds are very small and numerous.",
+      "impact": "This plant is a prolific seeder and spread by birds. It forms dense stands in pastures and can also invade disturbed forest areas, displacing native species.",
+      "distribution":  "O’ahu, Moloka’i, Lana’i, Hawai’i Island",
+      "lookalike": "Glorybush (Tibouchina Urvilleana)"
     }
   ],
 
@@ -52,6 +88,26 @@
       "reporter": "john@foo.com",
       "verified": "Yes",
       "removed": "No"
-      }
+    },
+    {"image": "https://birding.ninja/wp-content/uploads/2014/12/hawaii14.jpg",
+      "pestName": "Red Whiskered Bulbul",
+      "pestDescription": "Small, tan, furry animal with 4 legs, a long body, and a long tail",
+      "island": "Oahu",
+      "location": "Manoa Valley District Park",
+      "date": "2024-01-01",
+      "reporter": "john@foo.com",
+      "verified": "Yes",
+      "removed": "No"
+    },
+    {"image": "https://i0.wp.com/www.oahuisc.org/wp-content/uploads/Tibher-Flower-Head-with-raindrops.jpg?fit=601%2C800&ssl=1",
+      "pestName": "Cane Tibouchina",
+      "pestDescription": "Tall upright weed plant with sharper leaf structure. Has small purple pedal flowers, with yellow antlers",
+      "island": "Oahu",
+      "location": "Along the Manoa Falls hike",
+      "date": "2024-01-01",
+      "reporter": "john@foo.com",
+      "verified": "Yes",
+      "removed": "No"
+    }
   ]
 }
