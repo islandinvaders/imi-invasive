@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Col, Container, Row, Form } from 'react-bootstrap';
-import { Search } from 'react-bootstrap-icons';
+import { Search, Filter } from 'react-bootstrap-icons';
 import { Meteor } from 'meteor/meteor';
 import { useTracker } from 'meteor/react-meteor-data';
 import Resource from '../components/Resource';
@@ -8,6 +8,7 @@ import { References } from '../../api/reference/Reference';
 
 const Resources = () => {
   const [searchQuery, setSearchQuery] = useState('');
+  const [selectedType, setSelectedType] = useState('');
 
   const references = useTracker(() => {
     const subscription = Meteor.subscribe(References.userPublicationName);
@@ -16,49 +17,70 @@ const Resources = () => {
       return [];
     }
 
-    let referenceItems = [];
-    if (searchQuery.trim() === '') {
-      referenceItems = References.collection.find({}).fetch();
-    } else {
-      referenceItems = References.collection.find({
+    let query = {};
+    if (searchQuery.trim() !== '') {
+      query = {
+        ...query,
         pestName: { $regex: searchQuery.trim(), $options: 'i' },
-      }).fetch();
+      };
+    }
+    if (selectedType !== '') {
+      query = {
+        ...query,
+        pestType: selectedType,
+      };
     }
 
+    const referenceItems = References.collection.find(query).fetch();
     return referenceItems;
-  }, [searchQuery]);
+  }, [searchQuery, selectedType]);
+
+  const handleTypeChange = (e) => {
+    setSelectedType(e.target.value);
+  };
 
   return (
     <Container className="py-3">
       <Row className="justify-content-center">
         <Col className="text-center">
-          <h2>Resources</h2>
+          <h2>Invasive Species List</h2>
+          <p>Discover list of references documenting invasive species present in the Hawaiian Islands ecosystem</p>
         </Col>
-        <Row>
-          <Col>
-            <Form onSubmit={(e) => e.preventDefault()} className="d-flex align-items-center justify-content-end">
-              <Search className="m-1" size="20" />
-              <Form.Control
-                type="text"
-                placeholder="Search by pest name"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="input-sm"
-                style={{ width: '200px', marginRight: '10px' }}
-              />
-            </Form>
+      </Row>
+      <Row>
+        <Col>
+          <Form onSubmit={(e) => e.preventDefault()} className="d-flex align-items-center justify-content-end">
+            <Search className="m-1" size="20" />
+            <Form.Control
+              type="text"
+              placeholder="Search by pest name"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="input-sm"
+              style={{ width: '200px', marginRight: '10px' }}
+            />
+            <Filter className="m-1" size="25" />
+            <Form.Select value={selectedType} onChange={handleTypeChange} className="input-sm" style={{ width: '100px' }}>
+              <option value="">Select One</option>
+              <option value="Plant">Plant</option>
+              <option value="Animal">Animal</option>
+              <option value="Bug">Bug</option>
+              <option value="Microbe">Microbe</option>
+              <option value="Fungus">Fungus</option>
+            </Form.Select>
+          </Form>
+        </Col>
+      </Row>
+      <Row xl={1} className="g-2">
+        {references.map((reference) => (
+          <Col className="m-3" key={reference._id}>
+            <Resource resource={reference} />
           </Col>
-        </Row>
-        <Row xl={1} className="g-2">
-          {references.map((reference) => (
-            <Col className="m-3" key={reference._id}>
-              <Resource resource={reference} />
-            </Col>
-          ))}
-        </Row>
+        ))}
       </Row>
     </Container>
   );
 };
 
 export default Resources;
+
