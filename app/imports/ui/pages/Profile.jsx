@@ -4,6 +4,7 @@ import { useTracker } from 'meteor/react-meteor-data';
 import { Card, Col, Container, Row, Button } from 'react-bootstrap';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { Profiles } from '../../api/profile/Profile';
+import EditProfile from './EditProfile';
 
 // View your own profile
 const Profile = () => {
@@ -57,7 +58,8 @@ const Profile = () => {
               </Row>
               <Row className="mt-3">
                 <Col className="d-flex justify-content-center">
-                  <Button> Edit Profile</Button>
+                  <Button className="px-4" onClick={EditProfile}> Edit Profile</Button>
+                  // <button onClick={() => gotToNewPage()} className="btn">Go to Customer Page</button>
                 </Col>
               </Row>
             </Card.Body>
