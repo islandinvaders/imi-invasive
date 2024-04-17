@@ -3,6 +3,7 @@ import { Roles } from 'meteor/alanning:roles';
 import { Stuffs } from '../../api/stuff/Stuff';
 import { Profiles } from '../../api/profile/Profile';
 import { References } from '../../api/reference/Reference';
+import { Reports } from '../../api/report/Report';
 
 // User-level publication.
 // If logged in, then publish documents owned by this user. Otherwise, publish nothing.
@@ -30,7 +31,7 @@ Meteor.publish(Profiles.userPublicationName, function () {
   return this.ready();
 });
 
-// alanning:roles publication
+// planning:roles publication
 // Recommended code to publish roles for each user.
 Meteor.publish(null, function () {
   if (this.userId) {
@@ -39,7 +40,12 @@ Meteor.publish(null, function () {
   return this.ready();
 });
 
-// Pubished all references to appear to Resources page
+// Published all references to appear to Resources page
 Meteor.publish(References.userPublicationName, function () {
   return References.collection.find();
+});
+
+// Publish all reports to appear to Posts page
+Meteor.publish(Reports.userPublicationName, function () {
+  return Reports.collection.find();
 });
