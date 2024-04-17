@@ -3,11 +3,10 @@ import swal from 'sweetalert';
 import { Meteor } from 'meteor/meteor';
 import { useTracker } from 'meteor/react-meteor-data';
 import { Card, Col, Container, Row } from 'react-bootstrap';
-import { AutoForm, ErrorsField, HiddenField, NumField, SelectField, SubmitField, TextField } from 'uniforms-bootstrap5';
+import { AutoForm, SubmitField, TextField } from 'uniforms-bootstrap5';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { Profiles } from '../../api/profile/Profile';
-
 
 // use profiles collection
 const bridge = new SimpleSchema2Bridge(Profiles.schema);
@@ -34,9 +33,15 @@ const EditProfile = () => {
   // On successful submit, insert the data.
   const submit = (data) => {
     const { firstName, lastName, email, bio, interests } = data;
-    Profiles.collection.update(thisProfile, { $set: { firstName, lastName, email, bio, interests } }, (error) => (error ?
-      swal('Error', error.message, 'error') :
-      swal('Success', 'Item updated successfully', 'success')));
+    Profiles.collection.update(thisProfile._id, { $set: { firstName, lastName, email, bio, interests } }, (error) => {
+      if (error) {
+        // Show an error message if the update fails
+        swal('Error', error.message, 'error');
+      } else {
+        // Show a success message if the update is successful
+        swal('Success', 'Profile updated successfully', 'success');
+      }
+    });
   };
 
   return ready ? (
@@ -45,7 +50,7 @@ const EditProfile = () => {
       <Row className="justify-content-center">
         <Col xs={8}>
           <Card>
-            <AutoForm schema={bridge} onSubmit={data => submit(data)} model={doc}>
+            <AutoForm schema={bridge} onSubmit={submit} model={thisProfile}>
               <Card.Body>
                 <Row>
                   <Col>
