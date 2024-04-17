@@ -20,7 +20,7 @@ class ReportsCollection {
         allowedValues: ['Niihau', 'Kauai', 'Oahu', 'Molokai', 'Lanai', 'Maui', 'Kahoolawe', 'Hawaii'],
       },
       location: String,
-      date: Date,
+      date: String,
       reporter: String,
       verified: {
         type: String,

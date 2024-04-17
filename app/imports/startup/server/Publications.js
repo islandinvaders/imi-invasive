@@ -4,7 +4,6 @@ import { Stuffs } from '../../api/stuff/Stuff';
 import { Profiles } from '../../api/profile/Profile';
 import { References } from '../../api/reference/Reference';
 import { Reports } from '../../api/report/Report';
-
 // User-level publication.
 // If logged in, then publish documents owned by this user. Otherwise, publish nothing.
 Meteor.publish(Stuffs.userPublicationName, function () {
@@ -45,7 +44,23 @@ Meteor.publish(References.userPublicationName, function () {
   return References.collection.find();
 });
 
-// Publish all reports to appear to Posts page
+// Publish only user's reports to appear to Posts page
 Meteor.publish(Reports.userPublicationName, function () {
-  return Reports.collection.find();
+  if (this.userId) {
+    const username = Meteor.users.findOne(this.userId).username;
+    return Reports.collection.find({ reporter: username });
+  }
+  return this.ready();
 });
+
+// Publish all reports (verified or not) to AdminPosts page
+Meteor.publish(Reports.adminPublicationName, function () {
+  if (this.userId && Roles.userIsInRole(this.userId, 'admin')) {
+    return Reports.collection.find();
+  }
+  return this.ready();
+});
+
+// Publish only verified reports to appear to Posts page
+
+// Publish only unverified reports to appear to AdminPosts page for verification

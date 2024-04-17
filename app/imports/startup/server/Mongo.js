@@ -18,7 +18,7 @@ if (References.collection.find().count() === 0) {
 
 // Initialize ReportsCollection default data
 const addReport = (data) => {
-  console.log(`  Adding: ${data.pestName} (${data.reporter}, ${data.date}) `);
+  console.log(`  Adding: ${data.pestName} (${data.reporter}, ${data.date}, ${data.verified}) `);
   Reports.collection.insert(data);
 };
 

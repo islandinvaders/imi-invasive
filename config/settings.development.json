@@ -105,8 +105,8 @@
       "island": "Oahu",
       "location": "Along the Manoa Falls hike",
       "date": "2024-01-01",
-      "reporter": "john@foo.com",
-      "verified": "Yes",
+      "reporter": "admin@foo.com",
+      "verified": "No",
       "removed": "No"
     }
   ]
