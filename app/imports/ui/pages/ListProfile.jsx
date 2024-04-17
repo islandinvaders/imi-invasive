@@ -7,7 +7,7 @@ import LoadingSpinner from '../components/LoadingSpinner';
 import { Profiles } from '../../api/profile/Profile';
 
 // View your own profile
-const Profile = () => {
+const ListProfile = () => {
   const currentUser = useTracker(() => Meteor.user());
   const navigate = useNavigate(); // Hook for redirecting
   const { ready, thisProfile } = useTracker(() => {
@@ -71,4 +71,4 @@ const Profile = () => {
   ) : <LoadingSpinner />;
 };
 
-export default Profile;
+export default ListProfile;
