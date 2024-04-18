@@ -1,34 +1,23 @@
 import React, { useEffect, useState } from 'react';
+import { Meteor } from 'meteor/meteor';
 import { useTracker } from 'meteor/react-meteor-data';
 import { Reports } from '../../api/report/Report';
 
 // MAKE CSV FILE
+// MAKE CSV FILE
 const csvmaker = function (data) {
-
-  // Declare csvRows before using it
   const csvRows = [];
-
-  // Headers is basically a keys of an
-  // object which is id, name, and
-  // profession
-  // Exclude the 'image' key
   const headers = Object.keys(data[0]).filter(key => key !== 'image');
-
-  // As for making csv format, headers
-  // must be separated by comma and
-  // pushing it into array
   csvRows.push(headers.join(','));
 
-  // Loop through each object in the data array
   data.forEach(item => {
-    // Pushing Object values into array
-    // with comma separation
-    // Exclude the 'image' value
-    const values = headers.map(header => item[header]).join(',');
+    const values = headers.map(header => {
+      const escaped = (`${item[header]}`).replace(/"/g, '\\"');
+      return `"${escaped}"`;
+    }).join(',');
     csvRows.push(values);
   });
 
-  // Returning the array joining with new line
   return csvRows.join('\n');
 };
 
@@ -60,21 +49,29 @@ const download = function (data) {
 const DownloadButton = () => {
   const [data, setData] = useState(null);
 
-  const fetchData = useTracker(() => Reports.collection.find().fetch());
+  const { reports } = useTracker(() => {
+    // Get access to Report documents.
+    const subscription = Meteor.subscribe(Reports.userPublicationName);
+    // Determine if the subscription is ready
+    const rdy = subscription.ready();
+    // Get the Report documents
+    const reportItems = Reports.collection.find({}).fetch();
+    return {
+      reports: reportItems,
+      ready: rdy,
+    };
+  }, []);
 
   useEffect(() => {
-    console.log(fetchData);
-    if (fetchData && fetchData.length > 0) {
-      setData(fetchData);
+    if (reports && reports.length > 0) {
+      setData(reports);
     }
-  }, [fetchData]);
+  }, [reports]);
 
   const handleClick = () => {
     if (data && data.length > 0) {
       const csvdata = csvmaker(data);
       download(csvdata);
-    } else {
-      console.error('No data found');
     }
   };
 
