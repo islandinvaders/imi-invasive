@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Container, Image, Row, Button, ButtonGroup, DropdownButton, Dropdown, Card, ListGroup } from 'react-bootstrap';
-import { get } from '../components/writeCSV.jsx';
+import DownloadButton from '../components/DownloadButton.jsx';
 
 /* A simple static component to render some text for the landing page. */
 const Posts = () => (
@@ -22,7 +22,7 @@ const Posts = () => (
               <Dropdown.Item eventKey="3">Edit</Dropdown.Item>
             </DropdownButton>
             <Button>Everyone Else</Button>
-            <button type="button" onClick={get}>Download CSV</button>
+            <DownloadButton />
           </ButtonGroup>
         </Row>
       </Col>
