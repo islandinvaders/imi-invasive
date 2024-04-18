@@ -7,7 +7,7 @@ import { Reports } from '../../api/report/Report';
 // MAKE CSV FILE
 const csvmaker = function (data) {
   const csvRows = [];
-  const headers = Object.keys(data[0]).filter(key => key !== 'image');
+  const headers = Object.keys(data[0]).filter(key => key !== 'image' && key !== '_id');
   csvRows.push(headers.join(','));
 
   data.forEach(item => {
@@ -55,7 +55,7 @@ const DownloadButton = () => {
     // Determine if the subscription is ready
     const rdy = subscription.ready();
     // Get the Report documents
-    const reportItems = Reports.collection.find({}).fetch();
+    const reportItems = Reports.collection.find({ verified: 'Yes' }).fetch();
     return {
       reports: reportItems,
       ready: rdy,
