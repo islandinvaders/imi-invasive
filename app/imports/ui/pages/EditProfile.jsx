@@ -2,11 +2,12 @@ import React from 'react';
 import swal from 'sweetalert';
 import { Meteor } from 'meteor/meteor';
 import { useTracker } from 'meteor/react-meteor-data';
-import { Card, Col, Container, Row } from 'react-bootstrap';
+import { Card, Col, Container, Row, Button } from 'react-bootstrap';
 import { AutoForm, SubmitField, TextField } from 'uniforms-bootstrap5';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { Profiles } from '../../api/profile/Profile';
+import { useNavigate } from 'react-router-dom';
 
 // use profiles collection
 const bridge = new SimpleSchema2Bridge(Profiles.schema);
@@ -14,6 +15,7 @@ const bridge = new SimpleSchema2Bridge(Profiles.schema);
 // View your own profile
 const EditProfile = () => {
   const currentUser = useTracker(() => Meteor.user());
+  const navigate = useNavigate(); // Hook for redirecting
   const { ready, thisProfile } = useTracker(() => {
     // Note that this subscription will get cleaned up
     // when your component is unmounted or deps change.
@@ -44,6 +46,10 @@ const EditProfile = () => {
     });
   };
 
+  const handleProfileRedirect = () => {
+    navigate('/profile'); // This will redirect to the EditProfile component
+  };
+
   return ready ? (
     <Container className="py-3">
       <h2 className="text-center">Edit Profile</h2>
@@ -54,28 +60,31 @@ const EditProfile = () => {
               <Card.Body>
                 <Row>
                   <Col>
-                    <TextField name="firstName" />
+                    <TextField name="firstName" style={{ minHeight: '5rem' }} />
                   </Col>
                   <Col>
-                    <TextField name="lastName" />
+                    <TextField name="lastName" style={{ minHeight: '5rem' }} />
                   </Col>
                   <Col>
-                    <TextField name="email" />
+                    <TextField name="email" style={{ minHeight: '5rem' }} />
                   </Col>
                 </Row>
                 <Row className="mt-3">
                   <Col>
-                    <TextField name="bio" />
+                    <TextField name="bio" style={{ minHeight: '5rem' }} />
                   </Col>
                 </Row>
                 <Row className="mt-3">
                   <Col>
-                    <TextField name="interests" />
+                    <TextField name="interests" style={{ minHeight: '5rem' }} />
                   </Col>
                 </Row>
                 <Row className="mt-3">
-                  <Col className="d-flex justify-content-center">
-                    <SubmitField value="Save Changes" />
+                  <Col className="d-flex justify-content-start">
+                    <Button className="px-4" onClick={handleProfileRedirect}>View Profile</Button>
+                  </Col>
+                  <Col>
+                    <SubmitField className="d-flex justify-content-end" value="Save Changes" />
                   </Col>
                 </Row>
               </Card.Body>
