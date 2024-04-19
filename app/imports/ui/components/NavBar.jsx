@@ -21,16 +21,21 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto justify-content-start">
-            {currentUser ? ([
+            {currentUser && !Roles.userIsInRole(Meteor.userId(), 'admin') ? ([ // User Navbar
               <Nav.Link id="list-stuff-nav" as={NavLink} to="/profile" key="profile">Profile</Nav.Link>,
               <Nav.Link id="list-stuff-nav" as={NavLink} to="/about" key="about">About Us</Nav.Link>,
               <Nav.Link id="list-stuff-nav" as={NavLink} to="/posts" key="posts">Posts</Nav.Link>,
               <Nav.Link id="list-stuff-nav" as={NavLink} to="/add" key="posts">File Report</Nav.Link>,
-              <Nav.Link id="list-stuff-nav" as={NavLink} to="/resources" key="rescources">Invasive List</Nav.Link>,
+              <Nav.Link id="list-stuff-nav" as={NavLink} to="/resources" key="resources">Invasive List</Nav.Link>,
             ]) : ''}
-            {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-              <Nav.Link id="list-stuff-admin-nav" as={NavLink} to="/admin" key="admin">Admin</Nav.Link>
-            ) : ''}
+            {Roles.userIsInRole(Meteor.userId(), 'admin') ? ([ // Admin Navbar
+              <Nav.Link id="list-stuff-nav" as={NavLink} to="/profile" key="profile">Profile</Nav.Link>,
+              <Nav.Link id="list-stuff-nav" as={NavLink} to="/about" key="about">About Us</Nav.Link>,
+              <Nav.Link id="list-stuff-nav" as={NavLink} to="/posts" key="posts">Posts</Nav.Link>,
+              <Nav.Link id="list-stuff-nav" as={NavLink} to="/add" key="posts">File Report</Nav.Link>,
+              <Nav.Link id="list-stuff-nav" as={NavLink} to="/resourcesadmin" key="resources">Invasive List Admin</Nav.Link>,
+              <Nav.Link id="list-stuff-admin-nav" as={NavLink} to="/admin" key="admin">Admin</Nav.Link>,
+            ]) : ''}
           </Nav>
           <Nav className="justify-content-end">
             {currentUser === '' ? (
