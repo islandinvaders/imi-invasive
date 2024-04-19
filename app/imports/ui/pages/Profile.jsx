@@ -25,6 +25,10 @@ const Profile = () => {
     navigate('/edit-profile'); // This will redirect to the EditProfile component
   };
 
+  const handleListRedirect = () => {
+    navigate('/list-profile'); // This will redirect to the ListProfile component
+  };
+
   return ready ? (
     <Container className="py-3">
       <h2 className="text-center">Profile</h2>
@@ -59,7 +63,10 @@ const Profile = () => {
                 </Col>
               </Row>
               <Row className="mt-3">
-                <Col className="d-flex justify-content-center">
+                <Col className="d-flex justify-content-start">
+                  <Button className="px-4" onClick={handleListRedirect}>List Profiles</Button>
+                </Col>
+                <Col className="d-flex justify-content-end">
                   <Button className="px-4" onClick={handleEditRedirect}>Edit Profile</Button>
                 </Col>
               </Row>
