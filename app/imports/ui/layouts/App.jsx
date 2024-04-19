@@ -22,6 +22,7 @@ import LoadingSpinner from '../components/LoadingSpinner';
 import Resources from '../pages/Resources';
 import Posts from '../pages/Posts';
 import EditProfile from '../pages/EditProfile';
+import Logo from '../components/Logo';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
   return (
     <Router>
       <div className="d-flex flex-column min-vh-100">
+        <Logo />
         <NavBar />
         <Routes>
           <Route exact path="/" element={<Landing />} />

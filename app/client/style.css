@@ -26,3 +26,20 @@ body {
   padding-top: 10px;
   padding-bottom: 20px;
 }
+
+.navbar {
+  justify-content: center;
+}
+
+/* Change color of items when not active */
+.navbar-nav .nav-item .nav-link {
+  color: darkolivegreen; /* Default color */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: darkolivegreen; /* Hover color */
+}
+
+.navbar-nav .nav-item.active .nav-link {
+  color: black !important; /* Active color */
+}
