@@ -6,7 +6,7 @@ import { Card, Image, ListGroup } from 'react-bootstrap';
 const Report = ({ report }) => (
   <Card>
     <Card.Header>
-      <Image src={report.image} />
+      <Card.Img variant="top" src={report.image} />
       <Card.Title>{report.pestName}</Card.Title>
     </Card.Header>
     <Card.Body>
