@@ -43,3 +43,16 @@ body {
 .navbar-nav .nav-item.active .nav-link {
   color: black !important; /* Active color */
 }
+
+.logo-container {
+  background-color: #E3E1CA;
+}
+
+.logo-image {
+  max-width: 300px;
+  max-height: 300px;
+}
+.custom-navbar {
+  background-color: #E3E1CA;
+}
+
