@@ -51,7 +51,7 @@ const DownloadButton = () => {
 
   const { reports } = useTracker(() => {
     // Get access to Report documents.
-    const subscription = Meteor.subscribe(Reports.userPublicationName);
+    const subscription = Meteor.subscribe(Reports.userVerifiedPosts);
     // Determine if the subscription is ready
     const rdy = subscription.ready();
     // Get the Report documents
