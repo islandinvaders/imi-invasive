@@ -72,7 +72,7 @@ const AddPost = () => {
     // Prepare file name for file to be uploaded to s3 using random bit string and file name to reduce likelihood of file override
     const newFileName = `${randomImageName()}${file.name}`;
 
-    // Not sure what these are, but they're required to put the object in the bucket
+    // Info required to put the object in the bucket
     const uploadParams = {
       Bucket: bucketName,
       Key: newFileName,
@@ -143,6 +143,7 @@ const AddPost = () => {
                   <LongTextField name="pestDescription" />
                 </Row>
                 <Row>
+                  {/** If user is admin, they can verify the report* */}
                   {isAdmin && (
                     <Col><SelectField name="verified" /></Col>
                   )}
