@@ -5,51 +5,59 @@ import { NavLink } from 'react-router-dom';
 import { Roles } from 'meteor/alanning:roles';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { BoxArrowRight, PersonFill, PersonPlusFill } from 'react-bootstrap-icons';
+import '/client/style.css';
 
 const NavBar = () => {
-  // useTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker
   const { currentUser } = useTracker(() => ({
     currentUser: Meteor.user() ? Meteor.user().username : '',
   }), []);
 
   return (
-    <Navbar bg="light" expand="lg" className="justify-content-center">
+    <Navbar expand="lg" className="custom-navbar justify-content-center">
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto justify-content-start">
+          <Nav className="me-auto">
             {currentUser ? ([
-              <Nav.Link id="list-stuff-nav" as={NavLink} to="/profile" key="profile">Profile</Nav.Link>,
-              <Nav.Link id="list-stuff-nav" as={NavLink} to="/about" key="about">About Us</Nav.Link>,
-              <Nav.Link id="list-stuff-nav" as={NavLink} to="/posts" key="posts">Posts</Nav.Link>,
-              <Nav.Link id="list-stuff-nav" as={NavLink} to="/add" key="posts">File Report</Nav.Link>,
-              <Nav.Link id="list-stuff-nav" as={NavLink} to="/resources" key="rescources">Invasive List</Nav.Link>,
+              <Nav.Item key="profile" className="border-1 border-top border-dark">
+                <Nav.Link id="list-stuff-nav" as={NavLink} to="/profile">Profile</Nav.Link>
+              </Nav.Item>,
+              <Nav.Item key="about" className="border-1 border-top border-dark">
+                <Nav.Link id="list-stuff-nav" as={NavLink} to="/about">About Us</Nav.Link>
+              </Nav.Item>,
+              <Nav.Item key="posts" className="border-1 border-top border-dark">
+                <Nav.Link id="list-stuff-nav" as={NavLink} to="/posts">Posts</Nav.Link>
+              </Nav.Item>,
+              <Nav.Item key="file-report" className="border-1 border-top border-dark">
+                <Nav.Link id="list-stuff-nav" as={NavLink} to="/add">File Report</Nav.Link>
+              </Nav.Item>,
+              <Nav.Item key="invasive-list" className="border-1 border-top border-dark">
+                <Nav.Link id="list-stuff-nav" as={NavLink} to="/resources">Invasive List</Nav.Link>
+              </Nav.Item>,
             ]) : ''}
             {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-              <Nav.Link id="list-stuff-admin-nav" as={NavLink} to="/admin" key="admin">Admin</Nav.Link>
+              <Nav.Item key="admin">
+                <Nav.Link id="list-stuff-admin-nav" as={NavLink} to="/admin">Admin</Nav.Link>
+              </Nav.Item>
             ) : ''}
           </Nav>
-          <Nav className="justify-content-end">
+          <Nav>
             {currentUser === '' ? (
               <NavDropdown id="login-dropdown" title="Login">
-                <NavDropdown.Item id="login-dropdown-sign-in" as={NavLink} to="/signin">
+                <NavDropdown.Item as={NavLink} to="/signin">
                   <PersonFill />
-                  Sign
-                  in
+                  Sign in
                 </NavDropdown.Item>
-                <NavDropdown.Item id="login-dropdown-sign-up" as={NavLink} to="/signup">
+                <NavDropdown.Item as={NavLink} to="/signup">
                   <PersonPlusFill />
-                  Sign
-                  up
+                  Sign up
                 </NavDropdown.Item>
               </NavDropdown>
             ) : (
               <NavDropdown id="navbar-current-user" title={currentUser}>
-                <NavDropdown.Item id="navbar-sign-out" as={NavLink} to="/signout">
+                <NavDropdown.Item as={NavLink} to="/signout">
                   <BoxArrowRight />
-                  {' '}
-                  Sign
-                  out
+                  Sign out
                 </NavDropdown.Item>
               </NavDropdown>
             )}

@@ -56,3 +56,6 @@ body {
   background-color: #E3E1CA;
 }
 
+.navbar .nav-link {
+  text-align: center;
+}
