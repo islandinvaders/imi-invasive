@@ -7,13 +7,8 @@ import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
 import SimpleSchema from 'simpl-schema';
 import { Roles } from 'meteor/alanning:roles';
 import crypto from 'crypto';
-import { S3Client, PutObjectCommand, GetObjectCommand } from '@aws-sdk/client-s3';
-import { getSignedUrl } from '@aws-sdk/s3-request-presigner';
-import dotenv from 'dotenv';
+import { S3Client, PutObjectCommand } from '@aws-sdk/client-s3';
 import { Reports } from '../../api/report/Report';
-
-// Allows access to environmental variables
-dotenv.config();
 
 // HANDLE IMAGE UPLOAD
 
@@ -21,10 +16,10 @@ dotenv.config();
 const randomImageName = (bytes = 32) => crypto.randomBytes(bytes).toString('hex');
 
 // Save environmental variables
-const bucketName = process.env.BUCKET_NAME;
-const bucketRegion = process.env.BUCKET_REGION;
-const accessKey = process.env.ACCESS_KEY;
-const secretAccessKey = process.env.SECRET_ACCESS_KEY;
+const bucketName = process.env.REACT_APP_BUCKET_NAME;
+const bucketRegion = process.env.REACT_APP_BUCKET_REGION;
+const accessKey = process.env.REACT_APP_ACCESS_KEY;
+const secretAccessKey = process.env.REACT_APP_SECRET_ACCESS_KEY;
 
 // Make new s3 client
 const s3 = new S3Client({
@@ -90,13 +85,9 @@ const AddPost = () => {
       const data = await s3.send(new PutObjectCommand(uploadParams));
       console.log('Success', data);
 
-      // Get URL of image back
-      const urlParams = { Bucket: bucketName, Key: newFileName };
-      const url = await getSignedUrl(s3, new GetObjectCommand(urlParams));
-
       // Update local state variable with image URL
-      setImageUrl(url);
-      console.log('image', url);
+      setImageUrl(newFileName);
+      console.log('image');
     } catch (err) {
       console.log('Error', err);
     }
