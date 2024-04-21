@@ -4,7 +4,6 @@ import { useTracker } from 'meteor/react-meteor-data';
 import { Reports } from '../../api/report/Report';
 
 // MAKE CSV FILE
-// MAKE CSV FILE
 const csvmaker = function (data) {
   const csvRows = [];
   const headers = Object.keys(data[0]).filter(key => key !== 'image' && key !== '_id');

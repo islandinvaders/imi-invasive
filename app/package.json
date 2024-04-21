@@ -2,10 +2,13 @@
   "name": "meteor-application-template-react",
   "private": true,
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.556.0",
+    "@aws-sdk/s3-request-presigner": "^3.556.0",
     "@babel/runtime": "^7.24.0",
     "bootstrap": "^5.3.3",
     "classnames": "^2.5.1",
     "core-js": "^3.36.0",
+    "dotenv": "^16.4.5",
     "graphql": "^16.8.1",
     "meteor-node-stubs": "^1.2.9",
     "prop-types": "^15.7.2",
