@@ -32,7 +32,7 @@ const Posts = () => {
             <Image roundedCircle src="https://m.media-amazon.com/images/I/812Onuail2L._AC_UF894,1000_QL80_.jpg" />
           </Row>
           <Row className="d-flex justify-content-center align-items-center">
-            <ButtonGroup vertical style={{ width: '150px' }}> {/* Set a fixed width for the button group */}
+            <ButtonGroup vertical style={{ width: '150px' }}>
               <DropdownButton
                 as={ButtonGroup}
                 title="My Posts"
@@ -47,7 +47,6 @@ const Posts = () => {
             </ButtonGroup>
           </Row>
         </Col>
-
         <Col xs={8} className="d-flex flex-column justify-content-center">
           <Row className="justify-content-center">
             <Col className="text-center">
