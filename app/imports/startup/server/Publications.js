@@ -12,6 +12,7 @@ Meteor.publish(Reports.userVerifiedPosts, function () {
   }
   return this.ready();
 });
+// Test
 
 // Admin-level publication.
 // If logged in and with admin role, then publish all documents from all users. Otherwise, publish nothing.
