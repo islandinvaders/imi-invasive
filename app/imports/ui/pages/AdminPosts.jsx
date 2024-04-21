@@ -13,7 +13,7 @@ const Posts = () => {
     // Note that this subscription will get cleaned up
     // when your component is unmounted or deps change.
     // Get access to Stuff documents.
-    const subscription = Meteor.subscribe(Reports.userVerifiedPosts);
+    const subscription = Meteor.subscribe(Reports.adminAllPosts);
     // Determine if the subscription is ready
     const rdy = subscription.ready();
     // Get the Report documents
