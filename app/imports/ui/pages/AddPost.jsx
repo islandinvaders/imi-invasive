@@ -85,7 +85,7 @@ const AddPost = () => {
       const data = await s3.send(new PutObjectCommand(uploadParams));
       console.log('Success', data);
 
-      // Update local state variable with image URL
+      // Update local state variable with image path name
       setImageUrl(newFileName);
       console.log('image');
     } catch (err) {
