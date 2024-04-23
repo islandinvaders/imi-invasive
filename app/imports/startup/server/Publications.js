@@ -13,11 +13,30 @@ Meteor.publish(Reports.userVerifiedPosts, function () {
   return this.ready();
 });
 
+// when PostsButton is clicked
+// If logged in will only display reports made by the user
+Meteor.publish(Reports.userSpecificPosts, function () {
+  if (this.userId) {
+    const username = Meteor.users.findOne(this.userId).username;
+    return Reports.collection.find({ reporter: username });
+  }
+  return this.ready();
+});
+
 // Admin-level publication.
 // If logged in and with admin role, then publish all documents from all users. Otherwise, publish nothing.
 Meteor.publish(Reports.adminAllPosts, function () {
   if (this.userId && Roles.userIsInRole(this.userId, 'admin')) {
     return Reports.collection.find();
+  }
+  return this.ready();
+});
+
+// when AdminButton is clicked
+// if logged in and with admin role, then displays only unverified posts
+Meteor.publish(Reports.adminUnverifiedPosts, function () {
+  if (this.userId && Roles.userIsInRole(this.userId, 'admin')) {
+    return Reports.collection.find({ verified: 'No' });
   }
   return this.ready();
 });
@@ -38,7 +57,7 @@ Meteor.publish(null, function () {
   return this.ready();
 });
 
-// Pubished all references to appear to Resources page
+// Published all references to appear to Resources page
 Meteor.publish(References.userPublicationName, function () {
   return References.collection.find();
 });

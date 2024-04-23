@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Card, ListGroup } from 'react-bootstrap';
 
-/** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 const Report = ({ report }) => (
   <Card>
     <Card.Header>
@@ -10,15 +9,15 @@ const Report = ({ report }) => (
       <Card.Title>{report.pestName}</Card.Title>
     </Card.Header>
     <Card.Body>
-      <Card.Text>{report.pestDescription}</Card.Text>
+      <Card.Text>Description: {report.pestDescription}</Card.Text>
     </Card.Body>
     <ListGroup className="list-group-flush">
-      <ListGroup.Item>{report.island} </ListGroup.Item>
-      <ListGroup.Item>{report.location}</ListGroup.Item>
-      <ListGroup.Item>{report.date.toLocaleDateString()}</ListGroup.Item>
-      <ListGroup.Item>{report.reporter}</ListGroup.Item>
-      <ListGroup.Item>{report.verified}</ListGroup.Item>
-      <ListGroup.Item>{report.removed}</ListGroup.Item>
+      <ListGroup.Item>Island: {report.island} </ListGroup.Item>
+      <ListGroup.Item>Location: {report.location}</ListGroup.Item>
+      <ListGroup.Item>Date Found: {report.date.toLocaleDateString()}</ListGroup.Item>
+      <ListGroup.Item>Reporter: {report.reporter}</ListGroup.Item>
+      <ListGroup.Item>Verification Status: {report.verified}</ListGroup.Item>
+      <ListGroup.Item>Removed from Area: {report.removed}</ListGroup.Item>
     </ListGroup>
   </Card>
 );

@@ -38,6 +38,8 @@ class ReportsCollection {
     // Define names for publications and subscriptions
     this.userVerifiedPosts = `${this.name}.publication.user`;
     this.adminAllPosts = `${this.name}.publication.admin`;
+    this.userSpecificPosts = `${this.name}.publication.userSpecific`;
+    this.adminUnverifiedPosts = `${this.name}.publication.adminUnverified`;
   }
 }
 
