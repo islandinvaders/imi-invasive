@@ -26,3 +26,17 @@ body {
   padding-top: 10px;
   padding-bottom: 20px;
 }
+
+/* Make buttons from react-bootstrap rectangle */
+.btn-posts {
+  border-radius: 0 !important;
+  background-color: lightyellow !important;
+  border-color: black !important;
+  color: black !important;
+  width: 200px !important;
+}
+
+.img-posts {
+  width: 200px !important;
+  height: 100px !important;
+}

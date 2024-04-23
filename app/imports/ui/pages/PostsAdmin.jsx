@@ -38,8 +38,10 @@ const PostsAdmin = () => {
           <Row className="d-flex justify-content-center align-items-center">
             <Image roundedCircle src="https://m.media-amazon.com/images/I/812Onuail2L._AC_UF894,1000_QL80_.jpg" />
           </Row>
-          <Row className="d-flex justify-content-center align-items-center">
-            <Button onClick={handleButtonClick}>{ showAllReports ? 'View Unverified Posts' : 'View All Posts' }</Button>
+          <Row className="d-flex justify-content-center align-items-center mt-4">
+            <Button className="btn-posts" py={10} onClick={handleButtonClick}>{ showAllReports ? 'View Unverified Posts' : 'View All Posts' }</Button>
+          </Row>
+          <Row className="d-flex justify-content-center align-items-center mt-2">
             <DownloadButton />
           </Row>
         </Col>
