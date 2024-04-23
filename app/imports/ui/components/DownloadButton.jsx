@@ -76,7 +76,7 @@ const DownloadButton = () => {
   };
 
   return (
-    <button type="button" onClick={handleClick}>
+    <button className="btn-posts" type="button" onClick={handleClick}>
       Download CSV
     </button>
   );
