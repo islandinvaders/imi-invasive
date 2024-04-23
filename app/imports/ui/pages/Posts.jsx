@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Col, Container, Row, Image, DropdownButton, ButtonGroup, Dropdown, Button } from 'react-bootstrap';
+import { Col, Container, Row, Image, Button } from 'react-bootstrap';
 import { Meteor } from 'meteor/meteor';
 import { useTracker } from 'meteor/react-meteor-data';
 import { Reports } from '../../api/report/Report';
@@ -8,8 +8,8 @@ import Report from '../components/Report';
 import DownloadButton from '../components/DownloadButton';
 
 const Posts = () => {
-  const setShowAllReports = true;
-  let showAllReports = useState(true);
+  // State to manage whether to show all reports or user-specific reports
+  const [showAllReports, setShowAllReports] = useState(true);
 
   // useTracker connects Meteor data to React components.
   const { ready, reports } = useTracker(() => {
@@ -17,19 +17,18 @@ const Posts = () => {
     const subscription = Meteor.subscribe(Reports.userVerifiedPosts);
     // Determine if the subscription is ready
     const rdy = subscription.ready();
-    // Get the Report documents
-    let reportItems = Reports.collection.find();
-    if (showAllReports) {
-      reportItems = Reports.userSpecificPosts;
-    }
+    // Get the Report documents based on the state
+    // TODO: DYNAMICALLY DISPLAY POSTS FOR CURRENT USER, NOT JUST 'john@foo.com'
+    const reportItems = showAllReports ? Reports.collection.find().fetch() : Reports.collection.find({ reporter: 'john@foo.com' });
     return {
       reports: reportItems,
       ready: rdy,
     };
   }, [showAllReports]);
 
+  // Function to handle button click to toggle between showing all reports and user-specific reports
   const handleButtonClick = () => {
-    setShowAllReports(showAllReports = !showAllReports);
+    setShowAllReports(prevState => !prevState);
   };
 
   return (ready ? (
@@ -40,18 +39,10 @@ const Posts = () => {
             <Image roundedCircle src="https://m.media-amazon.com/images/I/812Onuail2L._AC_UF894,1000_QL80_.jpg" />
           </Row>
           <Row className="d-flex justify-content-center align-items-center">
-            <ButtonGroup vertical style={{ width: '150px' }}>
-              <DropdownButton
-                as={ButtonGroup}
-                title="My Posts"
-                id="bg-vertical-dropdown-1"
-              >
-                <Dropdown.Item onClick={handleButtonClick()}>View All</Dropdown.Item>
-                <Dropdown.Item>Delete</Dropdown.Item>
-                <Dropdown.Item>Edit</Dropdown.Item>
-              </DropdownButton>
-              <Button>Everyone Else</Button>
-            </ButtonGroup>
+            {/* <Dropdown.Item > */}
+            {/*  {showAllReports ? 'View All' : 'View User-Specific'} */}
+            {/* </Dropdown.Item> */}
+            <Button onClick={handleButtonClick}>{ showAllReports ? 'View User-Specific' : 'View All' }</Button>
             <DownloadButton />
           </Row>
         </Col>
