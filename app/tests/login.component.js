@@ -1,6 +1,6 @@
 import { Selector } from 'testcafe';
 
-class NavBar {
+class LoginComponent {
 
   /** If someone is logged in, then log them out, otherwise do nothing. */
   async ensureLogout(testController) {
@@ -53,41 +53,7 @@ class NavBar {
     await testController.click('#login-dropdown-sign-up');
   }
 
-  async gotoLandingPage(testController) {
-    await testController.click('#landing-page');
-  }
 
-  async gotoResourcesPage(testController) {
-    const visible = await Selector('#basic-navbar-nav').visible;
-    if (!visible) {
-      await testController.click('button.navbar-toggler');
-    }
-    await testController.click('#resources-nav');
-  }
-
-  async gotoResourcesAdminPage(testController) {
-    const visible = await Selector('#basic-navbar-nav').visible;
-    if (!visible) {
-      await testController.click('button.navbar-toggler');
-    }
-    await testController.click('#resources-admin-nav');
-  }
-
-  async gotoPostsPage(testController) {
-    const visible = await Selector('#basic-navbar-nav').visible;
-    if (!visible) {
-      await testController.click('button.navbar-toggler');
-    }
-    await testController.click('#posts-nav');
-  }
-
-  async gotoPostsAdminPage(testController) {
-    const visible = await Selector('#basic-navbar-nav').visible;
-    if (!visible) {
-      await testController.click('button.navbar-toggler');
-    }
-    await testController.click('#posts-admin-nav');
-  }
 }
 
-export const navBar = new NavBar();
+export const loginComponent = new LoginComponent();
