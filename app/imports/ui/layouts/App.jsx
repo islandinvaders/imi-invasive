@@ -7,7 +7,6 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import Footer from '../components/Footer';
 import Landing from '../pages/Landing';
 import AboutUs from '../pages/AboutUs';
-import Profile from '../pages/Profile';
 import ListStuff from '../pages/ListStuff';
 import ListStuffAdmin from '../pages/ListStuffAdmin';
 import AddPost from '../pages/AddPost';
@@ -26,6 +25,7 @@ import EditProfile from '../pages/EditProfile';
 import Logo from '../components/Logo';
 import Login from '../components/Login';
 import PostsAdmin from '../pages/PostsAdmin';
+import ListProfile from '../pages/ListProfile';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => {
@@ -47,8 +47,8 @@ const App = () => {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/signout" element={<SignOut />} />
           <Route path="/about" element={<ProtectedRoute><AboutUs /></ProtectedRoute>} />
-          <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
           <Route path="/edit-profile" element={<ProtectedRoute><EditProfile /></ProtectedRoute>} />
+          <Route path="/list-profile" element={<ProtectedRoute><ListProfile /></ProtectedRoute>} />
           <Route path="/posts" element={<ProtectedRoute><Posts /></ProtectedRoute>} />
           <Route path="/postsadmin" element={<AdminProtectedRoute ready={ready}><PostsAdmin /></AdminProtectedRoute>} />
           <Route path="/home" element={<ProtectedRoute><Landing /></ProtectedRoute>} />
