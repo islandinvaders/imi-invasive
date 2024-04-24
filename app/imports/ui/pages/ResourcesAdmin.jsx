@@ -49,7 +49,7 @@ const ResourcesAdmin = () => {
       </Row>
       <Row>
         <Col>
-          <Button style={{ marginLeft: '15px' }}>Add Species</Button>
+          <Button style={{ marginLeft: '15px' }}>Add Reference</Button>
         </Col>
         <Col>
           <Form onSubmit={(e) => e.preventDefault()} className="d-flex align-items-center justify-content-end">
