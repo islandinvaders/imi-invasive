@@ -27,7 +27,6 @@ import Logo from '../components/Logo';
 import Login from '../components/Login';
 import PostsAdmin from '../pages/PostsAdmin';
 
-
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => {
   const { ready } = useTracker(() => {
