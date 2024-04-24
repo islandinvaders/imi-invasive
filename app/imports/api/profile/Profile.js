@@ -23,6 +23,10 @@ class ProfilesCollection {
         type: String,
         optional: true,
       },
+      type: {
+        type: String,
+        optional: true,
+      },
     });
     // Attach the schema to the collection, so all attempts to insert a document are checked against schema.
     this.collection.attachSchema(this.schema);

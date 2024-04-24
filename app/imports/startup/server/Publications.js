@@ -42,7 +42,11 @@ Meteor.publish(Reports.adminUnverifiedPosts, function () {
 });
 
 Meteor.publish(Profiles.userPublicationName, function () {
-  if (this.userId) {
+  return Profiles.collection.find({});
+});
+
+Meteor.publish(Profiles.adminPublicationName, function () {
+  if (this.userId && Roles.userIsInRole(this.userId, 'admin')) {
     return Profiles.collection.find();
   }
   return this.ready();

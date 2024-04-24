@@ -1,31 +1,47 @@
 {
-  "defaultAccounts": [
+    "defaultAccounts": [
+      {
+        "email": "admin@foo.com",
+        "password": "changeme",
+        "role": "admin"
+      },
+      {
+        "email": "john@foo.com",
+        "password": "changeme"
+      },
+      {
+        "email": "jo@jo.com",
+        "password": "changeme"
+      },
+      {
+        "email": "jo@taro.com",
+        "password": "changeme"
+      }
+    ],
+  "profileData": [
     {
-      "email": "admin@foo.com",
-      "password": "changeme",
-      "role": "admin",
-      "firstName": "Admin",
-      "lastName": "User",
-      "bio": "I am an admin user",
-      "interests": "All"
-    },
-    {
-      "email": "john@foo.com",
-      "password": "changeme",
       "firstName": "Gojo",
       "lastName": "Satoru",
+      "email": "john@foo.com",
       "bio": "I am an advocate for endangered species",
       "interests": "Birds, Insects, Mammals"
     },
     {
-      "email": "jo@jo.com",
-      "password": "changeme",
       "firstName": "Johnathan",
       "lastName": "Joestar",
+      "email": "jo@jo.com",
+      "bio": "I am an advocate for endangered species",
+      "interests": "Birds, Insects, Mammals"
+    },
+    {
+      "firstName": "Jotaro",
+      "lastName": "Kujo",
+      "email": "jo@taro.com",
       "bio": "I am an advocate for endangered species",
       "interests": "Birds, Insects, Mammals"
     }
   ],
+
 
   "referenceData": [
     {
