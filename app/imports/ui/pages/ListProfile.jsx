@@ -8,12 +8,11 @@ import Profile from '../components/Profile';
 
 // View your own profile
 const ListProfile = () => {
-  const currentUser = useTracker(() => Meteor.user());
   const { ready, thisProfile } = useTracker(() => {
     const subscription = Meteor.subscribe(Profiles.userPublicationName);
     // eslint-disable-next-line no-shadow
     const ready = subscription.ready();
-    const profile = Profiles.collection.findOne({ email: currentUser?.username });
+    const profile = Profiles.collection.find({}).fetch();
     return {
       thisProfile: profile,
       ready,

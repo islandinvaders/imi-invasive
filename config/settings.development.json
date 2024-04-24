@@ -3,37 +3,45 @@
       {
         "email": "admin@foo.com",
         "password": "changeme",
-        "role": "admin",
-        "firstName": "Admin",
-        "lastName": "User",
-        "bio": "I am an admin user",
-        "interests": "All"
+        "role": "admin"
       },
       {
         "email": "john@foo.com",
-        "password": "changeme",
-        "firstName": "Gojo",
-        "lastName": "Satoru",
-        "bio": "I am an advocate for endangered species",
-        "interests": "Birds, Insects, Mammals"
+        "password": "changeme"
       },
       {
         "email": "jo@jo.com",
-        "password": "changeme",
-        "firstName": "Johnathan",
-        "lastName": "Joestar",
-        "bio": "I am an advocate for endangered species",
-        "interests": "Birds, Insects, Mammals"
+        "password": "changeme"
       },
       {
         "email": "jo@taro.com",
-        "password": "changeme",
-        "firstName": "Jotaro",
-        "lastName": "Kujo",
-        "bio": "I am an advocate for endangered species",
-        "interests": "Birds, Insects, Mammals"
+        "password": "changeme"
       }
     ],
+  "profileData": [
+    {
+      "firstName": "Gojo",
+      "lastName": "Satoru",
+      "email": "john@foo.com",
+      "bio": "I am an advocate for endangered species",
+      "interests": "Birds, Insects, Mammals"
+    },
+    {
+      "firstName": "Johnathan",
+      "lastName": "Joestar",
+      "email": "jo@jo.com",
+      "bio": "I am an advocate for endangered species",
+      "interests": "Birds, Insects, Mammals"
+    },
+    {
+      "firstName": "Jotaro",
+      "lastName": "Kujo",
+      "email": "jo@taro.com",
+      "bio": "I am an advocate for endangered species",
+      "interests": "Birds, Insects, Mammals"
+    }
+  ],
+
 
   "referenceData": [
     {

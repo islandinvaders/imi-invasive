@@ -5,9 +5,9 @@ import { useTracker } from 'meteor/react-meteor-data';
 import { Card, Col, Container, Row, Button } from 'react-bootstrap';
 import { AutoForm, SubmitField, TextField } from 'uniforms-bootstrap5';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
+import { useNavigate } from 'react-router-dom';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { Profiles } from '../../api/profile/Profile';
-import { useNavigate } from 'react-router-dom';
 
 // use profiles collection
 const bridge = new SimpleSchema2Bridge(Profiles.schema);
@@ -24,7 +24,8 @@ const EditProfile = () => {
     // Determine if the subscription is ready
     const rdy = subscription.ready();
     // Get the Stuff documents
-    const profile = Profiles.collection.findOne({ email: currentUser?.username });
+    const profile = Profiles.collection.findOne({ email: currentUser?.emails[0].address });
+
     return {
       thisProfile: profile,
       ready: rdy,
@@ -46,8 +47,8 @@ const EditProfile = () => {
     });
   };
 
-  const handleProfileRedirect = () => {
-    navigate('/profile'); // This will redirect to the EditProfile component
+  const handleListRedirect = () => {
+    navigate('/list-profile'); // This will redirect to the ListProfile component
   };
 
   return ready ? (
@@ -81,7 +82,7 @@ const EditProfile = () => {
                 </Row>
                 <Row className="mt-3">
                   <Col className="d-flex justify-content-start">
-                    <Button className="px-4" onClick={handleProfileRedirect}>View Profile</Button>
+                    <Button className="px-4" onClick={handleListRedirect}>List Profiles</Button>
                   </Col>
                   <Col>
                     <SubmitField className="d-flex justify-content-end" value="Save Changes" />
