@@ -1,38 +1,33 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import { Card } from 'react-bootstrap';
 
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
-const Profile = ({ profile }) => (
+const Profile = ({ listProfile }) => (
   <Card className="h-100">
     <Card.Header>
-      <Card.Title>{profile.firstName} {profile.lastName}</Card.Title>
-      <Card.Subtitle>{profile.email}</Card.Subtitle>
+      <Card.Title>{listProfile.firstName} {listProfile.lastName}</Card.Title>
+      <Card.Subtitle>{listProfile.email}</Card.Subtitle>
     </Card.Header>
     <Card.Body>
-      <Card.Text>{profile.bio}</Card.Text>
-      <Card.Text>{profile.type}</Card.Text>
-      <Card.Text>{profile.interests}</Card.Text>
-      <Link to={`/edit/${profile._id}`}>Edit</Link>
+      <Card.Text>{listProfile.bio}</Card.Text>
+      <Card.Text>{listProfile.type}</Card.Text>
+      <Card.Text>{listProfile.interests}</Card.Text>
     </Card.Body>
   </Card>
 );
 
 // Require a document to be passed to this component.
 Profile.propTypes = {
-  profile: PropTypes.shape({
-    firstName: PropTypes.string,
-    lastName: PropTypes.string,
-    email: PropTypes.string,
+  listProfile: PropTypes.shape({
+    firstName: PropTypes.string.isRequired,
+    lastName: PropTypes.string.isRequired,
+    email: PropTypes.string.isRequired,
     bio: PropTypes.string,
     type: PropTypes.string,
-    optional: true,
-  }),
-  interests: PropTypes.string,
-  optional: true,
-  _id: PropTypes.string,
+    interests: PropTypes.string,
+    _id: PropTypes.string.isRequired,
+  }).isRequired,
 };
-
 
 export default Profile;
