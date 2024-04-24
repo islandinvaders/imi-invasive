@@ -11,10 +11,6 @@ const ListProfile = () => {
   const currentUser = useTracker(() => Meteor.user());
   const { ready, thisProfile } = useTracker(() => {
     const subscription = Meteor.subscribe(Profiles.userPublicationName);
-    if (Meteor.isServer) {
-      const defaultAccounts = Meteor.settings.defaultAccounts;
-      // Use defaultAccounts here for server-side operations, such as initial user setup
-    }
     // eslint-disable-next-line no-shadow
     const ready = subscription.ready();
     const profile = Profiles.collection.findOne({ email: currentUser?.username });
