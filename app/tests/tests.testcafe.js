@@ -3,16 +3,14 @@ import { signinPage } from './signin.page';
 import { signoutPage } from './signout.page';
 import { navBar } from './navbar.component';
 import { resourcesPage } from './resources.page';
-// import { resourcesAdminPage } from './resources.admin.page';
-// import { postsPage } from './posts.page';
+import { resourcesAdminPage } from './resources.admin.page';
 import { loginComponent } from './login.component';
-// import login from '../imports/ui/components/Login';
 
 /* global fixture:false, test:false */
 
 /** Credentials for one of the sample users defined in settings.development.json. */
 const credentials = { username: 'john@foo.com', password: 'changeme' };
-// const admin = { username: 'admin@foo.com', password: 'changeme' };
+const admin = { username: 'admin@foo.com', password: 'changeme' };
 
 const pestName = 'Mongoose';
 
@@ -51,13 +49,13 @@ test('Test access to user resources page', async (testController) => {
   await signoutPage.isDisplayed(testController);
 });
 
-/*
 test('Test admin resources page', async (testController) => {
   await navBar.gotoLandingPage(testController);
   await loginComponent.gotoSignInPage(testController);
   await signinPage.signin(testController, admin.username, admin.password);
-  await loginComponent.isLoggedIn(testController, credentials.username);
+  await loginComponent.isLoggedIn(testController, admin.username);
   await navBar.gotoResourcesAdminPage(testController);
   await resourcesAdminPage.deleteResource(testController);
+  await loginComponent.logout(testController);
+  await signoutPage.isDisplayed(testController);
 });
- */
