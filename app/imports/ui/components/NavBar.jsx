@@ -16,29 +16,21 @@ const NavBar = () => {
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mx-auto">
-            {currentUser ? ([
-              <Nav.Item key="profile" className="border-1 border-top border-dark">
-                <Nav.Link id="list-stuff-nav" as={NavLink} to="/profile">PROFILE</Nav.Link>
-              </Nav.Item>,
-              <Nav.Item key="about" className="border-1 border-top border-dark">
-                <Nav.Link id="list-stuff-nav" as={NavLink} to="/about">ABOUT US</Nav.Link>
-              </Nav.Item>,
-              <Nav.Item key="posts" className="border-1 border-top border-dark">
-                <Nav.Link id="list-stuff-nav" as={NavLink} to="/posts">POSTS</Nav.Link>
-              </Nav.Item>,
-              <Nav.Item key="file-report" className="border-1 border-top border-dark">
-                <Nav.Link id="list-stuff-nav" as={NavLink} to="/add">FILE REPORT</Nav.Link>
-              </Nav.Item>,
-              <Nav.Item key="invasive-list" className="border-1 border-top border-dark">
-                <Nav.Link id="list-stuff-nav" as={NavLink} to="/resources">INVASIVE LIST</Nav.Link>
-              </Nav.Item>,
+          <Nav className="me-auto justify-content-start">
+            {currentUser && !Roles.userIsInRole(Meteor.userId(), 'admin') ? ([ // User Navbar
+              <Nav.Link id="list-stuff-nav" as={NavLink} to="/profile" key="profile">Profile</Nav.Link>,
+              <Nav.Link id="list-stuff-nav" as={NavLink} to="/about" key="about">About Us</Nav.Link>,
+              <Nav.Link id="list-stuff-nav" as={NavLink} to="/posts" key="posts">Posts</Nav.Link>,
+              <Nav.Link id="list-stuff-nav" as={NavLink} to="/add" key="posts">File Report</Nav.Link>,
+              <Nav.Link id="list-stuff-nav" as={NavLink} to="/resources" key="resources">Invasive List</Nav.Link>,
             ]) : ''}
-            {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-              <Nav.Item key="admin">
-                <Nav.Link id="list-stuff-admin-nav" as={NavLink} to="/admin">Admin</Nav.Link>
-              </Nav.Item>
-            ) : ''}
+            {Roles.userIsInRole(Meteor.userId(), 'admin') ? ([ // Admin Navbar
+              <Nav.Link id="list-stuff-nav" as={NavLink} to="/profile" key="profile">Profile</Nav.Link>,
+              <Nav.Link id="list-stuff-nav" as={NavLink} to="/about" key="about">About Us</Nav.Link>,
+              <Nav.Link id="list-stuff-nav" as={NavLink} to="/postsadmin" key="posts">Posts Admin</Nav.Link>,
+              <Nav.Link id="list-stuff-nav" as={NavLink} to="/add" key="posts">File Report</Nav.Link>,
+              <Nav.Link id="list-stuff-nav" as={NavLink} to="/resourcesadmin" key="resources">Invasive List Admin</Nav.Link>,
+            ]) : ''}
           </Nav>
         </Navbar.Collapse>
       </Container>

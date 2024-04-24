@@ -7,19 +7,19 @@ import LoadingSpinner from '../components/LoadingSpinner';
 import Report from '../components/Report';
 import DownloadButton from '../components/DownloadButton';
 
-const Posts = () => {
+const PostsAdmin = () => {
   // State to manage whether to show all reports or user-specific reports
   const [showAllReports, setShowAllReports] = useState(true);
 
   // useTracker connects Meteor data to React components.
   const { ready, reports } = useTracker(() => {
     // Get access to Report documents.
-    const subscription = Meteor.subscribe(Reports.userVerifiedPosts);
+    const subscription = Meteor.subscribe(Reports.adminAllPosts);
     // Determine if the subscription is ready
     const rdy = subscription.ready();
     // Get the Report documents based on the state
     // TODO: DYNAMICALLY DISPLAY POSTS FOR CURRENT USER, NOT JUST 'john@foo.com'
-    const reportItems = showAllReports ? Reports.collection.find().fetch() : Reports.collection.find({ reporter: 'john@foo.com' });
+    const reportItems = showAllReports ? Reports.collection.find().fetch() : Reports.collection.find({ verified: 'No' });
     return {
       reports: reportItems,
       ready: rdy,
@@ -49,7 +49,7 @@ const Posts = () => {
         <Col xs={8} className="d-flex flex-column justify-content-center">
           <Row className="justify-content-center">
             <Col className="text-center">
-              <h2>Posts </h2>
+              <h2>Posts Admin</h2>
             </Col>
           </Row>
           {reports.map((report) => (<Row className="py-4" key={report._id}><Report report={report} /></Row>))}
@@ -58,4 +58,4 @@ const Posts = () => {
     </Container>
   ) : <LoadingSpinner />);
 };
-export default Posts;
+export default PostsAdmin;
