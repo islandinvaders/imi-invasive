@@ -18,21 +18,11 @@ const NavBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto">
             {currentUser ? ([
-              <Nav.Item key="profile" className="border-1 border-top border-dark">
-                <Nav.Link id="list-stuff-nav" as={NavLink} to="/profile">PROFILE</Nav.Link>
-              </Nav.Item>,
-              <Nav.Item key="about" className="border-1 border-top border-dark">
-                <Nav.Link id="list-stuff-nav" as={NavLink} to="/about">ABOUT US</Nav.Link>
-              </Nav.Item>,
-              <Nav.Item key="posts" className="border-1 border-top border-dark">
-                <Nav.Link id="list-stuff-nav" as={NavLink} to="/posts">POSTS</Nav.Link>
-              </Nav.Item>,
-              <Nav.Item key="file-report" className="border-1 border-top border-dark">
-                <Nav.Link id="list-stuff-nav" as={NavLink} to="/add">FILE REPORT</Nav.Link>
-              </Nav.Item>,
-              <Nav.Item key="invasive-list" className="border-1 border-top border-dark">
-                <Nav.Link id="list-stuff-nav" as={NavLink} to="/resources">INVASIVE LIST</Nav.Link>
-              </Nav.Item>,
+              <Nav.Link id="list-stuff-nav" as={NavLink} to="/profile">PROFILE</Nav.Link>,
+              <Nav.Link id="list-stuff-nav" as={NavLink} to="/about">ABOUT US</Nav.Link>,
+              <Nav.Link id="list-stuff-nav" as={NavLink} to="/posts">POSTS</Nav.Link>,
+              <Nav.Link id="list-stuff-nav" as={NavLink} to="/add">FILE REPORT</Nav.Link>,
+              <Nav.Link id="list-stuff-nav" as={NavLink} to="/resources">INVASIVE LIST</Nav.Link>,
             ]) : ''}
             {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
               <Nav.Item key="admin">

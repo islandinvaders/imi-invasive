@@ -44,21 +44,22 @@ h2 {
 }
 
 /* Change color of items when not active */
-.navbar-nav .nav-item .nav-link {
+.navbar-nav .nav-link {
   color: #3C3A42; /* Default color */
   border-color: #3C3A42; /* Change to your desired border color */
   border-bottom-width: 2px; /* Add a border on the bottom */
   border-top-width: 2px;
   margin-right: 30px;
   font-family: 'Norwester', sans-serif;
+  font-weight: bold;
 }
 
-.navbar-nav .nav-item .nav-link:hover {
+.navbar-nav .nav-link:hover {
   color: #56684F; /* Hover color */
 }
 
-.navbar-nav .nav-item.active .nav-link {
-  color: #56684F !important; /* Active color */
+.navbar-nav .nav-link {
+  color: #3C3A42 !important; /* Active color */
 }
 
 .logo-container {
@@ -70,7 +71,7 @@ h2 {
   max-height: 300px;
 }
 .custom-navbar {
-  background-color: #E3E1CA;
+  background-color: whitesmoke;
 }
 
 .navbar .nav-link {
@@ -86,8 +87,8 @@ h2 {
 .custom-login-dropdown .nav-link {
   color: #E3E1CA !important; /* Change to your desired text color */
 }
-
 .image-overlay {
+  background-image: url("app/public/images/mountains.png");
   background-size: cover;
   background-position: center;
   height: 500px;
