@@ -39,10 +39,12 @@ h2 {
   padding-bottom: 20px;
 }
 
-.navbar {
-  justify-content: center;
+.navbar-nav {
+  width: 100%;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  display: flex;
 }
-
 /* Change color of items when not active */
 .navbar-nav .nav-link {
   color: #3C3A42; /* Default color */

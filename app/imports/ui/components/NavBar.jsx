@@ -14,12 +14,10 @@ const NavBar = () => {
   return (
     <Navbar expand="lg" className="custom-navbar">
       <Container>
-        <Navbar.Brand id="landing-page" as={NavLink} to="/">
-          <h2>&apos;Imi Invasive</h2>
-        </Navbar.Brand>
+        <Navbar.Brand id="landing-page" as={NavLink} to="/" />
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto justify-content-start">
+          <Nav className="me-auto justify-content-center">
             {currentUser && !Roles.userIsInRole(Meteor.userId(), 'admin') ? ([ // User Navbar
               <Nav.Link id="profile-nav" as={NavLink} to="/profile" key="profile">Profile</Nav.Link>,
               <Nav.Link id="about-us-nav" as={NavLink} to="/about" key="about">About Us</Nav.Link>,
