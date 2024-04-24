@@ -16,15 +16,15 @@ class LoginComponent {
     const visible = await Selector('#basic-navbar-nav').visible;
     if (!visible) {
       await testController.click('#login-dropdown');
+      await testController.click('#login-dropdown-sign-in');
     }
-    await testController.click('#login-dropdown-sign-in');
   }
 
   /** Check that the specified user is currently logged in. */
   async isLoggedIn(testController, username) {
     const visible = await Selector('#basic-navbar-nav').visible;
     if (!visible) {
-      await testController.click('button.navbar-toggler');
+      await testController.click('#login-dropdown');
     }
     const loggedInUser = Selector('#navbar-current-user').innerText;
     await testController.expect(loggedInUser).eql(username);
@@ -51,8 +51,6 @@ class LoginComponent {
     await testController.click('#login-dropdown');
     await testController.click('#login-dropdown-sign-up');
   }
-
-
 }
 
 export const loginComponent = new LoginComponent();
