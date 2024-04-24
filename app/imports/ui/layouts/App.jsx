@@ -23,7 +23,10 @@ import Resources from '../pages/Resources';
 import ResourcesAdmin from '../pages/ResourcesAdmin';
 import Posts from '../pages/Posts';
 import EditProfile from '../pages/EditProfile';
+import Logo from '../components/Logo';
+import Login from '../components/Login';
 import PostsAdmin from '../pages/PostsAdmin';
+
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => {
@@ -36,6 +39,8 @@ const App = () => {
   return (
     <Router>
       <div className="d-flex flex-column min-vh-100">
+        <Login />
+        <Logo />
         <NavBar />
         <Routes>
           <Route exact path="/" element={<Landing />} />
