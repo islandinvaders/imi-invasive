@@ -24,17 +24,11 @@ const ListProfile = () => {
       <Row className="justify-content-center">
         <Col>
           <Col className="text-center">
-            <h2>Profiles</h2>
+            <h2>List Profiles</h2>
           </Col>
-          {thisProfile ? (
-            <Row xs={1} md={2} lg={3} className="g-4">
-              <Col key={thisProfile._id}>
-                <Profile listProfile={thisProfile} />
-              </Col>
-            </Row>
-          ) : (
-            <p>No profile found.</p>
-          )}
+          <Row xs={5} md={2} lg={3} className="g-4">
+            {thisProfile.map((profile) => <Profile key={profile._id} listProfile={profile} />)}
+          </Row>
         </Col>
       </Row>
     </Container>
