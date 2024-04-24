@@ -3,11 +3,13 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 /* A simple static component to render some text for the landing page. */
 const Landing = () => (
-  <Container id="landing-page" fluid className="image-overlay d-flex justify-content-start">
+  <Container id="landing-page" fluid className="d-flex justify-content-start">
     <Row className="align-middle text-center">
       <Col className="d-flex flex-column justify-content-center">
-        <h1>ALOHA MAI KĀKOU!</h1>
-        <p> </p>
+        <div className="image-overlay d-flex justify-content-start">
+          <h1>ALOHA MAI KĀKOU!</h1>
+        </div>
+        <p />
         <h2>`Imi means “search” in ʻŌlelo Hawaiʻi</h2>
         <p> </p>
         <p className="px-5">Invasive species pose a significant threat to local ecosystems, causing ecological imbalances or even extinction.
