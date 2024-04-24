@@ -11,8 +11,12 @@ class PostsPage {
     await testController.expect(this.pageSelector.exists).ok();
   }
 
-  async search(testController, pestName) {
-    await testController.typeText('#resources-search', pestName);
+  async switchDisplay(testController) {
+    await testController.click('#toggle-button');
+  }
+
+  async downloadCSV(testController) {
+    await testController.click('#download-button');
   }
 }
 

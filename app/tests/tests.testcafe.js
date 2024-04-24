@@ -6,6 +6,7 @@ import { resourcesPage } from './resources.page';
 // import { resourcesAdminPage } from './resources.admin.page';
 // import { postsPage } from './posts.page';
 import { loginComponent } from './login.component';
+import { postsPage } from './posts.page';
 // import login from '../imports/ui/components/Login';
 
 /* global fixture:false, test:false */
@@ -37,6 +38,13 @@ test('Test user Posts page', async (testController) => {
   await signinPage.signin(testController, credentials.username, credentials.password);
   await loginComponent.isLoggedIn(testController, credentials.username);
   await navBar.gotoPostsPage(testController);
+  /* await postsPage.switchDisplay(testController);
+  await postsPage.isDisplayed(testController);
+  await postsPage.switchDisplay(testController);
+  await postsPage.isDisplayed(testController);
+  await postsPage.downloadCSV(testController);
+  await loginComponent.logout(testController);
+  await signoutPage.isDisplayed(testController); */
 });
 
 test('Test access to user resources page', async (testController) => {
