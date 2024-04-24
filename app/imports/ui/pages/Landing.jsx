@@ -21,7 +21,6 @@ const Landing = () => (
           species across the Hawaiian Islands.
         </p>
       </Col>
-
     </Row>
   </Container>
 );
