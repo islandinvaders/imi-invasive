@@ -4,12 +4,12 @@ import { Card } from 'react-bootstrap';
 
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 const Profile = ({ listProfile }) => (
-  <Card className="h-100">
+  <Card className="h-100" style={{ marginBottom: '20px' }}>
     <Card.Header>
       <Card.Title>{listProfile.firstName} {listProfile.lastName}</Card.Title>
       <Card.Subtitle>{listProfile.email}</Card.Subtitle>
     </Card.Header>
-    <Card.Body>
+    <Card.Body style={{ padding: '20px' }}>
       <Card.Text>{listProfile.bio}</Card.Text>
       <Card.Text>{listProfile.type}</Card.Text>
       <Card.Text>{listProfile.interests}</Card.Text>

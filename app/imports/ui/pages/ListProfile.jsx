@@ -26,7 +26,7 @@ const ListProfile = () => {
           <Col className="text-center">
             <h2>List Profiles</h2>
           </Col>
-          <Row xs={5} md={2} lg={3} className="g-4">
+          <Row xs={2} md={3} lg={3} className="g-4" style={{ rowGap: '20px', columnGap: '20px' }}>
             {thisProfile.map((profile) => <Profile key={profile._id} listProfile={profile} />)}
           </Row>
         </Col>
