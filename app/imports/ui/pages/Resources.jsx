@@ -40,7 +40,7 @@ const Resources = () => {
   };
 
   return (
-    <Container className="py-3">
+    <Container id="resources" className="py-3">
       <Row className="justify-content-center">
         <Col className="text-center">
           <h2>Invasive Species List</h2>
@@ -52,6 +52,7 @@ const Resources = () => {
           <Form onSubmit={(e) => e.preventDefault()} className="d-flex align-items-center justify-content-end">
             <Search className="m-1" size="20" />
             <Form.Control
+              id="resources-search"
               type="text"
               placeholder="Search by pest name"
               value={searchQuery}
@@ -60,13 +61,13 @@ const Resources = () => {
               style={{ width: '200px', marginRight: '10px' }}
             />
             <Filter className="m-1" size="25" />
-            <Form.Select value={selectedType} onChange={handleTypeChange} className="input-sm" style={{ width: '100px' }}>
-              <option value="">Select One</option>
-              <option value="Plant">Plant</option>
-              <option value="Animal">Animal</option>
-              <option value="Bug">Bug</option>
-              <option value="Microbe">Microbe</option>
-              <option value="Fungus">Fungus</option>
+            <Form.Select id="resources-filter" value={selectedType} onChange={handleTypeChange} className="input-sm" style={{ width: '100px' }}>
+              <option id="resources-filter-select-one" value="">Select One</option>
+              <option id="resources-filter-plant" value="Plant">Plant</option>
+              <option id="resources-filter-animal" value="Animal">Animal</option>
+              <option id="resources-filter-bug" value="Bug">Bug</option>
+              <option id="resources-filter-microbe" value="Microbe">Microbe</option>
+              <option id="resources-filter-fungus" value="Fungus">Fungus</option>
             </Form.Select>
           </Form>
         </Col>

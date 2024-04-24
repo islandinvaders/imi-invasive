@@ -15,25 +15,25 @@ const NavBar = () => {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand as={NavLink} to="/">
+        <Navbar.Brand id="landing-page" as={NavLink} to="/">
           <h2>&apos;Imi Invasive</h2>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto justify-content-start">
             {currentUser && !Roles.userIsInRole(Meteor.userId(), 'admin') ? ([ // User Navbar
-              <Nav.Link id="list-stuff-nav" as={NavLink} to="/profile" key="profile">Profile</Nav.Link>,
-              <Nav.Link id="list-stuff-nav" as={NavLink} to="/about" key="about">About Us</Nav.Link>,
-              <Nav.Link id="list-stuff-nav" as={NavLink} to="/posts" key="posts">Posts</Nav.Link>,
-              <Nav.Link id="list-stuff-nav" as={NavLink} to="/add" key="posts">File Report</Nav.Link>,
-              <Nav.Link id="list-stuff-nav" as={NavLink} to="/resources" key="resources">Invasive List</Nav.Link>,
+              <Nav.Link id="profile-nav" as={NavLink} to="/profile" key="profile">Profile</Nav.Link>,
+              <Nav.Link id="about-us-nav" as={NavLink} to="/about" key="about">About Us</Nav.Link>,
+              <Nav.Link id="posts-nav" as={NavLink} to="/posts" key="posts">Posts</Nav.Link>,
+              <Nav.Link id="reports-nav" as={NavLink} to="/add" key="posts">File Report</Nav.Link>,
+              <Nav.Link id="resources-nav" as={NavLink} to="/resources" key="resources">Invasive List</Nav.Link>,
             ]) : ''}
             {Roles.userIsInRole(Meteor.userId(), 'admin') ? ([ // Admin Navbar
-              <Nav.Link id="list-stuff-nav" as={NavLink} to="/profile" key="profile">Profile</Nav.Link>,
-              <Nav.Link id="list-stuff-nav" as={NavLink} to="/about" key="about">About Us</Nav.Link>,
-              <Nav.Link id="list-stuff-nav" as={NavLink} to="/postsadmin" key="posts">Posts Admin</Nav.Link>,
-              <Nav.Link id="list-stuff-nav" as={NavLink} to="/add" key="posts">File Report</Nav.Link>,
-              <Nav.Link id="list-stuff-nav" as={NavLink} to="/resourcesadmin" key="resources">Invasive List Admin</Nav.Link>,
+              <Nav.Link id="profile-nav" as={NavLink} to="/profile" key="profile">Profile</Nav.Link>,
+              <Nav.Link id="about-us-nav" as={NavLink} to="/about" key="about">About Us</Nav.Link>,
+              <Nav.Link id="posts-admin-nav" as={NavLink} to="/postsadmin" key="posts">Posts Admin</Nav.Link>,
+              <Nav.Link id="posts-nav" as={NavLink} to="/add" key="posts">File Report</Nav.Link>,
+              <Nav.Link id="resources-admin-nav" as={NavLink} to="/resourcesadmin" key="resources">Invasive List Admin</Nav.Link>,
             ]) : ''}
           </Nav>
           <Nav className="justify-content-end">

@@ -18,7 +18,7 @@ const Resource = ({ resource, collection }) => {
             </Card.Subtitle>
           </Col>
           <Col className="text-end m-2">
-            <Button variant="danger" onClick={() => removeItem(resource._id)}>Delete</Button>
+            <Button id="resource-admin-delete" variant="danger" onClick={() => removeItem(resource._id)}>Delete</Button>
           </Col>
         </Row>
       </Card.Header>

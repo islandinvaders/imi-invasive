@@ -40,7 +40,7 @@ const ResourcesAdmin = () => {
   };
 
   return (
-    <Container className="py-3">
+    <Container id="resources-admin" className="py-3">
       <Row className="justify-content-center">
         <Col className="text-center">
           <h2>Invasive Species List Admin</h2>
@@ -49,12 +49,13 @@ const ResourcesAdmin = () => {
       </Row>
       <Row>
         <Col>
-          <Button style={{ marginLeft: '15px' }}>Add Reference</Button>
+          <Button id="resources-add-reference" style={{ marginLeft: '15px' }}>Add Reference</Button>
         </Col>
         <Col>
           <Form onSubmit={(e) => e.preventDefault()} className="d-flex align-items-center justify-content-end">
             <Search className="m-1" size="20" />
             <Form.Control
+              id="resources-search"
               type="text"
               placeholder="Search by pest name"
               value={searchQuery}
