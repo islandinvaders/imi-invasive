@@ -25,8 +25,8 @@ const Login = () => {
           </NavDropdown.Item>
         </NavDropdown>
       ) : (
-        <NavDropdown className="custom-login-dropdown" id="navbar-current-user" title={currentUser}>
-          <NavDropdown.Item id="navbar-sign-out" as={NavLink} to="/signout">
+        <NavDropdown className="custom-login-dropdown" id="login-current-user" title={currentUser}>
+          <NavDropdown.Item id="login-sign-out" as={NavLink} to="/signout">
             <BoxArrowRight />
             Sign out
           </NavDropdown.Item>

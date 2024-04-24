@@ -14,9 +14,6 @@ const NavBar = () => {
   return (
     <Navbar expand="lg" className="custom-navbar">
       <Container>
-        <Navbar.Brand id="landing-page" as={NavLink} to="/">
-          <h2>&apos;Imi Invasive</h2>
-        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="justify-content-center">
