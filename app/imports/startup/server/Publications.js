@@ -1,43 +1,42 @@
 import { Meteor } from 'meteor/meteor';
 import { Roles } from 'meteor/alanning:roles';
-import { Stuffs } from '../../api/stuff/Stuff';
 import { Reports } from '../../api/report/Report';
 import { Profiles } from '../../api/profile/Profile';
 import { References } from '../../api/reference/Reference';
 
 // User-level publication.
-// If logged in, then publish documents owned by this user. Otherwise, publish nothing.
-Meteor.publish(Stuffs.userPublicationName, function () {
-  if (this.userId) {
-    const username = Meteor.users.findOne(this.userId).username;
-    return Stuffs.collection.find({ owner: username });
-  }
-  return this.ready();
-});
-
-// User-level publication.
 // If logged in, then publish documents that are verified. Otherwise, publish nothing.
-Meteor.publish(Reports.userPublicationName, function () {
+Meteor.publish(Reports.userVerifiedPosts, function () {
   if (this.userId) {
     return Reports.collection.find({ verified: 'Yes' });
   }
   return this.ready();
 });
 
-// Admin-level publication.
-// If logged in and with admin role, then publish all documents from all users. Otherwise, publish nothing.
-Meteor.publish(Stuffs.adminPublicationName, function () {
-  if (this.userId && Roles.userIsInRole(this.userId, 'admin')) {
-    return Stuffs.collection.find();
+// when PostsButton is clicked
+// If logged in will only display reports made by the user
+Meteor.publish(Reports.userSpecificPosts, function () {
+  if (this.userId) {
+    const username = Meteor.users.findOne(this.userId).username;
+    return Reports.collection.find({ reporter: username });
   }
   return this.ready();
 });
 
 // Admin-level publication.
 // If logged in and with admin role, then publish all documents from all users. Otherwise, publish nothing.
-Meteor.publish(Reports.adminPublicationName, function () {
+Meteor.publish(Reports.adminAllPosts, function () {
   if (this.userId && Roles.userIsInRole(this.userId, 'admin')) {
     return Reports.collection.find();
+  }
+  return this.ready();
+});
+
+// when AdminButton is clicked
+// if logged in and with admin role, then displays only unverified posts
+Meteor.publish(Reports.adminUnverifiedPosts, function () {
+  if (this.userId && Roles.userIsInRole(this.userId, 'admin')) {
+    return Reports.collection.find({ verified: 'No' });
   }
   return this.ready();
 });
@@ -58,7 +57,7 @@ Meteor.publish(null, function () {
   return this.ready();
 });
 
-// Pubished all references to appear to Resources page
+// Published all references to appear to Resources page
 Meteor.publish(References.userPublicationName, function () {
   return References.collection.find();
 });

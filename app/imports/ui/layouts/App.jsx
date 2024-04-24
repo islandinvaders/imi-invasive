@@ -20,10 +20,13 @@ import SignIn from '../pages/SignIn';
 import NotAuthorized from '../pages/NotAuthorized';
 import LoadingSpinner from '../components/LoadingSpinner';
 import Resources from '../pages/Resources';
+import ResourcesAdmin from '../pages/ResourcesAdmin';
 import Posts from '../pages/Posts';
 import EditProfile from '../pages/EditProfile';
 import Logo from '../components/Logo';
 import Login from '../components/Login';
+import PostsAdmin from '../pages/PostsAdmin';
+
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => {
@@ -48,9 +51,11 @@ const App = () => {
           <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
           <Route path="/edit-profile" element={<ProtectedRoute><EditProfile /></ProtectedRoute>} />
           <Route path="/posts" element={<ProtectedRoute><Posts /></ProtectedRoute>} />
+          <Route path="/postsadmin" element={<AdminProtectedRoute ready={ready}><PostsAdmin /></AdminProtectedRoute>} />
           <Route path="/home" element={<ProtectedRoute><Landing /></ProtectedRoute>} />
           <Route path="/list" element={<ProtectedRoute><ListStuff /></ProtectedRoute>} />
           <Route path="/resources" element={<ProtectedRoute><Resources /></ProtectedRoute>} />
+          <Route path="/resourcesadmin" element={<AdminProtectedRoute ready={ready}><ResourcesAdmin /></AdminProtectedRoute>} />
           <Route path="/add" element={<ProtectedRoute><AddPost /></ProtectedRoute>} />
           <Route path="/edit/:_id" element={<ProtectedRoute><EditStuff /></ProtectedRoute>} />
           <Route path="/admin" element={<AdminProtectedRoute ready={ready}><ListStuffAdmin /></AdminProtectedRoute>} />

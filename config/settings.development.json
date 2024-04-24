@@ -85,8 +85,8 @@
       "island": "Oahu",
       "location": "University of Hawaii Campus Center",
       "date": "2024-01-01",
-      "reporter": "john@foo.com",
-      "verified": "Yes",
+      "reporter": "admin@foo.com",
+      "verified": "No",
       "removed": "No"
     },
     {"image": "https://birding.ninja/wp-content/uploads/2014/12/hawaii14.jpg",
@@ -95,7 +95,7 @@
       "island": "Oahu",
       "location": "Manoa Valley District Park",
       "date": "2024-01-01",
-      "reporter": "john@foo.com",
+      "reporter": "admin@foo.com",
       "verified": "Yes",
       "removed": "No"
     },
