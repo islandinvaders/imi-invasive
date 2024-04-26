@@ -65,8 +65,7 @@ const AddPost = () => {
             <Card>
               <Card.Body>
                 <Row>
-                  IMAGE PLACEHOLDER
-                  <input type="file" name="image" accept="image/*" />
+                  <TextField name="image" />
                 </Row>
                 <Row>
                   <Col>
