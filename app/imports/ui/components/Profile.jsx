@@ -1,11 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Card } from 'react-bootstrap';
+import { Card, Image } from 'react-bootstrap';
 
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 const Profile = ({ listProfile }) => (
   <Card className="h-100" style={{ marginBottom: '20px' }}>
     <Card.Header>
+      <Image
+        roundedCircle
+        src={listProfile.image}
+        style={{ width: '80px', height: '80px' }}
+        alt="profile picture"
+      />
       <Card.Title>{listProfile.firstName} {listProfile.lastName}</Card.Title>
       <Card.Subtitle>{listProfile.email}</Card.Subtitle>
     </Card.Header>
@@ -20,6 +26,7 @@ const Profile = ({ listProfile }) => (
 // Require a document to be passed to this component.
 Profile.propTypes = {
   listProfile: PropTypes.shape({
+    image: PropTypes.string,
     firstName: PropTypes.string.isRequired,
     lastName: PropTypes.string.isRequired,
     email: PropTypes.string.isRequired,
