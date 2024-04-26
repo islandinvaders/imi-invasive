@@ -16,7 +16,7 @@ const AutoScrollCarousel = () => {
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
     centerMode: true,
-    centerPadding: '0px' // Remove padding at the sides
+    centerPadding: '0px', // Remove padding at the sides
   };
 
   const CustomPrevArrow = (props) => {

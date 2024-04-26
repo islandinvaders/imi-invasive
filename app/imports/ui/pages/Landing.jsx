@@ -6,7 +6,7 @@ const Landing = () => (
   <Container id="landing-page" fluid className="d-flex justify-content-start">
     <Row className="align-middle text-center">
       <Col className="d-flex flex-column justify-content-center">
-        <div className="image-overlay d-flex justify-content-start">
+        <div className="image-overlay d-flex justify-content-center">
           <h1>ALOHA MAI KĀKOU!</h1>
         </div>
         <p />
