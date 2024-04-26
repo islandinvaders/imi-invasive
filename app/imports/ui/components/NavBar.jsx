@@ -19,7 +19,7 @@ const NavBar = () => {
           <Nav className="me-auto">
             {currentUser && (
               <>
-                <Nav.Link as={NavLink} to="/edit-profile" key="edit-profile">EDIT PROFILE</Nav.Link>
+                <Nav.Link as={NavLink} to="/edit-profile" key="edit-profile">PROFILE ADMIN</Nav.Link>
                 <Nav.Link as={NavLink} to="/about" key="about">ABOUT US</Nav.Link>
                 {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
                   <>
