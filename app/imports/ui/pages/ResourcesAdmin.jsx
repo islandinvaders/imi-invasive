@@ -3,6 +3,7 @@ import { Col, Container, Row, Form, Button } from 'react-bootstrap';
 import { Search, Filter } from 'react-bootstrap-icons';
 import { Meteor } from 'meteor/meteor';
 import { useTracker } from 'meteor/react-meteor-data';
+import { Link } from 'react-router-dom';
 import ResourceAdmin from '../components/ResourceAdmin';
 import { References } from '../../api/reference/Reference';
 
@@ -49,7 +50,11 @@ const ResourcesAdmin = () => {
       </Row>
       <Row>
         <Col>
-          <Button id="resources-add-reference" style={{ marginLeft: '15px' }}>Add Reference</Button>
+          <Link to="/addresource">
+            <Button id="resources-add-reference" style={{ marginLeft: '15px' }}>
+              Add Reference
+            </Button>
+          </Link>
         </Col>
         <Col>
           <Form onSubmit={(e) => e.preventDefault()} className="d-flex align-items-center justify-content-end">
