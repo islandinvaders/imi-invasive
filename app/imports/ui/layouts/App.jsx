@@ -26,6 +26,7 @@ import Logo from '../components/Logo';
 import Login from '../components/Login';
 import PostsAdmin from '../pages/PostsAdmin';
 import ListProfile from '../pages/ListProfile';
+import AddResource from '../pages/AddResource';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => {
@@ -56,6 +57,7 @@ const App = () => {
           <Route path="/resources" element={<ProtectedRoute><Resources /></ProtectedRoute>} />
           <Route path="/resourcesadmin" element={<AdminProtectedRoute ready={ready}><ResourcesAdmin /></AdminProtectedRoute>} />
           <Route path="/add" element={<ProtectedRoute><AddPost /></ProtectedRoute>} />
+          <Route path="/addresource" element={<ProtectedRoute><AddResource /></ProtectedRoute>} />
           <Route path="/edit/:_id" element={<ProtectedRoute><EditStuff /></ProtectedRoute>} />
           <Route path="/admin" element={<AdminProtectedRoute ready={ready}><ListStuffAdmin /></AdminProtectedRoute>} />
           <Route path="/notauthorized" element={<NotAuthorized />} />
