@@ -22,7 +22,7 @@ const Posts = () => {
     const rdy = reportsSubscription.ready() && profilesSubscription.ready();
     console.log(rdy);
     // Get the Report documents based on the state
-    const reportItems = showAllReports ? Reports.collection.find().fetch() : Reports.collection.find({ verified: 'Yes' });
+    const reportItems = showAllReports ? Reports.collection.find().fetch() : Reports.collection.find({ reporter: Meteor.user()?.username }).fetch();
     const userProfile = Profiles.collection.find({ email: currentUserEmail }).fetch();
     return {
       reports: reportItems,
@@ -46,7 +46,7 @@ const Posts = () => {
             {profile && profile.image ? <Image roundedCircle src={profile.image} /> : <Image roundedCircle src="https://m.media-amazon.com/images/I/812Onuail2L._AC_UF894,1000_QL80_.jpg" />}
           </Row>
           <Row className="d-flex justify-content-center align-items-center mt-4">
-            <Button className="btn-posts" py={10} onClick={handleButtonClick}>{ showAllReports ? 'View All Posts' : 'View My Posts' }</Button>
+            <Button className="btn-posts" py={10} onClick={handleButtonClick}>{ showAllReports ? 'View My Posts' : 'View All Posts' }</Button>
           </Row>
           <Row className="d-flex justify-content-center align-items-center mt-2">
             <DownloadButton />

@@ -1,24 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Card, ListGroup } from 'react-bootstrap';
+import { Card, ListGroup, Row, Col } from 'react-bootstrap';
 
 const Report = ({ report }) => (
   <Card>
     <Card.Header>
-      <Card.Img variant="top" src={report.image} />
+      <Card.Img variant="top" src={report.image} style={{ width: '60%' }}/>
       <Card.Title>{report.pestName}</Card.Title>
     </Card.Header>
-    <Card.Body>
-      <Card.Text>Description: {report.pestDescription}</Card.Text>
-    </Card.Body>
-    <ListGroup className="list-group-flush">
-      <ListGroup.Item>Island: {report.island} </ListGroup.Item>
-      <ListGroup.Item>Location: {report.location}</ListGroup.Item>
-      <ListGroup.Item>Date Found: {report.date.toLocaleDateString()}</ListGroup.Item>
-      <ListGroup.Item>Reporter: {report.reporter}</ListGroup.Item>
-      <ListGroup.Item>Verification Status: {report.verified}</ListGroup.Item>
-      <ListGroup.Item>Removed from Area: {report.removed}</ListGroup.Item>
-    </ListGroup>
+    <Row>
+      <Col>
+        <ListGroup className="list-group-flush">
+          <ListGroup.Item>Island: {report.island} </ListGroup.Item>
+          <ListGroup.Item>Location: {report.location}</ListGroup.Item>
+          <ListGroup.Item>Date Found: {report.date.toLocaleDateString()}</ListGroup.Item>
+          <ListGroup.Item>Reporter: {report.reporter}</ListGroup.Item>
+          <ListGroup.Item>Verification Status: {report.verified}</ListGroup.Item>
+          <ListGroup.Item>Removed from Area: {report.removed}</ListGroup.Item>
+        </ListGroup>
+      </Col>
+      <Col>
+        <Card.Body>
+          <Card.Text>Description: {report.pestDescription}</Card.Text>
+        </Card.Body>
+      </Col>
+    </Row>
   </Card>
 );
 
