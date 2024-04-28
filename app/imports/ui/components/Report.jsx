@@ -5,7 +5,7 @@ import { Card, ListGroup, Row, Col } from 'react-bootstrap';
 const Report = ({ report }) => (
   <Card>
     <Card.Header>
-      <Card.Img variant="top" src={report.image} style={{ width: '60%' }}/>
+      <Card.Img variant="top" src={report.image} style={{ width: '60%' }} />
       <Card.Title>{report.pestName}</Card.Title>
     </Card.Header>
     <Row>
