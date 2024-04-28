@@ -1,43 +1,36 @@
 import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import Carousel from 'react-bootstrap/Carousel';
 
-const images = [
-  '/images/hawaii1.png',
-  '/images/hawaii2.png',
-  '/images/hawaii3.png',
-  '/images/flower1.png',
-  '/images/flower2.png',
-  '/images/mongoose.png',
-];
-const PauseOnHover = (children, func) => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    pauseOnHover: true,
-  };
-  return (
-    <Slider
-      dots={settings.dots}
-      infinite={settings.infinite}
-      speed={settings.speed}
-      slidesToShow={settings.slidesToShow}
-      slidesToScroll={settings.slidesToScroll}
-      autoplay={settings.autoplay}
-      autoplaySpeed={settings.autoplaySpeed}
-    >
-      {images.map((image, index) => (
-        <div key={index}>
-          <img src={image} alt={`Slide ${index}`} />
-        </div>
-      ), func)}
-    </Slider>
-  );
-};
-
-export default PauseOnHover;
+const CarouselImages = () => (
+  <Carousel>
+    <Carousel.Item>
+      <img
+        alt="Hawaii3"
+        src="/images/hawaii3.png"
+        className="d-block w-100"
+      />
+    </Carousel.Item>
+    <Carousel.Item>
+      <img
+        alt="Hawaii2"
+        src="/images/hawaii2.png"
+        className="d-block w-100"
+      />
+    </Carousel.Item>
+    <Carousel.Item>
+      <img
+        alt="Flower"
+        src="/images/flower2.png"
+        className="d-block w-100"
+      />
+    </Carousel.Item>
+    <Carousel.Item>
+      <img
+        alt="logo"
+        src="/images/mongoose.png"
+        className="d-block w-100"
+      />
+    </Carousel.Item>
+  </Carousel>
+);
+export default CarouselImages;

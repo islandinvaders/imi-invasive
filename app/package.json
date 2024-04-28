@@ -8,6 +8,7 @@
     "core-js": "^3.36.0",
     "framer-motion": "^11.1.7",
     "graphql": "^16.8.1",
+    "jquery": "^3.7.1",
     "meteor-node-stubs": "^1.2.9",
     "prop-types": "^15.7.2",
     "react": "^18.2.0",

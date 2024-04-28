@@ -1,14 +1,15 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import PauseOnHover from '../components/Carousel';
+import CarouselImages from '../components/Carousel';
 
-/* A simple static component to render some text for the landing page. */
 const Landing = () => (
   <Container id="landing-page" fluid className="d-flex justify-content-start">
     <Row className="align-middle text-center">
+      <Row noGutters>
+        <CarouselImages />
+      </Row>
       <Col className="d-flex flex-column justify-content-center">
-        <PauseOnHover />
-        <div className="image-overlay d-flex justify-content-center">
+        <div>
           <h1>ALOHA MAI KĀKOU!</h1>
         </div>
         <p />
