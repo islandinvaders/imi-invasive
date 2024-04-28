@@ -1,9 +1,11 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import CarouselImages from '../components/Carousel';
 
 /* A simple static component to render some text for the landing page. */
 const Landing = () => (
   <Container id="landing-page" fluid className="d-flex justify-content-start">
+    <CarouselImages />
     <Row className="align-middle text-center">
       <Col className="d-flex flex-column justify-content-center">
         <div className="image-overlay d-flex justify-content-start">

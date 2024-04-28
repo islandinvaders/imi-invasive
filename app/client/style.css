@@ -2,7 +2,13 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700|Source+Code+Pro:300,400,500,700");
 /* Import the Norwester font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Norwester&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Norwester&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;700&display=swap');
 
 /* Set up some CSS variables to theme the application. */
 :root {
@@ -10,22 +16,21 @@
   --matr-navbar-bg-rgb: 236, 236, 236;
 }
 
-/* Change bootstrap variable values.
- See https://getbootstrap.com/docs/5.2/customize/css-variables/
- */
 body {
   --bs-light-rgb: var(--matr-navbar-bg-rgb);
-  font-family: 'Norwester', sans-serif;
+  font-family: 'Spectral', sans-serif;
+  color: #404044;
 }
 
 h1 {
-  font-family: 'Norwester', sans-serif;
+  font-family: 'Eczar', sans-serif;
   font-weight: bolder;
   color: whitesmoke;
 }
 
 h2 {
-  font-family: 'Norwester', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: bolder;
 }
 
 /* Set the alert background on the signin and signup pages. */
@@ -47,54 +52,72 @@ h2 {
   align-items: center; /* Center vertically */
   display: flex;
 }
+.navbar-nav .nav-link:active,
+.navbar-nav .nav-link:focus {
+  color: lightgray !important;
+}
 /* Change color of items when not active */
 .navbar-nav .nav-link {
-  color: #3C3A42; /* Default color */
+  color: #56684F; /* Default color */
   margin-right: 40px;
-  font-family: 'Norwester', sans-serif;
+  margin-left: 40px;
+  font-family: 'Libre Franklin', sans-serif;
   font-weight: bold;
   margin-bottom: 10px;
   margin-top: 10px;
+  text-align: center;
+  font-size: large;
 }
-
+/* Set the hover color for .navbar-nav .nav-link */
 .navbar-nav .nav-link:hover {
-  color: #56684F; /* Hover color */
+  color: #E3E1CA; /* Your hover color */
 }
 
-.navbar-nav .nav-link {
-  color: #3C3A42; /* Active color */
+/* Styling for the bar above the navbar text */
+.navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  top: 0; /* Position the bar above the link */
+  left: 0;
+  width: 100%;
+  height: 2px; /* Bar height */
+  background-color: #56684F; /* Bar color */
+  transform: scaleX(0); /* Initially hidden */
+  transition: transform 0.3s ease; /* Add transition for animation */
+}
+
+/* Show the bar on hover, focus, or when active */
+.navbar-nav .nav-link:hover::before,
+.navbar-nav .nav-link:focus::before,
+.navbar-nav .nav-link:active::before {
+  transform: scaleX(1); /* Show the bar */
 }
 
 .logo-container {
   background-color: #E3E1CA;
 }
 .logo-image {
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 200px;
+  max-height: 200px;
 }
 .custom-navbar {
   background-color: whitesmoke;
 }
-.navbar .nav-link {
-  text-align: center;
-}
 /* Customize the background of the login dropdown */
 .custom-login-dropdown {
-  background-color: #56684F; /* Change to your desired background color */
+  background-color: #56684F;
   justify-content: right;
 }
 .custom-login-dropdown .nav-link {
-  color: #E3E1CA !important; /* Change to your desired text color */
+  color: #E3E1CA !important;
 }
 .image-overlay {
-    background-image: url('app/public/images/mountains.png');
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px; /* Added padding to the sides */
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Make buttons from react-bootstrap rectangle */
@@ -109,4 +132,21 @@ h2 {
 .img-posts {
   width: 200px !important;
   height: 100px !important;
+}
+
+/* Set the carousel to take up all horizontal space */
+.carousel {
+  width: 100%;
+}
+
+/* Set the carousel items to take up all horizontal space */
+.carousel-item {
+  width: 100%;
+  overflow: hidden; /* Hide any overflow content */
+}
+
+/* Set the images inside carousel items to cover the entire item */
+.carousel-item img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
 }
