@@ -23,11 +23,11 @@ const ListProfile = () => {
     <Container className="py-3">
       <Row className="justify-content-center">
         <Col>
-          <Col className="text-center">
+          <Col className="text-center mb-3">
             <h2>List Profiles</h2>
           </Col>
-          <Row xs={2} md={3} lg={3} className="g-4" style={{ rowGap: '20px', columnGap: '20px' }}>
-            {thisProfile.map((profile) => <Profile key={profile._id} listProfile={profile} />)}
+          <Row xs={1} sm={2} lg={3} className="g-4">
+            {thisProfile.map((profile) => <Col><div><Profile key={profile._id} listProfile={profile} /></div></Col>)}
           </Row>
         </Col>
       </Row>
