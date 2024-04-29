@@ -1,12 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Card, ListGroup, Row, Col, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Card, ListGroup, Row, Col, Button, Form } from 'react-bootstrap';
+import { Roles } from 'meteor/alanning:roles';
+import swal from 'sweetalert';
 
 const ReportAdmin = ({ report, collection, showControls }) => {
 
+  const isAdmin = Roles.userIsInRole(Meteor.userId(), 'admin');
   const removeItem = (docID) => {
     collection.remove(docID);
+  };
+
+  const verifyReport = (newStatus) => {
+    if (isAdmin) {
+      collection.update(report._id, { $set: { verified: newStatus } }, (error) => {
+        if (error) {
+          swal('Error', error.message, 'error');
+        } else {
+          swal('Success', 'Verification status updated successfully', 'success');
+        }
+      });
+    } else {
+      swal('Error', 'Unauthorized access', 'error');
+    }
   };
 
   return (
@@ -22,7 +38,9 @@ const ReportAdmin = ({ report, collection, showControls }) => {
             <ListGroup.Item><strong>Location:</strong> {report.location}</ListGroup.Item>
             <ListGroup.Item><strong>Date Found:</strong> {report.date.toLocaleDateString()}</ListGroup.Item>
             <ListGroup.Item><strong>Reporter:</strong> {report.reporter}</ListGroup.Item>
-            <ListGroup.Item><strong>Verification Status:</strong> {report.verified}</ListGroup.Item>
+            <ListGroup.Item>
+              <strong>Verification Status:</strong> {report.verified}
+            </ListGroup.Item>
             <ListGroup.Item><strong>Removed from Area:</strong> {report.removed}</ListGroup.Item>
           </ListGroup>
         </Col>
@@ -35,8 +53,21 @@ const ReportAdmin = ({ report, collection, showControls }) => {
           {showControls && (
             <Row className="mt-2">
               <Button variant="danger" onClick={() => removeItem(report._id)}>Delete</Button>
-              <Link to={`/admin/edit/${report._id}`}>Edit</Link>
             </Row>
+          )}
+          {showControls && isAdmin && (
+            <>
+              <Card.Text><strong>Change Verification Status</strong></Card.Text>
+              <Form.Select
+                aria-label="Change Verification Status"
+                onChange={(e) => verifyReport(e.target.value)}
+                defaultValue={report.verified}
+                className="mt-2"
+              >
+                <option value="Yes">Verified</option>
+                <option value="No">Unverified</option>
+              </Form.Select>
+            </>
           )}
         </Col>
       </Row>
