@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Card, ListGroup, Row, Col, Button, Form } from 'react-bootstrap';
 import { Roles } from 'meteor/alanning:roles';
 import swal from 'sweetalert';
+import { Link } from 'react-router-dom';
 
 const ReportAdmin = ({ report, collection, showControls }) => {
 
@@ -69,6 +70,7 @@ const ReportAdmin = ({ report, collection, showControls }) => {
               </Form.Select>
             </>
           )}
+          <Link to={`/admin/edit/${report._id}`}>Edit</Link>
         </Col>
       </Row>
     </Card>

@@ -27,6 +27,7 @@ import PostsAdmin from '../pages/PostsAdmin';
 import ListProfile from '../pages/ListProfile';
 import AddResource from '../pages/AddResource';
 import EditPost from '../pages/EditPost';
+import EditPostAdmin from '../pages/EditPostAdmin';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => {
@@ -59,7 +60,7 @@ const App = () => {
           <Route path="/add" element={<ProtectedRoute><AddPost /></ProtectedRoute>} />
           <Route path="/addresource" element={<ProtectedRoute><AddResource /></ProtectedRoute>} />
           <Route path="/edit/:_id" element={<ProtectedRoute><EditPost /></ProtectedRoute>} />
-          <Route path="/admin/edit/:_id" element={<ProtectedRoute><EditPost /></ProtectedRoute>} />
+          <Route path="/admin/edit/:_id" element={<ProtectedRoute><EditPostAdmin /></ProtectedRoute>} />
           <Route path="/admin" element={<AdminProtectedRoute ready={ready}><ListStuffAdmin /></AdminProtectedRoute>} />
           <Route path="/notauthorized" element={<NotAuthorized />} />
           <Route path="*" element={<NotFound />} />
