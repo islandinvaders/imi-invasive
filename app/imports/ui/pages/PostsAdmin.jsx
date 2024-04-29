@@ -4,8 +4,8 @@ import { Meteor } from 'meteor/meteor';
 import { useTracker } from 'meteor/react-meteor-data';
 import { Reports } from '../../api/report/Report';
 import LoadingSpinner from '../components/LoadingSpinner';
-import Report from '../components/Report';
 import DownloadButton from '../components/DownloadButton';
+import ReportAdmin from '../components/ReportAdmin';
 
 const PostsAdmin = () => {
   // State to manage whether to show all reports or user-specific reports
@@ -18,7 +18,6 @@ const PostsAdmin = () => {
     // Determine if the subscription is ready
     const rdy = subscription.ready();
     // Get the Report documents based on the state
-    // TODO: DYNAMICALLY DISPLAY POSTS FOR CURRENT USER, NOT JUST 'john@foo.com'
     const reportItems = showAllReports ? Reports.collection.find().fetch() : Reports.collection.find({ verified: 'No' });
     return {
       reports: reportItems,
@@ -52,7 +51,7 @@ const PostsAdmin = () => {
               <h2>Posts Admin</h2>
             </Col>
           </Row>
-          {reports.map((report) => (<Row className="py-4" key={report._id}><Report report={report} /></Row>))}
+          {reports.map((report) => (<Row className="py-4" key={report._id}><ReportAdmin report={report} collection={Reports.collection} showControls={!showAllReports} /></Row>))}
         </Col>
       </Row>
     </Container>
