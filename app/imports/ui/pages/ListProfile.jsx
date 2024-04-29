@@ -2,6 +2,7 @@ import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { useTracker } from 'meteor/react-meteor-data';
 import { Col, Container, Row } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { Profiles } from '../../api/profile/Profile';
 import Profile from '../components/Profile';
@@ -26,8 +27,8 @@ const ListProfile = () => {
           <Col className="text-center">
             <h2>List Profiles</h2>
           </Col>
-          <Row xs={2} md={3} lg={3} className="g-4" style={{ rowGap: '20px', columnGap: '20px' }}>
-            {thisProfile.map((profile) => <Profile key={profile._id} listProfile={profile} />)}
+          <Row xs={1} sm={2} lg={3} className="g-4">
+            {thisProfile.map((profile) => <Col><div><Profile key={profile._id} listProfile={profile} /></div></Col>)}
           </Row>
         </Col>
       </Row>
