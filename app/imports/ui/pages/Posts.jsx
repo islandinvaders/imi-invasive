@@ -59,7 +59,7 @@ const Posts = () => {
               <h2>Posts </h2>
             </Col>
           </Row>
-          {reports.map((report) => (<Row className="py-4" key={report._id}><Report report={report} /></Row>))}
+          {reports.map((report) => (<Row className="py-4" key={report._id}><Report report={report} collection={Reports.collection} showControls={!showAllReports} /></Row>))}
         </Col>
       </Row>
     </Container>
