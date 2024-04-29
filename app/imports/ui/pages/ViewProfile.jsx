@@ -1,10 +1,7 @@
 import React from 'react';
-import swal from 'sweetalert';
 import { Card, Col, Container, Image, Row } from 'react-bootstrap';
-import { AutoForm, ErrorsField, HiddenField, NumField, SelectField, SubmitField, TextField } from 'uniforms-bootstrap5';
 import { Meteor } from 'meteor/meteor';
 import { useTracker } from 'meteor/react-meteor-data';
-import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
 import { useParams } from 'react-router';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { Profiles } from '../../api/profile/Profile';
@@ -34,7 +31,7 @@ const ViewProfile = () => {
     <Container className="py-3">
       <Row className="justify-content-center">
         <Col>
-          <Col className="text-center"><h2>View Profile</h2></Col>
+          <Col md={12} className="text-center mb-4"><h2>View {thisProfile.firstName}&nbsp;{thisProfile.lastName}&apos;s Profile</h2></Col>
           <Row className="d-flex justify-content-left">
             <Col>
               {thisProfile.image && (
@@ -46,8 +43,22 @@ const ViewProfile = () => {
                 />
               )}
             </Col>
-            <Col className="d-flex justify-content-center">
-              {thisProfile.firstName}
+
+            <Col>
+              <Card>
+                <Card.Header>
+                  <Card.Title>{thisProfile.firstName} {thisProfile.lastName}</Card.Title>
+                  <Card.Subtitle>{thisProfile.email}</Card.Subtitle>
+                </Card.Header>
+                <Card.Body>
+                  <Card.Text>
+                    <span className="fw-bold">Bio:</span>{' '}{thisProfile.bio}
+                  </Card.Text>
+                  <Card.Text>
+                    <span className="fw-bold">Interests:</span><span>{' '}{thisProfile.interests}</span>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
             </Col>
           </Row>
         </Col>
