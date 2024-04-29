@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Card, ListGroup, Row, Col, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Report = ({ report, collection, showControls }) => {
 
@@ -34,6 +35,7 @@ const Report = ({ report, collection, showControls }) => {
           {showControls && (
             <Row className="mt-2">
               <Button variant="danger" onClick={() => removeItem(report._id)}>Delete</Button>
+              <Link to={`/edit/${report._id}`}>Edit</Link>
             </Row>
           )}
         </Col>

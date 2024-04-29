@@ -1,11 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Card, ListGroup, Row, Col, Button } from 'react-bootstrap';
+import { Card, ListGroup, Row, Col, Button, Form } from 'react-bootstrap';
+import { Roles } from 'meteor/alanning:roles';
+import swal from 'sweetalert';
+import { Meteor } from 'meteor/meteor';
 
-const Report = ({ report, collection, showControls }) => {
+const ReportAdmin = ({ report, collection, showControls }) => {
 
+  const isAdmin = Roles.userIsInRole(Meteor.userId(), 'admin');
   const removeItem = (docID) => {
     collection.remove(docID);
+  };
+
+  const verifyReport = (newStatus) => {
+    if (isAdmin) {
+      collection.update(report._id, { $set: { verified: newStatus } }, (error) => {
+        if (error) {
+          swal('Error', error.message, 'error');
+        } else {
+          swal('Success', 'Verification status updated successfully', 'success');
+        }
+      });
+    } else {
+      swal('Error', 'Unauthorized access', 'error');
+    }
   };
 
   return (
@@ -21,7 +39,9 @@ const Report = ({ report, collection, showControls }) => {
             <ListGroup.Item><strong>Location:</strong> {report.location}</ListGroup.Item>
             <ListGroup.Item><strong>Date Found:</strong> {report.date.toLocaleDateString()}</ListGroup.Item>
             <ListGroup.Item><strong>Reporter:</strong> {report.reporter}</ListGroup.Item>
-            <ListGroup.Item><strong>Verification Status:</strong> {report.verified}</ListGroup.Item>
+            <ListGroup.Item>
+              <strong>Verification Status:</strong> {report.verified}
+            </ListGroup.Item>
             <ListGroup.Item><strong>Removed from Area:</strong> {report.removed}</ListGroup.Item>
           </ListGroup>
         </Col>
@@ -32,8 +52,25 @@ const Report = ({ report, collection, showControls }) => {
             </Card.Body>
           </Row>
           {showControls && (
-            <Row className="mt-2">
+            <Row className="m-2">
               <Button variant="danger" onClick={() => removeItem(report._id)}>Delete</Button>
+            </Row>
+          )}
+          <Row className="m-2">
+            <a href={`/admin/edit/${report._id}`} className="btn btn-primary ml-2">Edit</a>
+          </Row>
+          {showControls && isAdmin && (
+            <Row className="m-2">
+              <Card.Text><strong>Change Verification Status</strong></Card.Text>
+              <Form.Select
+                aria-label="Change Verification Status"
+                onChange={(e) => verifyReport(e.target.value)}
+                defaultValue={report.verified}
+                className="mt-2"
+              >
+                <option value="Yes">Verified</option>
+                <option value="No">Unverified</option>
+              </Form.Select>
             </Row>
           )}
         </Col>
@@ -43,7 +80,7 @@ const Report = ({ report, collection, showControls }) => {
 };
 
 // Require a document to be passed to this component.
-Report.propTypes = {
+ReportAdmin.propTypes = {
   report: PropTypes.shape({
     image: PropTypes.string,
     pestName: PropTypes.string,
@@ -62,4 +99,4 @@ Report.propTypes = {
   showControls: PropTypes.bool,
 };
 
-export default Report;
+export default ReportAdmin;
