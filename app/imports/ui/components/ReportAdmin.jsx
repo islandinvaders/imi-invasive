@@ -56,6 +56,7 @@ const ReportAdmin = ({ report, collection, showControls }) => {
               <Button variant="danger" onClick={() => removeItem(report._id)}>Delete</Button>
             </Row>
           )}
+          <a href={`/admin/edit/${report._id}`} className="btn btn-primary ml-2">Edit</a>
           {showControls && isAdmin && (
             <>
               <Card.Text><strong>Change Verification Status</strong></Card.Text>
@@ -70,7 +71,6 @@ const ReportAdmin = ({ report, collection, showControls }) => {
               </Form.Select>
             </>
           )}
-          <Link to={`/admin/edit/${report._id}`}>Edit</Link>
         </Col>
       </Row>
     </Card>
