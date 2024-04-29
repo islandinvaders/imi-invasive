@@ -1,0 +1,268 @@
+{
+  "format": "web-program-pre1",
+  "manifest": [
+    {
+      "path": "4da572eaabfa991c75a98b433863a6610d216588.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/4da572eaabfa991c75a98b433863a6610d216588.js?meteor_js_resource=true",
+      "replaceable": false,
+      "size": 3672449,
+      "hash": "4da572eaabfa991c75a98b433863a6610d216588",
+      "sri": "TQrnf0HVN9MaQIsDV0Iae91TYYmN2A4lLOrRAh2Pk4AcE2PZhXeviU4mge5LlGiLaysc0WEZhzcxv/NWciYFdA=="
+    },
+    {
+      "path": "4da572eaabfa991c75a98b433863a6610d216588.stats.json",
+      "where": "client",
+      "type": "json",
+      "cacheable": true,
+      "url": "/4da572eaabfa991c75a98b433863a6610d216588.stats.json?meteor_js_resource=true",
+      "size": 69546,
+      "hash": "a0c5c9523ffcb5dacc9924284e5600ce95a4cc42",
+      "sri": "F70tnn8+dCMNlY3bI4LQama/u8HbBqJ+7VD8b4A5uQWF4n1RUxLxPdQU78KwzsCmkWdzVciOlCM6j/nhAJQoJQ=="
+    },
+    {
+      "path": "58989dae2e5ec98beb610da5cf0d7c4f0115b821.css",
+      "where": "client",
+      "type": "css",
+      "cacheable": true,
+      "url": "/58989dae2e5ec98beb610da5cf0d7c4f0115b821.css?meteor_css_resource=true",
+      "size": 2637,
+      "hash": "58989dae2e5ec98beb610da5cf0d7c4f0115b821",
+      "sri": "VhZNmW4wyh+Toq8DqOTH9m6VNUKKuUOzevw4XX0PkJN69A1SNyxAjVL/GyBPkjIevlPepgVrSxuRvkfVOKhrIQ=="
+    },
+    {
+      "path": "packages/promise/promise.d.ts",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/promise/promise.d.ts",
+      "size": 633,
+      "hash": "4aa461da7ad90c74a51ddfccc84b055fc0403119",
+      "sri": "6MVw86BmnkmTtXXlCxaH8k7xIUcMZK4O57Nnu82uI5MJT9Fbru7Yv71SuHx+giKUM9wkRs7WkpqPWjADS+U2qw=="
+    },
+    {
+      "path": "packages/tracker/tracker.d.ts",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/tracker/tracker.d.ts",
+      "size": 6096,
+      "hash": "93ebe1d7d6aed2b029129079014e3ebfd5e8bb8c",
+      "sri": "D7pwjdFz5YPTxAyDXrqMNZ9v65eWU+XZ8ASp8aLJaTSkoBScGaLOCxlnSzLKyfsYugreqjaynnaiUGpNhW/ldw=="
+    },
+    {
+      "path": "app/favicon.ico",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicon.ico",
+      "size": 1150,
+      "hash": "2350206dd1825f7168091f90dbdcd5e13ddeddb9",
+      "sri": null
+    },
+    {
+      "path": "app/images/logo.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/images/logo.png",
+      "size": 399841,
+      "hash": "9f95f9829e62367c2d4b39b230dddfa943352c4e",
+      "sri": null
+    },
+    {
+      "path": "app/images/mountains.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/images/mountains.png",
+      "size": 163787,
+      "hash": "5d6670ab72bf4213e421413584a6eab021145494",
+      "sri": null
+    },
+    {
+      "path": "app/themes/default/assets/fonts/brand-icons.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/themes/default/assets/fonts/brand-icons.eot",
+      "size": 98640,
+      "hash": "3ecf896e6cdb106960789c7ed8375509df123763",
+      "sri": null
+    },
+    {
+      "path": "app/themes/default/assets/fonts/brand-icons.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/themes/default/assets/fonts/brand-icons.svg",
+      "size": 507628,
+      "hash": "1239a953b5a74bab5b960d45d0157f2be7a4262e",
+      "sri": null
+    },
+    {
+      "path": "app/themes/default/assets/fonts/brand-icons.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/themes/default/assets/fonts/brand-icons.ttf",
+      "size": 98404,
+      "hash": "e1b1d7a2b82f303f6d054f2a558b7e4f492622b1",
+      "sri": null
+    },
+    {
+      "path": "app/themes/default/assets/fonts/brand-icons.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/themes/default/assets/fonts/brand-icons.woff",
+      "size": 63728,
+      "hash": "e02d7f57528e8ad383da64b2001dfa325ea75a94",
+      "sri": null
+    },
+    {
+      "path": "app/themes/default/assets/fonts/brand-icons.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/themes/default/assets/fonts/brand-icons.woff2",
+      "size": 54488,
+      "hash": "841058175591a714af6fdad40ba1615edb1a291b",
+      "sri": null
+    },
+    {
+      "path": "app/themes/default/assets/fonts/icons.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/themes/default/assets/fonts/icons.eot",
+      "size": 106004,
+      "hash": "1c4fa1de1b67348d40dd8fef3b0fc7d8dac7f8a7",
+      "sri": null
+    },
+    {
+      "path": "app/themes/default/assets/fonts/icons.otf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/themes/default/assets/fonts/icons.otf",
+      "size": 93888,
+      "hash": "c3f2b6c560fa022790e10ccbbc5d1f7af41df21b",
+      "sri": null
+    },
+    {
+      "path": "app/themes/default/assets/fonts/icons.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/themes/default/assets/fonts/icons.svg",
+      "size": 390837,
+      "hash": "007bb036d8b1645c21d0724b574589063a22be5e",
+      "sri": null
+    },
+    {
+      "path": "app/themes/default/assets/fonts/icons.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/themes/default/assets/fonts/icons.ttf",
+      "size": 105784,
+      "hash": "997bf1a1e56c8d3d1b55bf04c9be895d05466929",
+      "sri": null
+    },
+    {
+      "path": "app/themes/default/assets/fonts/icons.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/themes/default/assets/fonts/icons.woff",
+      "size": 50524,
+      "hash": "3293f9e5e4eef2626fbfd61cf3c2997eeaf6e8d6",
+      "sri": null
+    },
+    {
+      "path": "app/themes/default/assets/fonts/icons.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/themes/default/assets/fonts/icons.woff2",
+      "size": 40148,
+      "hash": "1ccc1d654581da1c1d27ea00b688734f3e7afc3e",
+      "sri": null
+    },
+    {
+      "path": "app/themes/default/assets/fonts/outline-icons.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/themes/default/assets/fonts/outline-icons.eot",
+      "size": 31156,
+      "hash": "4621d17b10b61dde1e618ce23de81ca9eb228251",
+      "sri": null
+    },
+    {
+      "path": "app/themes/default/assets/fonts/outline-icons.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/themes/default/assets/fonts/outline-icons.svg",
+      "size": 107201,
+      "hash": "a2d33c9c2a606258ef493b443362f7289d856c9c",
+      "sri": null
+    },
+    {
+      "path": "app/themes/default/assets/fonts/outline-icons.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/themes/default/assets/fonts/outline-icons.ttf",
+      "size": 30928,
+      "hash": "d40c590c0e9f5b88cfd394ae6f0da9276539d1c1",
+      "sri": null
+    },
+    {
+      "path": "app/themes/default/assets/fonts/outline-icons.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/themes/default/assets/fonts/outline-icons.woff",
+      "size": 14712,
+      "hash": "6d39df0998e28f8cf58f82334fdbd3f2be6488bf",
+      "sri": null
+    },
+    {
+      "path": "app/themes/default/assets/fonts/outline-icons.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/themes/default/assets/fonts/outline-icons.woff2",
+      "size": 12240,
+      "hash": "b9dbdfc017c35998ae07ea27bc537059aaf49e0f",
+      "sri": null
+    },
+    {
+      "path": "app/themes/default/assets/images/flags.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/themes/default/assets/images/flags.png",
+      "size": 28123,
+      "hash": "5a374563d6a64f3101f74cfc6f274ad8700b9bb9",
+      "sri": null
+    },
+    {
+      "path": "head.html",
+      "where": "internal",
+      "type": "head",
+      "hash": "906025374d1b7a0c2137bd6af1d8ed68a4e87dda"
+    },
+    {
+      "path": "body.html",
+      "where": "internal",
+      "type": "body",
+      "hash": "610e57f329e1f2341ad8bca050bf0d565513f9ca"
+    }
+  ]
+}
