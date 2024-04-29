@@ -10,13 +10,13 @@ import LoadingSpinner from '../components/LoadingSpinner';
 import { Reports } from '../../api/report/Report';
 
 const bridge = new SimpleSchema2Bridge(Reports.schema);
-const EditPost = () => {
+const EditPostAdmin = () => {
   // Get the documentID from the URL field. See imports/ui/layouts/App.jsx for the route containing :_id.
   const { _id } = useParams();
   // console.log('EditStuff', _id);
   // useTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker
   const { doc, ready } = useTracker(() => {
-    const subscription = Meteor.subscribe(Reports.userSpecificPosts);
+    const subscription = Meteor.subscribe(Reports.adminUnverifiedPosts);
     // Determine if the subscription is ready
     const rdy = subscription.ready();
     // Get the document
@@ -39,7 +39,7 @@ const EditPost = () => {
     <Container className="py-3">
       <Row className="justify-content-center">
         <Col xs={5}>
-          <Col className="text-center"><h2>Edit Report</h2></Col>
+          <Col className="text-center"><h2>Edit Reports Admin</h2></Col>
           <AutoForm schema={bridge} onSubmit={data => submit(data)} model={doc}>
             <Card>
               <Card.Body>
@@ -61,12 +61,12 @@ const EditPost = () => {
                   <LongTextField name="pestDescription" />
                 </Row>
                 <Row>
+                  <Col><SelectField name="verified" /></Col>
                   <Col><SelectField name="removed" /></Col>
                 </Row>
                 <SubmitField value="Submit" />
                 <ErrorsField />
                 <HiddenField name="date" value={new Date()} />
-                <HiddenField name="verified" value="No" />
               </Card.Body>
             </Card>
           </AutoForm>
@@ -76,4 +76,4 @@ const EditPost = () => {
   ) : <LoadingSpinner />;
 };
 
-export default EditPost;
+export default EditPostAdmin;

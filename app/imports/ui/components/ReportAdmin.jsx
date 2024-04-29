@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Card, ListGroup, Row, Col, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
-const Report = ({ report, collection, showControls }) => {
+const ReportAdmin = ({ report, collection, showControls }) => {
 
   const removeItem = (docID) => {
     collection.remove(docID);
@@ -34,6 +35,7 @@ const Report = ({ report, collection, showControls }) => {
           {showControls && (
             <Row className="mt-2">
               <Button variant="danger" onClick={() => removeItem(report._id)}>Delete</Button>
+              <Link to={`/admin/edit/${report._id}`}>Edit</Link>
             </Row>
           )}
         </Col>
@@ -43,7 +45,7 @@ const Report = ({ report, collection, showControls }) => {
 };
 
 // Require a document to be passed to this component.
-Report.propTypes = {
+ReportAdmin.propTypes = {
   report: PropTypes.shape({
     image: PropTypes.string,
     pestName: PropTypes.string,
@@ -62,4 +64,4 @@ Report.propTypes = {
   showControls: PropTypes.bool,
 };
 
-export default Report;
+export default ReportAdmin;
