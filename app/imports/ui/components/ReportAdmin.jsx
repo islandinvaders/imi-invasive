@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Card, ListGroup, Row, Col, Button, Form } from 'react-bootstrap';
 import { Roles } from 'meteor/alanning:roles';
 import swal from 'sweetalert';
-import { Link } from 'react-router-dom';
+import { Meteor } from 'meteor/meteor';
 
 const ReportAdmin = ({ report, collection, showControls }) => {
 
@@ -52,13 +52,15 @@ const ReportAdmin = ({ report, collection, showControls }) => {
             </Card.Body>
           </Row>
           {showControls && (
-            <Row className="mt-2">
+            <Row className="m-2">
               <Button variant="danger" onClick={() => removeItem(report._id)}>Delete</Button>
             </Row>
           )}
-          <a href={`/admin/edit/${report._id}`} className="btn btn-primary ml-2">Edit</a>
+          <Row className="m-2">
+            <a href={`/admin/edit/${report._id}`} className="btn btn-primary ml-2">Edit</a>
+          </Row>
           {showControls && isAdmin && (
-            <>
+            <Row className="m-2">
               <Card.Text><strong>Change Verification Status</strong></Card.Text>
               <Form.Select
                 aria-label="Change Verification Status"
@@ -69,7 +71,7 @@ const ReportAdmin = ({ report, collection, showControls }) => {
                 <option value="Yes">Verified</option>
                 <option value="No">Unverified</option>
               </Form.Select>
-            </>
+            </Row>
           )}
         </Col>
       </Row>
