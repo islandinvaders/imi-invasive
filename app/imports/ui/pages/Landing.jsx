@@ -15,19 +15,22 @@ const Landing = () => (
         </div>
         <div>
           <Row>
-            <Col className="justify-content-left">
+            <Col xs={12} md={6} className="justify-content-left">
               <img
                 alt="collage"
                 src="/images/collage.png"
-                className="d-inline-block align-top w-100 h-100"
+                className="img-fluid d-inline-block align-top landing-collage"
               />
             </Col>
             <Col>
-              <p className="px-5 ">Invasive species pose a significant threat to local ecosystems, causing ecological imbalances or even extinction.
+              <h2 className="landing-header text-left">
+                Help us ʻimi invasive species!
+              </h2>
+              <p className="landing-description text-left">Invasive species pose a significant threat to local ecosystems, causing ecological imbalances or even extinction.
                 However, monitoring and tracking these invasive species across the Hawaiian islands can be a daunting and resource-expensive
                 task, making research difficult to complete.
               </p>
-              <p className="px-5">‘Imi Invasive aims to address invasive species management challenges by
+              <p className="landing-description text-left">‘Imi Invasive aims to address invasive species management challenges by
                 establishing a citizen science initiative to bring the community together and educate people on invasive species, raising
                 awareness and empowering the community and professionals to be able to better track the harmful species and care for the
                 ecosystem. It should serve as an educational resource and also a centralized app for people to report and help manage invasive
