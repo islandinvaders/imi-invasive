@@ -1,0 +1,2173 @@
+{
+  "minifier": {
+    "name": "standard-minifier-js",
+    "version": "2.8.1"
+  },
+  "totalMinifiedBytes": 3672449,
+  "totalMinifiedGzipBytes": 695930,
+  "minifiedBytesByPackage": {
+    "packages/meteor.js": 10123,
+    "packages/meteor-base.js": 31,
+    "packages/mobile-experience.js": 37,
+    "packages/modules-runtime.js": 5294,
+    "packages/modules.js": [
+      3009545,
+      {
+        "node_modules": {
+          "meteor": {
+            "modules": {
+              "client.js": 126,
+              "legacy.js": 42,
+              "css.js": 263,
+              "install-packages.js": 2361,
+              "process.js": 349,
+              "reify.js": 83,
+              "stubs.js": 99,
+              "node_modules": {
+                "@meteorjs": {
+                  "reify": {
+                    "lib": {
+                      "runtime": {
+                        "index.js": 954,
+                        "utils.js": 1309,
+                        "entry.js": 3503
+                      }
+                    }
+                  }
+                },
+                "meteor-babel-helpers": {
+                  "package.json": 90,
+                  "index.js": 387
+                }
+              }
+            }
+          },
+          "bootstrap": {
+            "dist": {
+              "css": {
+                "bootstrap.min.css": 231192
+              }
+            }
+          },
+          "react": {
+            "package.json": 76,
+            "index.js": 76,
+            "cjs": {
+              "react.production.min.js": 6662,
+              "react.development.js": 266,
+              "react-jsx-runtime.production.min.js": 848,
+              "react-jsx-runtime.development.js": 278
+            },
+            "jsx-runtime.js": 88
+          },
+          "react-dom": {
+            "package.json": 126,
+            "client.js": 106,
+            "index.js": 289,
+            "cjs": {
+              "react-dom.production.min.js": 129621,
+              "react-dom.development.js": 270
+            }
+          },
+          "scheduler": {
+            "package.json": 80,
+            "index.js": 80,
+            "cjs": {
+              "scheduler.production.min.js": 4064,
+              "scheduler.development.js": 268
+            }
+          },
+          "prop-types": {
+            "package.json": 81,
+            "index.js": 70,
+            "factoryWithTypeCheckers.js": 6133,
+            "lib": {
+              "ReactPropTypesSecret.js": 96,
+              "has.js": 80
+            },
+            "checkPropTypes.js": 136,
+            "factoryWithThrowingShims.js": 687
+          },
+          "react-is": {
+            "package.json": 80,
+            "index.js": 79,
+            "cjs": {
+              "react-is.production.min.js": 2386,
+              "react-is.development.js": 273
+            }
+          },
+          "object-assign": {
+            "package.json": 67,
+            "index.js": 998
+          },
+          "react-router-dom": {
+            "package.json": 118,
+            "dist": {
+              "main.js": 315,
+              "umd": {
+                "react-router-dom.production.min.js": 23353,
+                "react-router-dom.development.js": 25716
+              }
+            }
+          },
+          "react-router": {
+            "package.json": 114,
+            "dist": {
+              "main.js": 307,
+              "umd": {
+                "react-router.production.min.js": 17231,
+                "react-router.development.js": 21957
+              }
+            }
+          },
+          "@remix-run": {
+            "router": {
+              "package.json": 126,
+              "dist": {
+                "router.cjs.js": 51745
+              }
+            }
+          },
+          "react-bootstrap": {
+            "package.json": 112,
+            "cjs": {
+              "index.js": 7903,
+              "Accordion.js": 1568,
+              "ThemeProvider.js": 1898,
+              "AccordionBody.js": 1334,
+              "AccordionCollapse.js": 1279,
+              "Collapse.js": 2422,
+              "transitionEndListener.js": 430,
+              "createChainedFunction.js": 356,
+              "triggerBrowserReflow.js": 108,
+              "TransitionWrapper.js": 1600,
+              "safeFindDOMNode.js": 238,
+              "AccordionContext.js": 834,
+              "AccordionItemContext.js": 783,
+              "AccordionButton.js": 1599,
+              "AccordionHeader.js": 1143,
+              "AccordionItem.js": 1189,
+              "Alert.js": 1669,
+              "AlertHeading.js": 1119,
+              "divWithClassName.js": 906,
+              "AlertLink.js": 1063,
+              "Fade.js": 1449,
+              "CloseButton.js": 1168,
+              "Anchor.js": 195,
+              "Badge.js": 1112,
+              "Breadcrumb.js": 1244,
+              "BreadcrumbItem.js": 1271,
+              "Button.js": 1255,
+              "ButtonGroup.js": 1133,
+              "ButtonToolbar.js": 1064,
+              "Card.js": 1534,
+              "CardBody.js": 1028,
+              "CardFooter.js": 1032,
+              "CardHeader.js": 1179,
+              "CardHeaderContext.js": 771,
+              "CardImg.js": 1062,
+              "CardImgOverlay.js": 1041,
+              "CardLink.js": 1026,
+              "CardSubtitle.js": 1083,
+              "CardText.js": 1026,
+              "CardTitle.js": 1077,
+              "CardGroup.js": 1030,
+              "Carousel.js": 5851,
+              "CarouselCaption.js": 1042,
+              "CarouselItem.js": 1048,
+              "ElementChildren.js": 948,
+              "Col.js": 1513,
+              "Container.js": 1103,
+              "Dropdown.js": 2555,
+              "DropdownContext.js": 767,
+              "DropdownDivider.js": 1067,
+              "DropdownHeader.js": 1064,
+              "DropdownItem.js": 1276,
+              "DropdownItemText.js": 1046,
+              "DropdownMenu.js": 2737,
+              "InputGroupContext.js": 771,
+              "NavbarContext.js": 767,
+              "useWrappedRefWithWarning.js": 236,
+              "types.js": 371,
+              "DropdownToggle.js": 1452,
+              "DropdownButton.js": 1715,
+              "Figure.js": 1127,
+              "FigureImage.js": 1022,
+              "Image.js": 1288,
+              "FigureCaption.js": 1045,
+              "Form.js": 1501,
+              "FormCheck.js": 1961,
+              "Feedback.js": 1118,
+              "FormCheckInput.js": 1221,
+              "FormContext.js": 735,
+              "FormCheckLabel.js": 1141,
+              "FormControl.js": 1397,
+              "FormFloating.js": 1036,
+              "FormGroup.js": 1035,
+              "FormLabel.js": 1376,
+              "FormRange.js": 1133,
+              "FormSelect.js": 1221,
+              "FormText.js": 1054,
+              "Switch.js": 975,
+              "FloatingLabel.js": 1155,
+              "InputGroup.js": 1480,
+              "InputGroupText.js": 1042,
+              "ListGroup.js": 1363,
+              "ListGroupItem.js": 1569,
+              "Modal.js": 4393,
+              "BootstrapModalManager.js": 1503,
+              "ModalBody.js": 1030,
+              "ModalContext.js": 745,
+              "ModalDialog.js": 1323,
+              "ModalFooter.js": 1034,
+              "ModalHeader.js": 1128,
+              "AbstractModalHeader.js": 1201,
+              "ModalTitle.js": 1079,
+              "Nav.js": 1662,
+              "NavItem.js": 1026,
+              "NavLink.js": 1303,
+              "Navbar.js": 1976,
+              "NavbarBrand.js": 1065,
+              "NavbarCollapse.js": 1152,
+              "NavbarToggle.js": 1394,
+              "NavbarOffcanvas.js": 1032,
+              "Offcanvas.js": 2984,
+              "OffcanvasBody.js": 1038,
+              "OffcanvasToggling.js": 1446,
+              "OffcanvasHeader.js": 1136,
+              "OffcanvasTitle.js": 1087,
+              "NavbarText.js": 1033,
+              "NavDropdown.js": 1516,
+              "Overlay.js": 2520,
+              "useOverlayOffset.js": 626,
+              "Popover.js": 1597,
+              "PopoverHeader.js": 1038,
+              "PopoverBody.js": 1034,
+              "helpers.js": 848,
+              "getInitialPopperStyles.js": 173,
+              "Tooltip.js": 1545,
+              "OverlayTrigger.js": 2592,
+              "PageItem.js": 1724,
+              "Pagination.js": 1180,
+              "Placeholder.js": 1016,
+              "usePlaceholder.js": 420,
+              "PlaceholderButton.js": 992,
+              "ProgressBar.js": 2266,
+              "Ratio.js": 1209,
+              "Row.js": 1276,
+              "Spinner.js": 1117,
+              "SplitButton.js": 1980,
+              "SSRProvider.js": 137,
+              "Stack.js": 1211,
+              "createUtilityClasses.js": 549,
+              "Tab.js": 770,
+              "TabContainer.js": 971,
+              "getTabTransitionComponent.js": 257,
+              "TabContent.js": 1032,
+              "TabPane.js": 1646,
+              "Table.js": 1344,
+              "Tabs.js": 1961,
+              "Toast.js": 1933,
+              "ToastFade.js": 1013,
+              "ToastHeader.js": 1389,
+              "ToastContext.js": 746,
+              "ToastBody.js": 1030,
+              "ToastContainer.js": 1471,
+              "ToggleButton.js": 1344,
+              "ToggleButtonGroup.js": 1540
+            }
+          },
+          "@babel": {
+            "runtime": {
+              "helpers": {
+                "interopRequireDefault.js": 133,
+                "interopRequireWildcard.js": 698,
+                "typeof.js": 374,
+                "extends.js": 372,
+                "objectWithoutPropertiesLoose.js": 216,
+                "inheritsLoose.js": 201,
+                "setPrototypeOf.js": 267,
+                "regeneratorRuntime.js": 6864,
+                "slicedToArray.js": 262,
+                "arrayWithHoles.js": 125,
+                "iterableToArrayLimit.js": 478,
+                "unsupportedIterableToArray.js": 401,
+                "arrayLikeToArray.js": 188,
+                "nonIterableRest.js": 256,
+                "objectSpread2.js": 688,
+                "defineProperty.js": 237,
+                "toPropertyKey.js": 204,
+                "toPrimitive.js": 365,
+                "createForOfIteratorHelperLoose.js": 558,
+                "toConsumableArray.js": 256,
+                "arrayWithoutHoles.js": 161,
+                "iterableToArray.js": 196,
+                "nonIterableSpread.js": 251,
+                "objectWithoutProperties.js": 368,
+                "assertThisInitialized.js": 205
+              },
+              "regenerator": {
+                "index.js": 210
+              }
+            }
+          },
+          "classnames": {
+            "package.json": 82,
+            "index.js": 839
+          },
+          "uncontrollable": {
+            "package.json": 118,
+            "lib": {
+              "cjs": {
+                "index.js": 369,
+                "hook.js": 1211,
+                "utils.js": 763,
+                "uncontrollable.js": 2691
+              }
+            }
+          },
+          "invariant": {
+            "package.json": 104,
+            "browser.js": 385
+          },
+          "react-lifecycles-compat": {
+            "package.json": 154,
+            "react-lifecycles-compat.cjs.js": 2404
+          },
+          "dom-helpers": {
+            "css": {
+              "package.json": 97
+            },
+            "cjs": {
+              "css.js": 614,
+              "getComputedStyle.js": 224,
+              "ownerWindow.js": 234,
+              "ownerDocument.js": 129,
+              "hyphenateStyle.js": 225,
+              "hyphenate.js": 150,
+              "isTransform.js": 201,
+              "transitionEnd.js": 652,
+              "listen.js": 309,
+              "addEventListener.js": 700,
+              "canUseDOM.js": 182,
+              "removeEventListener.js": 240,
+              "triggerEvent.js": 223,
+              "querySelectorAll.js": 196,
+              "contains.js": 203,
+              "scrollbarSize.js": 459,
+              "activeElement.js": 289,
+              "addClass.js": 357,
+              "hasClass.js": 212,
+              "removeClass.js": 377
+            },
+            "transitionEnd": {
+              "package.json": 127
+            },
+            "querySelectorAll": {
+              "package.json": 136
+            },
+            "addEventListener": {
+              "package.json": 136
+            },
+            "contains": {
+              "package.json": 112
+            },
+            "listen": {
+              "package.json": 106
+            },
+            "ownerDocument": {
+              "package.json": 127
+            },
+            "canUseDOM": {
+              "package.json": 115
+            },
+            "removeEventListener": {
+              "package.json": 145
+            },
+            "scrollbarSize": {
+              "package.json": 127
+            },
+            "activeElement": {
+              "package.json": 127
+            },
+            "addClass": {
+              "package.json": 112
+            },
+            "removeClass": {
+              "package.json": 121
+            },
+            "hasClass": {
+              "package.json": 112
+            }
+          },
+          "react-transition-group": {
+            "Transition": {
+              "package.json": 129
+            },
+            "cjs": {
+              "Transition.js": 4561,
+              "config.js": 116,
+              "utils": {
+                "PropTypes.js": 222,
+                "reflow.js": 122
+              },
+              "TransitionGroupContext.js": 201
+            }
+          },
+          "@restart": {
+            "hooks": {
+              "useMergedRefs": {
+                "package.json": 130
+              },
+              "cjs": {
+                "useMergedRefs.js": 287,
+                "useEventCallback.js": 274,
+                "useCommittedRef.js": 186,
+                "index.js": 854,
+                "useCallbackRef.js": 115,
+                "useEventListener.js": 333,
+                "useGlobalListener.js": 250,
+                "useInterval.js": 394,
+                "useRafInterval.js": 529,
+                "useMergeState.js": 278,
+                "useMergeStateFromProps.js": 222,
+                "useMounted.js": 221,
+                "usePrevious.js": 169,
+                "useImage.js": 550,
+                "useResizeObserver.js": 481,
+                "useIsomorphicEffect.js": 251,
+                "useUpdateEffect.js": 205,
+                "useTimeout.js": 572,
+                "useWillUnmount.js": 233,
+                "useUpdatedRef.js": 134,
+                "useForceUpdate.js": 136,
+                "useSafeState.js": 281,
+                "useBreakpoint.js": 881,
+                "useMediaQuery.js": 679
+              },
+              "useEventCallback": {
+                "package.json": 139
+              },
+              "package.json": 111,
+              "useUpdateEffect": {
+                "package.json": 136
+              },
+              "useCommittedRef": {
+                "package.json": 136
+              },
+              "useTimeout": {
+                "package.json": 121
+              },
+              "usePrevious": {
+                "package.json": 124
+              },
+              "useForceUpdate": {
+                "package.json": 133
+              },
+              "useEventListener": {
+                "package.json": 139
+              },
+              "useCallbackRef": {
+                "package.json": 133
+              },
+              "useSafeState": {
+                "package.json": 127
+              },
+              "useIsomorphicEffect": {
+                "package.json": 148
+              },
+              "useWillUnmount": {
+                "package.json": 133
+              },
+              "useMounted": {
+                "package.json": 121
+              },
+              "useBreakpoint": {
+                "package.json": 130
+              }
+            },
+            "ui": {
+              "Anchor": {
+                "package.json": 106
+              },
+              "cjs": {
+                "Anchor.js": 1305,
+                "Button.js": 1695,
+                "Dropdown.js": 3630,
+                "DropdownContext.js": 711,
+                "DropdownMenu.js": 2159,
+                "usePopper.js": 2334,
+                "popper.js": 21173,
+                "useClickOutside.js": 1562,
+                "mergeOptionsWithPopperConfig.js": 1058,
+                "DropdownToggle.js": 1341,
+                "ssr.js": 152,
+                "DropdownItem.js": 1755,
+                "SelectableContext.js": 775,
+                "NavContext.js": 730,
+                "DataKey.js": 262,
+                "useWindow.js": 305,
+                "Nav.js": 2592,
+                "TabContext.js": 711,
+                "NavItem.js": 2045,
+                "Modal.js": 4711,
+                "ModalManager.js": 1597,
+                "getScrollbarWidth.js": 162,
+                "useWaitForDOMRef.js": 681,
+                "ImperativeTransition.js": 1792,
+                "NoopTransition.js": 524,
+                "RTGTransition.js": 1079,
+                "useRTGTransitionProps.js": 1116,
+                "utils.js": 112,
+                "Overlay.js": 2096,
+                "useRootClose.js": 1260,
+                "Tabs.js": 1440,
+                "TabPanel.js": 2518
+              },
+              "Button": {
+                "package.json": 106
+              },
+              "Dropdown": {
+                "package.json": 112
+              },
+              "node_modules": {
+                "uncontrollable": {
+                  "package.json": 118,
+                  "lib": {
+                    "cjs": {
+                      "index.js": 1081
+                    }
+                  }
+                }
+              },
+              "DropdownItem": {
+                "package.json": 124
+              },
+              "DropdownMenu": {
+                "package.json": 124
+              },
+              "DropdownContext": {
+                "package.json": 133
+              },
+              "DropdownToggle": {
+                "package.json": 130
+              },
+              "Nav": {
+                "package.json": 97
+              },
+              "NavItem": {
+                "package.json": 109
+              },
+              "SelectableContext": {
+                "package.json": 139
+              },
+              "Modal": {
+                "package.json": 103
+              },
+              "ModalManager": {
+                "package.json": 124
+              },
+              "Overlay": {
+                "package.json": 109
+              },
+              "ssr": {
+                "package.json": 97
+              },
+              "Tabs": {
+                "package.json": 100
+              },
+              "NoopTransition": {
+                "package.json": 130
+              },
+              "TabContext": {
+                "package.json": 118
+              },
+              "TabPanel": {
+                "package.json": 112
+              }
+            }
+          },
+          "dequal": {
+            "package.json": 105,
+            "dist": {
+              "index.js": 1102
+            }
+          },
+          "warning": {
+            "package.json": 79,
+            "warning.js": 69
+          },
+          "@react-aria": {
+            "ssr": {
+              "package.json": 113,
+              "dist": {
+                "main.js": 2104
+              }
+            }
+          },
+          "prop-types-extra": {
+            "lib": {
+              "all.js": 497,
+              "utils": {
+                "createChainableTypeChecker.js": 459
+              }
+            }
+          },
+          "react-bootstrap-icons": {
+            "package.json": 121,
+            "build": {
+              "index.js": 1871623
+            }
+          },
+          "simpl-schema": {
+            "package.json": 120,
+            "dist": {
+              "cjs": {
+                "main.js": 616,
+                "clean.js": 2681,
+                "clean": {
+                  "convertToProperType.js": 782,
+                  "setAutoValues.js": 866,
+                  "AutoValueRunner.js": 1472,
+                  "getPositionsForAutoValue.js": 1513
+                },
+                "SimpleSchema.js": 16705,
+                "defaultMessages.js": 1377,
+                "errors.js": 230,
+                "expandShorthand.js": 753,
+                "SimpleSchemaGroup.js": 610,
+                "utility": {
+                  "index.js": 1896,
+                  "humanize.js": 702
+                },
+                "ValidationContext.js": 1808,
+                "doValidation.js": 1556,
+                "validation": {
+                  "validateDocument.js": 639,
+                  "validateField.js": 4033,
+                  "allowedValuesValidator.js": 375,
+                  "requiredValidator.js": 786,
+                  "typeValidator": {
+                    "index.js": 1493,
+                    "checkArrayValue.js": 438,
+                    "checkDateValue.js": 554,
+                    "checkNumberValue.js": 709,
+                    "checkStringValue.js": 780
+                  }
+                },
+                "toJsonSchema.js": 2045
+              }
+            }
+          },
+          "clone": {
+            "package.json": 75,
+            "clone.js": 2413
+          },
+          "mongo-object": {
+            "package.json": 120,
+            "dist": {
+              "cjs": {
+                "main.js": 1323,
+                "mongo-object.js": 8049,
+                "util.js": 2813
+              }
+            }
+          },
+          "uniforms-bootstrap5": {
+            "package.json": 120,
+            "cjs": {
+              "index.js": 3386,
+              "AutoField.js": 829,
+              "BoolField.js": 878,
+              "wrapField.js": 1316,
+              "gridClassName.js": 537,
+              "DateField.js": 1107,
+              "ListField.js": 1314,
+              "ListAddField.js": 974,
+              "ListItemField.js": 550,
+              "ListDelField.js": 906,
+              "NestField.js": 781,
+              "NumField.js": 764,
+              "RadioField.js": 969,
+              "SelectField.js": 1884,
+              "TextField.js": 766,
+              "AutoFields.js": 564,
+              "AutoForm.js": 252,
+              "ValidatedQuickForm.js": 272,
+              "BaseForm.js": 605,
+              "QuickForm.js": 463,
+              "ErrorsField.js": 614,
+              "SubmitField.js": 1027,
+              "ValidatedForm.js": 257,
+              "ErrorField.js": 603,
+              "HiddenField.js": 543,
+              "LongTextField.js": 641
+            }
+          },
+          "tslib": {
+            "package.json": 97,
+            "tslib.js": 7893
+          },
+          "uniforms": {
+            "package.json": 109,
+            "cjs": {
+              "index.js": 671,
+              "AutoForm.js": 1075,
+              "ValidatedQuickForm.js": 226,
+              "BaseForm.js": 3480,
+              "changedKeys.js": 558,
+              "joinName.js": 885,
+              "context.js": 146,
+              "randomIds.js": 242,
+              "QuickForm.js": 845,
+              "ValidatedForm.js": 2707,
+              "Bridge.js": 1452,
+              "connectField.js": 860,
+              "useField.js": 1588,
+              "useForm.js": 611,
+              "createAutoField.js": 650,
+              "filterDOMProps.js": 558,
+              "types.js": 78
+            }
+          },
+          "lodash": {
+            "clone.js": 86,
+            "_baseClone.js": 1832,
+            "_Stack.js": 309,
+            "_ListCache.js": 350,
+            "_listCacheClear.js": 72,
+            "_listCacheDelete.js": 196,
+            "_assocIndexOf.js": 120,
+            "eq.js": 71,
+            "_listCacheGet.js": 126,
+            "_listCacheHas.js": 100,
+            "_listCacheSet.js": 156,
+            "_stackClear.js": 99,
+            "_stackDelete.js": 104,
+            "_stackGet.js": 72,
+            "_stackHas.js": 72,
+            "_stackSet.js": 295,
+            "_Map.js": 78,
+            "_getNative.js": 126,
+            "_baseIsNative.js": 422,
+            "isFunction.js": 245,
+            "_baseGetTag.js": 234,
+            "_Symbol.js": 58,
+            "_root.js": 147,
+            "_freeGlobal.js": 80,
+            "_getRawTag.js": 252,
+            "_objectToString.js": 95,
+            "isObject.js": 104,
+            "_isMasked.js": 163,
+            "_coreJsData.js": 73,
+            "_toSource.js": 159,
+            "_getValue.js": 73,
+            "_MapCache.js": 345,
+            "_mapCacheClear.js": 162,
+            "_Hash.js": 325,
+            "_hashClear.js": 109,
+            "_nativeCreate.js": 73,
+            "_hashDelete.js": 113,
+            "_hashGet.js": 227,
+            "_hashHas.js": 162,
+            "_hashSet.js": 185,
+            "_mapCacheDelete.js": 121,
+            "_getMapData.js": 143,
+            "_isKeyable.js": 142,
+            "_mapCacheGet.js": 93,
+            "_mapCacheHas.js": 93,
+            "_mapCacheSet.js": 144,
+            "_arrayEach.js": 115,
+            "_assignValue.js": 189,
+            "_baseAssignValue.js": 161,
+            "_defineProperty.js": 139,
+            "_baseAssign.js": 107,
+            "_copyObject.js": 244,
+            "keys.js": 134,
+            "_arrayLikeKeys.js": 469,
+            "_baseTimes.js": 96,
+            "isArguments.js": 249,
+            "_baseIsArguments.js": 135,
+            "isObjectLike.js": 79,
+            "isArray.js": 50,
+            "isBuffer.js": 217,
+            "stubFalse.js": 52,
+            "_isIndex.js": 187,
+            "isTypedArray.js": 131,
+            "_baseIsTypedArray.js": 806,
+            "isLength.js": 112,
+            "_baseUnary.js": 76,
+            "_nodeUtil.js": 287,
+            "_baseKeys.js": 230,
+            "_isPrototype.js": 142,
+            "_nativeKeys.js": 74,
+            "_overArg.js": 81,
+            "isArrayLike.js": 121,
+            "_baseAssignIn.js": 109,
+            "keysIn.js": 139,
+            "_baseKeysIn.js": 255,
+            "_nativeKeysIn.js": 106,
+            "_cloneBuffer.js": 296,
+            "_copyArray.js": 112,
+            "_copySymbols.js": 111,
+            "_getSymbols.js": 241,
+            "_arrayFilter.js": 138,
+            "stubArray.js": 52,
+            "_copySymbolsIn.js": 113,
+            "_getSymbolsIn.js": 207,
+            "_arrayPush.js": 109,
+            "_getPrototype.js": 84,
+            "_getAllKeys.js": 124,
+            "_baseGetAllKeys.js": 124,
+            "_getAllKeysIn.js": 128,
+            "_getTag.js": 594,
+            "_DataView.js": 83,
+            "_Promise.js": 82,
+            "_Set.js": 78,
+            "_WeakMap.js": 82,
+            "_initCloneArray.js": 210,
+            "_initCloneByTag.js": 888,
+            "_cloneArrayBuffer.js": 139,
+            "_Uint8Array.js": 62,
+            "_cloneDataView.js": 160,
+            "_cloneRegExp.js": 134,
+            "_cloneSymbol.js": 139,
+            "_cloneTypedArray.js": 156,
+            "_initCloneObject.js": 170,
+            "_baseCreate.js": 207,
+            "isMap.js": 117,
+            "_baseIsMap.js": 125,
+            "isSet.js": 117,
+            "_baseIsSet.js": 125,
+            "isEqual.js": 86,
+            "_baseIsEqual.js": 177,
+            "_baseIsEqualDeep.js": 701,
+            "_equalArrays.js": 575,
+            "_SetCache.js": 240,
+            "_setCacheAdd.js": 113,
+            "_setCacheHas.js": 72,
+            "_arraySome.js": 120,
+            "_cacheHas.js": 62,
+            "_equalByTag.js": 951,
+            "_mapToArray.js": 119,
+            "_setToArray.js": 113,
+            "_equalObjects.js": 703,
+            "omit.js": 402,
+            "_arrayMap.js": 124,
+            "_baseUnset.js": 168,
+            "_castPath.js": 157,
+            "_isKey.js": 294,
+            "isSymbol.js": 151,
+            "_stringToPath.js": 310,
+            "_memoizeCapped.js": 147,
+            "memoize.js": 364,
+            "toString.js": 94,
+            "_baseToString.js": 298,
+            "last.js": 92,
+            "_parent.js": 123,
+            "_baseGet.js": 170,
+            "_toKey.js": 151,
+            "_baseSlice.js": 180,
+            "_customOmitClone.js": 92,
+            "isPlainObject.js": 384,
+            "_flatRest.js": 135,
+            "flatten.js": 113,
+            "_baseFlatten.js": 226,
+            "_isFlattenable.js": 169,
+            "_overRest.js": 274,
+            "_apply.js": 211,
+            "_setToString.js": 84,
+            "_baseSetToString.js": 194,
+            "constant.js": 72,
+            "identity.js": 53,
+            "_shortOut.js": 205,
+            "setWith.js": 132,
+            "_baseSet.js": 411,
+            "get.js": 120,
+            "cloneDeep.js": 90,
+            "noop.js": 44,
+            "mapValues.js": 187,
+            "_baseForOwn.js": 101,
+            "_baseFor.js": 62,
+            "_createBaseFor.js": 169,
+            "_baseIteratee.js": 239,
+            "_baseMatches.js": 221,
+            "_baseIsMatch.js": 409,
+            "_getMatchData.js": 166,
+            "_isStrictComparable.js": 85,
+            "_matchesStrictComparable.js": 123,
+            "_baseMatchesProperty.js": 298,
+            "hasIn.js": 113,
+            "_baseHasIn.js": 77,
+            "_hasPath.js": 330,
+            "property.js": 155,
+            "_baseProperty.js": 91,
+            "_basePropertyDeep.js": 100,
+            "xor.js": 157,
+            "_baseRest.js": 133,
+            "_baseXor.js": 272,
+            "_baseDifference.js": 468,
+            "_arrayIncludes.js": 120,
+            "_baseIndexOf.js": 150,
+            "_baseFindIndex.js": 128,
+            "_baseIsNaN.js": 56,
+            "_strictIndexOf.js": 110,
+            "_arrayIncludesWith.js": 120,
+            "_baseUniq.js": 508,
+            "_createSet.js": 149,
+            "isArrayLikeObject.js": 109
+          },
+          "sweetalert": {
+            "package.json": 94,
+            "dist": {
+              "sweetalert.min.js": 40706
+            }
+          },
+          "uniforms-bridge-simple-schema-2": {
+            "package.json": 132,
+            "cjs": {
+              "index.js": 436,
+              "register.js": 379,
+              "SimpleSchema2Bridge.js": 2763
+            },
+            "node_modules": {
+              "simpl-schema": {
+                "package.json": 89,
+                "dist": {
+                  "main.js": 270,
+                  "SimpleSchema.js": 20875,
+                  "humanize.js": 647,
+                  "ValidationContext.js": 4711,
+                  "doValidation.js": 6662,
+                  "utility": {
+                    "index.js": 1376,
+                    "appendAffectedKey.js": 207,
+                    "dateToDateString.js": 312,
+                    "forEachKeyAncestor.js": 258,
+                    "getKeysWithValueInObj.js": 322,
+                    "getLastPartOfKey.js": 264,
+                    "getParentOfKey.js": 222,
+                    "isEmptyObject.js": 232,
+                    "isObjectWeShouldTraverse.js": 577,
+                    "looksLikeModifier.js": 231,
+                    "merge.js": 465
+                  },
+                  "validation": {
+                    "typeValidator": {
+                      "index.js": 1235,
+                      "doDateChecks.js": 572,
+                      "doNumberChecks.js": 841,
+                      "doStringChecks.js": 830,
+                      "doArrayChecks.js": 485
+                    },
+                    "requiredValidator.js": 779,
+                    "allowedValuesValidator.js": 393
+                  },
+                  "SimpleSchemaGroup.js": 3143,
+                  "regExp.js": 2752,
+                  "clean.js": 3403,
+                  "clean": {
+                    "convertToProperType.js": 1037,
+                    "setAutoValues.js": 814,
+                    "getPositionsForAutoValue.js": 1445,
+                    "AutoValueRunner.js": 2804
+                  },
+                  "expandShorthand.js": 1503,
+                  "defaultMessages.js": 1927
+                }
+              },
+              "mongo-object": {
+                "package.json": 96,
+                "dist": {
+                  "mongo-object.js": 11965
+                }
+              }
+            }
+          },
+          "message-box": {
+            "package.json": 93,
+            "dist": {
+              "MessageBox.js": 3708,
+              "merge.js": 396
+            }
+          },
+          "lodash.template": {
+            "package.json": 69,
+            "index.js": 8158
+          },
+          "lodash._reinterpolate": {
+            "package.json": 75,
+            "index.js": 55
+          },
+          "lodash.templatesettings": {
+            "package.json": 77,
+            "index.js": 1362
+          },
+          "meteor-node-stubs": {
+            "package.json": 87,
+            "index.js": 384,
+            "map.json": 1008,
+            "deps": {
+              "process.js": 38
+            },
+            "node_modules": {
+              "process": {
+                "browser.js": 1688
+              }
+            }
+          }
+        }
+      }
+    ],
+    "packages/modern-browsers.js": 35,
+    "packages/babel-compiler.js": 34,
+    "packages/react-fast-refresh.js": [
+      2966,
+      {
+        "node_modules": {
+          "meteor": {
+            "react-fast-refresh": {
+              "client.js": 332,
+              "client-runtime.js": 1364,
+              "node_modules": {
+                "react-refresh": {
+                  "runtime.js": 92,
+                  "cjs": {
+                    "react-refresh-runtime.production.min.js": 366,
+                    "react-refresh-runtime.development.js": 282
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "packages/ecmascript.js": 30,
+    "packages/ecmascript-runtime.js": 38,
+    "packages/babel-runtime.js": 33,
+    "packages/promise.js": [
+      5834,
+      {
+        "node_modules": {
+          "meteor": {
+            "promise": {
+              "modern.js": 25,
+              "legacy.js": 97,
+              "client.js": 73,
+              "extensions.js": 403,
+              "node_modules": {
+                "promise": {
+                  "lib": {
+                    "es6-extensions.js": 1373,
+                    "core.js": 1838
+                  }
+                },
+                "asap": {
+                  "package.json": 249,
+                  "raw.js": 63,
+                  "browser-raw.js": 684
+                },
+                "meteor-promise": {
+                  "package.json": 121,
+                  "promise_client.js": 268
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "packages/fetch.js": [
+      10714,
+      {
+        "node_modules": {
+          "meteor": {
+            "fetch": {
+              "legacy.js": 112,
+              "node_modules": {
+                "whatwg-fetch": {
+                  "package.json": 114,
+                  "dist": {
+                    "fetch.umd.js": 10064
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "packages/dynamic-import.js": [
+      5195,
+      {
+        "node_modules": {
+          "meteor": {
+            "dynamic-import": {
+              "client.js": 1923,
+              "cache.js": 1952,
+              "common.js": 62,
+              "dynamic-versions.js": 818
+            }
+          }
+        }
+      }
+    ],
+    "packages/es5-shim.js": [
+      28782,
+      {
+        "node_modules": {
+          "meteor": {
+            "es5-shim": {
+              "client.js": 134,
+              "console.js": 291,
+              "export_globals.js": 154,
+              "import_globals.js": 77,
+              "node_modules": {
+                "es5-shim": {
+                  "es5-shim.js": 22843,
+                  "es5-sham.js": 4835
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "packages/ecmascript-runtime-client.js": [
+      123222,
+      {
+        "node_modules": {
+          "meteor": {
+            "ecmascript-runtime-client": {
+              "modern.js": 766,
+              "legacy.js": 1059,
+              "node_modules": {
+                "core-js": {
+                  "es": {
+                    "symbol": {
+                      "index.js": 858
+                    },
+                    "map": {
+                      "index.js": 217
+                    },
+                    "set": {
+                      "index.js": 217
+                    },
+                    "array": {
+                      "index.js": 1158
+                    },
+                    "function": {
+                      "index.js": 187
+                    },
+                    "math": {
+                      "index.js": 663
+                    },
+                    "object": {
+                      "index.js": 1278
+                    },
+                    "regexp": {
+                      "index.js": 413
+                    },
+                    "string": {
+                      "index.js": 1321
+                    },
+                    "weak-map": {
+                      "index.js": 188
+                    },
+                    "weak-set": {
+                      "index.js": 188
+                    }
+                  },
+                  "modules": {
+                    "es.array.concat.js": 961,
+                    "es.object.to-string.js": 174,
+                    "es.symbol.js": 4691,
+                    "es.symbol.async-iterator.js": 80,
+                    "es.symbol.description.js": 890,
+                    "es.symbol.has-instance.js": 78,
+                    "es.symbol.is-concat-spreadable.js": 85,
+                    "es.symbol.iterator.js": 75,
+                    "es.symbol.match.js": 72,
+                    "es.symbol.match-all.js": 75,
+                    "es.symbol.replace.js": 74,
+                    "es.symbol.search.js": 73,
+                    "es.symbol.species.js": 74,
+                    "es.symbol.split.js": 72,
+                    "es.symbol.to-primitive.js": 78,
+                    "es.symbol.to-string-tag.js": 78,
+                    "es.symbol.unscopables.js": 78,
+                    "es.json.to-string-tag.js": 101,
+                    "es.math.to-string-tag.js": 72,
+                    "es.reflect.to-string-tag.js": 164,
+                    "es.map.js": 213,
+                    "es.string.iterator.js": 409,
+                    "web.dom-collections.iterator.js": 432,
+                    "es.array.iterator.js": 618,
+                    "es.set.js": 213,
+                    "es.array.from.js": 204,
+                    "es.array.is-array.js": 110,
+                    "es.array.of.js": 368,
+                    "es.array.copy-within.js": 182,
+                    "es.array.every.js": 270,
+                    "es.array.fill.js": 163,
+                    "es.array.filter.js": 283,
+                    "es.array.find.js": 315,
+                    "es.array.find-index.js": 335,
+                    "es.array.flat.js": 404,
+                    "es.array.flat-map.js": 401,
+                    "es.array.for-each.js": 155,
+                    "es.array.includes.js": 266,
+                    "es.array.index-of.js": 353,
+                    "es.array.join.js": 316,
+                    "es.array.last-index-of.js": 156,
+                    "es.array.map.js": 274,
+                    "es.array.reduce.js": 378,
+                    "es.array.reduce-right.js": 389,
+                    "es.array.reverse.js": 255,
+                    "es.array.slice.js": 784,
+                    "es.array.some.js": 267,
+                    "es.array.sort.js": 1324,
+                    "es.array.species.js": 59,
+                    "es.array.splice.js": 923,
+                    "es.array.unscopables.flat.js": 69,
+                    "es.array.unscopables.flat-map.js": 72,
+                    "es.function.bind.js": 116,
+                    "es.function.name.js": 274,
+                    "es.function.has-instance.js": 405,
+                    "es.math.acosh.js": 303,
+                    "es.math.asinh.js": 209,
+                    "es.math.atanh.js": 178,
+                    "es.math.cbrt.js": 173,
+                    "es.math.clz32.js": 166,
+                    "es.math.cosh.js": 225,
+                    "es.math.expm1.js": 134,
+                    "es.math.fround.js": 111,
+                    "es.math.hypot.js": 303,
+                    "es.math.imul.js": 282,
+                    "es.math.log10.js": 134,
+                    "es.math.log1p.js": 109,
+                    "es.math.log2.js": 130,
+                    "es.math.sign.js": 107,
+                    "es.math.sinh.js": 295,
+                    "es.math.tanh.js": 203,
+                    "es.math.trunc.js": 139,
+                    "es.object.assign.js": 144,
+                    "es.object.create.js": 153,
+                    "es.object.define-property.js": 186,
+                    "es.object.define-properties.js": 188,
+                    "es.object.entries.js": 155,
+                    "es.object.freeze.js": 310,
+                    "es.object.from-entries.js": 232,
+                    "es.object.get-own-property-descriptor.js": 335,
+                    "es.object.get-own-property-descriptors.js": 414,
+                    "es.object.get-own-property-names.js": 248,
+                    "es.object.get-prototype-of.js": 305,
+                    "es.object.is.js": 108,
+                    "es.object.is-extensible.js": 238,
+                    "es.object.is-frozen.js": 228,
+                    "es.object.is-sealed.js": 228,
+                    "es.object.keys.js": 228,
+                    "es.object.prevent-extensions.js": 332,
+                    "es.object.seal.js": 306,
+                    "es.object.set-prototype-of.js": 133,
+                    "es.object.values.js": 153,
+                    "es.object.define-getter.js": 382,
+                    "es.object.define-setter.js": 382,
+                    "es.object.lookup-getter.js": 452,
+                    "es.object.lookup-setter.js": 452,
+                    "es.regexp.constructor.js": 2296,
+                    "es.regexp.to-string.js": 457,
+                    "es.regexp.dot-all.js": 375,
+                    "es.regexp.exec.js": 149,
+                    "es.regexp.flags.js": 332,
+                    "es.regexp.sticky.js": 384,
+                    "es.regexp.test.js": 484,
+                    "es.string.match.js": 692,
+                    "es.string.replace.js": 1524,
+                    "es.string.search.js": 575,
+                    "es.string.split.js": 2237,
+                    "es.string.from-code-point.js": 423,
+                    "es.string.raw.js": 304,
+                    "es.string.code-point-at.js": 178,
+                    "es.string.ends-with.js": 639,
+                    "es.string.includes.js": 334,
+                    "es.string.match-all.js": 2041,
+                    "es.string.pad-end.js": 252,
+                    "es.string.pad-start.js": 256,
+                    "es.string.repeat.js": 116,
+                    "es.string.replace-all.js": 938,
+                    "es.string.starts-with.js": 623,
+                    "es.string.substr.js": 375,
+                    "es.string.trim.js": 215,
+                    "es.string.trim-start.js": 260,
+                    "es.string.trim-end.js": 253,
+                    "es.string.anchor.js": 228,
+                    "es.string.big.js": 220,
+                    "es.string.blink.js": 226,
+                    "es.string.bold.js": 220,
+                    "es.string.fixed.js": 223,
+                    "es.string.fontcolor.js": 238,
+                    "es.string.fontsize.js": 235,
+                    "es.string.italics.js": 226,
+                    "es.string.link.js": 224,
+                    "es.string.small.js": 226,
+                    "es.string.strike.js": 229,
+                    "es.string.sub.js": 220,
+                    "es.string.sup.js": 220,
+                    "es.weak-map.js": 1200,
+                    "es.weak-set.js": 197,
+                    "es.number.epsilon.js": 98,
+                    "es.number.is-finite.js": 120,
+                    "es.number.is-integer.js": 115,
+                    "es.number.is-nan.js": 107,
+                    "es.number.is-safe-integer.js": 183,
+                    "es.number.max-safe-integer.js": 108,
+                    "es.number.min-safe-integer.js": 109,
+                    "es.number.parse-float.js": 156,
+                    "es.number.parse-int.js": 150,
+                    "es.typed-array.uint8-array.js": 133,
+                    "es.typed-array.uint32-array.js": 134
+                  },
+                  "internals": {
+                    "export.js": 612,
+                    "global.js": 264,
+                    "object-get-own-property-descriptor.js": 428,
+                    "descriptors.js": 144,
+                    "fails.js": 76,
+                    "object-property-is-enumerable.js": 178,
+                    "create-property-descriptor.js": 113,
+                    "to-indexed-object.js": 140,
+                    "indexed-object.js": 225,
+                    "classof-raw.js": 88,
+                    "require-object-coercible.js": 104,
+                    "to-primitive.js": 354,
+                    "is-object.js": 96,
+                    "has.js": 136,
+                    "to-object.js": 110,
+                    "ie8-dom-define.js": 231,
+                    "document-create-element.js": 173,
+                    "create-non-enumerable-property.js": 229,
+                    "object-define-property.js": 359,
+                    "an-object.js": 140,
+                    "redefine.js": 684,
+                    "set-global.js": 163,
+                    "inspect-source.js": 185,
+                    "shared-store.js": 131,
+                    "internal-state.js": 968,
+                    "native-weak-map.js": 153,
+                    "shared-key.js": 133,
+                    "shared.js": 259,
+                    "is-pure.js": 31,
+                    "uid.js": 131,
+                    "hidden-keys.js": 31,
+                    "copy-constructor-properties.js": 279,
+                    "own-keys.js": 284,
+                    "get-built-in.js": 222,
+                    "path.js": 61,
+                    "object-get-own-property-names.js": 187,
+                    "object-keys-internal.js": 306,
+                    "array-includes.js": 363,
+                    "to-length.js": 125,
+                    "to-integer.js": 104,
+                    "to-absolute-index.js": 138,
+                    "enum-bug-keys.js": 138,
+                    "object-get-own-property-symbols.js": 49,
+                    "is-forced.js": 279,
+                    "is-array.js": 114,
+                    "create-property.js": 226,
+                    "array-species-create.js": 320,
+                    "well-known-symbol.js": 359,
+                    "native-symbol.js": 217,
+                    "engine-v8-version.js": 266,
+                    "engine-user-agent.js": 96,
+                    "use-symbol-as-uid.js": 106,
+                    "array-method-has-species-support.js": 281,
+                    "to-string-tag-support.js": 124,
+                    "object-to-string.js": 172,
+                    "classof.js": 435,
+                    "object-create.js": 954,
+                    "object-define-properties.js": 284,
+                    "object-keys.js": 149,
+                    "html.js": 97,
+                    "object-get-own-property-names-external.js": 363,
+                    "well-known-symbol-wrapped.js": 64,
+                    "define-well-known-symbol.js": 245,
+                    "set-to-string-tag.js": 234,
+                    "array-iteration.js": 720,
+                    "function-bind-context.js": 358,
+                    "a-function.js": 122,
+                    "collection.js": 1517,
+                    "internal-metadata.js": 700,
+                    "freezing.js": 133,
+                    "iterate.js": 885,
+                    "is-array-iterator-method.js": 190,
+                    "iterators.js": 31,
+                    "get-iterator-method.js": 204,
+                    "iterator-close.js": 130,
+                    "an-instance.js": 131,
+                    "check-correctness-of-iteration.js": 380,
+                    "inherit-if-required.js": 229,
+                    "object-set-prototype-of.js": 368,
+                    "a-possible-prototype.js": 161,
+                    "collection-strong.js": 2315,
+                    "redefine-all.js": 116,
+                    "define-iterator.js": 1372,
+                    "create-iterator-constructor.js": 370,
+                    "iterators-core.js": 531,
+                    "object-get-prototype-of.js": 372,
+                    "correct-prototype-getter.js": 169,
+                    "set-species.js": 302,
+                    "string-multibyte.js": 386,
+                    "dom-iterables.js": 530,
+                    "add-to-unscopables.js": 261,
+                    "array-from.js": 718,
+                    "call-with-safe-iteration-closing.js": 173,
+                    "array-copy-within.js": 403,
+                    "array-method-is-strict.js": 164,
+                    "array-fill.js": 311,
+                    "flatten-into-array.js": 399,
+                    "array-for-each.js": 229,
+                    "array-last-index-of.js": 479,
+                    "array-reduce.js": 462,
+                    "engine-is-node.js": 115,
+                    "array-sort.js": 421,
+                    "engine-ff-version.js": 108,
+                    "engine-is-ie-or-edge.js": 93,
+                    "engine-webkit-version.js": 113,
+                    "function-bind.js": 487,
+                    "math-log1p.js": 112,
+                    "math-sign.js": 88,
+                    "math-expm1.js": 197,
+                    "math-fround.js": 287,
+                    "object-assign.js": 818,
+                    "object-to-array.js": 358,
+                    "same-value.js": 96,
+                    "object-prototype-accessors-forced.js": 283,
+                    "is-regexp.js": 214,
+                    "regexp-flags.js": 237,
+                    "regexp-sticky-helpers.js": 266,
+                    "regexp-unsupported-dot-all.js": 148,
+                    "regexp-unsupported-ncg.js": 171,
+                    "regexp-exec.js": 1402,
+                    "fix-regexp-well-known-symbol-logic.js": 817,
+                    "advance-string-index.js": 135,
+                    "regexp-exec-abstract.js": 363,
+                    "get-substitution.js": 566,
+                    "species-constructor.js": 228,
+                    "not-a-regexp.js": 157,
+                    "correct-is-regexp-logic.js": 180,
+                    "string-pad.js": 378,
+                    "string-repeat.js": 280,
+                    "string-pad-webkit-bug.js": 145,
+                    "string-trim.js": 305,
+                    "whitespaces.js": 107,
+                    "string-trim-forced.js": 181,
+                    "create-html.js": 213,
+                    "string-html-forced.js": 162,
+                    "collection-weak.js": 1498,
+                    "number-is-finite.js": 133,
+                    "is-integer.js": 125,
+                    "number-parse-float.js": 244,
+                    "number-parse-int.js": 268,
+                    "typed-array-constructor.js": 3176,
+                    "typed-array-constructors-require-wrappers.js": 413,
+                    "array-buffer-view-core.js": 2213,
+                    "array-buffer-native.js": 90,
+                    "array-buffer.js": 3777,
+                    "to-index.js": 207,
+                    "ieee754.js": 819,
+                    "to-offset.js": 147,
+                    "to-positive-integer.js": 157,
+                    "typed-array-from.js": 584
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "packages/base64.js": [
+      1999,
+      {
+        "node_modules": {
+          "meteor": {
+            "base64": {
+              "base64.js": 1510
+            }
+          }
+        }
+      }
+    ],
+    "packages/ejson.js": [
+      8087,
+      {
+        "node_modules": {
+          "meteor": {
+            "ejson": {
+              "ejson.js": 5369,
+              "stringify.js": 974,
+              "utils.js": 1209
+            }
+          }
+        }
+      }
+    ],
+    "packages/diff-sequence.js": [
+      3095,
+      {
+        "node_modules": {
+          "meteor": {
+            "diff-sequence": {
+              "diff.js": 2559
+            }
+          }
+        }
+      }
+    ],
+    "packages/geojson-utils.js": [
+      5226,
+      {
+        "node_modules": {
+          "meteor": {
+            "geojson-utils": {
+              "main.js": 50,
+              "geojson-utils.js": 4805
+            }
+          }
+        }
+      }
+    ],
+    "packages/id-map.js": [
+      1935,
+      {
+        "node_modules": {
+          "meteor": {
+            "id-map": {
+              "id-map.js": 1423
+            }
+          }
+        }
+      }
+    ],
+    "packages/random.js": [
+      4685,
+      {
+        "node_modules": {
+          "meteor": {
+            "random": {
+              "main_client.js": 345,
+              "AbstractRandomGenerator.js": 928,
+              "AleaRandomGenerator.js": 1229,
+              "BrowserRandomGenerator.js": 452,
+              "createAleaGenerator.js": 691,
+              "createRandom.js": 411
+            }
+          }
+        }
+      }
+    ],
+    "packages/mongo-id.js": [
+      2305,
+      {
+        "node_modules": {
+          "meteor": {
+            "mongo-id": {
+              "id.js": 1769
+            }
+          }
+        }
+      }
+    ],
+    "packages/ordered-dict.js": [
+      4017,
+      {
+        "node_modules": {
+          "meteor": {
+            "ordered-dict": {
+              "ordered_dict.js": 3491
+            }
+          }
+        }
+      }
+    ],
+    "packages/tracker.js": [
+      5691,
+      {
+        "node_modules": {
+          "meteor": {
+            "tracker": {
+              "tracker.js": 5191
+            }
+          }
+        }
+      }
+    ],
+    "packages/minimongo.js": [
+      49307,
+      {
+        "node_modules": {
+          "meteor": {
+            "minimongo": {
+              "minimongo_client.js": 50,
+              "common.js": 13388,
+              "constants.js": 366,
+              "cursor.js": 5743,
+              "local_collection.js": 21623,
+              "matcher.js": 3121,
+              "minimongo_common.js": 237,
+              "observe_handle.js": 102,
+              "sorter.js": 3699
+            }
+          }
+        }
+      }
+    ],
+    "packages/check.js": [
+      6643,
+      {
+        "node_modules": {
+          "meteor": {
+            "check": {
+              "match.js": 5779,
+              "isPlainObject.js": 329
+            }
+          }
+        }
+      }
+    ],
+    "packages/retry.js": [
+      1479,
+      {
+        "node_modules": {
+          "meteor": {
+            "retry": {
+              "retry.js": 972
+            }
+          }
+        }
+      }
+    ],
+    "packages/callback-hook.js": [
+      2572,
+      {
+        "node_modules": {
+          "meteor": {
+            "callback-hook": {
+              "hook.js": 2066
+            }
+          }
+        }
+      }
+    ],
+    "packages/ddp-common.js": [
+      5500,
+      {
+        "node_modules": {
+          "meteor": {
+            "ddp-common": {
+              "namespace.js": 18,
+              "heartbeat.js": 1693,
+              "utils.js": 1559,
+              "method_invocation.js": 589,
+              "random_stream.js": 692
+            }
+          }
+        }
+      }
+    ],
+    "packages/reload.js": [
+      3008,
+      {
+        "node_modules": {
+          "meteor": {
+            "reload": {
+              "reload.js": 2519
+            }
+          }
+        }
+      }
+    ],
+    "packages/socket-stream-client.js": [
+      62820,
+      {
+        "node_modules": {
+          "meteor": {
+            "socket-stream-client": {
+              "browser.js": 3539,
+              "common.js": 2902,
+              "sockjs-1.6.1-min-.js": 55048,
+              "urls.js": 801
+            }
+          }
+        }
+      }
+    ],
+    "packages/ddp-client.js": [
+      28220,
+      {
+        "node_modules": {
+          "meteor": {
+            "ddp-client": {
+              "client": {
+                "client.js": 136,
+                "client_convenience.js": 876
+              },
+              "common": {
+                "MethodInvoker.js": 1381,
+                "livedata_connection.js": 23871,
+                "namespace.js": 997
+              }
+            }
+          }
+        }
+      }
+    ],
+    "packages/ddp.js": 78,
+    "packages/ddp-server.js": 30,
+    "packages/allow-deny.js": [
+      6127,
+      {
+        "node_modules": {
+          "meteor": {
+            "allow-deny": {
+              "allow-deny.js": 5457
+            }
+          }
+        }
+      }
+    ],
+    "packages/typescript.js": 30,
+    "packages/logging.js": [
+      4497,
+      {
+        "node_modules": {
+          "meteor": {
+            "logging": {
+              "logging.js": 3848,
+              "logging_browser.js": 53
+            }
+          }
+        }
+      }
+    ],
+    "packages/insecure.js": 28,
+    "packages/mongo.js": [
+      12688,
+      {
+        "node_modules": {
+          "meteor": {
+            "mongo": {
+              "local_collection_driver.js": 440,
+              "collection.js": 10910,
+              "mongo_utils.js": 377
+            }
+          }
+        }
+      }
+    ],
+    "packages/reactive-var.js": 818,
+    "packages/minifier-css.js": 66,
+    "packages/standard-minifier-css.js": 41,
+    "packages/standard-minifier-js.js": 40,
+    "packages/shell-server.js": 32,
+    "packages/static-html.js": 31,
+    "packages/react-meteor-data.js": [
+      7911,
+      {
+        "node_modules": {
+          "meteor": {
+            "react-meteor-data": {
+              "index.js": 424,
+              "useFind.ts": 2654,
+              "useSubscribe.ts": 494,
+              "useTracker.ts": 3221,
+              "withTracker.tsx": 535
+            }
+          }
+        }
+      }
+    ],
+    "packages/ddp-rate-limiter.js": 36,
+    "packages/localstorage.js": 837,
+    "packages/url.js": [
+      43087,
+      {
+        "node_modules": {
+          "meteor": {
+            "url": {
+              "modern.js": 110,
+              "legacy.js": 273,
+              "bc": {
+                "url_client.js": 172,
+                "url_common.js": 569
+              },
+              "node_modules": {
+                "core-js": {
+                  "proposals": {
+                    "url.js": 108
+                  },
+                  "modules": {
+                    "web.url.js": 11631,
+                    "es.string.iterator.js": 409,
+                    "web.url-search-params.js": 4431,
+                    "es.array.iterator.js": 618,
+                    "web.url.to-json.js": 159
+                  },
+                  "internals": {
+                    "string-multibyte.js": 386,
+                    "to-integer.js": 104,
+                    "require-object-coercible.js": 104,
+                    "internal-state.js": 968,
+                    "native-weak-map.js": 153,
+                    "global.js": 264,
+                    "inspect-source.js": 185,
+                    "shared-store.js": 131,
+                    "set-global.js": 163,
+                    "create-non-enumerable-property.js": 229,
+                    "descriptors.js": 144,
+                    "fails.js": 76,
+                    "object-define-property.js": 359,
+                    "ie8-dom-define.js": 231,
+                    "document-create-element.js": 173,
+                    "is-object.js": 96,
+                    "an-object.js": 140,
+                    "to-primitive.js": 354,
+                    "create-property-descriptor.js": 113,
+                    "has.js": 136,
+                    "to-object.js": 110,
+                    "shared-key.js": 133,
+                    "shared.js": 259,
+                    "is-pure.js": 31,
+                    "uid.js": 131,
+                    "hidden-keys.js": 31,
+                    "define-iterator.js": 1372,
+                    "export.js": 612,
+                    "object-get-own-property-descriptor.js": 428,
+                    "object-property-is-enumerable.js": 178,
+                    "to-indexed-object.js": 140,
+                    "indexed-object.js": 225,
+                    "classof-raw.js": 88,
+                    "redefine.js": 684,
+                    "copy-constructor-properties.js": 279,
+                    "own-keys.js": 284,
+                    "get-built-in.js": 222,
+                    "path.js": 61,
+                    "object-get-own-property-names.js": 187,
+                    "object-keys-internal.js": 306,
+                    "array-includes.js": 363,
+                    "to-length.js": 125,
+                    "to-absolute-index.js": 138,
+                    "enum-bug-keys.js": 138,
+                    "object-get-own-property-symbols.js": 49,
+                    "is-forced.js": 279,
+                    "create-iterator-constructor.js": 370,
+                    "iterators-core.js": 531,
+                    "object-get-prototype-of.js": 372,
+                    "correct-prototype-getter.js": 169,
+                    "well-known-symbol.js": 359,
+                    "native-symbol.js": 232,
+                    "engine-v8-version.js": 266,
+                    "engine-user-agent.js": 96,
+                    "use-symbol-as-uid.js": 116,
+                    "object-create.js": 954,
+                    "object-define-properties.js": 284,
+                    "object-keys.js": 149,
+                    "html.js": 97,
+                    "set-to-string-tag.js": 234,
+                    "iterators.js": 31,
+                    "object-set-prototype-of.js": 368,
+                    "a-possible-prototype.js": 161,
+                    "native-url.js": 615,
+                    "an-instance.js": 131,
+                    "object-assign.js": 823,
+                    "array-from.js": 718,
+                    "function-bind-context.js": 358,
+                    "a-function.js": 122,
+                    "call-with-safe-iteration-closing.js": 173,
+                    "iterator-close.js": 130,
+                    "is-array-iterator-method.js": 190,
+                    "create-property.js": 226,
+                    "get-iterator-method.js": 204,
+                    "classof.js": 435,
+                    "to-string-tag-support.js": 124,
+                    "string-punycode-to-ascii.js": 1258,
+                    "add-to-unscopables.js": 261,
+                    "redefine-all.js": 116,
+                    "get-iterator.js": 216
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "packages/accounts-base.js": [
+      16259,
+      {
+        "node_modules": {
+          "meteor": {
+            "accounts-base": {
+              "client_main.js": 315,
+              "accounts_client.js": 9469,
+              "accounts_common.js": 5666
+            }
+          }
+        }
+      }
+    ],
+    "packages/sha.js": 2495,
+    "packages/accounts-password.js": [
+      2983,
+      {
+        "node_modules": {
+          "meteor": {
+            "accounts-password": {
+              "password_client.js": 2353
+            }
+          }
+        }
+      }
+    ],
+    "packages/zodern_types.js": 32,
+    "packages/alanning_roles.js": [
+      29714,
+      {
+        "node_modules": {
+          "meteor": {
+            "alanning:roles": {
+              "roles": {
+                "roles_common.js": 8678,
+                "roles_common_async.js": 19002,
+                "client": {
+                  "debug.js": 136,
+                  "uiHelpers.js": 776,
+                  "subscriptions.js": 75
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "packages/raix_eventemitter.js": 2187,
+    "packages/tmeasday_check-npm-versions.js": [
+      20216,
+      {
+        "node_modules": {
+          "meteor": {
+            "tmeasday:check-npm-versions": {
+              "check-npm-versions.ts": 987,
+              "node_modules": {
+                "semver": {
+                  "package.json": 77,
+                  "semver.js": 18526
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "packages/aldeed_collection2.js": [
+      23318,
+      {
+        "node_modules": {
+          "meteor": {
+            "aldeed:collection2": {
+              "collection2.js": 8761,
+              "lib.js": 640,
+              "node_modules": {
+                "lodash.isempty": {
+                  "package.json": 68,
+                  "index.js": 2650
+                },
+                "lodash.isequal": {
+                  "package.json": 68,
+                  "index.js": 10100
+                },
+                "lodash.isobject": {
+                  "package.json": 69,
+                  "index.js": 99
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "packages/aldeed_schema-index.js": [
+      999,
+      {
+        "node_modules": {
+          "meteor": {
+            "aldeed:schema-index": {
+              "client.js": 37,
+              "common.js": 366
+            }
+          }
+        }
+      }
+    ],
+    "packages/underscore.js": 14679,
+    "packages/zodern_meteor-package-versions.js": 50,
+    "packages/montiapm_agent.js": [
+      20844,
+      {
+        "node_modules": {
+          "meteor": {
+            "montiapm:agent": {
+              "lib": {
+                "common": {
+                  "utils.js": 1617,
+                  "unify.js": 635,
+                  "default_error_filters.js": 355,
+                  "send.js": 953
+                },
+                "models": {
+                  "base_error.js": 589
+                },
+                "retry.js": 1052,
+                "ntp.js": 2429,
+                "client": {
+                  "httpRequest.js": 1675,
+                  "utils.js": 1715,
+                  "models": {
+                    "errors.js": 1976
+                  },
+                  "error_reporters": {
+                    "zone.js": 511,
+                    "window_error.js": 720,
+                    "meteor_debug.js": 996,
+                    "unhandled_rejection.js": 565,
+                    "tracker.js": 1109
+                  },
+                  "kadira.js": 1769
+                },
+                "profiler": {
+                  "client.js": 141
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "packages/webapp.js": [
+      881,
+      {
+        "node_modules": {
+          "meteor": {
+            "webapp": {
+              "webapp_client.js": 378
+            }
+          }
+        }
+      }
+    ],
+    "packages/zodern_hide-production-sourcemaps.js": 53,
+    "packages/dev-error-overlay.js": [
+      1824,
+      {
+        "node_modules": {
+          "meteor": {
+            "dev-error-overlay": {
+              "client.js": 1297
+            }
+          }
+        }
+      }
+    ],
+    "packages/hot-code-push.js": 33,
+    "packages/launch-screen.js": 71,
+    "packages/autoupdate.js": [
+      4117,
+      {
+        "node_modules": {
+          "meteor": {
+            "autoupdate": {
+              "autoupdate_client.js": 1979,
+              "client_versions.js": 1490
+            }
+          }
+        }
+      }
+    ],
+    "app/global-imports.js": [
+      941,
+      {}
+    ],
+    "app/app.js": [
+      55734,
+      {
+        "client": {
+          "template.main.js": 115,
+          "style.css": 14,
+          "main.js": 131
+        },
+        "imports": {
+          "api": {
+            "profile": {
+              "Profile.js": 644
+            },
+            "reference": {
+              "Reference.js": 697
+            },
+            "report": {
+              "Report.js": 922
+            },
+            "stuff": {
+              "Stuff.js": 599
+            }
+          },
+          "startup": {
+            "client": {
+              "Startup.jsx": 356
+            }
+          },
+          "ui": {
+            "components": {
+              "DownloadButton.jsx": 1280,
+              "Footer.jsx": 636,
+              "LoadingSpinner.jsx": 360,
+              "Login.jsx": 1145,
+              "Logo.jsx": 482,
+              "NavBar.jsx": 1500,
+              "Profile.jsx": 947,
+              "Report.jsx": 1121,
+              "Resource.jsx": 1644,
+              "ResourceAdmin.jsx": 1923,
+              "StuffItem.jsx": 552,
+              "StuffItemAdmin.jsx": 474
+            },
+            "layouts": {
+              "App.jsx": 4409
+            },
+            "pages": {
+              "AboutUs.jsx": 4910,
+              "AddPost.jsx": 2812,
+              "AddResource.jsx": 2492,
+              "EditProfile.jsx": 2596,
+              "EditStuff.jsx": 1885,
+              "Landing.jsx": 1593,
+              "ListProfile.jsx": 1102,
+              "ListStuff.jsx": 1300,
+              "ListStuffAdmin.jsx": 1313,
+              "NotAuthorized.jsx": 432,
+              "NotFound.jsx": 432,
+              "Posts.jsx": 2324,
+              "PostsAdmin.jsx": 1998,
+              "Resources.jsx": 2677,
+              "ResourcesAdmin.jsx": 2757,
+              "SignIn.jsx": 1851,
+              "SignOut.jsx": 348,
+              "SignUp.jsx": 2057
+            }
+          }
+        }
+      }
+    ]
+  }
+}

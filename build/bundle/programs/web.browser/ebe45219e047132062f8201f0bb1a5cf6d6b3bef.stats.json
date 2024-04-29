@@ -1,0 +1,3877 @@
+{
+  "minifier": {
+    "name": "standard-minifier-js",
+    "version": "2.8.1"
+  },
+  "totalMinifiedBytes": 4872310,
+  "totalMinifiedGzipBytes": 630171,
+  "minifiedBytesByPackage": {
+    "packages/meteor.js": 10123,
+    "packages/meteor-base.js": 31,
+    "packages/mobile-experience.js": 37,
+    "packages/modules-runtime.js": 5179,
+    "packages/modules.js": [
+      4438520,
+      {
+        "node_modules": {
+          "meteor": {
+            "modules": {
+              "client.js": 126,
+              "css.js": 263,
+              "install-packages.js": 2333,
+              "process.js": 349,
+              "reify.js": 83,
+              "stubs.js": 99,
+              "node_modules": {
+                "@meteorjs": {
+                  "reify": {
+                    "lib": {
+                      "runtime": {
+                        "index.js": 954,
+                        "utils.js": 1309,
+                        "entry.js": 3503
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "bootstrap": {
+            "dist": {
+              "css": {
+                "bootstrap.min.css": 231192
+              }
+            }
+          },
+          "dequal": {
+            "dist": {
+              "index.mjs": 1119
+            },
+            "package.json": 105
+          },
+          "react": {
+            "package.json": 76,
+            "index.js": 76,
+            "cjs": {
+              "react.production.min.js": 6662,
+              "react.development.js": 266,
+              "react-jsx-runtime.production.min.js": 848,
+              "react-jsx-runtime.development.js": 278
+            },
+            "jsx-runtime.js": 88
+          },
+          "react-dom": {
+            "package.json": 126,
+            "client.js": 106,
+            "index.js": 289,
+            "cjs": {
+              "react-dom.production.min.js": 129621,
+              "react-dom.development.js": 270
+            }
+          },
+          "scheduler": {
+            "package.json": 80,
+            "index.js": 80,
+            "cjs": {
+              "scheduler.production.min.js": 4064,
+              "scheduler.development.js": 268
+            }
+          },
+          "prop-types": {
+            "package.json": 81,
+            "index.js": 70,
+            "factoryWithTypeCheckers.js": 6133,
+            "lib": {
+              "ReactPropTypesSecret.js": 96,
+              "has.js": 80
+            },
+            "checkPropTypes.js": 136,
+            "factoryWithThrowingShims.js": 687
+          },
+          "react-is": {
+            "package.json": 80,
+            "index.js": 79,
+            "cjs": {
+              "react-is.production.min.js": 2386,
+              "react-is.development.js": 273
+            }
+          },
+          "object-assign": {
+            "package.json": 67,
+            "index.js": 998
+          },
+          "react-router-dom": {
+            "package.json": 118,
+            "dist": {
+              "index.js": 19766
+            }
+          },
+          "react-router": {
+            "package.json": 114,
+            "dist": {
+              "index.js": 16520
+            }
+          },
+          "@remix-run": {
+            "router": {
+              "package.json": 126,
+              "dist": {
+                "router.js": 51788
+              }
+            }
+          },
+          "react-bootstrap": {
+            "package.json": 112,
+            "esm": {
+              "index.js": 5510,
+              "Accordion.js": 1028,
+              "ThemeProvider.js": 1253,
+              "AccordionBody.js": 723,
+              "AccordionCollapse.js": 673,
+              "Collapse.js": 1747,
+              "transitionEndListener.js": 359,
+              "createChainedFunction.js": 291,
+              "triggerBrowserReflow.js": 73,
+              "TransitionWrapper.js": 862,
+              "safeFindDOMNode.js": 161,
+              "AccordionContext.js": 238,
+              "AccordionItemContext.js": 151,
+              "AccordionButton.js": 999,
+              "AccordionHeader.js": 495,
+              "AccordionItem.js": 564,
+              "Alert.js": 1117,
+              "AlertHeading.js": 475,
+              "divWithClassName.js": 239,
+              "AlertLink.js": 423,
+              "Fade.js": 870,
+              "CloseButton.js": 499,
+              "Anchor.js": 92,
+              "Badge.js": 459,
+              "Breadcrumb.js": 597,
+              "BreadcrumbItem.js": 624,
+              "Button.js": 623,
+              "ButtonGroup.js": 479,
+              "ButtonToolbar.js": 411,
+              "Card.js": 994,
+              "CardBody.js": 374,
+              "CardFooter.js": 378,
+              "CardHeader.js": 554,
+              "CardHeaderContext.js": 139,
+              "CardImg.js": 409,
+              "CardImgOverlay.js": 387,
+              "CardLink.js": 372,
+              "CardSubtitle.js": 439,
+              "CardText.js": 372,
+              "CardTitle.js": 433,
+              "CardGroup.js": 376,
+              "Carousel.js": 5164,
+              "CarouselCaption.js": 388,
+              "CarouselItem.js": 395,
+              "ElementChildren.js": 369,
+              "Col.js": 896,
+              "Container.js": 458,
+              "Dropdown.js": 2121,
+              "DropdownContext.js": 135,
+              "DropdownDivider.js": 413,
+              "DropdownHeader.js": 410,
+              "DropdownItem.js": 650,
+              "DropdownItemText.js": 392,
+              "DropdownMenu.js": 2253,
+              "InputGroupContext.js": 139,
+              "NavbarContext.js": 135,
+              "useWrappedRefWithWarning.js": 218,
+              "types.js": 242,
+              "DropdownToggle.js": 881,
+              "DropdownButton.js": 1045,
+              "Figure.js": 501,
+              "FigureImage.js": 379,
+              "Image.js": 645,
+              "FigureCaption.js": 391,
+              "Form.js": 976,
+              "FormCheck.js": 1400,
+              "Feedback.js": 449,
+              "FormCheckInput.js": 603,
+              "FormContext.js": 103,
+              "FormCheckLabel.js": 523,
+              "FormControl.js": 815,
+              "FormFloating.js": 382,
+              "FormGroup.js": 387,
+              "FormLabel.js": 786,
+              "FormRange.js": 515,
+              "FormSelect.js": 603,
+              "FormText.js": 400,
+              "Switch.js": 296,
+              "FloatingLabel.js": 553,
+              "InputGroup.js": 827,
+              "InputGroupText.js": 388,
+              "ListGroup.js": 772,
+              "ListGroupItem.js": 974,
+              "Modal.js": 3892,
+              "BootstrapModalManager.js": 1388,
+              "ModalBody.js": 376,
+              "ModalContext.js": 113,
+              "ModalDialog.js": 660,
+              "ModalFooter.js": 380,
+              "ModalHeader.js": 488,
+              "AbstractModalHeader.js": 623,
+              "ModalTitle.js": 435,
+              "Nav.js": 1122,
+              "NavItem.js": 372,
+              "NavLink.js": 690,
+              "Navbar.js": 1449,
+              "NavbarBrand.js": 412,
+              "NavbarCollapse.js": 531,
+              "NavbarToggle.js": 778,
+              "NavbarOffcanvas.js": 406,
+              "Offcanvas.js": 2590,
+              "OffcanvasBody.js": 384,
+              "OffcanvasToggling.js": 848,
+              "OffcanvasHeader.js": 496,
+              "OffcanvasTitle.js": 443,
+              "NavbarText.js": 379,
+              "NavDropdown.js": 873,
+              "Overlay.js": 1947,
+              "useOverlayOffset.js": 570,
+              "Popover.js": 1022,
+              "PopoverHeader.js": 384,
+              "PopoverBody.js": 380,
+              "helpers.js": 242,
+              "getInitialPopperStyles.js": 138,
+              "Tooltip.js": 950,
+              "OverlayTrigger.js": 2028,
+              "PageItem.js": 1082,
+              "Pagination.js": 591,
+              "Placeholder.js": 364,
+              "usePlaceholder.js": 365,
+              "PlaceholderButton.js": 340,
+              "ProgressBar.js": 1613,
+              "Ratio.js": 556,
+              "Row.js": 634,
+              "Spinner.js": 464,
+              "SplitButton.js": 1262,
+              "SSRProvider.js": 93,
+              "Stack.js": 609,
+              "createUtilityClasses.js": 514,
+              "Tab.js": 657,
+              "TabContainer.js": 318,
+              "getTabTransitionComponent.js": 194,
+              "TabContent.js": 378,
+              "TabPane.js": 1034,
+              "Table.js": 682,
+              "Tabs.js": 1412,
+              "Toast.js": 1345,
+              "ToastFade.js": 377,
+              "ToastHeader.js": 834,
+              "ToastContext.js": 114,
+              "ToastBody.js": 376,
+              "ToastContainer.js": 817,
+              "ToggleButton.js": 776,
+              "ToggleButtonGroup.js": 941
+            }
+          },
+          "classnames": {
+            "package.json": 82,
+            "index.js": 839
+          },
+          "uncontrollable": {
+            "package.json": 118,
+            "lib": {
+              "esm": {
+                "index.js": 163,
+                "hook.js": 1162,
+                "utils.js": 726,
+                "uncontrollable.js": 2561
+              }
+            }
+          },
+          "@babel": {
+            "runtime": {
+              "helpers": {
+                "esm": {
+                  "extends.js": 272,
+                  "objectWithoutPropertiesLoose.js": 178,
+                  "inheritsLoose.js": 188,
+                  "setPrototypeOf.js": 167
+                },
+                "objectSpread2.js": 688,
+                "defineProperty.js": 237,
+                "toPropertyKey.js": 204,
+                "typeof.js": 374,
+                "toPrimitive.js": 365,
+                "objectWithoutProperties.js": 368,
+                "objectWithoutPropertiesLoose.js": 216,
+                "extends.js": 372
+              }
+            }
+          },
+          "invariant": {
+            "package.json": 104,
+            "browser.js": 385
+          },
+          "react-lifecycles-compat": {
+            "package.json": 154,
+            "react-lifecycles-compat.es.js": 2358
+          },
+          "dom-helpers": {
+            "css": {
+              "package.json": 97
+            },
+            "esm": {
+              "css.js": 485,
+              "getComputedStyle.js": 144,
+              "ownerWindow.js": 153,
+              "ownerDocument.js": 94,
+              "hyphenateStyle.js": 150,
+              "hyphenate.js": 116,
+              "isTransform.js": 167,
+              "transitionEnd.js": 579,
+              "listen.js": 207,
+              "addEventListener.js": 642,
+              "canUseDOM.js": 115,
+              "removeEventListener.js": 173,
+              "triggerEvent.js": 188,
+              "querySelectorAll.js": 162,
+              "contains.js": 168,
+              "scrollbarSize.js": 386,
+              "activeElement.js": 208,
+              "addClass.js": 276,
+              "hasClass.js": 177,
+              "removeClass.js": 342
+            },
+            "transitionEnd": {
+              "package.json": 127
+            },
+            "querySelectorAll": {
+              "package.json": 136
+            },
+            "addEventListener": {
+              "package.json": 136
+            },
+            "contains": {
+              "package.json": 112
+            },
+            "listen": {
+              "package.json": 106
+            },
+            "ownerDocument": {
+              "package.json": 127
+            },
+            "canUseDOM": {
+              "package.json": 115
+            },
+            "removeEventListener": {
+              "package.json": 145
+            },
+            "scrollbarSize": {
+              "package.json": 127
+            },
+            "activeElement": {
+              "package.json": 127
+            },
+            "addClass": {
+              "package.json": 112
+            },
+            "removeClass": {
+              "package.json": 121
+            },
+            "hasClass": {
+              "package.json": 112
+            }
+          },
+          "react-transition-group": {
+            "Transition": {
+              "package.json": 129
+            },
+            "esm": {
+              "Transition.js": 4405,
+              "config.js": 49,
+              "utils": {
+                "PropTypes.js": 137,
+                "reflow.js": 88
+              },
+              "TransitionGroupContext.js": 99
+            }
+          },
+          "@restart": {
+            "hooks": {
+              "useMergedRefs": {
+                "package.json": 130
+              },
+              "esm": {
+                "useMergedRefs.js": 270,
+                "useEventCallback.js": 233,
+                "useCommittedRef.js": 161,
+                "index.js": 951,
+                "useCallbackRef.js": 115,
+                "useEventListener.js": 291,
+                "useGlobalListener.js": 209,
+                "useInterval.js": 309,
+                "useRafInterval.js": 444,
+                "useMergeState.js": 283,
+                "useMergeStateFromProps.js": 167,
+                "useMounted.js": 216,
+                "usePrevious.js": 175,
+                "useImage.js": 556,
+                "useResizeObserver.js": 441,
+                "useIsomorphicEffect.js": 225,
+                "useUpdateEffect.js": 179,
+                "useTimeout.js": 548,
+                "useWillUnmount.js": 191,
+                "useUpdatedRef.js": 133,
+                "useForceUpdate.js": 135,
+                "useSafeState.js": 208,
+                "useBreakpoint.js": 815,
+                "useMediaQuery.js": 639
+              },
+              "useEventCallback": {
+                "package.json": 139
+              },
+              "package.json": 111,
+              "useUpdateEffect": {
+                "package.json": 136
+              },
+              "useCommittedRef": {
+                "package.json": 136
+              },
+              "useTimeout": {
+                "package.json": 121
+              },
+              "usePrevious": {
+                "package.json": 124
+              },
+              "useForceUpdate": {
+                "package.json": 133
+              },
+              "useEventListener": {
+                "package.json": 139
+              },
+              "useCallbackRef": {
+                "package.json": 133
+              },
+              "useSafeState": {
+                "package.json": 127
+              },
+              "useIsomorphicEffect": {
+                "package.json": 148
+              },
+              "useWillUnmount": {
+                "package.json": 133
+              },
+              "useMounted": {
+                "package.json": 121
+              },
+              "useBreakpoint": {
+                "package.json": 130
+              }
+            },
+            "ui": {
+              "Anchor": {
+                "package.json": 106
+              },
+              "esm": {
+                "Anchor.js": 750,
+                "Button.js": 1125,
+                "Dropdown.js": 3102,
+                "DropdownContext.js": 105,
+                "DropdownMenu.js": 1665,
+                "usePopper.js": 2259,
+                "popper.js": 834,
+                "useClickOutside.js": 1466,
+                "mergeOptionsWithPopperConfig.js": 1049,
+                "DropdownToggle.js": 817,
+                "ssr.js": 180,
+                "DropdownItem.js": 1197,
+                "SelectableContext.js": 179,
+                "NavContext.js": 132,
+                "DataKey.js": 214,
+                "useWindow.js": 269,
+                "Nav.js": 2055,
+                "TabContext.js": 105,
+                "NavItem.js": 1489,
+                "Modal.js": 4185,
+                "ModalManager.js": 1518,
+                "getScrollbarWidth.js": 149,
+                "useWaitForDOMRef.js": 646,
+                "ImperativeTransition.js": 1231,
+                "NoopTransition.js": 462,
+                "RTGTransition.js": 444,
+                "useRTGTransitionProps.js": 991,
+                "utils.js": 99,
+                "Overlay.js": 1534,
+                "useRootClose.js": 663,
+                "Tabs.js": 877,
+                "TabPanel.js": 1920
+              },
+              "Button": {
+                "package.json": 106
+              },
+              "Dropdown": {
+                "package.json": 112
+              },
+              "node_modules": {
+                "uncontrollable": {
+                  "package.json": 118,
+                  "lib": {
+                    "esm": {
+                      "index.js": 1096
+                    }
+                  }
+                }
+              },
+              "DropdownItem": {
+                "package.json": 124
+              },
+              "DropdownMenu": {
+                "package.json": 124
+              },
+              "DropdownContext": {
+                "package.json": 133
+              },
+              "DropdownToggle": {
+                "package.json": 130
+              },
+              "Nav": {
+                "package.json": 97
+              },
+              "NavItem": {
+                "package.json": 109
+              },
+              "SelectableContext": {
+                "package.json": 139
+              },
+              "Modal": {
+                "package.json": 103
+              },
+              "ModalManager": {
+                "package.json": 124
+              },
+              "Overlay": {
+                "package.json": 109
+              },
+              "ssr": {
+                "package.json": 97
+              },
+              "Tabs": {
+                "package.json": 100
+              },
+              "NoopTransition": {
+                "package.json": 130
+              },
+              "TabContext": {
+                "package.json": 118
+              },
+              "TabPanel": {
+                "package.json": 112
+              }
+            }
+          },
+          "@popperjs": {
+            "core": {
+              "lib": {
+                "modifiers": {
+                  "arrow.js": 1596,
+                  "computeStyles.js": 2640,
+                  "eventListeners.js": 641,
+                  "flip.js": 1865,
+                  "hide.js": 915,
+                  "offset.js": 804,
+                  "popperOffsets.js": 312,
+                  "preventOverflow.js": 2453
+                },
+                "utils": {
+                  "getBasePlacement.js": 126,
+                  "math.js": 101,
+                  "userAgent.js": 225,
+                  "getMainAxisFromPlacement.js": 103,
+                  "within.js": 205,
+                  "mergePaddingObject.js": 149,
+                  "getFreshSideObject.js": 95,
+                  "expandToHashMap.js": 113,
+                  "getVariation.js": 81,
+                  "getOppositePlacement.js": 189,
+                  "getOppositeVariationPlacement.js": 149,
+                  "detectOverflow.js": 1541,
+                  "rectToClientRect.js": 142,
+                  "computeOffsets.js": 803,
+                  "computeAutoPlacement.js": 768,
+                  "getAltAxis.js": 80,
+                  "orderModifiers.js": 517,
+                  "debounce.js": 181,
+                  "mergeByName.js": 294
+                },
+                "enums.js": 824,
+                "dom-utils": {
+                  "getLayoutRect.js": 294,
+                  "getBoundingClientRect.js": 686,
+                  "instanceOf.js": 408,
+                  "getWindow.js": 183,
+                  "isLayoutViewport.js": 165,
+                  "contains.js": 275,
+                  "getOffsetParent.js": 1077,
+                  "getNodeName.js": 103,
+                  "getComputedStyle.js": 141,
+                  "isTableElement.js": 154,
+                  "getParentNode.js": 297,
+                  "getDocumentElement.js": 187,
+                  "getClippingRect.js": 1612,
+                  "getViewportRect.js": 484,
+                  "getWindowScrollBarX.js": 266,
+                  "getWindowScroll.js": 181,
+                  "getDocumentRect.js": 669,
+                  "listScrollParents.js": 450,
+                  "getScrollParent.js": 361,
+                  "isScrollParent.js": 215,
+                  "getCompositeRect.js": 922,
+                  "getNodeScroll.js": 306,
+                  "getHTMLElementScroll.js": 112
+                },
+                "popper-base.js": 202,
+                "createPopper.js": 2548
+              }
+            }
+          },
+          "warning": {
+            "package.json": 79,
+            "warning.js": 69
+          },
+          "@react-aria": {
+            "ssr": {
+              "package.json": 113,
+              "dist": {
+                "module.js": 1883
+              }
+            }
+          },
+          "prop-types-extra": {
+            "lib": {
+              "all.js": 497,
+              "utils": {
+                "createChainableTypeChecker.js": 459
+              }
+            }
+          },
+          "react-bootstrap-icons": {
+            "package.json": 121,
+            "dist": {
+              "index.js": 123809,
+              "icons": {
+                "0-circle-fill.js": 1498,
+                "0-circle.js": 1534,
+                "0-square-fill.js": 1536,
+                "0-square.js": 1606,
+                "1-circle-fill.js": 1256,
+                "1-circle.js": 1290,
+                "1-square-fill.js": 1292,
+                "1-square.js": 1393,
+                "123.js": 1870,
+                "2-circle-fill.js": 1463,
+                "2-circle.js": 1488,
+                "2-square-fill.js": 1490,
+                "2-square.js": 1591,
+                "3-circle-fill.js": 1613,
+                "3-circle.js": 1669,
+                "3-square-fill.js": 1640,
+                "3-square.js": 1741,
+                "4-circle-fill.js": 1365,
+                "4-circle.js": 1448,
+                "4-square-fill.js": 1450,
+                "4-square.js": 1520,
+                "5-circle-fill.js": 1501,
+                "5-circle.js": 1525,
+                "5-square-fill.js": 1527,
+                "5-square.js": 1628,
+                "6-circle-fill.js": 1623,
+                "6-circle.js": 1651,
+                "6-square-fill.js": 1684,
+                "6-square.js": 1754,
+                "7-circle-fill.js": 1257,
+                "7-circle.js": 1290,
+                "7-square-fill.js": 1292,
+                "7-square.js": 1393,
+                "8-circle-fill.js": 1692,
+                "8-circle.js": 1728,
+                "8-square-fill.js": 1759,
+                "8-square.js": 1831,
+                "9-circle-fill.js": 1580,
+                "9-circle.js": 1608,
+                "9-square-fill.js": 1642,
+                "9-square.js": 1711,
+                "activity.js": 1376,
+                "airplane-engines-fill.js": 1685,
+                "airplane-engines.js": 2028,
+                "airplane-fill.js": 1498,
+                "airplane.js": 1851,
+                "alarm-fill.js": 1624,
+                "alarm.js": 1719,
+                "alexa.js": 1450,
+                "align-bottom.js": 1287,
+                "align-center.js": 1318,
+                "align-end.js": 1340,
+                "align-middle.js": 1318,
+                "align-start.js": 1338,
+                "align-top.js": 1307,
+                "alipay.js": 1868,
+                "alphabet-uppercase.js": 1846,
+                "alphabet.js": 2049,
+                "alt.js": 1340,
+                "amazon.js": 2308,
+                "amd.js": 1246,
+                "android.js": 1444,
+                "android2.js": 2412,
+                "app-indicator.js": 1404,
+                "app.js": 1294,
+                "apple.js": 2460,
+                "archive-fill.js": 1356,
+                "archive.js": 1406,
+                "arrow-90deg-down.js": 1347,
+                "arrow-90deg-left.js": 1346,
+                "arrow-90deg-right.js": 1347,
+                "arrow-90deg-up.js": 1348,
+                "arrow-bar-down.js": 1377,
+                "arrow-bar-left.js": 1377,
+                "arrow-bar-right.js": 1376,
+                "arrow-bar-up.js": 1380,
+                "arrow-clockwise.js": 1368,
+                "arrow-counterclockwise.js": 1368,
+                "arrow-down-circle-fill.js": 1313,
+                "arrow-down-circle.js": 1365,
+                "arrow-down-left-circle-fill.js": 1305,
+                "arrow-down-left-circle.js": 1359,
+                "arrow-down-left-square-fill.js": 1352,
+                "arrow-down-left-square.js": 1431,
+                "arrow-down-left.js": 1287,
+                "arrow-down-right-circle-fill.js": 1304,
+                "arrow-down-right-circle.js": 1360,
+                "arrow-down-right-square-fill.js": 1352,
+                "arrow-down-right-square.js": 1432,
+                "arrow-down-right.js": 1289,
+                "arrow-down-short.js": 1315,
+                "arrow-down-square-fill.js": 1353,
+                "arrow-down-square.js": 1437,
+                "arrow-down-up.js": 1460,
+                "arrow-down.js": 1316,
+                "arrow-left-circle-fill.js": 1311,
+                "arrow-left-circle.js": 1364,
+                "arrow-left-right.js": 1453,
+                "arrow-left-short.js": 1315,
+                "arrow-left-square-fill.js": 1355,
+                "arrow-left-square.js": 1437,
+                "arrow-left.js": 1318,
+                "arrow-repeat.js": 1589,
+                "arrow-return-left.js": 1373,
+                "arrow-return-right.js": 1371,
+                "arrow-right-circle-fill.js": 1313,
+                "arrow-right-circle.js": 1366,
+                "arrow-right-short.js": 1316,
+                "arrow-right-square-fill.js": 1353,
+                "arrow-right-square.js": 1438,
+                "arrow-right.js": 1318,
+                "arrow-through-heart-fill.js": 1736,
+                "arrow-through-heart.js": 1945,
+                "arrow-up-circle-fill.js": 1313,
+                "arrow-up-circle.js": 1365,
+                "arrow-up-left-circle-fill.js": 1304,
+                "arrow-up-left-circle.js": 1356,
+                "arrow-up-left-square-fill.js": 1350,
+                "arrow-up-left-square.js": 1428,
+                "arrow-up-left.js": 1286,
+                "arrow-up-right-circle-fill.js": 1303,
+                "arrow-up-right-circle.js": 1358,
+                "arrow-up-right-square-fill.js": 1352,
+                "arrow-up-right-square.js": 1429,
+                "arrow-up-right.js": 1288,
+                "arrow-up-short.js": 1318,
+                "arrow-up-square-fill.js": 1354,
+                "arrow-up-square.js": 1436,
+                "arrow-up.js": 1318,
+                "arrows-angle-contract.js": 1458,
+                "arrows-angle-expand.js": 1459,
+                "arrows-collapse-vertical.js": 1475,
+                "arrows-collapse.js": 1493,
+                "arrows-expand-vertical.js": 1482,
+                "arrows-expand.js": 1497,
+                "arrows-fullscreen.js": 1727,
+                "arrows-move.js": 1702,
+                "arrows-vertical.js": 1362,
+                "arrows.js": 1362,
+                "aspect-ratio-fill.js": 1387,
+                "aspect-ratio.js": 1495,
+                "asterisk.js": 1368,
+                "at.js": 1803,
+                "award-fill.js": 1440,
+                "award.js": 1650,
+                "back.js": 1330,
+                "backpack-fill.js": 1569,
+                "backpack.js": 1634,
+                "backpack2-fill.js": 1697,
+                "backpack2.js": 1923,
+                "backpack3-fill.js": 1832,
+                "backpack3.js": 1949,
+                "backpack4-fill.js": 1559,
+                "backpack4.js": 1706,
+                "backspace-fill.js": 1457,
+                "backspace-reverse-fill.js": 1440,
+                "backspace-reverse.js": 1595,
+                "backspace.js": 1606,
+                "badge-3d-fill.js": 1805,
+                "badge-3d.js": 1870,
+                "badge-4k-fill.js": 1526,
+                "badge-4k.js": 1567,
+                "badge-8k-fill.js": 1807,
+                "badge-8k.js": 1881,
+                "badge-ad-fill.js": 1664,
+                "badge-ad.js": 1722,
+                "badge-ar-fill.js": 1554,
+                "badge-ar.js": 1623,
+                "badge-cc-fill.js": 1789,
+                "badge-cc.js": 1855,
+                "badge-hd-fill.js": 1496,
+                "badge-hd.js": 1549,
+                "badge-sd-fill.js": 1806,
+                "badge-sd.js": 1862,
+                "badge-tm-fill.js": 1396,
+                "badge-tm.js": 1480,
+                "badge-vo-fill.js": 1600,
+                "badge-vo.js": 1667,
+                "badge-vr-fill.js": 1523,
+                "badge-vr.js": 1585,
+                "badge-wc-fill.js": 1632,
+                "badge-wc.js": 1728,
+                "bag-check-fill.js": 1383,
+                "bag-check.js": 1496,
+                "bag-dash-fill.js": 1319,
+                "bag-dash.js": 1431,
+                "bag-fill.js": 1281,
+                "bag-heart-fill.js": 1353,
+                "bag-heart.js": 1394,
+                "bag-plus-fill.js": 1372,
+                "bag-plus.js": 1482,
+                "bag-x-fill.js": 1447,
+                "bag-x.js": 1564,
+                "bag.js": 1321,
+                "balloon-fill.js": 1742,
+                "balloon-heart-fill.js": 1749,
+                "balloon-heart.js": 1977,
+                "balloon.js": 1808,
+                "ban-fill.js": 1268,
+                "ban.js": 1300,
+                "bandaid-fill.js": 1819,
+                "bandaid.js": 1987,
+                "bank.js": 1471,
+                "bank2.js": 1436,
+                "bar-chart-fill.js": 1363,
+                "bar-chart-line-fill.js": 1309,
+                "bar-chart-line.js": 1347,
+                "bar-chart-steps.js": 1531,
+                "bar-chart.js": 1399,
+                "basket-fill.js": 1567,
+                "basket.js": 1751,
+                "basket2-fill.js": 1532,
+                "basket2.js": 1609,
+                "basket3-fill.js": 1454,
+                "basket3.js": 1473,
+                "battery-charging.js": 1789,
+                "battery-full.js": 1386,
+                "battery-half.js": 1385,
+                "battery.js": 1344,
+                "behance.js": 2517,
+                "bell-fill.js": 1305,
+                "bell-slash-fill.js": 1388,
+                "bell-slash.js": 1638,
+                "bell.js": 1532,
+                "bezier.js": 2009,
+                "bezier2.js": 1778,
+                "bicycle.js": 1628,
+                "bing.js": 2636,
+                "binoculars-fill.js": 1632,
+                "binoculars.js": 2064,
+                "blockquote-left.js": 1876,
+                "blockquote-right.js": 1867,
+                "bluetooth.js": 1486,
+                "body-text.js": 1932,
+                "book-fill.js": 1510,
+                "book-half.js": 1652,
+                "book.js": 1785,
+                "bookmark-check-fill.js": 1381,
+                "bookmark-check.js": 1515,
+                "bookmark-dash-fill.js": 1316,
+                "bookmark-dash.js": 1450,
+                "bookmark-fill.js": 1257,
+                "bookmark-heart-fill.js": 1326,
+                "bookmark-heart.js": 1461,
+                "bookmark-plus-fill.js": 1368,
+                "bookmark-plus.js": 1477,
+                "bookmark-star-fill.js": 1615,
+                "bookmark-star.js": 1705,
+                "bookmark-x-fill.js": 1442,
+                "bookmark-x.js": 1580,
+                "bookmark.js": 1341,
+                "bookmarks-fill.js": 1380,
+                "bookmarks.js": 1468,
+                "bookshelf.js": 1303,
+                "boombox-fill.js": 1737,
+                "boombox.js": 1814,
+                "bootstrap-fill.js": 1566,
+                "bootstrap-reboot.js": 1598,
+                "bootstrap.js": 1632,
+                "border-all.js": 1238,
+                "border-bottom.js": 2155,
+                "border-center.js": 2131,
+                "border-inner.js": 1979,
+                "border-left.js": 2190,
+                "border-middle.js": 2142,
+                "border-outer.js": 1556,
+                "border-right.js": 2159,
+                "border-style.js": 1711,
+                "border-top.js": 2169,
+                "border-width.js": 1376,
+                "border.js": 2420,
+                "bounding-box-circles.js": 1542,
+                "bounding-box.js": 1285,
+                "box-arrow-down-left.js": 1542,
+                "box-arrow-down-right.js": 1543,
+                "box-arrow-down.js": 1563,
+                "box-arrow-in-down-left.js": 1542,
+                "box-arrow-in-down-right.js": 1547,
+                "box-arrow-in-down.js": 1562,
+                "box-arrow-in-left.js": 1560,
+                "box-arrow-in-right.js": 1563,
+                "box-arrow-in-up-left.js": 1538,
+                "box-arrow-in-up-right.js": 1544,
+                "box-arrow-in-up.js": 1561,
+                "box-arrow-left.js": 1561,
+                "box-arrow-right.js": 1565,
+                "box-arrow-up-left.js": 1541,
+                "box-arrow-up-right.js": 1543,
+                "box-arrow-up.js": 1559,
+                "box-fill.js": 1490,
+                "box-seam-fill.js": 1519,
+                "box-seam.js": 1501,
+                "box.js": 1462,
+                "box2-fill.js": 1320,
+                "box2-heart-fill.js": 1393,
+                "box2-heart.js": 1432,
+                "box2.js": 1332,
+                "boxes.js": 1796,
+                "braces-asterisk.js": 1988,
+                "braces.js": 1785,
+                "bricks.js": 1587,
+                "briefcase-fill.js": 1485,
+                "briefcase.js": 1549,
+                "brightness-alt-high-fill.js": 1538,
+                "brightness-alt-high.js": 1581,
+                "brightness-alt-low-fill.js": 1438,
+                "brightness-alt-low.js": 1481,
+                "brightness-high-fill.js": 1790,
+                "brightness-high.js": 1822,
+                "brightness-low-fill.js": 1540,
+                "brightness-low.js": 1571,
+                "brilliance.js": 1261,
+                "broadcast-pin.js": 1596,
+                "broadcast.js": 1565,
+                "browser-chrome.js": 1529,
+                "browser-edge.js": 2204,
+                "browser-firefox.js": 2326,
+                "browser-safari.js": 3142,
+                "brush-fill.js": 1692,
+                "brush.js": 2159,
+                "bucket-fill.js": 1342,
+                "bucket.js": 1423,
+                "bug-fill.js": 1730,
+                "bug.js": 1828,
+                "building-add.js": 2084,
+                "building-check.js": 2118,
+                "building-dash.js": 2040,
+                "building-down.js": 2131,
+                "building-exclamation.js": 2064,
+                "building-fill-add.js": 2132,
+                "building-fill-check.js": 2166,
+                "building-fill-dash.js": 2088,
+                "building-fill-down.js": 2179,
+                "building-fill-exclamation.js": 2143,
+                "building-fill-gear.js": 2604,
+                "building-fill-lock.js": 2086,
+                "building-fill-slash.js": 2161,
+                "building-fill-up.js": 2180,
+                "building-fill-x.js": 2216,
+                "building-fill.js": 2000,
+                "building-gear.js": 2524,
+                "building-lock.js": 2062,
+                "building-slash.js": 2113,
+                "building-up.js": 2132,
+                "building-x.js": 2133,
+                "building.js": 2037,
+                "buildings-fill.js": 1529,
+                "buildings.js": 1670,
+                "bullseye.js": 1493,
+                "bus-front-fill.js": 1903,
+                "bus-front.js": 2073,
+                "c-circle-fill.js": 1491,
+                "c-circle.js": 1522,
+                "c-square-fill.js": 1524,
+                "c-square.js": 1625,
+                "cake-fill.js": 1978,
+                "cake.js": 2067,
+                "cake2-fill.js": 2730,
+                "cake2.js": 3020,
+                "calculator-fill.js": 1958,
+                "calculator.js": 2031,
+                "calendar-check-fill.js": 1395,
+                "calendar-check.js": 1488,
+                "calendar-date-fill.js": 1785,
+                "calendar-date.js": 1821,
+                "calendar-day-fill.js": 1588,
+                "calendar-day.js": 1667,
+                "calendar-event-fill.js": 1370,
+                "calendar-event.js": 1445,
+                "calendar-fill.js": 1301,
+                "calendar-heart-fill.js": 1358,
+                "calendar-heart.js": 1406,
+                "calendar-minus-fill.js": 1326,
+                "calendar-minus.js": 1423,
+                "calendar-month-fill.js": 1995,
+                "calendar-month.js": 2057,
+                "calendar-plus-fill.js": 1382,
+                "calendar-plus.js": 1470,
+                "calendar-range-fill.js": 1326,
+                "calendar-range.js": 1426,
+                "calendar-week-fill.js": 1613,
+                "calendar-week.js": 1681,
+                "calendar-x-fill.js": 1465,
+                "calendar-x.js": 1554,
+                "calendar.js": 1333,
+                "calendar2-check-fill.js": 1505,
+                "calendar2-check.js": 1628,
+                "calendar2-date-fill.js": 1903,
+                "calendar2-date.js": 1960,
+                "calendar2-day-fill.js": 1706,
+                "calendar2-day.js": 1806,
+                "calendar2-event-fill.js": 1484,
+                "calendar2-event.js": 1584,
+                "calendar2-fill.js": 1382,
+                "calendar2-heart-fill.js": 1450,
+                "calendar2-heart.js": 1511,
+                "calendar2-minus-fill.js": 1441,
+                "calendar2-minus.js": 1564,
+                "calendar2-month-fill.js": 2125,
+                "calendar2-month.js": 2198,
+                "calendar2-plus-fill.js": 1491,
+                "calendar2-plus.js": 1579,
+                "calendar2-range-fill.js": 1466,
+                "calendar2-range.js": 1535,
+                "calendar2-week-fill.js": 1725,
+                "calendar2-week.js": 1789,
+                "calendar2-x-fill.js": 1569,
+                "calendar2-x.js": 1696,
+                "calendar2.js": 1472,
+                "calendar3-event-fill.js": 1290,
+                "calendar3-event.js": 1401,
+                "calendar3-fill.js": 1236,
+                "calendar3-range-fill.js": 1296,
+                "calendar3-range.js": 1416,
+                "calendar3-week-fill.js": 1386,
+                "calendar3-week.js": 1499,
+                "calendar3.js": 1692,
+                "calendar4-event.js": 1485,
+                "calendar4-range.js": 1502,
+                "calendar4-week.js": 1722,
+                "calendar4.js": 1373,
+                "camera-fill.js": 1491,
+                "camera-reels-fill.js": 1433,
+                "camera-reels.js": 1596,
+                "camera-video-fill.js": 1325,
+                "camera-video-off-fill.js": 1389,
+                "camera-video-off.js": 1523,
+                "camera-video.js": 1433,
+                "camera.js": 1662,
+                "camera2.js": 1572,
+                "capslock-fill.js": 1374,
+                "capslock.js": 1474,
+                "capsule-pill.js": 1388,
+                "capsule.js": 1291,
+                "car-front-fill.js": 1880,
+                "car-front.js": 2246,
+                "card-checklist.js": 1740,
+                "card-heading.js": 1568,
+                "card-image.js": 1473,
+                "card-list.js": 1651,
+                "card-text.js": 1548,
+                "caret-down-fill.js": 1269,
+                "caret-down-square-fill.js": 1299,
+                "caret-down-square.js": 1404,
+                "caret-down.js": 1291,
+                "caret-left-fill.js": 1270,
+                "caret-left-square-fill.js": 1309,
+                "caret-left-square.js": 1435,
+                "caret-left.js": 1279,
+                "caret-right-fill.js": 1271,
+                "caret-right-square-fill.js": 1304,
+                "caret-right-square.js": 1433,
+                "caret-right.js": 1287,
+                "caret-up-fill.js": 1271,
+                "caret-up-square-fill.js": 1303,
+                "caret-up-square.js": 1432,
+                "caret-up.js": 1291,
+                "cart-check-fill.js": 1533,
+                "cart-check.js": 1594,
+                "cart-dash-fill.js": 1469,
+                "cart-dash.js": 1532,
+                "cart-fill.js": 1450,
+                "cart-plus-fill.js": 1518,
+                "cart-plus.js": 1580,
+                "cart-x-fill.js": 1610,
+                "cart-x.js": 1664,
+                "cart.js": 1480,
+                "cart2.js": 1467,
+                "cart3.js": 1526,
+                "cart4.js": 1552,
+                "cash-coin.js": 2005,
+                "cash-stack.js": 1394,
+                "cash.js": 1359,
+                "cassette-fill.js": 1499,
+                "cassette.js": 1561,
+                "cast.js": 1496,
+                "cc-circle-fill.js": 1748,
+                "cc-circle.js": 1796,
+                "cc-square-fill.js": 1798,
+                "cc-square.js": 2646,
+                "chat-dots-fill.js": 1441,
+                "chat-dots.js": 1715,
+                "chat-fill.js": 1338,
+                "chat-heart-fill.js": 1409,
+                "chat-heart.js": 1679,
+                "chat-left-dots-fill.js": 1364,
+                "chat-left-dots.js": 1478,
+                "chat-left-fill.js": 1269,
+                "chat-left-heart-fill.js": 1340,
+                "chat-left-heart.js": 1453,
+                "chat-left-quote-fill.js": 1868,
+                "chat-left-quote.js": 1677,
+                "chat-left-text-fill.js": 1385,
+                "chat-left-text.js": 1558,
+                "chat-left.js": 1351,
+                "chat-quote-fill.js": 1945,
+                "chat-quote.js": 1915,
+                "chat-right-dots-fill.js": 1365,
+                "chat-right-dots.js": 1479,
+                "chat-right-fill.js": 1271,
+                "chat-right-heart-fill.js": 1340,
+                "chat-right-heart.js": 1454,
+                "chat-right-quote-fill.js": 1814,
+                "chat-right-quote.js": 1678,
+                "chat-right-text-fill.js": 1392,
+                "chat-right-text.js": 1559,
+                "chat-right.js": 1352,
+                "chat-square-dots-fill.js": 1395,
+                "chat-square-dots.js": 1549,
+                "chat-square-fill.js": 1298,
+                "chat-square-heart-fill.js": 1369,
+                "chat-square-heart.js": 1524,
+                "chat-square-quote-fill.js": 1899,
+                "chat-square-quote.js": 1748,
+                "chat-square-text-fill.js": 1416,
+                "chat-square-text.js": 1629,
+                "chat-square.js": 1422,
+                "chat-text-fill.js": 1462,
+                "chat-text.js": 1796,
+                "chat.js": 1589,
+                "check-all.js": 1382,
+                "check-circle-fill.js": 1341,
+                "check-circle.js": 1392,
+                "check-lg.js": 1332,
+                "check-square-fill.js": 1378,
+                "check-square.js": 1456,
+                "check.js": 1285,
+                "check2-all.js": 1443,
+                "check2-circle.js": 1391,
+                "check2-square.js": 1456,
+                "check2.js": 1284,
+                "chevron-bar-contract.js": 1468,
+                "chevron-bar-down.js": 1357,
+                "chevron-bar-expand.js": 1467,
+                "chevron-bar-left.js": 1355,
+                "chevron-bar-right.js": 1356,
+                "chevron-bar-up.js": 1360,
+                "chevron-compact-down.js": 1297,
+                "chevron-compact-left.js": 1295,
+                "chevron-compact-right.js": 1298,
+                "chevron-compact-up.js": 1273,
+                "chevron-contract.js": 1410,
+                "chevron-double-down.js": 1461,
+                "chevron-double-left.js": 1459,
+                "chevron-double-right.js": 1461,
+                "chevron-double-up.js": 1421,
+                "chevron-down.js": 1295,
+                "chevron-expand.js": 1408,
+                "chevron-left.js": 1294,
+                "chevron-right.js": 1295,
+                "chevron-up.js": 1275,
+                "circle-fill.js": 1176,
+                "circle-half.js": 1212,
+                "circle-square.js": 1406,
+                "circle.js": 1226,
+                "clipboard-check-fill.js": 1594,
+                "clipboard-check.js": 1688,
+                "clipboard-data-fill.js": 1610,
+                "clipboard-data.js": 1651,
+                "clipboard-fill.js": 1475,
+                "clipboard-heart-fill.js": 1596,
+                "clipboard-heart.js": 1633,
+                "clipboard-minus-fill.js": 1525,
+                "clipboard-minus.js": 1623,
+                "clipboard-plus-fill.js": 1579,
+                "clipboard-plus.js": 1670,
+                "clipboard-pulse.js": 1735,
+                "clipboard-x-fill.js": 1654,
+                "clipboard-x.js": 1754,
+                "clipboard.js": 1514,
+                "clipboard2-check-fill.js": 1633,
+                "clipboard2-check.js": 1680,
+                "clipboard2-data-fill.js": 1649,
+                "clipboard2-data.js": 1699,
+                "clipboard2-fill.js": 1530,
+                "clipboard2-heart-fill.js": 1708,
+                "clipboard2-heart.js": 1711,
+                "clipboard2-minus-fill.js": 1565,
+                "clipboard2-minus.js": 1614,
+                "clipboard2-plus-fill.js": 1620,
+                "clipboard2-plus.js": 1667,
+                "clipboard2-pulse-fill.js": 1773,
+                "clipboard2-pulse.js": 1805,
+                "clipboard2-x-fill.js": 1691,
+                "clipboard2-x.js": 1741,
+                "clipboard2.js": 1549,
+                "clock-fill.js": 1271,
+                "clock-history.js": 1979,
+                "clock.js": 1335,
+                "cloud-arrow-down-fill.js": 1496,
+                "cloud-arrow-down.js": 1785,
+                "cloud-arrow-up-fill.js": 1493,
+                "cloud-arrow-up.js": 1785,
+                "cloud-check-fill.js": 1473,
+                "cloud-check.js": 1783,
+                "cloud-download-fill.js": 1525,
+                "cloud-download.js": 1791,
+                "cloud-drizzle-fill.js": 1583,
+                "cloud-drizzle.js": 1710,
+                "cloud-fill.js": 1374,
+                "cloud-fog-fill.js": 1366,
+                "cloud-fog.js": 1493,
+                "cloud-fog2-fill.js": 1356,
+                "cloud-fog2.js": 1445,
+                "cloud-hail-fill.js": 1660,
+                "cloud-hail.js": 1795,
+                "cloud-haze-fill.js": 1425,
+                "cloud-haze.js": 1552,
+                "cloud-haze2-fill.js": 1393,
+                "cloud-haze2.js": 1505,
+                "cloud-lightning-fill.js": 1393,
+                "cloud-lightning-rain-fill.js": 1734,
+                "cloud-lightning-rain.js": 1862,
+                "cloud-lightning.js": 1521,
+                "cloud-minus-fill.js": 1409,
+                "cloud-minus.js": 1681,
+                "cloud-moon-fill.js": 1521,
+                "cloud-moon.js": 1673,
+                "cloud-plus-fill.js": 1460,
+                "cloud-plus.js": 1771,
+                "cloud-rain-fill.js": 1566,
+                "cloud-rain-heavy-fill.js": 1566,
+                "cloud-rain-heavy.js": 1693,
+                "cloud-rain.js": 1693,
+                "cloud-slash-fill.js": 1428,
+                "cloud-slash.js": 1693,
+                "cloud-sleet-fill.js": 2269,
+                "cloud-sleet.js": 2401,
+                "cloud-snow-fill.js": 2513,
+                "cloud-snow.js": 2659,
+                "cloud-sun-fill.js": 1653,
+                "cloud-sun.js": 1804,
+                "cloud-upload-fill.js": 1521,
+                "cloud-upload.js": 1827,
+                "cloud.js": 1611,
+                "clouds-fill.js": 1380,
+                "clouds.js": 1588,
+                "cloudy-fill.js": 1247,
+                "cloudy.js": 1383,
+                "code-slash.js": 1464,
+                "code-square.js": 1556,
+                "code.js": 1352,
+                "coin.js": 1823,
+                "collection-fill.js": 1368,
+                "collection-play-fill.js": 1437,
+                "collection-play.js": 1554,
+                "collection.js": 1414,
+                "columns-gap.js": 1480,
+                "columns.js": 1283,
+                "command.js": 1433,
+                "compass-fill.js": 1314,
+                "compass.js": 1384,
+                "cone-striped.js": 1540,
+                "cone.js": 1251,
+                "controller.js": 2692,
+                "cookie.js": 1722,
+                "copy.js": 1420,
+                "cpu-fill.js": 1822,
+                "cpu.js": 1903,
+                "credit-card-2-back-fill.js": 1322,
+                "credit-card-2-back.js": 1424,
+                "credit-card-2-front-fill.js": 1492,
+                "credit-card-2-front.js": 1696,
+                "credit-card-fill.js": 1308,
+                "credit-card.js": 1407,
+                "crop.js": 1366,
+                "crosshair.js": 1554,
+                "crosshair2.js": 1618,
+                "cup-fill.js": 1394,
+                "cup-hot-fill.js": 3135,
+                "cup-hot.js": 3230,
+                "cup-straw.js": 2091,
+                "cup.js": 1485,
+                "currency-bitcoin.js": 1843,
+                "currency-dollar.js": 1649,
+                "currency-euro.js": 1500,
+                "currency-exchange.js": 2033,
+                "currency-pound.js": 1509,
+                "currency-rupee.js": 1376,
+                "currency-yen.js": 1317,
+                "cursor-fill.js": 1303,
+                "cursor-text.js": 1702,
+                "cursor.js": 1369,
+                "dash-circle-dotted.js": 2663,
+                "dash-circle-fill.js": 1234,
+                "dash-circle.js": 1313,
+                "dash-lg.js": 1236,
+                "dash-square-dotted.js": 2436,
+                "dash-square-fill.js": 1271,
+                "dash-square.js": 1384,
+                "dash.js": 1215,
+                "database-add.js": 2280,
+                "database-check.js": 2314,
+                "database-dash.js": 2236,
+                "database-down.js": 2327,
+                "database-exclamation.js": 2291,
+                "database-fill-add.js": 2114,
+                "database-fill-check.js": 2148,
+                "database-fill-dash.js": 2070,
+                "database-fill-down.js": 2161,
+                "database-fill-exclamation.js": 2156,
+                "database-fill-gear.js": 2586,
+                "database-fill-lock.js": 2185,
+                "database-fill-slash.js": 2143,
+                "database-fill-up.js": 2162,
+                "database-fill-x.js": 2229,
+                "database-fill.js": 2151,
+                "database-gear.js": 2752,
+                "database-lock.js": 2261,
+                "database-slash.js": 2309,
+                "database-up.js": 2328,
+                "database-x.js": 2364,
+                "database.js": 2222,
+                "device-hdd-fill.js": 1664,
+                "device-hdd.js": 1777,
+                "device-ssd-fill.js": 1608,
+                "device-ssd.js": 1685,
+                "diagram-2-fill.js": 1551,
+                "diagram-2.js": 1798,
+                "diagram-3-fill.js": 1672,
+                "diagram-3.js": 2002,
+                "diamond-fill.js": 1318,
+                "diamond-half.js": 1396,
+                "diamond.js": 1432,
+                "dice-1-fill.js": 1270,
+                "dice-1.js": 1347,
+                "dice-2-fill.js": 1314,
+                "dice-2.js": 1410,
+                "dice-3-fill.js": 1352,
+                "dice-3.js": 1451,
+                "dice-4-fill.js": 1397,
+                "dice-4.js": 1491,
+                "dice-5-fill.js": 1439,
+                "dice-5.js": 1531,
+                "dice-6-fill.js": 1482,
+                "dice-6.js": 1571,
+                "disc-fill.js": 1350,
+                "disc.js": 1436,
+                "discord.js": 2161,
+                "display-fill.js": 1284,
+                "display.js": 1582,
+                "displayport-fill.js": 1348,
+                "displayport.js": 1402,
+                "distribute-horizontal.js": 1400,
+                "distribute-vertical.js": 1396,
+                "door-closed-fill.js": 1271,
+                "door-closed.js": 1312,
+                "door-open-fill.js": 1373,
+                "door-open.js": 1454,
+                "dot.js": 1201,
+                "download.js": 1449,
+                "dpad-fill.js": 1821,
+                "dpad.js": 2116,
+                "dribbble.js": 2007,
+                "dropbox.js": 1378,
+                "droplet-fill.js": 1365,
+                "droplet-half.js": 1645,
+                "droplet.js": 1633,
+                "duffle-fill.js": 2061,
+                "duffle.js": 2190,
+                "ear-fill.js": 1496,
+                "ear.js": 1650,
+                "earbuds.js": 1879,
+                "easel-fill.js": 1388,
+                "easel.js": 1419,
+                "easel2-fill.js": 1462,
+                "easel2.js": 1496,
+                "easel3-fill.js": 1284,
+                "easel3.js": 1350,
+                "egg-fill.js": 1209,
+                "egg-fried.js": 1573,
+                "egg.js": 1418,
+                "eject-fill.js": 1334,
+                "eject.js": 1379,
+                "emoji-angry-fill.js": 1679,
+                "emoji-angry.js": 1719,
+                "emoji-astonished-fill.js": 1785,
+                "emoji-astonished.js": 1895,
+                "emoji-dizzy-fill.js": 1588,
+                "emoji-dizzy.js": 1654,
+                "emoji-expressionless-fill.js": 1313,
+                "emoji-expressionless.js": 1434,
+                "emoji-frown-fill.js": 1485,
+                "emoji-frown.js": 1555,
+                "emoji-grimace-fill.js": 1778,
+                "emoji-grimace.js": 1797,
+                "emoji-grin-fill.js": 1918,
+                "emoji-grin.js": 1982,
+                "emoji-heart-eyes-fill.js": 1601,
+                "emoji-heart-eyes.js": 1664,
+                "emoji-kiss-fill.js": 2160,
+                "emoji-kiss.js": 2113,
+                "emoji-laughing-fill.js": 1560,
+                "emoji-laughing.js": 1477,
+                "emoji-neutral-fill.js": 1383,
+                "emoji-neutral.js": 1445,
+                "emoji-smile-fill.js": 1485,
+                "emoji-smile-upside-down-fill.js": 1492,
+                "emoji-smile-upside-down.js": 1555,
+                "emoji-smile.js": 1549,
+                "emoji-sunglasses-fill.js": 1598,
+                "emoji-sunglasses.js": 1669,
+                "emoji-surprise-fill.js": 1357,
+                "emoji-surprise.js": 1422,
+                "emoji-tear-fill.js": 1850,
+                "emoji-tear.js": 1930,
+                "emoji-wink-fill.js": 1567,
+                "emoji-wink.js": 1656,
+                "envelope-arrow-down-fill.js": 1636,
+                "envelope-arrow-down.js": 1586,
+                "envelope-arrow-up-fill.js": 1646,
+                "envelope-arrow-up.js": 1596,
+                "envelope-at-fill.js": 2110,
+                "envelope-at.js": 2074,
+                "envelope-check-fill.js": 1642,
+                "envelope-check.js": 1596,
+                "envelope-dash-fill.js": 1561,
+                "envelope-dash.js": 1515,
+                "envelope-exclamation-fill.js": 1578,
+                "envelope-exclamation.js": 1532,
+                "envelope-fill.js": 1355,
+                "envelope-heart-fill.js": 1718,
+                "envelope-heart.js": 1578,
+                "envelope-open-fill.js": 1421,
+                "envelope-open-heart-fill.js": 1761,
+                "envelope-open-heart.js": 1662,
+                "envelope-open.js": 1524,
+                "envelope-paper-fill.js": 1495,
+                "envelope-paper-heart-fill.js": 1549,
+                "envelope-paper-heart.js": 1679,
+                "envelope-paper.js": 1583,
+                "envelope-plus-fill.js": 1607,
+                "envelope-plus.js": 1561,
+                "envelope-slash-fill.js": 1647,
+                "envelope-slash.js": 1601,
+                "envelope-x-fill.js": 1689,
+                "envelope-x.js": 1643,
+                "envelope.js": 1432,
+                "eraser-fill.js": 1406,
+                "eraser.js": 1491,
+                "escape.js": 1395,
+                "ethernet.js": 2020,
+                "ev-front-fill.js": 1811,
+                "ev-front.js": 2156,
+                "ev-station-fill.js": 1661,
+                "ev-station.js": 1733,
+                "exclamation-circle-fill.js": 1314,
+                "exclamation-circle.js": 1358,
+                "exclamation-diamond-fill.js": 1424,
+                "exclamation-diamond.js": 1564,
+                "exclamation-lg.js": 1252,
+                "exclamation-octagon-fill.js": 1512,
+                "exclamation-octagon.js": 1569,
+                "exclamation-square-fill.js": 1350,
+                "exclamation-square.js": 1429,
+                "exclamation-triangle-fill.js": 1391,
+                "exclamation-triangle.js": 1653,
+                "exclamation.js": 1260,
+                "exclude.js": 1303,
+                "explicit-fill.js": 1325,
+                "explicit.js": 1457,
+                "exposure.js": 1377,
+                "eye-fill.js": 1322,
+                "eye-slash-fill.js": 1527,
+                "eye-slash.js": 1839,
+                "eye.js": 1551,
+                "eyedropper.js": 1468,
+                "eyeglasses.js": 1412,
+                "facebook.js": 1446,
+                "fan.js": 2265,
+                "fast-forward-btn-fill.js": 1404,
+                "fast-forward-btn.js": 1469,
+                "fast-forward-circle-fill.js": 1348,
+                "fast-forward-circle.js": 1433,
+                "fast-forward-fill.js": 1414,
+                "fast-forward.js": 1456,
+                "feather.js": 2176,
+                "feather2.js": 1394,
+                "file-arrow-down-fill.js": 1365,
+                "file-arrow-down.js": 1463,
+                "file-arrow-up-fill.js": 1349,
+                "file-arrow-up.js": 1467,
+                "file-bar-graph-fill.js": 1473,
+                "file-bar-graph.js": 1564,
+                "file-binary-fill.js": 1637,
+                "file-binary.js": 1724,
+                "file-break-fill.js": 1280,
+                "file-break.js": 1376,
+                "file-check-fill.js": 1336,
+                "file-check.js": 1451,
+                "file-code-fill.js": 1423,
+                "file-code.js": 1516,
+                "file-diff-fill.js": 1361,
+                "file-diff.js": 1494,
+                "file-earmark-arrow-down-fill.js": 1421,
+                "file-earmark-arrow-down.js": 1458,
+                "file-earmark-arrow-up-fill.js": 1415,
+                "file-earmark-arrow-up.js": 1458,
+                "file-earmark-bar-graph-fill.js": 1541,
+                "file-earmark-bar-graph.js": 1581,
+                "file-earmark-binary-fill.js": 1710,
+                "file-earmark-binary.js": 1717,
+                "file-earmark-break-fill.js": 1343,
+                "file-earmark-break.js": 1359,
+                "file-earmark-check-fill.js": 1405,
+                "file-earmark-check.js": 1441,
+                "file-earmark-code-fill.js": 1495,
+                "file-earmark-code.js": 1562,
+                "file-earmark-diff-fill.js": 1465,
+                "file-earmark-diff.js": 1504,
+                "file-earmark-easel-fill.js": 1645,
+                "file-earmark-easel.js": 1653,
+                "file-earmark-excel-fill.js": 1470,
+                "file-earmark-excel.js": 1510,
+                "file-earmark-fill.js": 1291,
+                "file-earmark-font-fill.js": 1478,
+                "file-earmark-font.js": 1522,
+                "file-earmark-image-fill.js": 1520,
+                "file-earmark-image.js": 1423,
+                "file-earmark-lock-fill.js": 1688,
+                "file-earmark-lock.js": 1700,
+                "file-earmark-lock2-fill.js": 1487,
+                "file-earmark-lock2.js": 1496,
+                "file-earmark-medical-fill.js": 1575,
+                "file-earmark-medical.js": 1611,
+                "file-earmark-minus-fill.js": 1339,
+                "file-earmark-minus.js": 1391,
+                "file-earmark-music-fill.js": 1544,
+                "file-earmark-music.js": 1572,
+                "file-earmark-pdf-fill.js": 2595,
+                "file-earmark-pdf.js": 2554,
+                "file-earmark-person-fill.js": 1405,
+                "file-earmark-person.js": 1372,
+                "file-earmark-play-fill.js": 1398,
+                "file-earmark-play.js": 1434,
+                "file-earmark-plus-fill.js": 1391,
+                "file-earmark-plus.js": 1442,
+                "file-earmark-post-fill.js": 1421,
+                "file-earmark-post.js": 1471,
+                "file-earmark-ppt-fill.js": 1435,
+                "file-earmark-ppt.js": 1445,
+                "file-earmark-richtext-fill.js": 1551,
+                "file-earmark-richtext.js": 1623,
+                "file-earmark-ruled-fill.js": 1338,
+                "file-earmark-ruled.js": 1354,
+                "file-earmark-slides-fill.js": 1622,
+                "file-earmark-slides.js": 1629,
+                "file-earmark-spreadsheet-fill.js": 1393,
+                "file-earmark-spreadsheet.js": 1380,
+                "file-earmark-text-fill.js": 1439,
+                "file-earmark-text.js": 1486,
+                "file-earmark-word-fill.js": 1487,
+                "file-earmark-word.js": 1525,
+                "file-earmark-x-fill.js": 1474,
+                "file-earmark-x.js": 1502,
+                "file-earmark-zip-fill.js": 1618,
+                "file-earmark-zip.js": 1592,
+                "file-earmark.js": 1301,
+                "file-easel-fill.js": 1575,
+                "file-easel.js": 1643,
+                "file-excel-fill.js": 1397,
+                "file-excel.js": 1516,
+                "file-fill.js": 1247,
+                "file-font-fill.js": 1408,
+                "file-font.js": 1517,
+                "file-image-fill.js": 1458,
+                "file-image.js": 1415,
+                "file-lock-fill.js": 1618,
+                "file-lock.js": 1711,
+                "file-lock2-fill.js": 1417,
+                "file-lock2.js": 1501,
+                "file-medical-fill.js": 1507,
+                "file-medical.js": 1600,
+                "file-minus-fill.js": 1269,
+                "file-minus.js": 1386,
+                "file-music-fill.js": 1477,
+                "file-music.js": 1572,
+                "file-pdf-fill.js": 2531,
+                "file-pdf.js": 2543,
+                "file-person-fill.js": 1360,
+                "file-person.js": 1362,
+                "file-play-fill.js": 1328,
+                "file-play.js": 1427,
+                "file-plus-fill.js": 1321,
+                "file-plus.js": 1419,
+                "file-post-fill.js": 1350,
+                "file-post.js": 1466,
+                "file-ppt-fill.js": 1370,
+                "file-ppt.js": 1431,
+                "file-richtext-fill.js": 1480,
+                "file-richtext.js": 1577,
+                "file-ruled-fill.js": 1299,
+                "file-ruled.js": 1365,
+                "file-slides-fill.js": 1550,
+                "file-slides.js": 1617,
+                "file-spreadsheet-fill.js": 1337,
+                "file-spreadsheet.js": 1403,
+                "file-text-fill.js": 1402,
+                "file-text.js": 1498,
+                "file-word-fill.js": 1417,
+                "file-word.js": 1536,
+                "file-x-fill.js": 1403,
+                "file-x.js": 1516,
+                "file-zip-fill.js": 1550,
+                "file-zip.js": 1593,
+                "file.js": 1296,
+                "files-alt.js": 1360,
+                "files.js": 1395,
+                "filetype-aac.js": 2024,
+                "filetype-ai.js": 1443,
+                "filetype-bmp.js": 2115,
+                "filetype-cs.js": 2471,
+                "filetype-css.js": 3099,
+                "filetype-csv.js": 2514,
+                "filetype-doc.js": 2610,
+                "filetype-docx.js": 2713,
+                "filetype-exe.js": 1576,
+                "filetype-gif.js": 1937,
+                "filetype-heic.js": 1954,
+                "filetype-html.js": 1552,
+                "filetype-java.js": 1792,
+                "filetype-jpg.js": 2305,
+                "filetype-js.js": 2199,
+                "filetype-json.js": 2755,
+                "filetype-jsx.js": 2268,
+                "filetype-key.js": 1559,
+                "filetype-m4p.js": 1814,
+                "filetype-md.js": 1712,
+                "filetype-mdx.js": 1836,
+                "filetype-mov.js": 1958,
+                "filetype-mp3.js": 2385,
+                "filetype-mp4.js": 1851,
+                "filetype-otf.js": 1910,
+                "filetype-pdf.js": 1938,
+                "filetype-php.js": 1895,
+                "filetype-png.js": 2200,
+                "filetype-ppt.js": 1881,
+                "filetype-pptx.js": 1942,
+                "filetype-psd.js": 2511,
+                "filetype-py.js": 1610,
+                "filetype-raw.js": 1771,
+                "filetype-rb.js": 1997,
+                "filetype-sass.js": 3340,
+                "filetype-scss.js": 3762,
+                "filetype-sh.js": 2033,
+                "filetype-sql.js": 2536,
+                "filetype-svg.js": 2563,
+                "filetype-tiff.js": 1502,
+                "filetype-tsx.js": 2133,
+                "filetype-ttf.js": 1429,
+                "filetype-txt.js": 1530,
+                "filetype-wav.js": 1611,
+                "filetype-woff.js": 2022,
+                "filetype-xls.js": 2135,
+                "filetype-xlsx.js": 2205,
+                "filetype-xml.js": 1564,
+                "filetype-yml.js": 1533,
+                "film.js": 1369,
+                "filter-circle-fill.js": 1352,
+                "filter-circle.js": 1436,
+                "filter-left.js": 1338,
+                "filter-right.js": 1339,
+                "filter-square-fill.js": 1388,
+                "filter-square.js": 1509,
+                "filter.js": 1340,
+                "fingerprint.js": 3165,
+                "fire.js": 1439,
+                "flag-fill.js": 1662,
+                "flag.js": 2018,
+                "floppy-fill.js": 1546,
+                "floppy.js": 1674,
+                "floppy2-fill.js": 1424,
+                "floppy2.js": 1618,
+                "flower1.js": 3989,
+                "flower2.js": 1874,
+                "flower3.js": 2703,
+                "folder-check.js": 1658,
+                "folder-fill.js": 1436,
+                "folder-minus.js": 1593,
+                "folder-plus.js": 1645,
+                "folder-symlink-fill.js": 1595,
+                "folder-symlink.js": 1729,
+                "folder-x.js": 1711,
+                "folder.js": 1540,
+                "folder2-open.js": 1626,
+                "folder2.js": 1472,
+                "fonts.js": 1362,
+                "forward-fill.js": 1283,
+                "forward.js": 1494,
+                "front.js": 1336,
+                "fuel-pump-diesel-fill.js": 1923,
+                "fuel-pump-diesel.js": 1962,
+                "fuel-pump-fill.js": 1633,
+                "fuel-pump.js": 1708,
+                "fullscreen-exit.js": 1544,
+                "fullscreen.js": 1545,
+                "funnel-fill.js": 1318,
+                "funnel.js": 1410,
+                "gear-fill.js": 1821,
+                "gear-wide-connected.js": 2244,
+                "gear-wide.js": 2085,
+                "gear.js": 2538,
+                "gem.js": 1495,
+                "gender-ambiguous.js": 1434,
+                "gender-female.js": 1319,
+                "gender-male.js": 1314,
+                "gender-neuter.js": 1274,
+                "gender-trans.js": 1649,
+                "geo-alt-fill.js": 1241,
+                "geo-alt.js": 1491,
+                "geo-fill.js": 1903,
+                "geo.js": 1935,
+                "gift-fill.js": 1507,
+                "gift.js": 1570,
+                "git.js": 1527,
+                "github.js": 1721,
+                "gitlab.js": 1484,
+                "globe-americas.js": 1722,
+                "globe-asia-australia.js": 2300,
+                "globe-central-south-asia.js": 1795,
+                "globe-europe-africa.js": 1826,
+                "globe.js": 2210,
+                "globe2.js": 2631,
+                "google-play.js": 1397,
+                "google.js": 1503,
+                "gpu-card.js": 1609,
+                "graph-down-arrow.js": 1403,
+                "graph-down.js": 1367,
+                "graph-up-arrow.js": 1403,
+                "graph-up.js": 1368,
+                "grid-1x2-fill.js": 1363,
+                "grid-1x2.js": 1400,
+                "grid-3x2-gap-fill.js": 1563,
+                "grid-3x2-gap.js": 1635,
+                "grid-3x2.js": 1400,
+                "grid-3x3-gap-fill.js": 1766,
+                "grid-3x3-gap.js": 1882,
+                "grid-3x3.js": 1439,
+                "grid-fill.js": 1542,
+                "grid.js": 1871,
+                "grip-horizontal.js": 1479,
+                "grip-vertical.js": 1481,
+                "h-circle-fill.js": 1252,
+                "h-circle.js": 1288,
+                "h-square-fill.js": 1289,
+                "h-square.js": 1391,
+                "hammer.js": 1503,
+                "hand-index-fill.js": 1580,
+                "hand-index-thumb-fill.js": 1553,
+                "hand-index-thumb.js": 2051,
+                "hand-index.js": 2082,
+                "hand-thumbs-down-fill.js": 1827,
+                "hand-thumbs-down.js": 2566,
+                "hand-thumbs-up-fill.js": 1825,
+                "hand-thumbs-up.js": 2596,
+                "handbag-fill.js": 1398,
+                "handbag.js": 1524,
+                "hash.js": 1830,
+                "hdd-fill.js": 1417,
+                "hdd-network-fill.js": 1433,
+                "hdd-network.js": 1619,
+                "hdd-rack-fill.js": 1451,
+                "hdd-rack.js": 1627,
+                "hdd-stack-fill.js": 1434,
+                "hdd-stack.js": 1639,
+                "hdd.js": 1610,
+                "hdmi-fill.js": 1387,
+                "hdmi.js": 1447,
+                "headphones.js": 1312,
+                "headset-vr.js": 1527,
+                "headset.js": 1403,
+                "heart-arrow.js": 1500,
+                "heart-fill.js": 1249,
+                "heart-half.js": 1377,
+                "heart-pulse-fill.js": 1561,
+                "heart-pulse.js": 1830,
+                "heart.js": 1472,
+                "heartbreak-fill.js": 1294,
+                "heartbreak.js": 1658,
+                "hearts.js": 1397,
+                "heptagon-fill.js": 1394,
+                "heptagon-half.js": 1419,
+                "heptagon.js": 1448,
+                "hexagon-fill.js": 1322,
+                "hexagon-half.js": 1326,
+                "hexagon.js": 1343,
+                "highlighter.js": 1599,
+                "highlights.js": 1406,
+                "hospital-fill.js": 2073,
+                "hospital.js": 2142,
+                "hourglass-bottom.js": 1622,
+                "hourglass-split.js": 1684,
+                "hourglass-top.js": 1623,
+                "hourglass.js": 1710,
+                "house-add-fill.js": 1581,
+                "house-add.js": 1568,
+                "house-check-fill.js": 1615,
+                "house-check.js": 1580,
+                "house-dash-fill.js": 1537,
+                "house-dash.js": 1502,
+                "house-door-fill.js": 1424,
+                "house-door.js": 1452,
+                "house-down-fill.js": 1628,
+                "house-down.js": 1593,
+                "house-exclamation-fill.js": 1592,
+                "house-exclamation.js": 1557,
+                "house-fill.js": 1416,
+                "house-gear-fill.js": 2173,
+                "house-gear.js": 2018,
+                "house-heart-fill.js": 1486,
+                "house-heart.js": 1530,
+                "house-lock-fill.js": 1607,
+                "house-lock.js": 1543,
+                "house-slash-fill.js": 1606,
+                "house-slash.js": 1571,
+                "house-up-fill.js": 1630,
+                "house-up.js": 1595,
+                "house-x-fill.js": 1666,
+                "house-x.js": 1631,
+                "house.js": 1429,
+                "houses-fill.js": 1559,
+                "houses.js": 1596,
+                "hr.js": 1363,
+                "hurricane.js": 1353,
+                "hypnotize.js": 2367,
+                "image-alt.js": 1321,
+                "image-fill.js": 1391,
+                "image.js": 1432,
+                "images.js": 1545,
+                "inbox-fill.js": 1471,
+                "inbox.js": 1574,
+                "inboxes-fill.js": 1673,
+                "inboxes.js": 1877,
+                "incognito.js": 1978,
+                "indent.js": 1426,
+                "infinity.js": 1392,
+                "info-circle-fill.js": 1430,
+                "info-circle.js": 1484,
+                "info-lg.js": 1414,
+                "info-square-fill.js": 1455,
+                "info-square.js": 1555,
+                "info.js": 1386,
+                "input-cursor-text.js": 1893,
+                "input-cursor.js": 1420,
+                "instagram.js": 2606,
+                "intersect.js": 1407,
+                "journal-album.js": 1669,
+                "journal-arrow-down.js": 1707,
+                "journal-arrow-up.js": 1711,
+                "journal-bookmark-fill.js": 1634,
+                "journal-bookmark.js": 1683,
+                "journal-check.js": 1695,
+                "journal-code.js": 1801,
+                "journal-medical.js": 1899,
+                "journal-minus.js": 1630,
+                "journal-plus.js": 1681,
+                "journal-richtext.js": 1844,
+                "journal-text.js": 1787,
+                "journal-x.js": 1760,
+                "journal.js": 1521,
+                "journals.js": 1606,
+                "joystick.js": 1618,
+                "justify-left.js": 1419,
+                "justify-right.js": 1420,
+                "justify.js": 1421,
+                "kanban-fill.js": 1438,
+                "kanban.js": 1542,
+                "key-fill.js": 1294,
+                "key.js": 1660,
+                "keyboard-fill.js": 2837,
+                "keyboard.js": 2883,
+                "ladder.js": 1312,
+                "lamp-fill.js": 2103,
+                "lamp.js": 2170,
+                "laptop-fill.js": 1274,
+                "laptop.js": 1324,
+                "layer-backward.js": 1558,
+                "layer-forward.js": 1555,
+                "layers-fill.js": 1423,
+                "layers-half.js": 1371,
+                "layers.js": 1452,
+                "layout-sidebar-inset-reverse.js": 1397,
+                "layout-sidebar-inset.js": 1395,
+                "layout-sidebar-reverse.js": 1311,
+                "layout-sidebar.js": 1308,
+                "layout-split.js": 1314,
+                "layout-text-sidebar-reverse.js": 1522,
+                "layout-text-sidebar.js": 1517,
+                "layout-text-window-reverse.js": 1512,
+                "layout-text-window.js": 1511,
+                "layout-three-columns.js": 1370,
+                "layout-wtf.js": 1480,
+                "life-preserver.js": 1534,
+                "lightbulb-fill.js": 1435,
+                "lightbulb-off-fill.js": 1520,
+                "lightbulb-off.js": 1650,
+                "lightbulb.js": 1553,
+                "lightning-charge-fill.js": 1309,
+                "lightning-charge.js": 1397,
+                "lightning-fill.js": 1299,
+                "lightning.js": 1393,
+                "line.js": 2612,
+                "link-45deg.js": 1543,
+                "link.js": 1418,
+                "linkedin.js": 1677,
+                "list-check.js": 1709,
+                "list-columns-reverse.js": 2115,
+                "list-columns.js": 2125,
+                "list-nested.js": 1354,
+                "list-ol.js": 2000,
+                "list-stars.js": 2342,
+                "list-task.js": 1667,
+                "list-ul.js": 1452,
+                "list.js": 1355,
+                "lock-fill.js": 1281,
+                "lock.js": 1349,
+                "luggage-fill.js": 1697,
+                "luggage.js": 1765,
+                "lungs-fill.js": 1895,
+                "lungs.js": 2365,
+                "magic.js": 1756,
+                "magnet-fill.js": 1230,
+                "magnet.js": 1287,
+                "mailbox-flag.js": 1535,
+                "mailbox.js": 1464,
+                "mailbox2-flag.js": 1500,
+                "mailbox2.js": 1499,
+                "map-fill.js": 1459,
+                "map.js": 1448,
+                "markdown-fill.js": 1475,
+                "markdown.js": 1713,
+                "marker-tip.js": 1458,
+                "mask.js": 1291,
+                "mastodon.js": 1963,
+                "medium.js": 1496,
+                "megaphone-fill.js": 1564,
+                "megaphone.js": 1760,
+                "memory.js": 1638,
+                "menu-app-fill.js": 1520,
+                "menu-app.js": 1600,
+                "menu-button-fill.js": 1612,
+                "menu-button-wide-fill.js": 1652,
+                "menu-button-wide.js": 1796,
+                "menu-button.js": 1732,
+                "menu-down.js": 1600,
+                "menu-up.js": 1600,
+                "messenger.js": 1596,
+                "meta.js": 1870,
+                "mic-fill.js": 1383,
+                "mic-mute-fill.js": 1548,
+                "mic-mute.js": 1603,
+                "mic.js": 1434,
+                "microsoft-teams.js": 1788,
+                "microsoft.js": 1246,
+                "minecart-loaded.js": 1793,
+                "minecart.js": 1444,
+                "modem-fill.js": 1504,
+                "modem.js": 1614,
+                "moisture.js": 1917,
+                "moon-fill.js": 1404,
+                "moon-stars-fill.js": 2002,
+                "moon-stars.js": 2179,
+                "moon.js": 1581,
+                "mortarboard-fill.js": 1511,
+                "mortarboard.js": 1629,
+                "motherboard-fill.js": 1865,
+                "motherboard.js": 1971,
+                "mouse-fill.js": 1237,
+                "mouse.js": 1300,
+                "mouse2-fill.js": 1301,
+                "mouse2.js": 1404,
+                "mouse3-fill.js": 1631,
+                "mouse3.js": 1887,
+                "music-note-beamed.js": 1456,
+                "music-note-list.js": 1605,
+                "music-note.js": 1375,
+                "music-player-fill.js": 1394,
+                "music-player.js": 1534,
+                "newspaper.js": 1626,
+                "nintendo-switch.js": 2334,
+                "node-minus-fill.js": 1371,
+                "node-minus.js": 1463,
+                "node-plus-fill.js": 1384,
+                "node-plus.js": 1509,
+                "noise-reduction.js": 2664,
+                "nut-fill.js": 1363,
+                "nut.js": 1510,
+                "nvidia.js": 1898,
+                "nvme-fill.js": 1595,
+                "nvme.js": 1703,
+                "octagon-fill.js": 1393,
+                "octagon-half.js": 1421,
+                "octagon.js": 1437,
+                "opencollective.js": 1499,
+                "optical-audio-fill.js": 1473,
+                "optical-audio.js": 1668,
+                "option.js": 1343,
+                "outlet.js": 1794,
+                "p-circle-fill.js": 1362,
+                "p-circle.js": 1393,
+                "p-square-fill.js": 1426,
+                "p-square.js": 1496,
+                "paint-bucket.js": 2446,
+                "palette-fill.js": 1471,
+                "palette.js": 1817,
+                "palette2.js": 1486,
+                "paperclip.js": 1315,
+                "paragraph.js": 1269,
+                "pass-fill.js": 1356,
+                "pass.js": 1518,
+                "passport-fill.js": 1465,
+                "passport.js": 1526,
+                "patch-check-fill.js": 1611,
+                "patch-check.js": 2063,
+                "patch-exclamation-fill.js": 1630,
+                "patch-exclamation.js": 2023,
+                "patch-minus-fill.js": 1548,
+                "patch-minus.js": 2000,
+                "patch-plus-fill.js": 1600,
+                "patch-plus.js": 2051,
+                "patch-question-fill.js": 1897,
+                "patch-question.js": 2341,
+                "pause-btn-fill.js": 1396,
+                "pause-btn.js": 1494,
+                "pause-circle-fill.js": 1360,
+                "pause-circle.js": 1368,
+                "pause-fill.js": 1296,
+                "pause.js": 1273,
+                "paypal.js": 1871,
+                "pc-display-horizontal.js": 1607,
+                "pc-display.js": 1518,
+                "pc-horizontal.js": 1410,
+                "pc.js": 1398,
+                "pci-card-network.js": 1636,
+                "pci-card-sound.js": 2028,
+                "pci-card.js": 1410,
+                "peace-fill.js": 1336,
+                "peace.js": 1389,
+                "pen-fill.js": 1450,
+                "pen.js": 1544,
+                "pencil-fill.js": 1570,
+                "pencil-square.js": 1596,
+                "pencil.js": 1535,
+                "pentagon-fill.js": 1319,
+                "pentagon-half.js": 1386,
+                "pentagon.js": 1484,
+                "people-fill.js": 1369,
+                "people.js": 1711,
+                "percent.js": 1416,
+                "person-add.js": 1554,
+                "person-arms-up.js": 1594,
+                "person-badge-fill.js": 1389,
+                "person-badge.js": 1501,
+                "person-bounding-box.js": 1647,
+                "person-check-fill.js": 1405,
+                "person-check.js": 1588,
+                "person-circle.js": 1365,
+                "person-dash-fill.js": 1341,
+                "person-dash.js": 1509,
+                "person-down.js": 1601,
+                "person-exclamation.js": 1563,
+                "person-fill-add.js": 1451,
+                "person-fill-check.js": 1485,
+                "person-fill-dash.js": 1406,
+                "person-fill-down.js": 1498,
+                "person-fill-exclamation.js": 1462,
+                "person-fill-gear.js": 1891,
+                "person-fill-lock.js": 1412,
+                "person-fill-slash.js": 1449,
+                "person-fill-up.js": 1499,
+                "person-fill-x.js": 1535,
+                "person-fill.js": 1230,
+                "person-gear.js": 1991,
+                "person-heart.js": 1309,
+                "person-hearts.js": 1465,
+                "person-lines-fill.js": 1405,
+                "person-lock.js": 1498,
+                "person-plus-fill.js": 1392,
+                "person-plus.js": 1548,
+                "person-raised-hand.js": 1512,
+                "person-rolodex.js": 1588,
+                "person-slash.js": 1550,
+                "person-square.js": 1385,
+                "person-standing-dress.js": 1481,
+                "person-standing.js": 1400,
+                "person-up.js": 1602,
+                "person-vcard-fill.js": 1521,
+                "person-vcard.js": 1604,
+                "person-video.js": 1430,
+                "person-video2.js": 1481,
+                "person-video3.js": 1460,
+                "person-walking.js": 1726,
+                "person-wheelchair.js": 1609,
+                "person-workspace.js": 1456,
+                "person-x-fill.js": 1444,
+                "person-x.js": 1636,
+                "person.js": 1388,
+                "phone-fill.js": 1260,
+                "phone-flip.js": 2122,
+                "phone-landscape-fill.js": 1264,
+                "phone-landscape.js": 1365,
+                "phone-vibrate-fill.js": 1813,
+                "phone-vibrate.js": 1980,
+                "phone.js": 1360,
+                "pie-chart-fill.js": 1277,
+                "pie-chart.js": 1318,
+                "piggy-bank-fill.js": 2107,
+                "piggy-bank.js": 2568,
+                "pin-angle-fill.js": 1597,
+                "pin-angle.js": 1996,
+                "pin-fill.js": 1529,
+                "pin-map-fill.js": 1441,
+                "pin-map.js": 1473,
+                "pin.js": 1879,
+                "pinterest.js": 1790,
+                "pip-fill.js": 1338,
+                "pip.js": 1451,
+                "play-btn-fill.js": 1305,
+                "play-btn.js": 1403,
+                "play-circle-fill.js": 1269,
+                "play-circle.js": 1365,
+                "play-fill.js": 1282,
+                "play.js": 1293,
+                "playstation.js": 1795,
+                "plug-fill.js": 1622,
+                "plug.js": 1676,
+                "plugin.js": 1538,
+                "plus-circle-dotted.js": 2708,
+                "plus-circle-fill.js": 1279,
+                "plus-circle.js": 1357,
+                "plus-lg.js": 1278,
+                "plus-slash-minus.js": 1384,
+                "plus-square-dotted.js": 2477,
+                "plus-square-fill.js": 1316,
+                "plus-square.js": 1428,
+                "plus.js": 1259,
+                "postage-fill.js": 1666,
+                "postage-heart-fill.js": 1716,
+                "postage-heart.js": 1652,
+                "postage.js": 1702,
+                "postcard-fill.js": 1547,
+                "postcard-heart-fill.js": 1514,
+                "postcard-heart.js": 1567,
+                "postcard.js": 1626,
+                "power.js": 1291,
+                "prescription.js": 1602,
+                "prescription2.js": 1396,
+                "printer-fill.js": 1441,
+                "printer.js": 1581,
+                "projector-fill.js": 1429,
+                "projector.js": 1506,
+                "puzzle-fill.js": 2382,
+                "puzzle.js": 3555,
+                "qr-code-scan.js": 1784,
+                "qr-code.js": 1621,
+                "question-circle-fill.js": 1672,
+                "question-circle.js": 1735,
+                "question-diamond-fill.js": 1780,
+                "question-diamond.js": 1941,
+                "question-lg.js": 1661,
+                "question-octagon-fill.js": 1874,
+                "question-octagon.js": 1946,
+                "question-square-fill.js": 1712,
+                "question-square.js": 1806,
+                "question.js": 1637,
+                "quora.js": 1713,
+                "quote.js": 1596,
+                "r-circle-fill.js": 1396,
+                "r-circle.js": 1419,
+                "r-square-fill.js": 1453,
+                "r-square.js": 1522,
+                "radar.js": 1410,
+                "radioactive.js": 1600,
+                "rainbow.js": 1467,
+                "receipt-cutoff.js": 2244,
+                "receipt.js": 2747,
+                "reception-0.js": 1394,
+                "reception-1.js": 1414,
+                "reception-2.js": 1434,
+                "reception-3.js": 1454,
+                "reception-4.js": 1475,
+                "record-btn-fill.js": 1261,
+                "record-btn.js": 1360,
+                "record-circle-fill.js": 1226,
+                "record-circle.js": 1290,
+                "record-fill.js": 1212,
+                "record.js": 1225,
+                "record2-fill.js": 1289,
+                "record2.js": 1289,
+                "recycle.js": 1770,
+                "reddit.js": 2013,
+                "regex.js": 1615,
+                "repeat-1.js": 1607,
+                "repeat.js": 1506,
+                "reply-all-fill.js": 1514,
+                "reply-all.js": 1993,
+                "reply-fill.js": 1298,
+                "reply.js": 1775,
+                "rewind-btn-fill.js": 1401,
+                "rewind-btn.js": 1471,
+                "rewind-circle-fill.js": 1366,
+                "rewind-circle.js": 1433,
+                "rewind-fill.js": 1413,
+                "rewind.js": 1459,
+                "robot.js": 2026,
+                "rocket-fill.js": 1920,
+                "rocket-takeoff-fill.js": 2027,
+                "rocket-takeoff.js": 2650,
+                "rocket.js": 2461,
+                "router-fill.js": 1924,
+                "router.js": 2007,
+                "rss-fill.js": 1402,
+                "rss.js": 1531,
+                "rulers.js": 1299,
+                "safe-fill.js": 1716,
+                "safe.js": 1830,
+                "safe2-fill.js": 1984,
+                "safe2.js": 2071,
+                "save-fill.js": 1381,
+                "save.js": 1452,
+                "save2-fill.js": 1360,
+                "save2.js": 1430,
+                "scissors.js": 1426,
+                "scooter.js": 1500,
+                "screwdriver.js": 1510,
+                "sd-card-fill.js": 1570,
+                "sd-card.js": 1660,
+                "search-heart-fill.js": 1410,
+                "search-heart.js": 1446,
+                "search.js": 1328,
+                "segmented-nav.js": 1279,
+                "send-arrow-down-fill.js": 1678,
+                "send-arrow-down.js": 1626,
+                "send-arrow-up-fill.js": 1678,
+                "send-arrow-up.js": 1626,
+                "send-check-fill.js": 1621,
+                "send-check.js": 1577,
+                "send-dash-fill.js": 1540,
+                "send-dash.js": 1496,
+                "send-exclamation-fill.js": 1557,
+                "send-exclamation.js": 1513,
+                "send-fill.js": 1400,
+                "send-plus-fill.js": 1586,
+                "send-plus.js": 1542,
+                "send-slash-fill.js": 1626,
+                "send-slash.js": 1582,
+                "send-x-fill.js": 1668,
+                "send-x.js": 1624,
+                "send.js": 1375,
+                "server.js": 1679,
+                "shadows.js": 1476,
+                "share-fill.js": 1325,
+                "share.js": 1454,
+                "shield-check.js": 2087,
+                "shield-exclamation.js": 2064,
+                "shield-fill-check.js": 1640,
+                "shield-fill-exclamation.js": 1655,
+                "shield-fill-minus.js": 1583,
+                "shield-fill-plus.js": 1634,
+                "shield-fill-x.js": 1699,
+                "shield-fill.js": 1520,
+                "shield-lock-fill.js": 1655,
+                "shield-lock.js": 2081,
+                "shield-minus.js": 2022,
+                "shield-plus.js": 2072,
+                "shield-shaded.js": 1760,
+                "shield-slash-fill.js": 1575,
+                "shield-slash.js": 1972,
+                "shield-x.js": 2152,
+                "shield.js": 1932,
+                "shift-fill.js": 1302,
+                "shift.js": 1371,
+                "shop-window.js": 1862,
+                "shop.js": 1892,
+                "shuffle.js": 1908,
+                "sign-dead-end-fill.js": 2003,
+                "sign-dead-end.js": 2143,
+                "sign-do-not-enter-fill.js": 2438,
+                "sign-do-not-enter.js": 2474,
+                "sign-intersection-fill.js": 1356,
+                "sign-intersection-side-fill.js": 1339,
+                "sign-intersection-side.js": 1501,
+                "sign-intersection-t-fill.js": 1332,
+                "sign-intersection-t.js": 1497,
+                "sign-intersection-y-fill.js": 1382,
+                "sign-intersection-y.js": 1547,
+                "sign-intersection.js": 1518,
+                "sign-merge-left-fill.js": 1522,
+                "sign-merge-left.js": 1678,
+                "sign-merge-right-fill.js": 1514,
+                "sign-merge-right.js": 1698,
+                "sign-no-left-turn-fill.js": 1470,
+                "sign-no-left-turn.js": 1478,
+                "sign-no-parking-fill.js": 1480,
+                "sign-no-parking.js": 1493,
+                "sign-no-right-turn-fill.js": 1457,
+                "sign-no-right-turn.js": 1469,
+                "sign-railroad-fill.js": 1882,
+                "sign-railroad.js": 1954,
+                "sign-stop-fill.js": 2267,
+                "sign-stop-lights-fill.js": 1496,
+                "sign-stop-lights.js": 1630,
+                "sign-stop.js": 2380,
+                "sign-turn-left-fill.js": 1454,
+                "sign-turn-left.js": 1635,
+                "sign-turn-right-fill.js": 1458,
+                "sign-turn-right.js": 1633,
+                "sign-turn-slight-left-fill.js": 1504,
+                "sign-turn-slight-left.js": 1673,
+                "sign-turn-slight-right-fill.js": 1488,
+                "sign-turn-slight-right.js": 1671,
+                "sign-yield-fill.js": 1628,
+                "sign-yield.js": 1945,
+                "signal.js": 2509,
+                "signpost-2-fill.js": 1436,
+                "signpost-2.js": 1459,
+                "signpost-fill.js": 1340,
+                "signpost-split-fill.js": 1328,
+                "signpost-split.js": 1368,
+                "signpost.js": 1344,
+                "sim-fill.js": 1560,
+                "sim-slash-fill.js": 1628,
+                "sim-slash.js": 1720,
+                "sim.js": 1687,
+                "sina-weibo.js": 2322,
+                "skip-backward-btn-fill.js": 1415,
+                "skip-backward-btn.js": 1501,
+                "skip-backward-circle-fill.js": 1379,
+                "skip-backward-circle.js": 1464,
+                "skip-backward-fill.js": 1397,
+                "skip-backward.js": 1445,
+                "skip-end-btn-fill.js": 1333,
+                "skip-end-btn.js": 1443,
+                "skip-end-circle-fill.js": 1297,
+                "skip-end-circle.js": 1394,
+                "skip-end-fill.js": 1286,
+                "skip-end.js": 1314,
+                "skip-forward-btn-fill.js": 1402,
+                "skip-forward-btn.js": 1500,
+                "skip-forward-circle-fill.js": 1366,
+                "skip-forward-circle.js": 1465,
+                "skip-forward-fill.js": 1402,
+                "skip-forward.js": 1448,
+                "skip-start-btn-fill.js": 1344,
+                "skip-start-btn.js": 1431,
+                "skip-start-circle-fill.js": 1308,
+                "skip-start-circle.js": 1394,
+                "skip-start-fill.js": 1284,
+                "skip-start.js": 1313,
+                "skype.js": 2406,
+                "slack.js": 1985,
+                "slash-circle-fill.js": 1253,
+                "slash-circle.js": 1335,
+                "slash-lg.js": 1261,
+                "slash-square-fill.js": 1289,
+                "slash-square.js": 1407,
+                "slash.js": 1238,
+                "sliders.js": 1496,
+                "sliders2-vertical.js": 1604,
+                "sliders2.js": 1612,
+                "smartwatch.js": 1631,
+                "snapchat.js": 3381,
+                "snow.js": 1967,
+                "snow2.js": 2544,
+                "snow3.js": 2134,
+                "sort-alpha-down-alt.js": 1576,
+                "sort-alpha-down.js": 1543,
+                "sort-alpha-up-alt.js": 1571,
+                "sort-alpha-up.js": 1538,
+                "sort-down-alt.js": 1468,
+                "sort-down.js": 1470,
+                "sort-numeric-down-alt.js": 1776,
+                "sort-numeric-down.js": 1807,
+                "sort-numeric-up-alt.js": 1771,
+                "sort-numeric-up.js": 1802,
+                "sort-up-alt.js": 1464,
+                "sort-up.js": 1465,
+                "soundwave.js": 1582,
+                "sourceforge.js": 1973,
+                "speaker-fill.js": 1407,
+                "speaker.js": 1488,
+                "speedometer.js": 1720,
+                "speedometer2.js": 1888,
+                "spellcheck.js": 2168,
+                "spotify.js": 1621,
+                "square-fill.js": 1228,
+                "square-half.js": 1268,
+                "square.js": 1297,
+                "stack-overflow.js": 1464,
+                "stack.js": 1636,
+                "star-fill.js": 1409,
+                "star-half.js": 1627,
+                "star.js": 1638,
+                "stars.js": 2012,
+                "steam.js": 1856,
+                "stickies-fill.js": 1500,
+                "stickies.js": 1545,
+                "sticky-fill.js": 1384,
+                "sticky.js": 1429,
+                "stop-btn-fill.js": 1325,
+                "stop-btn.js": 1423,
+                "stop-circle-fill.js": 1289,
+                "stop-circle.js": 1353,
+                "stop-fill.js": 1257,
+                "stop.js": 1335,
+                "stoplights-fill.js": 1508,
+                "stoplights.js": 1593,
+                "stopwatch-fill.js": 1449,
+                "stopwatch.js": 1513,
+                "strava.js": 1274,
+                "stripe.js": 1581,
+                "subscript.js": 1488,
+                "substack.js": 1234,
+                "subtract.js": 1330,
+                "suit-club-fill.js": 1372,
+                "suit-club.js": 1990,
+                "suit-diamond-fill.js": 1272,
+                "suit-diamond.js": 1431,
+                "suit-heart-fill.js": 1320,
+                "suit-heart.js": 1821,
+                "suit-spade-fill.js": 1438,
+                "suit-spade.js": 1953,
+                "suitcase-fill.js": 1468,
+                "suitcase-lg-fill.js": 1386,
+                "suitcase-lg.js": 1476,
+                "suitcase.js": 1613,
+                "suitcase2-fill.js": 1365,
+                "suitcase2.js": 1428,
+                "sun-fill.js": 1790,
+                "sun.js": 1822,
+                "sunglasses.js": 1506,
+                "sunrise-fill.js": 1656,
+                "sunrise.js": 1697,
+                "sunset-fill.js": 1658,
+                "sunset.js": 1699,
+                "superscript.js": 1485,
+                "symmetry-horizontal.js": 1344,
+                "symmetry-vertical.js": 1346,
+                "table.js": 1364,
+                "tablet-fill.js": 1260,
+                "tablet-landscape-fill.js": 1261,
+                "tablet-landscape.js": 1360,
+                "tablet.js": 1360,
+                "tag-fill.js": 1320,
+                "tag.js": 1417,
+                "tags-fill.js": 1456,
+                "tags.js": 1521,
+                "taxi-front-fill.js": 1911,
+                "taxi-front.js": 2289,
+                "telegram.js": 1722,
+                "telephone-fill.js": 1525,
+                "telephone-forward-fill.js": 1675,
+                "telephone-forward.js": 2000,
+                "telephone-inbound-fill.js": 1656,
+                "telephone-inbound.js": 1981,
+                "telephone-minus-fill.js": 1586,
+                "telephone-minus.js": 1961,
+                "telephone-outbound-fill.js": 1654,
+                "telephone-outbound.js": 1979,
+                "telephone-plus-fill.js": 1637,
+                "telephone-plus.js": 2012,
+                "telephone-x-fill.js": 1724,
+                "telephone-x.js": 2100,
+                "telephone.js": 1850,
+                "tencent-qq.js": 2695,
+                "terminal-dash.js": 1620,
+                "terminal-fill.js": 1361,
+                "terminal-plus.js": 1666,
+                "terminal-split.js": 1669,
+                "terminal-x.js": 1748,
+                "terminal.js": 1481,
+                "text-center.js": 1419,
+                "text-indent-left.js": 1515,
+                "text-indent-right.js": 1497,
+                "text-left.js": 1417,
+                "text-paragraph.js": 1417,
+                "text-right.js": 1419,
+                "text-wrap.js": 1484,
+                "textarea-resize.js": 1512,
+                "textarea-t.js": 1735,
+                "textarea.js": 1503,
+                "thermometer-half.js": 1413,
+                "thermometer-high.js": 1413,
+                "thermometer-low.js": 1413,
+                "thermometer-snow.js": 1835,
+                "thermometer-sun.js": 1848,
+                "thermometer.js": 1374,
+                "threads-fill.js": 2084,
+                "threads.js": 1913,
+                "three-dots-vertical.js": 1282,
+                "three-dots.js": 1281,
+                "thunderbolt-fill.js": 1385,
+                "thunderbolt.js": 1453,
+                "ticket-detailed-fill.js": 1528,
+                "ticket-detailed.js": 1686,
+                "ticket-fill.js": 1367,
+                "ticket-perforated-fill.js": 1493,
+                "ticket-perforated.js": 1658,
+                "ticket.js": 1502,
+                "tiktok.js": 1288,
+                "toggle-off.js": 1293,
+                "toggle-on.js": 1228,
+                "toggle2-off.js": 1320,
+                "toggle2-on.js": 1301,
+                "toggles.js": 1405,
+                "toggles2.js": 1474,
+                "tools.js": 1936,
+                "tornado.js": 3189,
+                "train-freight-front-fill.js": 1757,
+                "train-freight-front.js": 1915,
+                "train-front-fill.js": 1731,
+                "train-front.js": 1937,
+                "train-lightrail-front-fill.js": 2380,
+                "train-lightrail-front.js": 2560,
+                "translate.js": 1788,
+                "transparency.js": 1699,
+                "trash-fill.js": 1450,
+                "trash.js": 1569,
+                "trash2-fill.js": 1511,
+                "trash2.js": 1431,
+                "trash3-fill.js": 1585,
+                "trash3.js": 1669,
+                "tree-fill.js": 1394,
+                "tree.js": 1594,
+                "trello.js": 1524,
+                "triangle-fill.js": 1291,
+                "triangle-half.js": 1420,
+                "triangle.js": 1521,
+                "trophy-fill.js": 1615,
+                "trophy.js": 1932,
+                "tropical-storm.js": 1432,
+                "truck-flatbed.js": 1520,
+                "truck-front-fill.js": 1579,
+                "truck-front.js": 1833,
+                "truck.js": 1650,
+                "tsunami.js": 2797,
+                "tv-fill.js": 1267,
+                "tv.js": 1631,
+                "twitch.js": 1363,
+                "twitter-x.js": 1311,
+                "twitter.js": 1598,
+                "type-bold.js": 1475,
+                "type-h1.js": 1266,
+                "type-h2.js": 1472,
+                "type-h3.js": 1635,
+                "type-h4.js": 1347,
+                "type-h5.js": 1528,
+                "type-h6.js": 1642,
+                "type-italic.js": 1359,
+                "type-strikethrough.js": 1575,
+                "type-underline.js": 1324,
+                "type.js": 1634,
+                "ubuntu.js": 1753,
+                "ui-checks-grid.js": 1730,
+                "ui-checks.js": 1758,
+                "ui-radios-grid.js": 1492,
+                "ui-radios.js": 1542,
+                "umbrella-fill.js": 2176,
+                "umbrella.js": 2625,
+                "unindent.js": 1427,
+                "union.js": 1263,
+                "unity.js": 1597,
+                "universal-access-circle.js": 1518,
+                "universal-access.js": 1403,
+                "unlock-fill.js": 1293,
+                "unlock.js": 1360,
+                "upc-scan.js": 1773,
+                "upc.js": 1387,
+                "upload.js": 1448,
+                "usb-c-fill.js": 1237,
+                "usb-c.js": 1318,
+                "usb-drive-fill.js": 1303,
+                "usb-drive.js": 1357,
+                "usb-fill.js": 1344,
+                "usb-micro-fill.js": 1380,
+                "usb-micro.js": 1441,
+                "usb-mini-fill.js": 1374,
+                "usb-mini.js": 1483,
+                "usb-plug-fill.js": 1444,
+                "usb-plug.js": 1582,
+                "usb-symbol.js": 1669,
+                "usb.js": 1383,
+                "valentine.js": 1717,
+                "valentine2.js": 1705,
+                "vector-pen.js": 1547,
+                "view-list.js": 1418,
+                "view-stacked.js": 1435,
+                "vignette.js": 1782,
+                "vimeo.js": 1537,
+                "vinyl-fill.js": 1320,
+                "vinyl.js": 1384,
+                "virus.js": 2029,
+                "virus2.js": 2012,
+                "voicemail.js": 1317,
+                "volume-down-fill.js": 1387,
+                "volume-down.js": 1466,
+                "volume-mute-fill.js": 1492,
+                "volume-mute.js": 1559,
+                "volume-off-fill.js": 1295,
+                "volume-off.js": 1366,
+                "volume-up-fill.js": 1730,
+                "volume-up.js": 1792,
+                "vr.js": 1381,
+                "wallet-fill.js": 1541,
+                "wallet.js": 1382,
+                "wallet2.js": 1416,
+                "watch.js": 1555,
+                "water.js": 2827,
+                "webcam-fill.js": 1600,
+                "webcam.js": 1619,
+                "wechat.js": 2050,
+                "whatsapp.js": 2200,
+                "wifi-1.js": 1499,
+                "wifi-2.js": 1707,
+                "wifi-off.js": 1956,
+                "wifi.js": 1942,
+                "wikipedia.js": 2301,
+                "wind.js": 1436,
+                "window-dash.js": 1577,
+                "window-desktop.js": 1553,
+                "window-dock.js": 1583,
+                "window-fullscreen.js": 1403,
+                "window-plus.js": 1623,
+                "window-sidebar.js": 1457,
+                "window-split.js": 1462,
+                "window-stack.js": 1540,
+                "window-x.js": 1705,
+                "window.js": 1448,
+                "windows.js": 1278,
+                "wordpress.js": 2183,
+                "wrench-adjustable-circle-fill.js": 1655,
+                "wrench-adjustable-circle.js": 1656,
+                "wrench-adjustable.js": 1648,
+                "wrench.js": 1534,
+                "x-circle-fill.js": 1357,
+                "x-circle.js": 1447,
+                "x-diamond-fill.js": 1468,
+                "x-diamond.js": 1629,
+                "x-lg.js": 1323,
+                "x-octagon-fill.js": 1564,
+                "x-octagon.js": 1658,
+                "x-square-fill.js": 1403,
+                "x-square.js": 1518,
+                "x.js": 1349,
+                "xbox.js": 2267,
+                "yelp.js": 3437,
+                "yin-yang.js": 1413,
+                "youtube.js": 1905,
+                "zoom-in.js": 1573,
+                "zoom-out.js": 1525
+              }
+            }
+          },
+          "simpl-schema": {
+            "package.json": 120,
+            "dist": {
+              "esm": {
+                "main.js": 341,
+                "clean.js": 2610,
+                "clean": {
+                  "convertToProperType.js": 751,
+                  "setAutoValues.js": 733,
+                  "AutoValueRunner.js": 1352,
+                  "getPositionsForAutoValue.js": 1393
+                },
+                "SimpleSchema.js": 16468,
+                "defaultMessages.js": 1300,
+                "errors.js": 164,
+                "expandShorthand.js": 635,
+                "SimpleSchemaGroup.js": 485,
+                "utility": {
+                  "index.js": 1602,
+                  "humanize.js": 608
+                },
+                "ValidationContext.js": 1698,
+                "doValidation.js": 1425,
+                "validation": {
+                  "validateDocument.js": 608,
+                  "validateField.js": 3931,
+                  "allowedValuesValidator.js": 344,
+                  "requiredValidator.js": 703,
+                  "typeValidator": {
+                    "index.js": 1303,
+                    "checkArrayValue.js": 381,
+                    "checkDateValue.js": 489,
+                    "checkNumberValue.js": 613,
+                    "checkStringValue.js": 697
+                  }
+                },
+                "toJsonSchema.js": 1973
+              }
+            }
+          },
+          "clone": {
+            "package.json": 75,
+            "clone.js": 2413
+          },
+          "mongo-object": {
+            "package.json": 120,
+            "dist": {
+              "esm": {
+                "main.js": 437,
+                "mongo-object.js": 7830,
+                "util.js": 2538
+              }
+            }
+          },
+          "uniforms-bootstrap5": {
+            "package.json": 120,
+            "esm": {
+              "index.js": 1261,
+              "AutoField.js": 766,
+              "BoolField.js": 835,
+              "wrapField.js": 1230,
+              "gridClassName.js": 492,
+              "DateField.js": 1086,
+              "ListField.js": 1280,
+              "ListAddField.js": 960,
+              "ListItemField.js": 469,
+              "ListDelField.js": 894,
+              "NestField.js": 740,
+              "NumField.js": 707,
+              "RadioField.js": 902,
+              "SelectField.js": 1805,
+              "TextField.js": 707,
+              "AutoFields.js": 551,
+              "AutoForm.js": 199,
+              "ValidatedQuickForm.js": 198,
+              "BaseForm.js": 550,
+              "QuickForm.js": 404,
+              "ErrorsField.js": 583,
+              "SubmitField.js": 962,
+              "ValidatedForm.js": 204,
+              "ErrorField.js": 572,
+              "HiddenField.js": 550,
+              "LongTextField.js": 584
+            }
+          },
+          "uniforms": {
+            "package.json": 109,
+            "esm": {
+              "index.js": 582,
+              "AutoForm.js": 1017,
+              "ValidatedQuickForm.js": 214,
+              "BaseForm.js": 3431,
+              "changedKeys.js": 457,
+              "joinName.js": 834,
+              "context.js": 111,
+              "randomIds.js": 178,
+              "QuickForm.js": 813,
+              "ValidatedForm.js": 2635,
+              "Bridge.js": 1294,
+              "connectField.js": 799,
+              "useField.js": 1578,
+              "useForm.js": 557,
+              "createAutoField.js": 594,
+              "filterDOMProps.js": 480,
+              "types.js": 14
+            }
+          },
+          "lodash": {
+            "clone.js": 86,
+            "_baseClone.js": 1832,
+            "_Stack.js": 309,
+            "_ListCache.js": 350,
+            "_listCacheClear.js": 72,
+            "_listCacheDelete.js": 196,
+            "_assocIndexOf.js": 120,
+            "eq.js": 71,
+            "_listCacheGet.js": 126,
+            "_listCacheHas.js": 100,
+            "_listCacheSet.js": 156,
+            "_stackClear.js": 99,
+            "_stackDelete.js": 104,
+            "_stackGet.js": 72,
+            "_stackHas.js": 72,
+            "_stackSet.js": 295,
+            "_Map.js": 78,
+            "_getNative.js": 126,
+            "_baseIsNative.js": 422,
+            "isFunction.js": 245,
+            "_baseGetTag.js": 234,
+            "_Symbol.js": 58,
+            "_root.js": 147,
+            "_freeGlobal.js": 80,
+            "_getRawTag.js": 252,
+            "_objectToString.js": 95,
+            "isObject.js": 104,
+            "_isMasked.js": 163,
+            "_coreJsData.js": 73,
+            "_toSource.js": 159,
+            "_getValue.js": 73,
+            "_MapCache.js": 345,
+            "_mapCacheClear.js": 162,
+            "_Hash.js": 325,
+            "_hashClear.js": 109,
+            "_nativeCreate.js": 73,
+            "_hashDelete.js": 113,
+            "_hashGet.js": 227,
+            "_hashHas.js": 162,
+            "_hashSet.js": 185,
+            "_mapCacheDelete.js": 121,
+            "_getMapData.js": 143,
+            "_isKeyable.js": 142,
+            "_mapCacheGet.js": 93,
+            "_mapCacheHas.js": 93,
+            "_mapCacheSet.js": 144,
+            "_arrayEach.js": 115,
+            "_assignValue.js": 189,
+            "_baseAssignValue.js": 161,
+            "_defineProperty.js": 139,
+            "_baseAssign.js": 107,
+            "_copyObject.js": 244,
+            "keys.js": 134,
+            "_arrayLikeKeys.js": 469,
+            "_baseTimes.js": 96,
+            "isArguments.js": 249,
+            "_baseIsArguments.js": 135,
+            "isObjectLike.js": 79,
+            "isArray.js": 50,
+            "isBuffer.js": 217,
+            "stubFalse.js": 52,
+            "_isIndex.js": 187,
+            "isTypedArray.js": 131,
+            "_baseIsTypedArray.js": 806,
+            "isLength.js": 112,
+            "_baseUnary.js": 76,
+            "_nodeUtil.js": 287,
+            "_baseKeys.js": 230,
+            "_isPrototype.js": 142,
+            "_nativeKeys.js": 74,
+            "_overArg.js": 81,
+            "isArrayLike.js": 121,
+            "_baseAssignIn.js": 109,
+            "keysIn.js": 139,
+            "_baseKeysIn.js": 255,
+            "_nativeKeysIn.js": 106,
+            "_cloneBuffer.js": 296,
+            "_copyArray.js": 112,
+            "_copySymbols.js": 111,
+            "_getSymbols.js": 241,
+            "_arrayFilter.js": 138,
+            "stubArray.js": 52,
+            "_copySymbolsIn.js": 113,
+            "_getSymbolsIn.js": 207,
+            "_arrayPush.js": 109,
+            "_getPrototype.js": 84,
+            "_getAllKeys.js": 124,
+            "_baseGetAllKeys.js": 124,
+            "_getAllKeysIn.js": 128,
+            "_getTag.js": 594,
+            "_DataView.js": 83,
+            "_Promise.js": 82,
+            "_Set.js": 78,
+            "_WeakMap.js": 82,
+            "_initCloneArray.js": 210,
+            "_initCloneByTag.js": 888,
+            "_cloneArrayBuffer.js": 139,
+            "_Uint8Array.js": 62,
+            "_cloneDataView.js": 160,
+            "_cloneRegExp.js": 134,
+            "_cloneSymbol.js": 139,
+            "_cloneTypedArray.js": 156,
+            "_initCloneObject.js": 170,
+            "_baseCreate.js": 207,
+            "isMap.js": 117,
+            "_baseIsMap.js": 125,
+            "isSet.js": 117,
+            "_baseIsSet.js": 125,
+            "isEqual.js": 86,
+            "_baseIsEqual.js": 177,
+            "_baseIsEqualDeep.js": 701,
+            "_equalArrays.js": 575,
+            "_SetCache.js": 240,
+            "_setCacheAdd.js": 113,
+            "_setCacheHas.js": 72,
+            "_arraySome.js": 120,
+            "_cacheHas.js": 62,
+            "_equalByTag.js": 951,
+            "_mapToArray.js": 119,
+            "_setToArray.js": 113,
+            "_equalObjects.js": 703,
+            "omit.js": 402,
+            "_arrayMap.js": 124,
+            "_baseUnset.js": 168,
+            "_castPath.js": 157,
+            "_isKey.js": 294,
+            "isSymbol.js": 151,
+            "_stringToPath.js": 310,
+            "_memoizeCapped.js": 147,
+            "memoize.js": 364,
+            "toString.js": 94,
+            "_baseToString.js": 298,
+            "last.js": 92,
+            "_parent.js": 123,
+            "_baseGet.js": 170,
+            "_toKey.js": 151,
+            "_baseSlice.js": 180,
+            "_customOmitClone.js": 92,
+            "isPlainObject.js": 384,
+            "_flatRest.js": 135,
+            "flatten.js": 113,
+            "_baseFlatten.js": 226,
+            "_isFlattenable.js": 169,
+            "_overRest.js": 274,
+            "_apply.js": 211,
+            "_setToString.js": 84,
+            "_baseSetToString.js": 194,
+            "constant.js": 72,
+            "identity.js": 53,
+            "_shortOut.js": 205,
+            "setWith.js": 132,
+            "_baseSet.js": 411,
+            "get.js": 120,
+            "cloneDeep.js": 90,
+            "noop.js": 44,
+            "mapValues.js": 187,
+            "_baseForOwn.js": 101,
+            "_baseFor.js": 62,
+            "_createBaseFor.js": 169,
+            "_baseIteratee.js": 239,
+            "_baseMatches.js": 221,
+            "_baseIsMatch.js": 409,
+            "_getMatchData.js": 166,
+            "_isStrictComparable.js": 85,
+            "_matchesStrictComparable.js": 123,
+            "_baseMatchesProperty.js": 298,
+            "hasIn.js": 113,
+            "_baseHasIn.js": 77,
+            "_hasPath.js": 330,
+            "property.js": 155,
+            "_baseProperty.js": 91,
+            "_basePropertyDeep.js": 100,
+            "xor.js": 157,
+            "_baseRest.js": 133,
+            "_baseXor.js": 272,
+            "_baseDifference.js": 468,
+            "_arrayIncludes.js": 120,
+            "_baseIndexOf.js": 150,
+            "_baseFindIndex.js": 128,
+            "_baseIsNaN.js": 56,
+            "_strictIndexOf.js": 110,
+            "_arrayIncludesWith.js": 120,
+            "_baseUniq.js": 508,
+            "_createSet.js": 149,
+            "isArrayLikeObject.js": 109
+          },
+          "tslib": {
+            "package.json": 97,
+            "tslib.es6.js": 7465
+          },
+          "sweetalert": {
+            "package.json": 94,
+            "dist": {
+              "sweetalert.min.js": 40706
+            }
+          },
+          "uniforms-bridge-simple-schema-2": {
+            "package.json": 132,
+            "esm": {
+              "index.js": 117,
+              "register.js": 311,
+              "SimpleSchema2Bridge.js": 2709
+            },
+            "node_modules": {
+              "simpl-schema": {
+                "package.json": 89,
+                "dist": {
+                  "main.js": 270,
+                  "SimpleSchema.js": 20875,
+                  "humanize.js": 647,
+                  "ValidationContext.js": 4711,
+                  "doValidation.js": 6662,
+                  "utility": {
+                    "index.js": 1376,
+                    "appendAffectedKey.js": 207,
+                    "dateToDateString.js": 312,
+                    "forEachKeyAncestor.js": 258,
+                    "getKeysWithValueInObj.js": 322,
+                    "getLastPartOfKey.js": 264,
+                    "getParentOfKey.js": 222,
+                    "isEmptyObject.js": 232,
+                    "isObjectWeShouldTraverse.js": 577,
+                    "looksLikeModifier.js": 231,
+                    "merge.js": 465
+                  },
+                  "validation": {
+                    "typeValidator": {
+                      "index.js": 1235,
+                      "doDateChecks.js": 572,
+                      "doNumberChecks.js": 841,
+                      "doStringChecks.js": 830,
+                      "doArrayChecks.js": 485
+                    },
+                    "requiredValidator.js": 779,
+                    "allowedValuesValidator.js": 393
+                  },
+                  "SimpleSchemaGroup.js": 3143,
+                  "regExp.js": 2752,
+                  "clean.js": 3403,
+                  "clean": {
+                    "convertToProperType.js": 1037,
+                    "setAutoValues.js": 814,
+                    "getPositionsForAutoValue.js": 1445,
+                    "AutoValueRunner.js": 2804
+                  },
+                  "expandShorthand.js": 1503,
+                  "defaultMessages.js": 1927
+                }
+              },
+              "mongo-object": {
+                "package.json": 96,
+                "dist": {
+                  "mongo-object.js": 11965
+                }
+              }
+            }
+          },
+          "message-box": {
+            "package.json": 93,
+            "dist": {
+              "MessageBox.js": 3708,
+              "merge.js": 396
+            }
+          },
+          "lodash.template": {
+            "package.json": 69,
+            "index.js": 8158
+          },
+          "lodash._reinterpolate": {
+            "package.json": 75,
+            "index.js": 55
+          },
+          "lodash.templatesettings": {
+            "package.json": 77,
+            "index.js": 1362
+          },
+          "meteor-node-stubs": {
+            "package.json": 87,
+            "index.js": 384,
+            "map.json": 1008,
+            "deps": {
+              "process.js": 38
+            },
+            "node_modules": {
+              "process": {
+                "browser.js": 1688
+              }
+            }
+          }
+        }
+      }
+    ],
+    "packages/modern-browsers.js": 35,
+    "packages/babel-compiler.js": 34,
+    "packages/react-fast-refresh.js": [
+      2931,
+      {
+        "node_modules": {
+          "meteor": {
+            "react-fast-refresh": {
+              "client.js": 332,
+              "client-runtime.js": 1364,
+              "node_modules": {
+                "react-refresh": {
+                  "runtime.js": 92,
+                  "cjs": {
+                    "react-refresh-runtime.production.min.js": 366,
+                    "react-refresh-runtime.development.js": 282
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "packages/ecmascript.js": 30,
+    "packages/ecmascript-runtime.js": 38,
+    "packages/babel-runtime.js": 33,
+    "packages/promise.js": [
+      1339,
+      {
+        "node_modules": {
+          "meteor": {
+            "promise": {
+              "modern.js": 25,
+              "client.js": 73,
+              "extensions.js": 403,
+              "node_modules": {
+                "meteor-promise": {
+                  "package.json": 121,
+                  "promise_client.js": 268
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "packages/fetch.js": [
+      410,
+      {
+        "node_modules": {
+          "meteor": {
+            "fetch": {
+              "modern.js": 94
+            }
+          }
+        }
+      }
+    ],
+    "packages/dynamic-import.js": [
+      5158,
+      {
+        "node_modules": {
+          "meteor": {
+            "dynamic-import": {
+              "client.js": 1923,
+              "cache.js": 1952,
+              "common.js": 62,
+              "dynamic-versions.js": 818
+            }
+          }
+        }
+      }
+    ],
+    "packages/es5-shim.js": 28,
+    "packages/ecmascript-runtime-client.js": [
+      22393,
+      {
+        "node_modules": {
+          "meteor": {
+            "ecmascript-runtime-client": {
+              "modern.js": 766,
+              "node_modules": {
+                "core-js": {
+                  "modules": {
+                    "es.object.get-own-property-descriptors.js": 414,
+                    "es.object.is.js": 108,
+                    "es.function.name.js": 274,
+                    "es.number.is-finite.js": 120,
+                    "es.number.is-nan.js": 107,
+                    "es.array.flat.js": 404,
+                    "es.array.flat-map.js": 401,
+                    "es.object.from-entries.js": 232,
+                    "es.string.pad-start.js": 256,
+                    "es.string.pad-end.js": 252,
+                    "es.string.trim-start.js": 260,
+                    "es.string.trim-end.js": 253,
+                    "es.symbol.async-iterator.js": 80
+                  },
+                  "internals": {
+                    "export.js": 612,
+                    "global.js": 264,
+                    "object-get-own-property-descriptor.js": 428,
+                    "descriptors.js": 144,
+                    "fails.js": 76,
+                    "object-property-is-enumerable.js": 178,
+                    "create-property-descriptor.js": 113,
+                    "to-indexed-object.js": 140,
+                    "indexed-object.js": 225,
+                    "classof-raw.js": 88,
+                    "require-object-coercible.js": 104,
+                    "to-primitive.js": 354,
+                    "is-object.js": 96,
+                    "has.js": 136,
+                    "to-object.js": 110,
+                    "ie8-dom-define.js": 231,
+                    "document-create-element.js": 173,
+                    "create-non-enumerable-property.js": 229,
+                    "object-define-property.js": 359,
+                    "an-object.js": 140,
+                    "redefine.js": 684,
+                    "set-global.js": 163,
+                    "inspect-source.js": 185,
+                    "shared-store.js": 131,
+                    "internal-state.js": 968,
+                    "native-weak-map.js": 153,
+                    "shared-key.js": 133,
+                    "shared.js": 259,
+                    "is-pure.js": 31,
+                    "uid.js": 131,
+                    "hidden-keys.js": 31,
+                    "copy-constructor-properties.js": 279,
+                    "own-keys.js": 284,
+                    "get-built-in.js": 222,
+                    "path.js": 61,
+                    "object-get-own-property-names.js": 187,
+                    "object-keys-internal.js": 306,
+                    "array-includes.js": 363,
+                    "to-length.js": 125,
+                    "to-integer.js": 104,
+                    "to-absolute-index.js": 138,
+                    "enum-bug-keys.js": 138,
+                    "object-get-own-property-symbols.js": 49,
+                    "is-forced.js": 279,
+                    "create-property.js": 226,
+                    "same-value.js": 96,
+                    "number-is-finite.js": 133,
+                    "flatten-into-array.js": 399,
+                    "is-array.js": 114,
+                    "function-bind-context.js": 358,
+                    "a-function.js": 122,
+                    "array-species-create.js": 320,
+                    "well-known-symbol.js": 359,
+                    "native-symbol.js": 232,
+                    "engine-v8-version.js": 266,
+                    "engine-user-agent.js": 96,
+                    "use-symbol-as-uid.js": 116,
+                    "iterate.js": 885,
+                    "is-array-iterator-method.js": 190,
+                    "iterators.js": 31,
+                    "get-iterator-method.js": 204,
+                    "classof.js": 435,
+                    "to-string-tag-support.js": 124,
+                    "iterator-close.js": 130,
+                    "string-pad.js": 378,
+                    "string-repeat.js": 280,
+                    "string-pad-webkit-bug.js": 145,
+                    "string-trim.js": 305,
+                    "whitespaces.js": 107,
+                    "string-trim-forced.js": 181,
+                    "define-well-known-symbol.js": 245,
+                    "well-known-symbol-wrapped.js": 64
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "packages/base64.js": [
+      1808,
+      {
+        "node_modules": {
+          "meteor": {
+            "base64": {
+              "base64.js": 1488
+            }
+          }
+        }
+      }
+    ],
+    "packages/ejson.js": [
+      6775,
+      {
+        "node_modules": {
+          "meteor": {
+            "ejson": {
+              "ejson.js": 4765,
+              "stringify.js": 911,
+              "utils.js": 733
+            }
+          }
+        }
+      }
+    ],
+    "packages/diff-sequence.js": [
+      2872,
+      {
+        "node_modules": {
+          "meteor": {
+            "diff-sequence": {
+              "diff.js": 2505
+            }
+          }
+        }
+      }
+    ],
+    "packages/geojson-utils.js": [
+      5191,
+      {
+        "node_modules": {
+          "meteor": {
+            "geojson-utils": {
+              "main.js": 50,
+              "geojson-utils.js": 4805
+            }
+          }
+        }
+      }
+    ],
+    "packages/id-map.js": [
+      1156,
+      {
+        "node_modules": {
+          "meteor": {
+            "id-map": {
+              "id-map.js": 813
+            }
+          }
+        }
+      }
+    ],
+    "packages/random.js": [
+      3682,
+      {
+        "node_modules": {
+          "meteor": {
+            "random": {
+              "main_client.js": 305,
+              "AbstractRandomGenerator.js": 649,
+              "AleaRandomGenerator.js": 987,
+              "BrowserRandomGenerator.js": 232,
+              "createAleaGenerator.js": 669,
+              "createRandom.js": 378
+            }
+          }
+        }
+      }
+    ],
+    "packages/mongo-id.js": [
+      1693,
+      {
+        "node_modules": {
+          "meteor": {
+            "mongo-id": {
+              "id.js": 1324
+            }
+          }
+        }
+      }
+    ],
+    "packages/ordered-dict.js": [
+      3032,
+      {
+        "node_modules": {
+          "meteor": {
+            "ordered-dict": {
+              "ordered_dict.js": 2675
+            }
+          }
+        }
+      }
+    ],
+    "packages/tracker.js": [
+      4826,
+      {
+        "node_modules": {
+          "meteor": {
+            "tracker": {
+              "tracker.js": 4493
+            }
+          }
+        }
+      }
+    ],
+    "packages/minimongo.js": [
+      44692,
+      {
+        "node_modules": {
+          "meteor": {
+            "minimongo": {
+              "minimongo_client.js": 50,
+              "common.js": 12228,
+              "constants.js": 333,
+              "cursor.js": 4965,
+              "local_collection.js": 20168,
+              "matcher.js": 2684,
+              "minimongo_common.js": 210,
+              "observe_handle.js": 54,
+              "sorter.js": 3173
+            }
+          }
+        }
+      }
+    ],
+    "packages/check.js": [
+      6125,
+      {
+        "node_modules": {
+          "meteor": {
+            "check": {
+              "match.js": 5438,
+              "isPlainObject.js": 321
+            }
+          }
+        }
+      }
+    ],
+    "packages/retry.js": [
+      1048,
+      {
+        "node_modules": {
+          "meteor": {
+            "retry": {
+              "retry.js": 710
+            }
+          }
+        }
+      }
+    ],
+    "packages/callback-hook.js": [
+      1874,
+      {
+        "node_modules": {
+          "meteor": {
+            "callback-hook": {
+              "hook.js": 1533
+            }
+          }
+        }
+      }
+    ],
+    "packages/ddp-common.js": [
+      4583,
+      {
+        "node_modules": {
+          "meteor": {
+            "ddp-common": {
+              "namespace.js": 18,
+              "heartbeat.js": 1293,
+              "utils.js": 1377,
+              "method_invocation.js": 487,
+              "random_stream.js": 628
+            }
+          }
+        }
+      }
+    ],
+    "packages/reload.js": [
+      2692,
+      {
+        "node_modules": {
+          "meteor": {
+            "reload": {
+              "reload.js": 2372
+            }
+          }
+        }
+      }
+    ],
+    "packages/socket-stream-client.js": [
+      61252,
+      {
+        "node_modules": {
+          "meteor": {
+            "socket-stream-client": {
+              "browser.js": 2920,
+              "common.js": 2468,
+              "sockjs-1.6.1-min-.js": 54754,
+              "urls.js": 747
+            }
+          }
+        }
+      }
+    ],
+    "packages/ddp-client.js": [
+      24291,
+      {
+        "node_modules": {
+          "meteor": {
+            "ddp-client": {
+              "client": {
+                "client.js": 136,
+                "client_convenience.js": 852
+              },
+              "common": {
+                "MethodInvoker.js": 1146,
+                "livedata_connection.js": 20486,
+                "namespace.js": 875
+              }
+            }
+          }
+        }
+      }
+    ],
+    "packages/ddp.js": 78,
+    "packages/ddp-server.js": 30,
+    "packages/allow-deny.js": [
+      5828,
+      {
+        "node_modules": {
+          "meteor": {
+            "allow-deny": {
+              "allow-deny.js": 5327
+            }
+          }
+        }
+      }
+    ],
+    "packages/typescript.js": 30,
+    "packages/logging.js": [
+      3942,
+      {
+        "node_modules": {
+          "meteor": {
+            "logging": {
+              "logging.js": 3462,
+              "logging_browser.js": 53
+            }
+          }
+        }
+      }
+    ],
+    "packages/insecure.js": 28,
+    "packages/mongo.js": [
+      12067,
+      {
+        "node_modules": {
+          "meteor": {
+            "mongo": {
+              "local_collection_driver.js": 362,
+              "collection.js": 10561,
+              "mongo_utils.js": 346
+            }
+          }
+        }
+      }
+    ],
+    "packages/reactive-var.js": 818,
+    "packages/minifier-css.js": 66,
+    "packages/standard-minifier-css.js": 41,
+    "packages/standard-minifier-js.js": 40,
+    "packages/shell-server.js": 32,
+    "packages/static-html.js": 31,
+    "packages/react-meteor-data.js": [
+      6865,
+      {
+        "node_modules": {
+          "meteor": {
+            "react-meteor-data": {
+              "index.js": 417,
+              "useFind.ts": 2245,
+              "useSubscribe.ts": 389,
+              "useTracker.ts": 2974,
+              "withTracker.tsx": 426
+            }
+          }
+        }
+      }
+    ],
+    "packages/ddp-rate-limiter.js": 36,
+    "packages/localstorage.js": 837,
+    "packages/url.js": [
+      1194,
+      {
+        "node_modules": {
+          "meteor": {
+            "url": {
+              "modern.js": 110,
+              "bc": {
+                "url_client.js": 172,
+                "url_common.js": 569
+              }
+            }
+          }
+        }
+      }
+    ],
+    "packages/accounts-base.js": [
+      13575,
+      {
+        "node_modules": {
+          "meteor": {
+            "accounts-base": {
+              "client_main.js": 237,
+              "accounts_client.js": 7938,
+              "accounts_common.js": 4756
+            }
+          }
+        }
+      }
+    ],
+    "packages/sha.js": 2495,
+    "packages/accounts-password.js": [
+      2654,
+      {
+        "node_modules": {
+          "meteor": {
+            "accounts-password": {
+              "password_client.js": 2193
+            }
+          }
+        }
+      }
+    ],
+    "packages/zodern_types.js": 32,
+    "packages/alanning_roles.js": [
+      19756,
+      {
+        "node_modules": {
+          "meteor": {
+            "alanning:roles": {
+              "roles": {
+                "roles_common.js": 8374,
+                "roles_common_async.js": 9615,
+                "client": {
+                  "debug.js": 138,
+                  "uiHelpers.js": 676,
+                  "subscriptions.js": 75
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "packages/raix_eventemitter.js": 2187,
+    "packages/tmeasday_check-npm-versions.js": [
+      20096,
+      {
+        "node_modules": {
+          "meteor": {
+            "tmeasday:check-npm-versions": {
+              "check-npm-versions.ts": 1036,
+              "node_modules": {
+                "semver": {
+                  "package.json": 77,
+                  "semver.js": 18526
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "packages/aldeed_collection2.js": [
+      22670,
+      {
+        "node_modules": {
+          "meteor": {
+            "aldeed:collection2": {
+              "collection2.js": 8493,
+              "lib.js": 429,
+              "node_modules": {
+                "lodash.isempty": {
+                  "package.json": 68,
+                  "index.js": 2650
+                },
+                "lodash.isequal": {
+                  "package.json": 68,
+                  "index.js": 10100
+                },
+                "lodash.isobject": {
+                  "package.json": 69,
+                  "index.js": 99
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "packages/aldeed_schema-index.js": [
+      806,
+      {
+        "node_modules": {
+          "meteor": {
+            "aldeed:schema-index": {
+              "client.js": 37,
+              "common.js": 342
+            }
+          }
+        }
+      }
+    ],
+    "packages/underscore.js": 14679,
+    "packages/zodern_meteor-package-versions.js": 50,
+    "packages/montiapm_agent.js": [
+      19454,
+      {
+        "node_modules": {
+          "meteor": {
+            "montiapm:agent": {
+              "lib": {
+                "common": {
+                  "utils.js": 1530,
+                  "unify.js": 571,
+                  "default_error_filters.js": 337,
+                  "send.js": 943
+                },
+                "models": {
+                  "base_error.js": 576
+                },
+                "retry.js": 783,
+                "ntp.js": 2071,
+                "client": {
+                  "httpRequest.js": 1631,
+                  "utils.js": 1563,
+                  "models": {
+                    "errors.js": 1912
+                  },
+                  "error_reporters": {
+                    "zone.js": 499,
+                    "window_error.js": 713,
+                    "meteor_debug.js": 1005,
+                    "unhandled_rejection.js": 494,
+                    "tracker.js": 1097
+                  },
+                  "kadira.js": 1740
+                },
+                "profiler": {
+                  "client.js": 121
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "packages/webapp.js": [
+      651,
+      {
+        "node_modules": {
+          "meteor": {
+            "webapp": {
+              "webapp_client.js": 317
+            }
+          }
+        }
+      }
+    ],
+    "packages/zodern_hide-production-sourcemaps.js": 53,
+    "packages/dev-error-overlay.js": [
+      1646,
+      {
+        "node_modules": {
+          "meteor": {
+            "dev-error-overlay": {
+              "client.js": 1288
+            }
+          }
+        }
+      }
+    ],
+    "packages/hot-code-push.js": 33,
+    "packages/launch-screen.js": 71,
+    "packages/autoupdate.js": [
+      3524,
+      {
+        "node_modules": {
+          "meteor": {
+            "autoupdate": {
+              "autoupdate_client.js": 1928,
+              "client_versions.js": 1117
+            }
+          }
+        }
+      }
+    ],
+    "app/global-imports.js": [
+      746,
+      {}
+    ],
+    "app/app.js": [
+      51118,
+      {
+        "client": {
+          "template.main.js": 115,
+          "style.css": 14,
+          "main.js": 131
+        },
+        "imports": {
+          "api": {
+            "profile": {
+              "Profile.js": 621
+            },
+            "reference": {
+              "Reference.js": 674
+            },
+            "report": {
+              "Report.js": 921
+            },
+            "stuff": {
+              "Stuff.js": 576
+            }
+          },
+          "startup": {
+            "client": {
+              "Startup.jsx": 326
+            }
+          },
+          "ui": {
+            "components": {
+              "DownloadButton.jsx": 1126,
+              "Footer.jsx": 596,
+              "LoadingSpinner.jsx": 311,
+              "Login.jsx": 1058,
+              "Logo.jsx": 442,
+              "NavBar.jsx": 1413,
+              "Profile.jsx": 906,
+              "Report.jsx": 1080,
+              "Resource.jsx": 1567,
+              "ResourceAdmin.jsx": 1818,
+              "StuffItem.jsx": 528,
+              "StuffItemAdmin.jsx": 451
+            },
+            "layouts": {
+              "App.jsx": 4132
+            },
+            "pages": {
+              "AboutUs.jsx": 4843,
+              "AddPost.jsx": 2353,
+              "AddResource.jsx": 2052,
+              "EditProfile.jsx": 2418,
+              "EditStuff.jsx": 1680,
+              "Landing.jsx": 1544,
+              "ListProfile.jsx": 1013,
+              "ListStuff.jsx": 1202,
+              "ListStuffAdmin.jsx": 1217,
+              "NotAuthorized.jsx": 383,
+              "NotFound.jsx": 383,
+              "Posts.jsx": 2074,
+              "PostsAdmin.jsx": 1754,
+              "Resources.jsx": 2405,
+              "ResourcesAdmin.jsx": 2467,
+              "SignIn.jsx": 1556,
+              "SignOut.jsx": 310,
+              "SignUp.jsx": 1754
+            }
+          }
+        }
+      }
+    ]
+  }
+}
