@@ -53,7 +53,7 @@ const EditProfile = () => {
 
   return ready ? (
     <Container className="py-3">
-      <h2 className="text-center">Edit Profile</h2>
+      <h2 className="text-center mb-3">Edit Profile</h2>
       <Row className="justify-content-center">
         <Col xs={8}>
           <Card>
