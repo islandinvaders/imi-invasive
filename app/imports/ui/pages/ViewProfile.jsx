@@ -1,8 +1,9 @@
 import React from 'react';
-import { Card, Col, Container, Image, Row } from 'react-bootstrap';
+import { Button, Card, Col, Container, Image, Row } from 'react-bootstrap';
 import { Meteor } from 'meteor/meteor';
 import { useTracker } from 'meteor/react-meteor-data';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { Profiles } from '../../api/profile/Profile';
 
@@ -51,6 +52,9 @@ const ViewProfile = () => {
                   </Card.Text>
                 </Card.Body>
               </Card>
+              <div className="d-flex justify-content-center mt-3">
+                <Button as={Link} to="/list-profile">Back to List</Button>
+              </div>
             </Col>
           </Row>
         </Col>
