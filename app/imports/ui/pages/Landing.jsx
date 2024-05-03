@@ -1,19 +1,25 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import CarouselImages from '../components/Carousel';
 
-/* A simple static component to render some text for the landing page. */
 const Landing = () => (
-  <Container id="landing-page" fluid className="d-flex justify-content-start" style={{ width: '100%' }}>
-    <Row className="align-middle text-center">
-      <Col className="d-flex flex-column justify-content-center">
-        <div className="image-overlay d-flex justify-content-start">
-          <h1>ALOHA MAI KĀKOU!</h1>
-        </div>
-        <p />
-        <div className="accent-green">
-          <h1>`Imi means “search” in ʻŌlelo Hawaiʻi</h1>
-        </div>
-        <div>
+  <>
+    <Container>
+      <Row noGutters>
+        <CarouselImages />
+      </Row>
+    </Container>
+
+    <Container id="landing-page" fluid className="d-flex justify-content-start" style={{ width: '100%' }}>
+      <Row className="align-middle text-center">
+        <Col className="d-flex flex-column justify-content-center">
+          <div className="image-overlay d-flex justify-content-start">
+            <h1>ALOHA MAI KĀKOU!</h1>
+          </div>
+          <p />
+          <div className="accent-green">
+            <h1>`Imi means “search” in ʻŌlelo Hawaiʻi</h1>
+          </div>
           <Row>
             <Col xs={12} md={6} className="justify-content-left">
               <img
@@ -38,10 +44,10 @@ const Landing = () => (
               </p>
             </Col>
           </Row>
-        </div>
-      </Col>
-    </Row>
-  </Container>
+        </Col>
+      </Row>
+    </Container>
+  </>
 );
 
 export default Landing;
