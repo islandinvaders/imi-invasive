@@ -39,11 +39,11 @@ const Posts = () => {
   return (ready ? (
     <Container className="py-3">
       <Row className="align-middle text-center">
-        <Col xs={4}>
+        <Col xs={4} className="pt-4">
           <Row className="d-flex justify-content-center align-items-center">
             {console.log(profile)}
             {console.log(profile && profile.image)}
-            {profile && profile.image ? <Image roundedCircle src={profile.image} /> : <Image roundedCircle src="https://m.media-amazon.com/images/I/812Onuail2L._AC_UF894,1000_QL80_.jpg" />}
+            {profile && profile.image ? <Image className="img-posts p-0" src={profile.image} /> : <Image className="img-posts p-0" src="https://pbs.twimg.com/profile_images/1507872748789706753/9wGjDEuR_400x400.jpg" />}
           </Row>
           <Row className="d-flex justify-content-center align-items-center mt-4">
             <Button className="btn-posts" py={10} onClick={handleButtonClick}>{ showAllReports ? 'View My Posts' : 'View All Posts' }</Button>
