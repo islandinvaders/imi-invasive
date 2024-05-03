@@ -59,15 +59,9 @@ h2 {
 }
 
 .accent-green {
-  left: 0;
-  right: 0;
-  background-color: white;
   color: #56684F;
-  font-weight: bolder;
   font-family: 'Eczar', sans-serif;
-  padding-top: 300px;
-  padding-bottom: 300px;
-  margin: 0;
+  text-align: center;
 }
 
 .landing-collage {
@@ -163,7 +157,6 @@ h2 {
   align-items: center;
 }
 
-/* Make buttons from react-bootstrap rectangle */
 .btn-posts {
   border-radius: 0 !important;
   background-color: #56684F !important;
