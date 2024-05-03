@@ -35,8 +35,8 @@ const EditProfile = () => {
   // console.log('EditStuff', doc, ready);
   // On successful submit, insert the data.
   const submit = (data) => {
-    const { firstName, lastName, email, bio, interests } = data;
-    Profiles.collection.update(thisProfile._id, { $set: { firstName, lastName, email, bio, interests } }, (error) => {
+    const { image, firstName, lastName, email, bio, interests } = data;
+    Profiles.collection.update(thisProfile._id, { $set: { image, firstName, lastName, email, bio, interests } }, (error) => {
       if (error) {
         // Show an error message if the update fails
         swal('Error', error.message, 'error');
@@ -53,12 +53,13 @@ const EditProfile = () => {
 
   return ready ? (
     <Container className="py-3">
-      <h2 className="text-center">Edit Profile</h2>
+      <h2 className="text-center mb-3">Edit Profile</h2>
       <Row className="justify-content-center">
         <Col xs={8}>
           <Card>
             <AutoForm schema={bridge} onSubmit={submit} model={thisProfile}>
               <Card.Body>
+                <Row><TextField name="image" style={{ minHeight: '5rem' }} /></Row>
                 <Row>
                   <Col>
                     <TextField name="firstName" style={{ minHeight: '5rem' }} />

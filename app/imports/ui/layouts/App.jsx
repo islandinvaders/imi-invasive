@@ -10,7 +10,6 @@ import AboutUs from '../pages/AboutUs';
 import ListStuff from '../pages/ListStuff';
 import ListStuffAdmin from '../pages/ListStuffAdmin';
 import AddPost from '../pages/AddPost';
-import EditStuff from '../pages/EditStuff';
 import NotFound from '../pages/NotFound';
 import SignUp from '../pages/SignUp';
 import SignOut from '../pages/SignOut';
@@ -26,6 +25,11 @@ import Logo from '../components/Logo';
 import Login from '../components/Login';
 import PostsAdmin from '../pages/PostsAdmin';
 import ListProfile from '../pages/ListProfile';
+import AddResource from '../pages/AddResource';
+import EditPost from '../pages/EditPost';
+import EditPostAdmin from '../pages/EditPostAdmin';
+import ViewProfile from '../pages/ViewProfile';
+import ListProfileAdmin from '../pages/ListProfileAdmin';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => {
@@ -49,6 +53,8 @@ const App = () => {
           <Route path="/about" element={<ProtectedRoute><AboutUs /></ProtectedRoute>} />
           <Route path="/edit-profile" element={<ProtectedRoute><EditProfile /></ProtectedRoute>} />
           <Route path="/list-profile" element={<ProtectedRoute><ListProfile /></ProtectedRoute>} />
+          <Route path="/list-profile-admin" element={<AdminProtectedRoute ready={ready}><ListProfileAdmin /></AdminProtectedRoute>} />
+          <Route path="/view-profile/:_id" element={<ProtectedRoute><ViewProfile /></ProtectedRoute>} />
           <Route path="/posts" element={<ProtectedRoute><Posts /></ProtectedRoute>} />
           <Route path="/postsadmin" element={<AdminProtectedRoute ready={ready}><PostsAdmin /></AdminProtectedRoute>} />
           <Route path="/home" element={<ProtectedRoute><Landing /></ProtectedRoute>} />
@@ -56,7 +62,9 @@ const App = () => {
           <Route path="/resources" element={<ProtectedRoute><Resources /></ProtectedRoute>} />
           <Route path="/resourcesadmin" element={<AdminProtectedRoute ready={ready}><ResourcesAdmin /></AdminProtectedRoute>} />
           <Route path="/add" element={<ProtectedRoute><AddPost /></ProtectedRoute>} />
-          <Route path="/edit/:_id" element={<ProtectedRoute><EditStuff /></ProtectedRoute>} />
+          <Route path="/addresource" element={<ProtectedRoute><AddResource /></ProtectedRoute>} />
+          <Route path="/edit/:_id" element={<ProtectedRoute><EditPost /></ProtectedRoute>} />
+          <Route path="/admin/edit/:_id" element={<ProtectedRoute><EditPostAdmin /></ProtectedRoute>} />
           <Route path="/admin" element={<AdminProtectedRoute ready={ready}><ListStuffAdmin /></AdminProtectedRoute>} />
           <Route path="/notauthorized" element={<NotAuthorized />} />
           <Route path="*" element={<NotFound />} />

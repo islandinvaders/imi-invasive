@@ -31,7 +31,7 @@ if (Reports.collection.find().count() === 0) {
 }
 
 const addProfile = (data) => {
-  console.log(`  Adding: ${data.LastName}, ${data.email} `);
+  console.log(`  Adding: ${data.lastName}, ${data.email} `);
   Profiles.collection.insert(data);
 };
 

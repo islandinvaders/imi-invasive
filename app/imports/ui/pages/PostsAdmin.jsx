@@ -4,24 +4,29 @@ import { Meteor } from 'meteor/meteor';
 import { useTracker } from 'meteor/react-meteor-data';
 import { Reports } from '../../api/report/Report';
 import LoadingSpinner from '../components/LoadingSpinner';
-import Report from '../components/Report';
 import DownloadButton from '../components/DownloadButton';
+import ReportAdmin from '../components/ReportAdmin';
+import { Profiles } from '../../api/profile/Profile';
 
 const PostsAdmin = () => {
   // State to manage whether to show all reports or user-specific reports
   const [showAllReports, setShowAllReports] = useState(true);
+  const currentUser = Meteor.user();
+  const currentUserEmail = currentUser && currentUser.email;
 
   // useTracker connects Meteor data to React components.
-  const { ready, reports } = useTracker(() => {
+  const { ready, reports, profile } = useTracker(() => {
     // Get access to Report documents.
-    const subscription = Meteor.subscribe(Reports.adminAllPosts);
+    const reportsSubscription = Meteor.subscribe(Reports.adminAllPosts);
+    const profilesSubscription = Meteor.subscribe(Profiles.userPublicationName);
     // Determine if the subscription is ready
-    const rdy = subscription.ready();
+    const rdy = reportsSubscription.ready() && profilesSubscription.ready();
     // Get the Report documents based on the state
-    // TODO: DYNAMICALLY DISPLAY POSTS FOR CURRENT USER, NOT JUST 'john@foo.com'
     const reportItems = showAllReports ? Reports.collection.find().fetch() : Reports.collection.find({ verified: 'No' });
+    const userProfile = Profiles.collection.find({ email: currentUserEmail }).fetch();
     return {
       reports: reportItems,
+      profile: userProfile,
       ready: rdy,
     };
   }, [showAllReports]);
@@ -34,9 +39,11 @@ const PostsAdmin = () => {
   return (ready ? (
     <Container className="py-3">
       <Row className="align-middle text-center">
-        <Col xs={4}>
+        <Col xs={4} className="pt-4">
           <Row className="d-flex justify-content-center align-items-center">
-            <Image roundedCircle src="https://m.media-amazon.com/images/I/812Onuail2L._AC_UF894,1000_QL80_.jpg" />
+            {console.log(profile)}
+            {console.log(profile && profile.image)}
+            {profile && profile.image ? <Image className="img-posts p-0" src={profile.image} /> : <Image className="img-posts p-0" src="https://pbs.twimg.com/profile_images/1507872748789706753/9wGjDEuR_400x400.jpg" />}
           </Row>
           <Row className="d-flex justify-content-center align-items-center mt-4">
             <Button className="btn-posts" py={10} onClick={handleButtonClick}>{ showAllReports ? 'View Unverified Posts' : 'View All Posts' }</Button>
@@ -52,7 +59,7 @@ const PostsAdmin = () => {
               <h2>Posts Admin</h2>
             </Col>
           </Row>
-          {reports.map((report) => (<Row className="py-4" key={report._id}><Report report={report} /></Row>))}
+          {reports.map((report) => (<Row className="py-4" key={report._id}><ReportAdmin report={report} collection={Reports.collection} showControls={!showAllReports} /></Row>))}
         </Col>
       </Row>
     </Container>

@@ -20,6 +20,15 @@
     ],
   "profileData": [
     {
+      "image": "https://todaygoodaction.campaignus.me/common/img/default_profile.png",
+      "firstName": "Admin",
+      "lastName": "Account",
+      "email": "admin@foo.com",
+      "bio": "I am an advocate for endangered species",
+      "interests": "Birds, Insects, Mammals"
+    },
+    {
+      "image": "https://todaygoodaction.campaignus.me/common/img/default_profile.png",
       "firstName": "Gojo",
       "lastName": "Satoru",
       "email": "john@foo.com",
@@ -27,6 +36,7 @@
       "interests": "Birds, Insects, Mammals"
     },
     {
+      "image": "https://todaygoodaction.campaignus.me/common/img/default_profile.png",
       "firstName": "Johnathan",
       "lastName": "Joestar",
       "email": "jo@jo.com",
@@ -34,6 +44,7 @@
       "interests": "Birds, Insects, Mammals"
     },
     {
+      "image": "https://todaygoodaction.campaignus.me/common/img/default_profile.png",
       "firstName": "Jotaro",
       "lastName": "Kujo",
       "email": "jo@taro.com",
