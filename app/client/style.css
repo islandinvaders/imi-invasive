@@ -173,5 +173,10 @@ h2 {
 
 .img-posts {
   width: 200px !important;
-  height: 100px !important;
+  height: 200px !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  object-fit: cover !important;
+  border: 3px solid black;
+  box-sizing: border-box;
 }
