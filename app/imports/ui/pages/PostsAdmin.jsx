@@ -39,7 +39,7 @@ const PostsAdmin = () => {
   return (ready ? (
     <Container className="py-3">
       <Row className="align-middle text-center">
-        <Col xs={4}>
+        <Col xs={4} className="pt-4">
           <Row className="d-flex justify-content-center align-items-center">
             {console.log(profile)}
             {console.log(profile && profile.image)}

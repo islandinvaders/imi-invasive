@@ -165,9 +165,9 @@ h2 {
 /* Make buttons from react-bootstrap rectangle */
 .btn-posts {
   border-radius: 0 !important;
-  background-color: lightyellow !important;
-  border-color: black !important;
-  color: black !important;
+  background-color: #56684F !important;
+  border-color: #E3E1CA !important;
+  color: #E3E1CA !important;
   width: 200px !important;
 }
 
@@ -180,3 +180,8 @@ h2 {
   border: 3px solid black;
   box-sizing: border-box;
 }
+/* For edit, delete, and change verification buttons on Posts/PostsAdmin */
+.other-btn-posts {
+  width: 200px !important;
+}
+

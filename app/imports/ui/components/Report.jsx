@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Card, ListGroup, Row, Col, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 
 const Report = ({ report, collection, showControls }) => {
 
@@ -15,7 +14,7 @@ const Report = ({ report, collection, showControls }) => {
         <Card.Img variant="top" src={report.image} style={{ width: '60%' }} />
         <Card.Title>{report.pestName}</Card.Title>
       </Card.Header>
-      <Row>
+      <Row className="pb-2">
         <Col>
           <ListGroup className="list-group-flush">
             <ListGroup.Item><strong>Island:</strong> {report.island} </ListGroup.Item>
@@ -33,10 +32,15 @@ const Report = ({ report, collection, showControls }) => {
             </Card.Body>
           </Row>
           {showControls && (
-            <Row className="mt-2">
-              <Button variant="danger" onClick={() => removeItem(report._id)}>Delete</Button>
-              <Link to={`/edit/${report._id}`}>Edit</Link>
-            </Row>
+            <>
+              <Row className="mt-2 justify-content-center">
+                <Button className="other-btn-posts" variant="danger" onClick={() => removeItem(report._id)}>Delete</Button>
+              </Row>
+              <Row className="mt-2 justify-content-center">
+                {/* eslint-disable-next-line no-return-assign */}
+                <Button className="other-btn-posts" variant="primary" onClick={() => window.location.href = `/edit/${report._id}`}>Edit</Button>
+              </Row>
+            </>
           )}
         </Col>
       </Row>
