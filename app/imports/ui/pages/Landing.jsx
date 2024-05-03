@@ -4,11 +4,9 @@ import CarouselImages from '../components/Carousel';
 
 const Landing = () => (
   <>
-    <Container>
-      <Row noGutters>
-        <CarouselImages />
-      </Row>
-    </Container>
+    <Row noGutters>
+      <CarouselImages />
+    </Row>
 
     <Container id="landing-page" fluid className="d-flex justify-content-start" style={{ width: '100%' }}>
       <Row className="align-middle text-center">
