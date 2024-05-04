@@ -204,3 +204,9 @@ h2 {
 .other-btn-posts {
   width: 200px !important;
 }
+
+/* footer */
+.footer-color {
+  background-color: #56684F !important;
+  color: floralwhite;
+}
