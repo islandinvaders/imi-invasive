@@ -48,20 +48,23 @@ h2 {
   font-weight: bolder;
   justify-content: left;
   text-align: left;
+  font-family: "Libre Franklin", sans-serif;
 }
 
 .landing-description {
   justify-content: left;
   text-align: left;
   line-height: 50px;
-  margin: 50px 75px 50px 150px;
-  font-family: 'Spectral', sans-serif;
+  margin: 50px 50px 50px 150px;
+  font-family: "Libre Franklin", sans-serif;
 }
 
 .accent-green {
   color: #56684F;
   font-family: 'Eczar', sans-serif;
   text-align: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
 }
 
 .landing-collage {

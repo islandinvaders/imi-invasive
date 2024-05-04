@@ -7,7 +7,7 @@ const Landing = () => (
     <CarouselImages />
     <Container fluid id="landing-page">
       <h1 className="accent-green py-5">`Imi means “search” in ʻŌlelo Hawaiʻi</h1>
-      <Row className="align-items-center">
+      <Row className="align-items-start"> {/* Use align-items-start to align columns at the top */}
         <Col className="px-3">
           <img
             alt="collage"
