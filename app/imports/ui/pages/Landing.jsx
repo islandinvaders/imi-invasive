@@ -36,24 +36,3 @@ const Landing = () => (
 );
 
 export default Landing;
-
-// Just a recap. This might help with formatting, but if it doesn't I have another idea for that too.
-/**
- * <>
- *  Row
- *    Carousel
- *  /Row
- *
- * Container
- *  Row
- *    header text (not in a column)
- *    Col 1
- *      image collage
- *    /Col
- *
- *    Col 2
- *      text
- *    /Col
- * /Container
- * </>
- */
