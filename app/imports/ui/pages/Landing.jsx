@@ -7,15 +7,15 @@ const Landing = () => (
     <CarouselImages />
     <Container fluid id="landing-page">
       <h1 className="accent-green py-5">`Imi means “search” in ʻŌlelo Hawaiʻi</h1>
-      <Row>
-        <Col>
+      <Row className="align-items-center">
+        <Col className="px-3">
           <img
             alt="collage"
             src="/images/collage.png"
             className="img-fluid d-inline-block align-top landing-collage"
           />
         </Col>
-        <Col>
+        <Col className="px-3">
           <h2 className="landing-header">
             Help us ʻimi invasive species!
           </h2>
