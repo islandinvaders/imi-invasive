@@ -10,7 +10,11 @@ const CarouselImages = () => (
         src="/images/hawaii3.png"
         className="d-block w-100"
       />
-      <CarouselCaption className="image-overlay d-flex justify-content-start"><h1>ALOHA MAI KĀKOU!</h1></CarouselCaption>
+      <CarouselCaption className="image-overlay d-flex flex-column justify-content-center">
+        <h1>ALOHA MAI KĀKOU!</h1>
+        <h2>E komo mai</h2>
+        <p>Welcome to `Imi Invasive!</p>
+      </CarouselCaption>
     </Carousel.Item>
     <Carousel.Item className="image-overlay">
       <img
@@ -18,7 +22,11 @@ const CarouselImages = () => (
         src="/images/hawaii2.png"
         className="d-block w-100"
       />
-      <CarouselCaption className="image-overlay d-flex justify-content-start"><h1>ALOHA MAI KĀKOU!</h1></CarouselCaption>
+      <CarouselCaption className="image-overlay d-flex flex-column justify-content-center">
+        <h1>ALOHA MAI KĀKOU!</h1>
+        <h2>E komo mai</h2>
+        <p>Welcome to `Imi Invasive!</p>
+      </CarouselCaption>
     </Carousel.Item>
     <Carousel.Item className="image-overlay">
       <img
@@ -26,7 +34,11 @@ const CarouselImages = () => (
         src="/images/flower2.png"
         className="d-block w-100"
       />
-      <CarouselCaption className="image-overlay d-flex justify-content-start"><h1>ALOHA MAI KĀKOU!</h1></CarouselCaption>
+      <CarouselCaption className="image-overlay d-flex flex-column justify-content-center">
+        <h1>ALOHA MAI KĀKOU!</h1>
+        <h2>E komo mai</h2>
+        <p>Welcome to `Imi Invasive!</p>
+      </CarouselCaption>
     </Carousel.Item>
     <Carousel.Item className="image-overlay">
       <img
@@ -34,7 +46,11 @@ const CarouselImages = () => (
         src="/images/mongoose.png"
         className="d-block w-100"
       />
-      <CarouselCaption className="image-overlay d-flex justify-content-start"><h1>ALOHA MAI KĀKOU!</h1></CarouselCaption>
+      <CarouselCaption className="image-overlay d-flex flex-column justify-content-center">
+        <h1>ALOHA MAI KĀKOU!</h1>
+        <h2>E komo mai</h2>
+        <p>Welcome to `Imi Invasive!</p>
+      </CarouselCaption>
     </Carousel.Item>
   </Carousel>
 );
