@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import { CarouselCaption } from 'react-bootstrap';
 
 const CarouselImages = () => (
-  <Carousel>
+  <Carousel style={{ height: 'auto' }}>
     <Carousel.Item className="image-overlay">
       <img
         alt="Hawaii3"
