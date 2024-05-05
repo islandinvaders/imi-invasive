@@ -4,7 +4,16 @@ import { Card, Image, Button } from 'react-bootstrap';
 
 const ProfileAdmin = ({ listProfile, collection }) => {
   const removeItem = (profileId) => {
-    collection.remove(profileId);
+    if (window.confirm('Are you sure you want to delete this profile?')) {
+      collection.remove(profileId, (error) => {
+        if (error) {
+          alert(`Error removing profile: ${error.message}`);
+        } else {
+          // Notify the user of successful removal
+          alert('Profile removed successfully!');
+        }
+      });
+    }
   };
 
   return (
