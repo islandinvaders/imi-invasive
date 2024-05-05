@@ -29,10 +29,10 @@ const Profile = ({ listProfile }) => (
           textOverflow: 'ellipsis',
         }}
       >
-        <span className="fw-bold">Bio:</span>{' '}{listProfile.bio}
+        <span className="fw-bold" style={{ fontSize: '18px' }}>Bio:</span>{' '}{listProfile.bio}
       </span>
       <Card.Text>
-        <span className="fw-bold">Interests:</span><span>{' '}{listProfile.interests}</span>
+        <span className="fw-bold" style={{ fontSize: '18px' }}>Interests:</span><span>{' '}{listProfile.interests}</span>
       </Card.Text>
     </Card.Body>
     <Card.Footer>

@@ -4,7 +4,7 @@ import { useTracker } from 'meteor/react-meteor-data';
 import { Col, Container, Row } from 'react-bootstrap';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { Profiles } from '../../api/profile/Profile';
-import Profile from '../components/Profile';
+import ProfileAdmin from '../components/ProfileAdmin';
 
 // View your own profile
 const ListProfileAdmin = () => {
@@ -27,7 +27,7 @@ const ListProfileAdmin = () => {
             <h2>List Profiles</h2>
           </Col>
           <Row xs={1} sm={2} lg={3} className="g-4">
-            {thisProfile.map((profile) => <Col><div><Profile key={profile._id} listProfile={profile} /></div></Col>)}
+            {thisProfile.map((profile) => <Col><div><ProfileAdmin key={profile._id} listProfile={profile} collection={Profiles.collection} /></div></Col>)}
           </Row>
         </Col>
       </Row>

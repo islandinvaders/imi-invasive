@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Card, Image, Button } from 'react-bootstrap';
 
-const ProfileAdmin = ({ listProfile, onDelete }) => {
-  const removeItem = () => {
-    onDelete.remove(listProfile);
+const ProfileAdmin = ({ listProfile, collection }) => {
+  const removeItem = (profileId) => {
+    collection.remove(profileId);
   };
 
   return (
@@ -40,8 +40,8 @@ const ProfileAdmin = ({ listProfile, onDelete }) => {
         </Card.Text>
       </Card.Body>
       <Card.Footer>
-        <div className="d-flex justify-content-between">
-          <Button id="profile-admin-delete" variant="danger" onClick={() => removeItem(listProfile._id)}>Delete</Button>
+        <div className="d-flex justify-content-center">
+          <Button variant="danger" onClick={() => removeItem(listProfile._id)}>Delete</Button>
         </div>
       </Card.Footer>
     </Card>
@@ -55,11 +55,11 @@ ProfileAdmin.propTypes = {
     lastName: PropTypes.string.isRequired,
     email: PropTypes.string.isRequired,
     bio: PropTypes.string,
-    type: PropTypes.string,
     interests: PropTypes.string,
     _id: PropTypes.string.isRequired,
   }).isRequired,
-  onDelete: PropTypes.func.isRequired,
+  // eslint-disable-next-line react/forbid-prop-types
+  collection: PropTypes.object.isRequired,
 };
 
 export default ProfileAdmin;
