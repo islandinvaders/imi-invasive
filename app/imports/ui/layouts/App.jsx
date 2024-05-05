@@ -30,6 +30,7 @@ import EditPost from '../pages/EditPost';
 import EditPostAdmin from '../pages/EditPostAdmin';
 import ViewProfile from '../pages/ViewProfile';
 import ListProfileAdmin from '../pages/ListProfileAdmin';
+import EditProfileAdmin from '../pages/EditProfileAdmin';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => {
@@ -52,6 +53,7 @@ const App = () => {
           <Route path="/signout" element={<SignOut />} />
           <Route path="/about" element={<ProtectedRoute><AboutUs /></ProtectedRoute>} />
           <Route path="/edit-profile" element={<ProtectedRoute><EditProfile /></ProtectedRoute>} />
+          <Route path="/edit-profile-admin" element={<AdminProtectedRoute ready={ready}><EditProfileAdmin /></AdminProtectedRoute>} />
           <Route path="/list-profile" element={<ProtectedRoute><ListProfile /></ProtectedRoute>} />
           <Route path="/list-profile-admin" element={<AdminProtectedRoute ready={ready}><ListProfileAdmin /></AdminProtectedRoute>} />
           <Route path="/view-profile/:_id" element={<ProtectedRoute><ViewProfile /></ProtectedRoute>} />

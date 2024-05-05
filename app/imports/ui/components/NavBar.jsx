@@ -22,7 +22,7 @@ const NavBar = () => {
                 <Nav.Link as={NavLink} to="/about" key="about">ABOUT US</Nav.Link>
                 {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
                   <>
-                    <Nav.Link as={NavLink} to="/list-profile-admin" key="profile-admin">PROFILE ADMIN</Nav.Link>
+                    <Nav.Link as={NavLink} to="/edit-profile-admin" key="edit-admin">PROFILE ADMIN</Nav.Link>
                     <Nav.Link as={NavLink} to="/postsadmin" key="posts-admin">POSTS ADMIN</Nav.Link>
                     <Nav.Link as={NavLink} to="/resourcesadmin" key="resources-admin">INVASIVE LIST ADMIN</Nav.Link>
                   </>
