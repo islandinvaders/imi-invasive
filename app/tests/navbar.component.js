@@ -5,6 +5,14 @@ class NavBar {
     await testController.click('#landing-page');
   }
 
+  async gotoAboutUsPage(testController) {
+    await testController.click('#about-us-nav');
+  }
+
+  async gotoEditProfilePage(testController) {
+    await testController.click('#edit-profile-nav');
+  }
+
   async gotoResourcesPage(testController) {
     const visible = await Selector('#basic-navbar-nav').visible;
     if (!visible) {

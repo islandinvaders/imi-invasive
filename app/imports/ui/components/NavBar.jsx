@@ -19,19 +19,19 @@ const NavBar = () => {
           <Nav className="me-auto">
             {currentUser && (
               <>
-                <Nav.Link as={NavLink} to="/about" key="about">ABOUT US</Nav.Link>
+                <Nav.Link as={NavLink} id="about-us-nav" to="/about" key="about">ABOUT US</Nav.Link>
                 {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
                   <>
-                    <Nav.Link as={NavLink} to="/list-profile-admin" key="profile-admin">PROFILE ADMIN</Nav.Link>
-                    <Nav.Link as={NavLink} to="/postsadmin" key="posts-admin">POSTS ADMIN</Nav.Link>
-                    <Nav.Link as={NavLink} to="/resourcesadmin" key="resources-admin">INVASIVE LIST ADMIN</Nav.Link>
+                    <Nav.Link as={NavLink} id="profile-admin-nav" to="/list-profile-admin" key="profile-admin">PROFILE ADMIN</Nav.Link>
+                    <Nav.Link as={NavLink} id="posts-admin-nav" to="/postsadmin" key="posts-admin">POSTS ADMIN</Nav.Link>
+                    <Nav.Link as={NavLink} id="resources-admin-nav" to="/resourcesadmin" key="resources-admin">INVASIVE LIST ADMIN</Nav.Link>
                   </>
                 ) : (
                   <>
-                    <Nav.Link as={NavLink} to="/edit-profile" key="edit-profile">EDIT PROFILE</Nav.Link>
-                    <Nav.Link as={NavLink} to="/posts" key="posts">POSTS</Nav.Link>
-                    <Nav.Link as={NavLink} to="/add" key="file-report">FILE REPORT</Nav.Link>
-                    <Nav.Link as={NavLink} to="/resources" key="resources">INVASIVE LIST</Nav.Link>
+                    <Nav.Link as={NavLink} id="edit-profile-nav" to="/edit-profile" key="edit-profile">EDIT PROFILE</Nav.Link>
+                    <Nav.Link as={NavLink} id="posts-nav" to="/posts" key="posts">POSTS</Nav.Link>
+                    <Nav.Link as={NavLink} id="reports-nav" to="/add" key="file-report">FILE REPORT</Nav.Link>
+                    <Nav.Link as={NavLink} id="resources-nav" to="/resources" key="resources">INVASIVE LIST</Nav.Link>
                   </>
                 )}
               </>

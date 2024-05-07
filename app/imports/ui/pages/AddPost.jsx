@@ -65,27 +65,27 @@ const AddPost = () => {
             <Card>
               <Card.Body>
                 <Row>
-                  <TextField name="image" />
+                  <TextField id="report-image" name="image" />
                 </Row>
                 <Row>
                   <Col>
-                    <TextField name="pestName" />
+                    <TextField id="report-pestname" name="pestName" />
                   </Col>
                   <Col>
-                    <SelectField name="island" />
+                    <SelectField id="report-island" name="island" />
                   </Col>
                   <Col>
-                    <TextField name="location" />
+                    <TextField id="report-location" name="location" />
                   </Col>
                 </Row>
                 <Row>
-                  <LongTextField name="pestDescription" />
+                  <LongTextField id="report-description" name="pestDescription" />
                 </Row>
                 <Row>
                   {isAdmin && (
-                    <Col><SelectField name="verified" /></Col>
+                    <Col><SelectField id="report-verified" name="verified" /></Col>
                   )}
-                  <Col><SelectField name="removed" /></Col>
+                  <Col><SelectField id="report-removed" name="removed" /></Col>
                 </Row>
                 <SubmitField value="Submit" />
                 <ErrorsField />
