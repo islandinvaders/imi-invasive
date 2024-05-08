@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Card, CardBody, CardFooter, Col, Image, Row, Button } from 'react-bootstrap';
 
-/** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
+/** Renders resources */
 const Resource = ({ resource, collection }) => {
   const removeItem = (docID) => {
     collection.remove(docID);

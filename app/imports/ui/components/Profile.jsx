@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Card, Image, Button } from 'react-bootstrap';
 
-/** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
+/** Renders Profile */
 const Profile = ({ listProfile }) => (
   <Card style={{ marginBottom: '20px', minHeight: '20rem', maxHeight: '20rem' }}>
     <Card.Header>

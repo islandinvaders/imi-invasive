@@ -19,11 +19,11 @@ const EditProfile = () => {
   const { ready, thisProfile } = useTracker(() => {
     // Note that this subscription will get cleaned up
     // when your component is unmounted or deps change.
-    // Get access to Stuff documents.
+    // Get access to Profile documents.
     const subscription = Meteor.subscribe(Profiles.userPublicationName);
     // Determine if the subscription is ready
     const rdy = subscription.ready();
-    // Get the Stuff documents
+    // Get the Profile documents
     const profile = Profiles.collection.findOne({ email: currentUser?.emails[0].address });
 
     return {
@@ -32,7 +32,7 @@ const EditProfile = () => {
     };
   }, []);
 
-  // console.log('EditStuff', doc, ready);
+  // console.log('EditProfile', doc, ready);
   // On successful submit, insert the data.
   const submit = (data) => {
     const { image, firstName, lastName, email, bio, interests } = data;
