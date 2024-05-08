@@ -32,18 +32,28 @@ const AddResource = () => {
   // On submit, insert the data.
   const submit = async (data, formRef) => {
     const { image, pestName, sciName, risk, regStatus, pestType, description, impact, distribution, lookalike } = data;
+
+    // Attempt to insert data into References collection
     References.collection.insert(
       { image, pestName, sciName, risk, regStatus, pestType, description, impact, distribution, lookalike },
       (error) => {
         if (error) {
+          // Display error message if insertion fails
           swal('Error', error.message, 'error');
         } else {
+          // Display success message
           swal('Success', 'Reference added successfully', 'success');
-          formRef.reset();
+
+          // Close the SweetAlert dialog after 2 seconds
+          setTimeout(() => {
+            swal.close(); // Close the SweetAlert dialog
+            formRef.reset(); // Reset the form
+          }, 2000); // Adjust the delay as needed
         }
       },
     );
   };
+
   // Render the form. Use Uniforms: https://github.com/vazco/uniforms
   let fRef = null;
   return (
@@ -54,19 +64,17 @@ const AddResource = () => {
           <AutoForm ref={ref => { fRef = ref; }} schema={bridge} onSubmit={data => submit(data, fRef)}>
             <Card>
               <Card.Body>
-                <Row>
-                  <TextField name="image" placeholder="Image URL" />
-                  <TextField name="pestName" />
-                  <TextField name="sciName" />
-                  <TextField name="risk" />
-                  <TextField name="regStatus" />
-                  <SelectField name="pestType" />
-                  <LongTextField name="description" />
-                  <LongTextField name="impact" />
-                  <TextField name="distribution" placeholder="Which Islands do they reside?" />
-                  <TextField name="lookalike" />
-                </Row>
-                <SubmitField value="Submit" />
+                <TextField id="add-resource-image" name="image" placeholder="Image URL" />
+                <TextField id="add-resource-pestName" name="pestName" />
+                <TextField id="add-resource-sciName" name="sciName" />
+                <TextField id="add-resource-risk" name="risk" />
+                <TextField id="add-resource-regStatus" name="regStatus" />
+                <SelectField id="add-resource-pestType" name="pestType" />
+                <LongTextField id="add-resource-description" name="description" />
+                <LongTextField id="add-resource-impact" name="impact" />
+                <TextField id="add-resource-distribution" name="distribution" placeholder="Which Islands do they reside?" />
+                <TextField id="add-resource-lookalike" name="lookalike" />
+                <SubmitField id="add-resource-submit-button" value="Submit" />
                 <ErrorsField />
               </Card.Body>
             </Card>

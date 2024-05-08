@@ -43,6 +43,11 @@ const EditProfile = () => {
       } else {
         // Show a success message if the update is successful
         swal('Success', 'Profile updated successfully', 'success');
+
+        // Close the SweetAlert dialog after 2 seconds
+        setTimeout(() => {
+          swal.close(); // Close the SweetAlert dialog
+        }, 2000); // Adjust the delay as needed
       }
     });
   };
@@ -59,34 +64,34 @@ const EditProfile = () => {
           <Card>
             <AutoForm schema={bridge} onSubmit={submit} model={thisProfile}>
               <Card.Body>
-                <Row><TextField name="image" style={{ minHeight: '5rem' }} /></Row>
+                <Row><TextField id="profile-image" name="image" style={{ minHeight: '5rem' }} /></Row>
                 <Row>
                   <Col>
-                    <TextField name="firstName" style={{ minHeight: '5rem' }} />
+                    <TextField id="profile-firstname" name="firstName" style={{ minHeight: '5rem' }} />
                   </Col>
                   <Col>
-                    <TextField name="lastName" style={{ minHeight: '5rem' }} />
+                    <TextField id="profile-lastname" name="lastName" style={{ minHeight: '5rem' }} />
                   </Col>
                   <Col>
-                    <TextField name="email" style={{ minHeight: '5rem' }} />
-                  </Col>
-                </Row>
-                <Row className="mt-3">
-                  <Col>
-                    <TextField name="bio" style={{ minHeight: '5rem' }} />
+                    <TextField id="prfoile-email" name="email" style={{ minHeight: '5rem' }} />
                   </Col>
                 </Row>
                 <Row className="mt-3">
                   <Col>
-                    <TextField name="interests" style={{ minHeight: '5rem' }} />
+                    <TextField id="profile-bio" name="bio" style={{ minHeight: '5rem' }} />
+                  </Col>
+                </Row>
+                <Row className="mt-3">
+                  <Col>
+                    <TextField id="profile-interests" name="interests" style={{ minHeight: '5rem' }} />
                   </Col>
                 </Row>
                 <Row className="mt-3">
                   <Col className="d-flex justify-content-start">
-                    <Button className="px-4 btn-primary" onClick={handleListRedirect}>List Profiles</Button>
+                    <Button id="list-profiles-button" className="px-4 btn-primary" onClick={handleListRedirect}>List Profiles</Button>
                   </Col>
                   <Col>
-                    <SubmitField className="d-flex justify-content-end" value="Save Changes" />
+                    <SubmitField id="profile-save-changes" className="d-flex justify-content-end" value="Save Changes" />
                   </Col>
                 </Row>
               </Card.Body>

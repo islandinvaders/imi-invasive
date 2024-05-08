@@ -2,7 +2,7 @@ import { Selector } from 'testcafe';
 
 class PostsPage {
   constructor() {
-    this.pageId = '#resources';
+    this.pageId = '#posts';
     this.pageSelector = Selector(this.pageId);
   }
 
@@ -13,6 +13,14 @@ class PostsPage {
 
   async search(testController, pestName) {
     await testController.typeText('#resources-search', pestName);
+  }
+
+  async viewMyPosts(testController) {
+    await testController.click('#view-my-posts');
+  }
+
+  async downloadCSV(testController) {
+    await testController.click('#download-csv');
   }
 }
 

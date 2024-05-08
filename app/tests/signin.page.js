@@ -1,4 +1,5 @@
 import { Selector } from 'testcafe';
+// eslint-disable-next-line import/no-cycle
 import { loginComponent } from './login.component';
 
 class SigninPage {
