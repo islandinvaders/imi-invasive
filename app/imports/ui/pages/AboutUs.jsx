@@ -25,11 +25,11 @@ const AboutUs = () => (
             <div className="card-body">
               <h5 className="card-title">Natalie Ching</h5>
               <small className="text-muted">2nd Year - BS in CS (Data Science)</small>
-              <Nav.Link href="https://www.linkedin.com/in/natalie-ching-96749a253/"><Linkedin/></Nav.Link>
+              <Nav.Link href="https://www.linkedin.com/in/natalie-ching-96749a253/"><Linkedin /></Nav.Link>
               <p className="card-text">
                 Natalie grew up in Hawai&apos;i and is very interested in native wildlife. She participates in invasive seaweed clean-ups in Oahu and replanting projects. Natalie aspires to work in data science for a government agency.
-                <br/>
-                <br/>
+                <br />
+                <br />
                 Fun Fact: Natalie is 5th generation in Hawai&apos;i, and she can touch her elbows behind her head.
               </p>
             </div>
@@ -40,11 +40,11 @@ const AboutUs = () => (
             <div className="card-body">
               <h5 className="card-title">Allison Ebsen</h5>
               <small className="text-muted">2nd Year - BS in CS (General)</small>
-              <Nav.Link href="https://www.linkedin.com/in/allison-ebsen/"><Linkedin/></Nav.Link>
+              <Nav.Link href="https://www.linkedin.com/in/allison-ebsen/"><Linkedin /></Nav.Link>
               <p className="card-text">
                 Allison works in Agrosecurity and Agricultural Engineering, and she values the interconnectedness between the environment and our health. She’s currently exploring careers in computational biology.
-                <br/>
-                <br/>
+                <br />
+                <br />
                 Fun Fact: A childhood game that Allison loves is Pokemon Mystery Dungeon: Explorers of Sky.
               </p>
             </div>
@@ -55,11 +55,11 @@ const AboutUs = () => (
             <div className="card-body">
               <h5 className="card-title">Lily Enanoria</h5>
               <small className="text-muted">2nd Year - BS in CS (Cyber Security)</small>
-              <Nav.Link href="https://www.linkedin.com/in/lily-enanoria-0944aa2aa/ "><Linkedin/></Nav.Link>
+              <Nav.Link href="https://www.linkedin.com/in/lily-enanoria-0944aa2aa/ "><Linkedin /></Nav.Link>
               <p className="card-text">
                 Lily grew up going to the beach with her &apos;ohana, and she loves interacting with nature. She loves opportunities to restore the &apos;āina. Lily aspires to work in cyber security for the government.
-                <br/>
-                <br/>
+                <br />
+                <br />
                 Fun Fact: Lily’s goal is to live in Japan one day.
               </p>
             </div>
@@ -70,11 +70,11 @@ const AboutUs = () => (
             <div className="card-body">
               <h5 className="card-title">Myra Ortigosa</h5>
               <small className="text-muted">2nd Year - BS in CS (Data Science)</small>
-              <Nav.Link href="https://www.linkedin.com/in/myra-angelica-ortigosa-5661a4275/ "><Linkedin/></Nav.Link>
+              <Nav.Link href="https://www.linkedin.com/in/myra-angelica-ortigosa-5661a4275/ "><Linkedin /></Nav.Link>
               <p className="card-text">
                 Myra cares about the environment and engages in community beach clean-ups, and she aspires to become a data scientist or data analyst.
-                <br/>
-                <br/>
+                <br />
+                <br />
                 Fun Fact: Myra recently got a takoyaki machine and wants to use it one day when she’s not busy.
               </p>
             </div>
@@ -85,11 +85,11 @@ const AboutUs = () => (
             <div className="card-body">
               <h5 className="card-title">Gian Panoy</h5>
               <small className="text-muted">2nd Year - BS in CS (General)</small>
-              <Nav.Link href="https://www.linkedin.com/in/gianpanoy/"><Linkedin/></Nav.Link>
+              <Nav.Link href="https://www.linkedin.com/in/gianpanoy/"><Linkedin /></Nav.Link>
               <p className="card-text">
                 Gian is pursuing a career in software engineering. He is of Native Hawaiian descent and cares about the community and life here.
-                <br/>
-                <br/>
+                <br />
+                <br />
                 Fun Fact: Gian (aka Mr. Worldwide) has visited Canada, South Korea, and the Philippines.
               </p>
             </div>
