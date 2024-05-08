@@ -222,4 +222,21 @@ h2 {
 .about-us-img {
   max-width: 300px;
   max-height: 300px;
+
+.btn-primary {
+  background-color: #56684F !important;
+  border-color: #E3E1CA !important;
+  color: #E3E1CA !important;
+  border-radius: 10px !important;
+}
+
+.btn-primary:hover {
+  background-color: #e3e1ca !important;
+  color: #56684f !important;
+  border-color: #56684f !important;
+}
+
+/* styles.css */
+.a-custom {
+  color: #e3e1ca !important; /* Change to your desired link color */
 }

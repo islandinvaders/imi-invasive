@@ -17,7 +17,7 @@ const Footer = () => (
         Honolulu, HI 96822
         {' '}
         <br />
-        <a href="https://islandinvaders.github.io/">
+        <a className="a-custom" href="https://islandinvaders.github.io/">
           <strong> &apos;Imi Invasive Home
             Page
           </strong>

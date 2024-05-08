@@ -53,7 +53,7 @@ const ViewProfile = () => {
                 </Card.Body>
               </Card>
               <div className="d-flex justify-content-center mt-3">
-                <Button as={Link} to="/list-profile">Back to List</Button>
+                <Button id="view-profile-backtolist" as={Link} to="/list-profile">Back to List</Button>
               </div>
             </Col>
           </Row>

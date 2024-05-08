@@ -46,10 +46,10 @@ const Posts = () => {
             {profile && profile.image ? <Image className="img-posts p-0" src={profile.image} /> : <Image className="img-posts p-0" src="https://pbs.twimg.com/profile_images/1507872748789706753/9wGjDEuR_400x400.jpg" />}
           </Row>
           <Row className="d-flex justify-content-center align-items-center mt-4">
-            <Button className="btn-posts" py={10} onClick={handleButtonClick}>{ showAllReports ? 'View My Posts' : 'View All Posts' }</Button>
+            <Button id="view-my-posts" className="btn-posts" py={10} onClick={handleButtonClick}>{ showAllReports ? 'View My Posts' : 'View All Posts' }</Button>
           </Row>
           <Row className="d-flex justify-content-center align-items-center mt-2">
-            <DownloadButton />
+            <DownloadButton id="download-csv" />
           </Row>
         </Col>
 

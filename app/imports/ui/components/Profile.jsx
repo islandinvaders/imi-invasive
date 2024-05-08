@@ -37,7 +37,7 @@ const Profile = ({ listProfile }) => (
     </Card.Body>
     <Card.Footer>
       <div className="d-flex justify-content-center">
-        <Button href={`/view-profile/${listProfile._id}`}>View Profile</Button>
+        <Button id="profile-view-button" href={`/view-profile/${listProfile._id}`}>View Profile</Button>
       </div>
     </Card.Footer>
   </Card>

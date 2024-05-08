@@ -33,6 +33,11 @@ class ResourcesAdminPage {
     }
   }
 
+  async gotoAddResource(testController) {
+    await this.isDisplayed(testController);
+    await testController.click('#resources-add-reference');
+  }
+
   async deleteResource(testController) {
     await this.isDisplayed(testController);
     await testController.click('#resource-admin-delete');
