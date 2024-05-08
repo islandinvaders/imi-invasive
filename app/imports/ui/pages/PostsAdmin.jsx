@@ -32,26 +32,24 @@ const PostsAdmin = () => {
 
   return (ready ? (
     <Container className="py-3">
-      <Row className="align-middle text-center">
-        <Col xs={4} className="pt-4">
-          <Row className="d-flex justify-content-center align-items-center mt-4">
-            <Button className="btn-posts" py={10} onClick={handleButtonClick}>{ showAllReports ? 'View Unverified Posts' : 'View All Posts' }</Button>
-          </Row>
-          <Row className="d-flex justify-content-center align-items-center mt-2">
-            <DownloadButton />
-          </Row>
+      <Row className="text-center pb-4">
+        <h2>Posts Admin</h2>
+      </Row>
+      <Row className="pb-2">
+        <Col className="d-flex justify-content-center">
+          <Button className="btn-posts mx-2" py={10} onClick={handleButtonClick}>{ showAllReports ? 'View Unverified Posts' : 'View All Posts' }</Button>
+          <DownloadButton />
         </Col>
-
-        <Col xs={8} className="d-flex flex-column justify-content-center">
-          <Row className="justify-content-center">
-            <Col className="text-center">
-              <h2>Posts Admin</h2>
-            </Col>
-          </Row>
-          {reports.map((report) => (<Row className="py-4" key={report._id}><ReportAdmin report={report} collection={Reports.collection} showControls={!showAllReports} /></Row>))}
-        </Col>
+      </Row>
+      <Row>
+        {reports.map((report, index) => (
+          <Col key={index} xs={6} className="py-4">
+            <ReportAdmin report={report} collection={Reports.collection} showControls={!showAllReports} />
+          </Col>
+        ))}
       </Row>
     </Container>
   ) : <LoadingSpinner />);
 };
+
 export default PostsAdmin;
