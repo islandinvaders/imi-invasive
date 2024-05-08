@@ -16,6 +16,11 @@
       {
         "email": "jo@taro.com",
         "password": "changeme"
+      },
+      {
+        "email": "allison@imi.com",
+        "password": "changeme",
+        "role": "admin"
       }
     ],
   "profileData": [
@@ -50,6 +55,14 @@
       "email": "jo@taro.com",
       "bio": "I am an advocate for endangered species",
       "interests": "Birds, Insects, Mammals"
+    },
+    {
+      "image": "https://todaygoodaction.campaignus.me/common/img/default_profile.png",
+      "firstName": "Allison",
+      "lastName": "Ebsen",
+      "email": "allison@imi.com",
+      "bio": "I like using tech for positive impact",
+      "interests": "Computer Science, Sustainability, Conservation, Ethnobotany"
     }
   ],
 
@@ -58,7 +71,7 @@
     {
       "image": "https://i.pinimg.com/originals/f1/4d/74/f14d74fccd5698545d2b5b02bad55790.jpg",
       "pestName": "Mongoose",
-      "sciName": "Herpestes Javanicus",
+      "sciName": "Herpestes javanicus",
       "risk": "N/A",
       "regStatus": "HAR 124",
       "pestType": "Animal",
@@ -70,7 +83,7 @@
     {
       "image": "https://dlnr.hawaii.gov/hisc/files/2013/02/corjub.jpg",
       "pestName": "Pampas Grass",
-      "sciName": "Cortaderia Selloana, Cortaderia Jubata",
+      "sciName": "Cortaderia selloana, Cortaderia jubata",
       "risk": "High",
       "regStatus": "HAR 68",
       "pestType": "Plant",
@@ -82,8 +95,8 @@
     {
       "image": "https://dlnr.hawaii.gov/hisc/files/2013/02/elecoq2.jpg",
       "pestName": "Coqui Frog",
-      "sciName": "Eleutherodactylus Coqui",
-      "risk": "Undefined",
+      "sciName": "Eleutherodactylus coqui",
+      "risk": "N/A",
       "regStatus": "Hawai’i Injurious Wildlife (Exhibit 5, Chapter 13-124)",
       "pestType": "Animal",
       "description": "The coqui is a small tree frog slightly larger than 2.5 cm (1 in) long, with colors varying from light yellow to dark brown. It has a round body shape and a broad rounded snout with obvious toe pads. They also make a distinctive “ko-kee” vocalization that can be easily heard. They are found on ground level and in trees and bushes, but their calls are primarily made from 1-2m (3-7 feet) high",
@@ -94,7 +107,7 @@
     {
       "image": "https://dlnr.hawaii.gov/hisc/files/2013/02/tibher3.jpg",
       "pestName": "Cane Tibouchina",
-      "sciName": "Tibouchina Herbacea",
+      "sciName": "Tibouchina herbacea",
       "risk": "N/A",
       "regStatus": "HAR 68",
       "pestType": "Plant",
@@ -102,6 +115,78 @@
       "impact": "This plant is a prolific seeder and spread by birds. It forms dense stands in pastures and can also invade disturbed forest areas, displacing native species.",
       "distribution":  "O’ahu, Moloka’i, Lana’i, Hawai’i Island",
       "lookalike": "Glorybush (Tibouchina Urvilleana)"
+    },
+    {
+      "image": "https://dlnr.hawaii.gov/hisc/files/2013/02/africanizedhoneybee.jpg",
+      "pestName": "Africanized Honeybee",
+      "sciName": "Apis mellifera scutellata",
+      "risk": "N/A",
+      "regStatus": "HAR 124",
+      "pestType": "Bug",
+      "description": "Known as the killer bee, the Africanized Honeybee is uncomfortable around people and animals and will readily depend its hive. They are aggressive and will quickly become upset and sting in greater numbers.",
+      "impact": "The Africanized Honeybee is a public safety threat, particularly in Hawaii, a region that offers a favorable mild climate. It may negatively impact local beekeepers, crop yields and pollination, and local communities and businesses.",
+      "distribution": "Currently not established in Hawaii",
+      "lookalike": "Domestic Honeybee"
+    },
+    {
+      "image": "https://www.gardeningknowhow.com/wp-content/uploads/2018/09/tree-fern.jpg",
+      "pestName": "Australian Tree Fern",
+      "sciName": "Cyathea cooperi",
+      "risk": "16, High Risk",
+      "regStatus": "N/A",
+      "pestType": "Plant",
+      "description": "This plant is a large tree fern that can grow up to 40 feet tall. It features long triangular leaves and lacy blades. It has white hairs on stalks, and the trunk does not have thick fibers wrapping around it.",
+      "impact": "This plant spreads quickly. It is fast growing and can outcompete native plants in the forest understory. It threatens slower growing hapuu.",
+      "distribution": "Kaua'i, O'ahu, Maui, Moloka'i, Hawai'i",
+      "lookalike": "Native Hapuu"
+    },
+    {
+      "image": "https://dlnr.hawaii.gov/hisc/files/2013/02/gooseberry.jpg",
+      "pestName": "Barbados Gooseberry",
+      "sciName": "Pereskia aculeata",
+      "risk": "13, High Risk",
+      "regStatus": "N/A",
+      "pestType": "Plant",
+      "description": "This plant is a woody shrub that grows into a leafy cactus. Its fragrant flowers vary in smell, and it features round yellow-red berries.",
+      "impact": "It is thorny and overgrows and replaces other plants. It destroys patches of forest and can spread quickly.",
+      "distribution": "Kaua'i, O'ahu, Moloka'i, Hawai'i",
+      "lookalike": "N/A"
+    },
+    {
+      "image": "https://dlnr.hawaii.gov/hisc/files/2013/02/browntreesnake4.jpg",
+      "pestName": "Brown Tree Snake",
+      "sciName": "Boiga irregularis",
+      "risk": "N/A",
+      "regStatus": "Hawaii Injurious Wildlife, Federal Injurious Wildlife",
+      "pestType": "Animal",
+      "description": "This snake ranges in colors from yellowish to dark brown on its back and a cream or yellow underside. It may sometimes have mottled bands. It is noctural and may be found on trees or on the ground. It may grow anywhere from 3 feet long to 9 feet long.",
+      "impact": "The snake feasts on eggs and small mammals. By reducing bug predator populations, crop production may be impacted by pests. It may also cause power outages by climbing power lines.",
+      "distribution": "Currently not established in Hawaii, but have been found in the past",
+      "lookalike": "N/A"
+    },
+    {
+      "image": "https://dlnr.hawaii.gov/hisc/files/2013/02/pipmet.jpg",
+      "pestName": "False Kava/'Awa",
+      "sciName": "Piper auritum",
+      "risk": "15, High Risk",
+      "regStatus": "N/A",
+      "pestType": "Plant",
+      "description": "False kava is a shrub-like plant, ranging from 3 to 6 feet tall with upper branches that extent in a horizontal pattern. The light green lives are large and feature a pinnate vein pattern with unequally lobed bases. They have short hairs along the edge, and when crushed, they may smell like root beer or anise. They may have a red tint to the main vein. It lacks the same medicinal properties as true kava.",
+      "impact": "They displace other plants, and they may threatened the preservation of true kava.",
+      "distribution": "O'ahu, Maui, Kaua'i",
+      "lookalike": "True Kava"
+    },
+    {
+      "image": "https://dlnr.hawaii.gov/hisc/files/2013/02/nettlecaterpillar.jpg",
+      "pestName": "Nettle Caterpillar",
+      "sciName": "Darna pallivitta",
+      "risk": "N/A",
+      "regStatus": "HAR 69A",
+      "pestType": "Plant",
+      "description": "The stinging nettle caterpillar is the 1st larval form of an Asian moth. It is covered with rows of poisonous spines. The coloration is variable, ranging from white to light grey, with a dark stripe running down the length of the back. Populations peak during the summer months.",
+      "impact": "It produces a painful sting that may induce an allergic reaction. They feed upon and damage crops, including local plants such as ti plants and coconut.",
+      "distribution": "All main Hawaiian islands",
+      "lookalike": "Nymphalid butterflies"
     }
   ],
 
@@ -133,6 +218,56 @@
       "location": "Along the Manoa Falls hike",
       "date": "2024-01-01",
       "reporter": "john@foo.com",
+      "verified": "Yes",
+      "removed": "No"
+    },
+    {"image": "https://i.pinimg.com/originals/f1/4d/74/f14d74fccd5698545d2b5b02bad55790.jpg",
+      "pestName": "Mongoose",
+      "pestDescription": "Small, tan, furry animal with 4 legs, a long body, and a long tail",
+      "island": "Oahu",
+      "location": "University of Hawaii Campus Center",
+      "date": "2024-01-01",
+      "reporter": "allison@imi.com",
+      "verified": "Yes",
+      "removed": "No"
+    },
+    {"image": "https://dlnr.hawaii.gov/hisc/files/2013/02/gooseberry.jpg",
+      "pestName": "Barbados Gooseberry",
+      "pestDescription": "Shrub with yellow berries",
+      "island": "Oahu",
+      "location": "Along the Manoa Falls hike",
+      "date": "2024-01-01",
+      "reporter": "allison@imi.com",
+      "verified": "Yes",
+      "removed": "No"
+    },
+    {"image": "https://dlnr.hawaii.gov/hisc/files/2013/02/nettlecaterpillar.jpg",
+      "pestName": "Nettle Caterpillar",
+      "pestDescription": "Spiny caterpillar",
+      "island": "Oahu",
+      "location": "Garden near JABSOM",
+      "date": "2024-01-01",
+      "reporter": "allison@imi.com",
+      "verified": "Yes",
+      "removed": "No"
+    },
+    {"image": "https://dlnr.hawaii.gov/hisc/files/2013/02/elecoq2.jpg",
+      "pestName": "Coqui Frog",
+      "pestDescription": "Round dark brown frog",
+      "island": "Oahu",
+      "location": "Manoa Falls",
+      "date": "2024-01-01",
+      "reporter": "allison@imi.com",
+      "verified": "Yes",
+      "removed": "No"
+    },
+    {"image": "https://static.s123-cdn-static.com/uploads/3353237/800_5ea3465ee9feb.jpg",
+      "pestName": "Coqui Frog",
+      "pestDescription": "Small yellow frog",
+      "island": "Oahu",
+      "location": "Manoa Falls",
+      "date": "2024-01-01",
+      "reporter": "allison@imi.com",
       "verified": "Yes",
       "removed": "No"
     }
