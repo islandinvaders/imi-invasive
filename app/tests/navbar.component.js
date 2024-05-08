@@ -29,6 +29,10 @@ class NavBar {
     await testController.click('#resources-admin-nav');
   }
 
+  async gotoReportPage(testController) {
+    await testController.click('#reports-nav');
+  }
+
   async gotoPostsPage(testController) {
     const visible = await Selector('#basic-navbar-nav').visible;
     if (!visible) {

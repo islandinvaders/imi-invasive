@@ -37,7 +37,7 @@ const bridge = new SimpleSchema2Bridge(formSchema);
 const AddPost = () => {
 
   // On submit, insert the data.
-  const submit = async (data, formRef) => {
+  const submit = async (data) => {
     const { image, pestName, pestDescription, island, location, verified, removed } = data;
     const reporter = Meteor.user().username;
     const date = new Date();
@@ -48,7 +48,10 @@ const AddPost = () => {
           swal('Error', error.message, 'error');
         } else {
           swal('Success', 'Item added successfully', 'success');
-          formRef.reset();
+          // Close the SweetAlert dialog after 2 seconds
+          setTimeout(() => {
+            swal.close(); // Close the SweetAlert dialog
+          }, 2000); // Adjust the delay as needed
         }
       },
     );
@@ -87,7 +90,7 @@ const AddPost = () => {
                   )}
                   <Col><SelectField id="report-removed" name="removed" /></Col>
                 </Row>
-                <SubmitField value="Submit" />
+                <SubmitField id="report-submit" value="Submit" />
                 <ErrorsField />
                 <HiddenField name="date" value={new Date()} />
               </Card.Body>

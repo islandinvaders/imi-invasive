@@ -1,7 +1,8 @@
 import { Selector } from 'testcafe';
 import { navBar } from './navbar.component';
-import { landingPage } from './landing.page';
+// eslint-disable-next-line import/no-cycle
 import { signinPage } from './signin.page';
+import { landingPage } from './landing.page';
 
 class LoginComponent {
 
@@ -16,10 +17,7 @@ class LoginComponent {
 
   async gotoSignInPage(testController) {
     await this.ensureLogout(testController);
-    const visible = await Selector('#basic-navbar-nav').visible;
-    if (!visible) {
-      await testController.click('#login-dropdown');
-    }
+    await testController.click('#login-dropdown');
     await testController.click('#login-dropdown-sign-in');
   }
 
@@ -57,7 +55,6 @@ class LoginComponent {
     await this.gotoSignInPage(testController);
     await signinPage.signin(testController, credentials.username, credentials.password);
     await this.isLoggedIn(testController, credentials.username);
-
   }
 }
 

@@ -8,6 +8,7 @@ import { loginComponent } from './login.component';
 import { resourcesFormPage } from './resourceform';
 import { signupPage } from './signup.page';
 import { postsPage } from './posts.page';
+import { reportPage } from './report.page';
 
 /* global fixture:false, test:false */
 
@@ -32,21 +33,20 @@ const mongooseData = {
   lookalike: 'Cats, Rats, Pheasants',
 };
 
-/*
-const falseReport = {
+const report = {
   image: 'https://dlnr.hawaii.gov/hisc/files/2023/08/Albizia-3-2.jpg',
   pestName: 'Albizia',
   island: 'Kauai',
-  Location: 'Puhi',
-  pestDescription: 'Tall tree in my backyard.'
+  location: 'Puhi',
+  pestDescription: 'Tall tree in my backyard.',
 };
-*/
 
 fixture('meteor-application-template-react localhost test with default db')
   .page('http://localhost:3000');
 
 test('Test that landing page shows up', async (testController) => {
   await landingPage.isDisplayed(testController);
+  await testController.wait(500);
 });
 
 test('Test signin and signout', async (testController) => {
@@ -61,24 +61,29 @@ test('Test signin and signout', async (testController) => {
 });
 
 test('Creating a new account', async (testController) => {
+  // Go to page
   await navBar.gotoLandingPage(testController);
   await testController.wait(1000);
   await loginComponent.gotoSignUpPage(testController);
+  // Create new account and logout
   await signupPage.signupUser(testController, newUser.username, newUser.password, newUser.firstName, newUser.lastName);
   await loginComponent.isLoggedIn(testController, newUser.username);
   await loginComponent.logout(testController);
   await signoutPage.isDisplayed(testController);
+  await navBar.gotoLandingPage(testController);
 });
 
 test('Test About Us page on Navbar', async (testController) => {
-  loginComponent.testLogin(testController, credentials);
+  // Login
+  await loginComponent.testLogin(testController, credentials);
   await testController.wait(2000);
+  // Go to page
   await navBar.gotoAboutUsPage(testController);
 });
 
 test('Test User Editing and viewing profiles', async (testController) => {
   // Login and go to page
-  loginComponent.testLogin(testController, credentials);
+  await loginComponent.testLogin(testController, credentials);
   await navBar.gotoEditProfilePage(testController);
   // Edit current profile & verify change
   await testController.typeText('#profile-bio', ' and love dogs');
@@ -138,21 +143,20 @@ test('Test user Posts page', async (testController) => {
   await testController.wait(2000);
 });
 
-/*
-
-test('Test Admin Posts page', async (testController) => {
-  // Login and to page
-  await loginComponent.testLogin(testController, credentials);
-  await testController.wait(1000);
-
-  // Edit post (Submit)
-});
-
 test('Test making a new report', async (testController) => {
   // Login and to page
   await loginComponent.testLogin(testController, credentials);
-  await testController.wait(1000);
-  // await navBar.gotoPostsPage(testController);
-  //
+  await navBar.gotoReportPage(testController);
+  // Input information and submit form
+  await reportPage.makeReport(testController, report);
+  await testController.wait(2000);
 });
-*/
+
+/*
+test('Test Admin Posts page', async (testController) => {
+  // Login and to page
+  await loginComponent.testLogin(testController, admin);
+  await testController.wait(1000);
+  // Edit post (Submit)
+});
+ */
