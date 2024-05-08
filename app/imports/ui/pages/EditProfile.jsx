@@ -83,7 +83,7 @@ const EditProfile = () => {
                 </Row>
                 <Row className="mt-3">
                   <Col className="d-flex justify-content-start">
-                    <Button className="px-4" onClick={handleListRedirect}>List Profiles</Button>
+                    <Button className="px-4 btn-primary" onClick={handleListRedirect}>List Profiles</Button>
                   </Col>
                   <Col>
                     <SubmitField className="d-flex justify-content-end" value="Save Changes" />
