@@ -11,8 +11,8 @@ const Report = ({ report, collection, showControls }) => {
   return (
     <Card>
       <Card.Header>
-        <Card.Img variant="top" src={report.image} style={{ width: '60%' }} />
-        <Card.Title>{report.pestName}</Card.Title>
+        <Row className="d-flex justify-content-center align-items-center py-3"><Card.Img variant="top" src={report.image} style={{ width: '60%' }} /></Row>
+        <Row className="text-center"><Card.Title>{report.pestName}</Card.Title></Row>
       </Card.Header>
       <Row className="pb-2">
         <Col>

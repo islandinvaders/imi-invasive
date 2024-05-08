@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Meteor } from 'meteor/meteor';
 import { useTracker } from 'meteor/react-meteor-data';
+import { Button } from 'react-bootstrap';
 import { Reports } from '../../api/report/Report';
 
 // MAKE CSV FILE
@@ -76,9 +77,9 @@ const DownloadButton = () => {
   };
 
   return (
-    <button id="download-csv" className="btn-posts" type="button" onClick={handleClick}>
+    <Button id="download-csv" className="btn-posts" type="button" onClick={handleClick}>
       Download CSV
-    </button>
+    </Button>
   );
 };
 
