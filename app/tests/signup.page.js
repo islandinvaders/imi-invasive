@@ -1,5 +1,4 @@
 import { Selector } from 'testcafe';
-import { navBar } from './navbar.component';
 import { loginComponent } from './login.component';
 
 class SignupPage {
