@@ -222,6 +222,7 @@ h2 {
 .about-us-img {
   max-width: 300px;
   max-height: 300px;
+}
 
 .btn-primary {
   background-color: #56684F !important;
@@ -237,6 +238,7 @@ h2 {
 }
 
 /* styles.css */
+
 .a-custom {
   color: #e3e1ca !important; /* Change to your desired link color */
 }
