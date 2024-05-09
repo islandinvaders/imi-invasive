@@ -12,7 +12,7 @@ class ReportPage {
   }
 
   async makeReport(testController, report) {
-    await testController.wait(5000);
+    await testController.wait(1000);
     await testController.typeText('#report-image', report.image);
     await testController.typeText('#report-pestname', report.pestName);
     await testController.click('#report-island'); // Click to open the dropdown

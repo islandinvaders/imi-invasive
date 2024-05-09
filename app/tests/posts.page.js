@@ -11,10 +11,6 @@ class PostsPage {
     await testController.expect(this.pageSelector.exists).ok();
   }
 
-  async search(testController, pestName) {
-    await testController.typeText('#resources-search', pestName);
-  }
-
   async viewMyPosts(testController) {
     await testController.click('#view-my-posts');
   }

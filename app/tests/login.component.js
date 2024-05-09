@@ -21,6 +21,16 @@ class LoginComponent {
     await testController.click('#login-dropdown-sign-in');
   }
 
+  async gotoEditProfile(testController) {
+    await testController.click('#login-current-user');
+    await testController.click('#login-edit-profile');
+  }
+
+  async gotoListProfiles(testController) {
+    await testController.click('#login-current-user');
+    await testController.click('#login-list-profiles');
+  }
+
   /** Check that the specified user is currently logged in. */
   async isLoggedIn(testController, username) {
     const loggedInUser = Selector('#login-current-user').innerText;

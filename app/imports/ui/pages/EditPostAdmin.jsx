@@ -31,9 +31,17 @@ const EditPostAdmin = () => {
   const submit = (data) => {
     const { image, pestName, pestDescription, island, location, verified, removed } = data;
     const reporter = Meteor.user().username;
-    Reports.collection.update(_id, { $set: { image, pestName, pestDescription, island, location, verified, removed, reporter } }, (error) => (error ?
-      swal('Error', error.message, 'error') :
-      swal('Success', 'Item updated successfully', 'success')));
+    Reports.collection.update(_id, { $set: { image, pestName, pestDescription, island, location, verified, removed, reporter } }, (error) => {
+      if (error) {
+        swal('Error', error.message, 'error');
+      } else {
+        swal('Success', 'Item updated successfully', 'success');
+        // Close the SweetAlert dialog after 2 seconds
+        setTimeout(() => {
+          swal.close(); // Close the SweetAlert dialog
+        }, 2000); // Adjust the delay as needed
+      }
+    }); // <-- Closing parenthesis was missing here
   };
 
   return ready ? (
@@ -45,27 +53,27 @@ const EditPostAdmin = () => {
             <Card>
               <Card.Body>
                 <Row>
-                  <TextField name="image" />
+                  <TextField id="edit-report-image" name="image" />
                 </Row>
                 <Row>
                   <Col>
-                    <TextField name="pestName" />
+                    <TextField id="edit-report-pestname" name="pestName" />
                   </Col>
                   <Col>
-                    <SelectField name="island" />
+                    <SelectField id="edit-report-island" name="island" />
                   </Col>
                   <Col>
-                    <TextField name="location" />
+                    <TextField id="edit-report-location" name="location" />
                   </Col>
                 </Row>
                 <Row>
-                  <LongTextField name="pestDescription" />
+                  <LongTextField id="edit-report-description" name="pestDescription" />
                 </Row>
                 <Row>
-                  <Col><SelectField name="verified" /></Col>
-                  <Col><SelectField name="removed" /></Col>
+                  <Col><SelectField id="edit-report-verified" name="verified" /></Col>
+                  <Col><SelectField id="edit-report-removed" name="removed" /></Col>
                 </Row>
-                <SubmitField value="Submit" />
+                <SubmitField id="edit-report-submit" value="Submit" />
                 <ErrorsField />
                 <HiddenField name="date" value={new Date()} />
               </Card.Body>
