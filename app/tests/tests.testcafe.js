@@ -93,18 +93,16 @@ test('Test About Us page on Navbar', async (testController) => {
 test('Test User Editing and viewing profiles', async (testController) => {
   // Login and go to page
   await loginComponent.testLogin(testController, credentials);
-  await navBar.gotoEditProfilePage(testController);
+  await loginComponent.gotoEditProfile(testController);
   // Edit current profile & verify change
   await testController.typeText('#profile-bio', ' and love dogs');
   await testController.typeText('#profile-interests', ' especially dogs');
   await testController.click('#profile-save-changes input.btn.btn-primary');
   await testController.wait(2000);
   await navBar.gotoLandingPage(testController);
-  await navBar.gotoEditProfilePage(testController);
   await testController.wait(2000);
   // Viewing other profiles and click on specific one, return back to list
-  await testController.click('#list-profiles-button');
-  await testController.wait(1000);
+  await loginComponent.gotoListProfiles(testController);
   await testController.click('#profile-view-button');
   await testController.click('#view-profile-backtolist');
 });
