@@ -31,9 +31,7 @@ const Profile = ({ listProfile }) => (
       >
         <span className="fw-bold" style={{ fontSize: '18px' }}>Bio:</span>{' '}{listProfile.bio}
       </span>
-      <Card.Text>
-        <span className="fw-bold" style={{ fontSize: '18px' }}>Interests:</span><span>{' '}{listProfile.interests}</span>
-      </Card.Text>
+      <span className="fw-bold" style={{ fontSize: '18px' }}>Interests:</span><span>{' '}{listProfile.interests}</span>
     </Card.Body>
     <Card.Footer>
       <div className="d-flex justify-content-center">

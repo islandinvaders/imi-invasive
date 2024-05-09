@@ -41,24 +41,32 @@
       "firstName": "Test",
       "lastName": "Account",
       "email": "test@imi.com",
-      "bio": "I am an advocate for endangered species",
-      "interests": "Birds, Insects, Mammals"
+      "bio": "Passionate about protecting endangered species, I am involved in research.",
+      "interests": "Biological Research"
     },
     {
-      "image": "https://todaygoodaction.campaignus.me/common/img/default_profile.png",
+      "image": "https://i.redd.it/x80su45zvl261.png",
       "firstName": "Gojo",
       "lastName": "Satoru",
       "email": "john@foo.com",
-      "bio": "I am an advocate for endangered species",
-      "interests": "Birds, Insects, Mammals"
+      "bio": "Eager to make a difference, I am learning about and advocating for the conservation of endangered species.",
+      "interests": "Educational Outreach, Wildlife Conservation, Habitat Restoration"
+    },
+    {
+      "image": "https://todaygoodaction.campaignus.me/common/img/default_profile.png",
+      "firstName": "Sally",
+      "lastName": "Song",
+      "email": "sally@foo.com",
+      "bio": "Dedicated to the conservation of endangered species, I strive to raise awareness and promote initiatives that protect our planet's precious wildlife.",
+      "interests": "Community Engagement, Environmental Education, Wildlife Conservation"
     },
     {
       "image": "https://todaygoodaction.campaignus.me/common/img/default_profile.png",
       "firstName": "Johnathan",
       "lastName": "Joestar",
       "email": "jo@jo.com",
-      "bio": "I am an advocate for endangered species",
-      "interests": "Birds, Insects, Mammals"
+      "bio": "I am a passionate advocate for endangered sea life, dedicated to protecting and preserving our ocean's most vulnerable species.",
+      "interests": "Marine Biology, Ocean Conservation, Marine Mammals"
     },
     {
       "image": "https://todaygoodaction.campaignus.me/common/img/default_profile.png",
@@ -66,7 +74,15 @@
       "lastName": "Kujo",
       "email": "jo@taro.com",
       "bio": "I am an advocate for endangered species",
-      "interests": "Birds, Insects, Mammals"
+      "interests": "Wildlife Conservation and Ecotourism"
+    },
+    {
+      "image": "https://todaygoodaction.campaignus.me/common/img/default_profile.png",
+      "firstName": "Kelly",
+      "lastName": "Luke",
+      "email": "kelly@foo.com",
+      "bio": "An enthusiast for wildlife conservation.",
+      "interests": "Environmental Science, Conservation, Biodiversity"
     },
     {
       "image": "https://todaygoodaction.campaignus.me/common/img/default_profile.png",
