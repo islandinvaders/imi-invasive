@@ -9,6 +9,8 @@ import { resourcesFormPage } from './resourceform';
 import { signupPage } from './signup.page';
 import { postsPage } from './posts.page';
 import { reportPage } from './report.page';
+import { postsAdminPage } from './posts.admin.page';
+import { reportAdminPage } from './report.admin.page';
 
 /* global fixture:false, test:false */
 
@@ -41,6 +43,16 @@ const report = {
   pestDescription: 'Tall tree in my backyard.',
 };
 
+const editReport = {
+  image: 'https://dlnr.hawaii.gov/hisc/files/2023/08/Albizia-3-2.jpg',
+  pestName: 'Albizia',
+  island: 'Kauai',
+  location: 'Puhi',
+  pestDescription: 'Tall tree in my backyard.',
+  verified: 'Yes',
+  removed: 'Yes',
+};
+
 fixture('meteor-application-template-react localhost test with default db')
   .page('http://localhost:3000');
 
@@ -68,9 +80,6 @@ test('Creating a new account', async (testController) => {
   // Create new account and logout
   await signupPage.signupUser(testController, newUser.username, newUser.password, newUser.firstName, newUser.lastName);
   await loginComponent.isLoggedIn(testController, newUser.username);
-  await loginComponent.logout(testController);
-  await signoutPage.isDisplayed(testController);
-  await navBar.gotoLandingPage(testController);
 });
 
 test('Test About Us page on Navbar', async (testController) => {
@@ -152,11 +161,18 @@ test('Test making a new report', async (testController) => {
   await testController.wait(2000);
 });
 
-/*
 test('Test Admin Posts page', async (testController) => {
   // Login and to page
   await loginComponent.testLogin(testController, admin);
   await testController.wait(1000);
+  await navBar.gotoPostsAdminPage(testController);
+  // Delete and change verification status
+  await postsAdminPage.viewVerifiedOrAll(testController);
+  await postsAdminPage.verificationStatusTrue(testController);
+  await testController.wait(2000);
+  await postsAdminPage.deletePost(testController);
   // Edit post (Submit)
+  await postsAdminPage.gotoEditReport(testController);
+  await reportAdminPage.editReport(testController, editReport);
+  await testController.wait(2000);
 });
- */

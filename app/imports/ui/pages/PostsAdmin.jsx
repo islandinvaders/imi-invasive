@@ -37,7 +37,7 @@ const PostsAdmin = () => {
       </Row>
       <Row className="pb-2">
         <Col className="d-flex justify-content-center">
-          <Button className="btn-posts mx-2" py={10} onClick={handleButtonClick}>{ showAllReports ? 'View Unverified Posts' : 'View All Posts' }</Button>
+          <Button id="posts-admin-verified-button" className="btn-posts mx-2" py={10} onClick={handleButtonClick}>{ showAllReports ? 'View Unverified Posts' : 'View All Posts' }</Button>
           <DownloadButton />
         </Col>
       </Row>

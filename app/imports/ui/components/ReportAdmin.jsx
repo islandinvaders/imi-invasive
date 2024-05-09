@@ -19,6 +19,10 @@ const ReportAdmin = ({ report, collection, showControls }) => {
           swal('Error', error.message, 'error');
         } else {
           swal('Success', 'Verification status updated successfully', 'success');
+          // Close the SweetAlert dialog after 2 seconds
+          setTimeout(() => {
+            swal.close(); // Close the SweetAlert dialog
+          }, 2000); // Adjust the delay as needed
         }
       });
     } else {
@@ -53,12 +57,12 @@ const ReportAdmin = ({ report, collection, showControls }) => {
           </Row>
           {showControls && (
             <Row className="m-2 justify-content-center">
-              <Button className="other-btn-posts" variant="danger" onClick={() => removeItem(report._id)}>Delete</Button>
+              <Button id="posts-admin-remove" className="other-btn-posts" variant="danger" onClick={() => removeItem(report._id)}>Delete</Button>
             </Row>
           )}
           <Row className="m-2 justify-content-center">
             {/* eslint-disable-next-line no-return-assign */}
-            <Button className="other-btn-posts" variant="primary" onClick={() => window.location.href = `/admin/edit/${report._id}`}>Edit</Button>
+            <Button id="posts-admin-edit" className="other-btn-posts" variant="primary" onClick={() => window.location.href = `/admin/edit/${report._id}`}>Edit</Button>
           </Row>
           {showControls && isAdmin && (
             <Row className="m-2 justify-content-center">
@@ -68,9 +72,10 @@ const ReportAdmin = ({ report, collection, showControls }) => {
                 onChange={(e) => verifyReport(e.target.value)}
                 defaultValue={report.verified}
                 className="mt-2 other-btn-posts"
+                id="posts-admin-ver-status"
               >
-                <option value="Yes">Verified</option>
-                <option value="No">Unverified</option>
+                <option id="posts-admin-ver-status-yes" value="Yes">Verified</option>
+                <option id="posts-admin-ver-status-no" value="No">Unverified</option>
               </Form.Select>
             </Row>
           )}
