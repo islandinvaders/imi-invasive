@@ -2,10 +2,9 @@ import React from 'react';
 import swal from 'sweetalert';
 import { Meteor } from 'meteor/meteor';
 import { useTracker } from 'meteor/react-meteor-data';
-import { Card, Col, Container, Row, Button } from 'react-bootstrap';
+import { Card, Col, Container, Row } from 'react-bootstrap';
 import { AutoForm, SubmitField, TextField } from 'uniforms-bootstrap5';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
-import { useNavigate } from 'react-router-dom';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { Profiles } from '../../api/profile/Profile';
 
@@ -15,7 +14,6 @@ const bridge = new SimpleSchema2Bridge(Profiles.schema);
 // View your own profile
 const EditProfileAdmin = () => {
   const currentUser = useTracker(() => Meteor.user());
-  const navigate = useNavigate(); // Hook for redirecting
   const { ready, thisProfile } = useTracker(() => {
     // Note that this subscription will get cleaned up
     // when your component is unmounted or deps change.
@@ -45,10 +43,6 @@ const EditProfileAdmin = () => {
         swal('Success', 'Profile updated successfully', 'success');
       }
     });
-  };
-
-  const handleListRedirect = () => {
-    navigate('/list-profile-admin'); // This will redirect to the ListProfile component
   };
 
   return ready ? (
@@ -82,9 +76,6 @@ const EditProfileAdmin = () => {
                   </Col>
                 </Row>
                 <Row className="mt-3">
-                  <Col className="d-flex justify-content-start">
-                    <Button className="px-4" onClick={handleListRedirect}>List Profiles</Button>
-                  </Col>
                   <Col>
                     <SubmitField className="d-flex justify-content-end" value="Save Changes" />
                   </Col>

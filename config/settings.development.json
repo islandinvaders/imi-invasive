@@ -18,6 +18,10 @@
         "password": "changeme"
       },
       {
+        "email": "test@imi.com",
+        "password": "changeme"
+      },
+      {
         "email": "allison@imi.com",
         "password": "changeme",
         "role": "admin"
@@ -29,6 +33,14 @@
       "firstName": "Admin",
       "lastName": "Account",
       "email": "admin@foo.com",
+      "bio": "I am an advocate for endangered species",
+      "interests": "Birds, Insects, Mammals"
+    },
+    {
+      "image": "https://todaygoodaction.campaignus.me/common/img/default_profile.png",
+      "firstName": "Test",
+      "lastName": "Account",
+      "email": "test@imi.com",
       "bio": "I am an advocate for endangered species",
       "interests": "Birds, Insects, Mammals"
     },

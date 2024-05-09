@@ -28,7 +28,6 @@ const NavBar = () => {
                   </>
                 ) : (
                   <>
-                    <Nav.Link as={NavLink} id="edit-profile-nav" to="/edit-profile" key="edit-profile">EDIT PROFILE</Nav.Link>
                     <Nav.Link as={NavLink} id="posts-nav" to="/posts" key="posts">POSTS</Nav.Link>
                     <Nav.Link as={NavLink} id="reports-nav" to="/add" key="file-report">FILE REPORT</Nav.Link>
                     <Nav.Link as={NavLink} id="resources-nav" to="/resources" key="resources">INVASIVE LIST</Nav.Link>

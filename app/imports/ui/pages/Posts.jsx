@@ -42,11 +42,15 @@ const Posts = () => {
         </Col>
       </Row>
       <Row>
-        {reports.map((report, index) => (
-          <Col key={index} xs={6} className="py-4">
-            <Report report={report} collection={Reports.collection} showControls={!showAllReports} />
-          </Col>
-        ))}
+        {reports.length === 0 && !showAllReports ? (
+          <div>You have no posts!</div>
+        ) : (
+          reports.map((report, index) => (
+            <Col key={index} xs={6} className="py-4">
+              <Report report={report} collection={Reports.collection} showControls={!showAllReports} />
+            </Col>
+          ))
+        )}
       </Row>
     </Container>
   ) : <LoadingSpinner />);

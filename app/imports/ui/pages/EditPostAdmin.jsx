@@ -16,7 +16,7 @@ const EditPostAdmin = () => {
   // console.log('EditReport', _id);
   // useTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker
   const { doc, ready } = useTracker(() => {
-    const subscription = Meteor.subscribe(Reports.adminUnverifiedPosts);
+    const subscription = Meteor.subscribe(Reports.adminAllPosts);
     // Determine if the subscription is ready
     const rdy = subscription.ready();
     // Get the document
@@ -30,7 +30,8 @@ const EditPostAdmin = () => {
   // On successful submit, insert the data.
   const submit = (data) => {
     const { image, pestName, pestDescription, island, location, verified, removed } = data;
-    Reports.collection.update(_id, { $set: { image, pestName, pestDescription, island, location, verified, removed } }, (error) => (error ?
+    const reporter = Meteor.user().username;
+    Reports.collection.update(_id, { $set: { image, pestName, pestDescription, island, location, verified, removed, reporter } }, (error) => (error ?
       swal('Error', error.message, 'error') :
       swal('Success', 'Item updated successfully', 'success')));
   };

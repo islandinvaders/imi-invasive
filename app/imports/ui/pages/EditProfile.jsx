@@ -2,10 +2,9 @@ import React from 'react';
 import swal from 'sweetalert';
 import { Meteor } from 'meteor/meteor';
 import { useTracker } from 'meteor/react-meteor-data';
-import { Card, Col, Container, Row, Button } from 'react-bootstrap';
+import { Card, Col, Container, Row } from 'react-bootstrap';
 import { AutoForm, SubmitField, TextField } from 'uniforms-bootstrap5';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
-import { useNavigate } from 'react-router-dom';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { Profiles } from '../../api/profile/Profile';
 
@@ -14,8 +13,7 @@ const bridge = new SimpleSchema2Bridge(Profiles.schema);
 
 // View your own profile
 const EditProfile = () => {
-  const currentUser = useTracker(() => Meteor.user());
-  const navigate = useNavigate(); // Hook for redirecting
+  const currentUser = useTracker(() => Meteor.user());// Hook for redirecting
   const { ready, thisProfile } = useTracker(() => {
     // Note that this subscription will get cleaned up
     // when your component is unmounted or deps change.
@@ -52,10 +50,6 @@ const EditProfile = () => {
     });
   };
 
-  const handleListRedirect = () => {
-    navigate('/list-profile'); // This will redirect to the ListProfile component
-  };
-
   return ready ? (
     <Container className="py-3">
       <h2 className="text-center mb-3">Edit Profile</h2>
@@ -87,9 +81,6 @@ const EditProfile = () => {
                   </Col>
                 </Row>
                 <Row className="mt-3">
-                  <Col className="d-flex justify-content-start">
-                    <Button id="list-profiles-button" className="px-4 btn-primary" onClick={handleListRedirect}>List Profiles</Button>
-                  </Col>
                   <Col>
                     <SubmitField id="profile-save-changes" className="d-flex justify-content-end" value="Save Changes" />
                   </Col>
