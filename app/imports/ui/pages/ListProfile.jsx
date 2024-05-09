@@ -23,7 +23,7 @@ const ListProfile = () => {
     <Container className="py-3">
       <Row className="justify-content-center">
         <Col>
-          <Col className="text-center mb-3">
+          <Col className="text-center mb-3 profile-header">
             <h2>List Profiles</h2>
           </Col>
           <Row xs={1} sm={2} lg={3} className="g-4">

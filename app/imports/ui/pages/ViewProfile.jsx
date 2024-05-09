@@ -24,7 +24,7 @@ const ViewProfile = () => {
     <Container className="py-4">
       <Row className="justify-content-center mb-4">
         <Col>
-          <Col md={12} className="text-center mb-4"><h2>View {thisProfile.firstName}&nbsp;{thisProfile.lastName}&apos;s Profile</h2></Col>
+          <Col md={12} className="text-center mb-4 profile-header"><h2>View {thisProfile.firstName}&nbsp;{thisProfile.lastName}&apos;s Profile</h2></Col>
           <Row className="d-flex justify-content-center">
             <Col xs={12} md={5} className="d-flex justify-content-center">
               {thisProfile.image && (
