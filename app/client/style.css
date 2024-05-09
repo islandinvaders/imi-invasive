@@ -72,6 +72,9 @@ h2 {
   font-weight: bold;
 }
 
+.profile-header {
+  padding-bottom: 25px;
+}
 .landing-collage {
   max-width: 100%;
   max-height: 100%;
@@ -122,7 +125,6 @@ h2 {
 .navbar-nav .nav-link:hover {
   color: #E3E1CA; /* Your hover color */
 }
-
 
 /* Styling for the bar above the navbar text */
 .navbar-nav .nav-link::before {
