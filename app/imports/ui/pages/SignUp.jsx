@@ -67,14 +67,14 @@ const SignUp = ({ location }) => {
           <AutoForm schema={bridge} onSubmit={data => submit(data)}>
             <Card>
               <Card.Body>
-                <TextField id="signup-form-email" name="email" placeholder="E-mail address" />
-                <TextField id="signup-form-password" name="password" placeholder="Password" type="password" />
-                <TextField id="signup-form-firstname" name="firstName" placeholder="First Name" />
-                <TextField id="signup-form-lastname" name="lastName" placeholder="Last Name" />
-                <LongTextField name="bio" placeholder="Bio" />
-                <TextField name="interests" placeholder="Interests" />
-                <ErrorsField />
-                <SubmitField id="signup-form-submit" />
+                <TextField id="signup-form-email" name="email" placeholder="E-mail address"/>
+                <TextField id="signup-form-password" name="password" placeholder="Password" type="password"/>
+                <TextField id="signup-form-firstname" name="firstName" placeholder="First Name"/>
+                <TextField id="signup-form-lastname" name="lastName" placeholder="Last Name"/>
+                <LongTextField name="bio" placeholder="Bio"/>
+                <TextField name="interests" placeholder="Interests"/>
+                <ErrorsField/>
+                <SubmitField id="signup-form-submit"/>
               </Card.Body>
             </Card>
           </AutoForm>
@@ -92,12 +92,16 @@ const SignUp = ({ location }) => {
             </Alert>
           )}
         </Col>
+      </Row>
+      <Row className="justify-content-center"> {/* Add a new row for the image */}
+      <Col xs={5} className="text-center"> {/* Center the column for the image */}
         <img
           alt="Join our 'Imi Invasive 'Ohana!"
           src="/images/join.png"
-          className="img-fluid align-top"
+          className="img-fluid align-top signup-image"
         />
-      </Row>
+      </Col>
+    </Row>
     </Container>
   );
 };
